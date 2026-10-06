@@ -79,11 +79,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adminfrm.Designer.vb">
-      <DependentUpon>Adminfrm.vb</DependentUpon>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Adminfrm.vb">
+    <Compile Include="Admin.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="connection.vb" />
     <Compile Include="CreateAccount.Designer.vb">
@@ -115,22 +121,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Ownerfrm.Designer.vb">
-      <DependentUpon>Ownerfrm.vb</DependentUpon>
+    <Compile Include="Owner.Designer.vb">
+      <DependentUpon>Owner.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ownerfrm.vb">
+    <Compile Include="Owner.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stafffrm.Designer.vb">
-      <DependentUpon>Stafffrm.vb</DependentUpon>
+    <Compile Include="OwnerDashboard.Designer.vb">
+      <DependentUpon>OwnerDashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="Stafffrm.vb">
+    <Compile Include="OwnerDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.vb">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDashboard.Designer.vb">
+      <DependentUpon>StaffDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDashboard.vb">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Adminfrm.resx">
-      <DependentUpon>Adminfrm.vb</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAccount.resx">
       <DependentUpon>CreateAccount.vb</DependentUpon>
@@ -144,11 +165,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ownerfrm.resx">
-      <DependentUpon>Ownerfrm.vb</DependentUpon>
+    <EmbeddedResource Include="Owner.resx">
+      <DependentUpon>Owner.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stafffrm.resx">
-      <DependentUpon>Stafffrm.vb</DependentUpon>
+    <EmbeddedResource Include="OwnerDashboard.resx">
+      <DependentUpon>OwnerDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDashboard.resx">
+      <DependentUpon>StaffDashboard.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

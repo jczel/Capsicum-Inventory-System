@@ -121,8 +121,7 @@ Public Class CreateAccount
         gendercmbbx.SelectedIndex = -1
     End Sub
 
-    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles loginlinklb.LinkClicked
-        loginform.Show()
-        Me.Hide()
+    Private Sub registerpanel_Paint(sender As Object, e As PaintEventArgs) Handles registerpanel.Paint
+
     End Sub
 End Class
