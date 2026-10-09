@@ -7,7 +7,7 @@ Public Class CreateAccount
     Private Sub CreateAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
         gender()
-
+        roless()
     End Sub
 
     Sub savedata()
@@ -16,7 +16,7 @@ Public Class CreateAccount
                 sqlconn.Open()
             End If
 
-            query = "INSERT INTO USER_ACCOUNT (firstname, lastname, username, birthdate, password, usertype, gender) VALUES (@firstname, @lastname, @username, @birthdate, @password, @usertype, @gender)"
+            query = "INSERT INTO Users (firstname, lastname, username, birthdate, password, role, gender) VALUES (@firstname, @lastname, @username, @birthdate, @password, @role, @gender)"
             cmd = New SqlCommand(query, sqlconn)
             With cmd.Parameters
                 .AddWithValue("@firstname", fnametxtbx.Text.Trim())
@@ -24,6 +24,7 @@ Public Class CreateAccount
                 .AddWithValue("@username", usernametxtbx.Text.Trim())
                 .AddWithValue("@birthdate", birthdatetimepicker.Value.Date)
                 .AddWithValue("@password", passwtxtbx.Text)
+                .AddWithValue("@role", rolecombbx.Text)
                 .AddWithValue("@gender", gendercmbbx.Text)
             End With
             cmd.ExecuteNonQuery()
@@ -46,6 +47,7 @@ Public Class CreateAccount
         If lastnametxtbx.Text = "" Then MsgBox("Last Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If usernametxtbx.Text = "" Then MsgBox("Username Cannot be blank", MsgBoxStyle.Critical) : Return
         If passwtxtbx.Text = "" Then MsgBox("Password Cannot be blank", MsgBoxStyle.Critical) : Return
+        If rolecombbx.Text = "" Then MsgBox("Select Role", MsgBoxStyle.Critical) : Return
         If gendercmbbx.Text = "" Then MsgBox("Select Gender", MsgBoxStyle.Critical) : Return
 
 
@@ -75,7 +77,7 @@ Public Class CreateAccount
         Try
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT COUNT(*) FROM USER_ACCOUNT WHERE username=@username"
+            query = "SELECT COUNT(*) FROM Users WHERE username=@username"
             cmd = New SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
             Dim count As Integer = CInt(cmd.ExecuteScalar())
@@ -97,6 +99,13 @@ Public Class CreateAccount
 
     End Sub
 
+    Sub roless()
+        rolecombbx.Items.Clear()
+        rolecombbx.Items.Add("Admin")
+        rolecombbx.Items.Add("Owner")
+        rolecombbx.Items.Add("Staff")
+
+    End Sub
 
 
     Sub gender()
@@ -111,10 +120,11 @@ Public Class CreateAccount
         usernametxtbx.Clear()
         passwtxtbx.Clear()
         confirmpasswtxtbx.Clear()
+        rolecombbx.SelectedIndex = -1
         gendercmbbx.SelectedIndex = -1
     End Sub
 
-    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles loginlinklb.LinkClicked
+    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
 
         Form1login.Show()
@@ -123,5 +133,13 @@ Public Class CreateAccount
 
     Private Sub CreateAccount_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
+    End Sub
+
+    Private Sub registerpanel_Paint(sender As Object, e As PaintEventArgs) Handles registerpanel.Paint
+
+    End Sub
+
+    Private Sub gendercmbbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gendercmbbx.SelectedIndexChanged
+
     End Sub
 End Class
