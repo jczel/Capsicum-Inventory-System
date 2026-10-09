@@ -120,4 +120,8 @@ Public Class CreateAccount
         Form1login.Show()
         Me.Hide()
     End Sub
+
+    Private Sub CreateAccount_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
+    End Sub
 End Class
