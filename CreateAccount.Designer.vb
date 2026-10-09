@@ -28,11 +28,9 @@ Partial Class CreateAccount
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.loginlinklb = New System.Windows.Forms.LinkLabel()
         Me.registerbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.gendercmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.usetypecmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.confirmpasswtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.passwtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.usernametxtbx = New Guna.UI2.WinForms.Guna2TextBox()
@@ -50,11 +48,9 @@ Partial Class CreateAccount
         Me.registerpanel.Controls.Add(Me.Label4)
         Me.registerpanel.Controls.Add(Me.Label3)
         Me.registerpanel.Controls.Add(Me.Label2)
-        Me.registerpanel.Controls.Add(Me.Label1)
         Me.registerpanel.Controls.Add(Me.loginlinklb)
         Me.registerpanel.Controls.Add(Me.registerbttn)
         Me.registerpanel.Controls.Add(Me.gendercmbbx)
-        Me.registerpanel.Controls.Add(Me.usetypecmbbx)
         Me.registerpanel.Controls.Add(Me.confirmpasswtxtbx)
         Me.registerpanel.Controls.Add(Me.passwtxtbx)
         Me.registerpanel.Controls.Add(Me.usernametxtbx)
@@ -74,7 +70,7 @@ Partial Class CreateAccount
         Me.birthdatetimepicker.FillColor = System.Drawing.Color.White
         Me.birthdatetimepicker.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.birthdatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.birthdatetimepicker.Location = New System.Drawing.Point(214, 385)
+        Me.birthdatetimepicker.Location = New System.Drawing.Point(214, 397)
         Me.birthdatetimepicker.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.birthdatetimepicker.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.birthdatetimepicker.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
@@ -99,7 +95,7 @@ Partial Class CreateAccount
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(231, 360)
+        Me.Label3.Location = New System.Drawing.Point(223, 372)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(82, 20)
         Me.Label3.TabIndex = 19
@@ -110,22 +106,11 @@ Partial Class CreateAccount
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(602, 362)
+        Me.Label2.Location = New System.Drawing.Point(595, 281)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 20)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Gender"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(602, 282)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 20)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "User Type"
         '
         'loginlinklb
         '
@@ -173,28 +158,10 @@ Partial Class CreateAccount
         Me.gendercmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.gendercmbbx.ItemHeight = 25
         Me.gendercmbbx.Items.AddRange(New Object() {"Male", "Female"})
-        Me.gendercmbbx.Location = New System.Drawing.Point(585, 395)
+        Me.gendercmbbx.Location = New System.Drawing.Point(585, 304)
         Me.gendercmbbx.Name = "gendercmbbx"
         Me.gendercmbbx.Size = New System.Drawing.Size(260, 31)
         Me.gendercmbbx.TabIndex = 11
-        '
-        'usetypecmbbx
-        '
-        Me.usetypecmbbx.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.usetypecmbbx.AutoRoundedCorners = True
-        Me.usetypecmbbx.BackColor = System.Drawing.Color.Transparent
-        Me.usetypecmbbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.usetypecmbbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.usetypecmbbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.usetypecmbbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.usetypecmbbx.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.usetypecmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.usetypecmbbx.ItemHeight = 25
-        Me.usetypecmbbx.Items.AddRange(New Object() {"Admin", "Owner", "staff"})
-        Me.usetypecmbbx.Location = New System.Drawing.Point(585, 308)
-        Me.usetypecmbbx.Name = "usetypecmbbx"
-        Me.usetypecmbbx.Size = New System.Drawing.Size(260, 31)
-        Me.usetypecmbbx.TabIndex = 7
         '
         'confirmpasswtxtbx
         '
@@ -339,14 +306,12 @@ Partial Class CreateAccount
     Friend WithEvents usernametxtbx As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents confirmpasswtxtbx As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents passwtxtbx As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents usetypecmbbx As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents gendercmbbx As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents registerbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents loginlinklb As LinkLabel
 
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents birthdatetimepicker As Guna.UI2.WinForms.Guna2DateTimePicker
 End Class

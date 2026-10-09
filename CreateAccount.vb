@@ -2,11 +2,12 @@
 Imports System.Text.RegularExpressions
 
 Public Class CreateAccount
+    Public Property Form1ogin As Object
 
     Private Sub CreateAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
         gender()
-        usertype()
+
     End Sub
 
     Sub savedata()
@@ -23,7 +24,6 @@ Public Class CreateAccount
                 .AddWithValue("@username", usernametxtbx.Text.Trim())
                 .AddWithValue("@birthdate", birthdatetimepicker.Value.Date)
                 .AddWithValue("@password", passwtxtbx.Text)
-                .AddWithValue("@usertype", usetypecmbbx.Text)
                 .AddWithValue("@gender", gendercmbbx.Text)
             End With
             cmd.ExecuteNonQuery()
@@ -39,14 +39,13 @@ Public Class CreateAccount
         End Try
     End Sub
 
-    Private Sub registerbttn_Click(sender As Object, e As EventArgs) Handles registerbttn.Click
+    Private Sub Registerbttn_Click(sender As Object, e As EventArgs) Handles registerbttn.Click
 
 
         If fnametxtbx.Text = "" Then MsgBox("First Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If lastnametxtbx.Text = "" Then MsgBox("Last Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If usernametxtbx.Text = "" Then MsgBox("Username Cannot be blank", MsgBoxStyle.Critical) : Return
         If passwtxtbx.Text = "" Then MsgBox("Password Cannot be blank", MsgBoxStyle.Critical) : Return
-        If usetypecmbbx.Text = "" Then MsgBox("Select User Type", MsgBoxStyle.Critical) : Return
         If gendercmbbx.Text = "" Then MsgBox("Select Gender", MsgBoxStyle.Critical) : Return
 
 
@@ -98,12 +97,7 @@ Public Class CreateAccount
 
     End Sub
 
-    Sub usertype()
-        usetypecmbbx.Items.Clear()
-        usetypecmbbx.Items.Add("Admin")
-        usetypecmbbx.Items.Add("Staff")
-        usetypecmbbx.Items.Add("Owner")
-    End Sub
+
 
     Sub gender()
         gendercmbbx.Items.Clear()
@@ -117,11 +111,13 @@ Public Class CreateAccount
         usernametxtbx.Clear()
         passwtxtbx.Clear()
         confirmpasswtxtbx.Clear()
-        usetypecmbbx.SelectedIndex = -1
         gendercmbbx.SelectedIndex = -1
     End Sub
 
-    Private Sub registerpanel_Paint(sender As Object, e As PaintEventArgs) Handles registerpanel.Paint
+    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles loginlinklb.LinkClicked
 
+
+        Form1login.Show()
+        Me.Hide()
     End Sub
 End Class

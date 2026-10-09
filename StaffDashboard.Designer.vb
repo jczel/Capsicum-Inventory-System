@@ -41,6 +41,10 @@ Partial Class StaffDashboard
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel15 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel16 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
@@ -53,6 +57,8 @@ Partial Class StaffDashboard
         Me.TableLayoutPanel4.SuspendLayout()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
+        Me.Guna2Panel15.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -243,17 +249,64 @@ Partial Class StaffDashboard
         '
         Me.Guna2Panel2.BackgroundImage = CType(resources.GetObject("Guna2Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel2.Controls.Add(Me.Guna2Panel15)
+        Me.Guna2Panel2.Controls.Add(Me.Label1)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(751, 263)
         Me.Guna2Panel2.TabIndex = 0
         '
+        'Guna2Panel15
+        '
+        Me.Guna2Panel15.BackgroundImage = CType(resources.GetObject("Guna2Panel15.BackgroundImage"), System.Drawing.Image)
+        Me.Guna2Panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel15.Controls.Add(Me.Guna2Panel16)
+        Me.Guna2Panel15.Controls.Add(Me.Label2)
+        Me.Guna2Panel15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel15.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel15.Name = "Guna2Panel15"
+        Me.Guna2Panel15.Size = New System.Drawing.Size(751, 263)
+        Me.Guna2Panel15.TabIndex = 1
+        '
+        'Guna2Panel16
+        '
+        Me.Guna2Panel16.BackgroundImage = CType(resources.GetObject("Guna2Panel16.BackgroundImage"), System.Drawing.Image)
+        Me.Guna2Panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Guna2Panel16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel16.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel16.Name = "Guna2Panel16"
+        Me.Guna2Panel16.Size = New System.Drawing.Size(751, 263)
+        Me.Guna2Panel16.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.Location = New System.Drawing.Point(384, 38)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 20)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Welcome"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.Location = New System.Drawing.Point(384, 38)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(75, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Welcome"
+        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.BackgroundImage = CType(resources.GetObject("Guna2Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Panel3.Location = New System.Drawing.Point(760, 3)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(298, 263)
@@ -277,6 +330,10 @@ Partial Class StaffDashboard
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
+        Me.Guna2Panel15.ResumeLayout(False)
+        Me.Guna2Panel15.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -300,4 +357,8 @@ Partial Class StaffDashboard
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Guna2Panel15 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel16 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label2 As Label
 End Class
