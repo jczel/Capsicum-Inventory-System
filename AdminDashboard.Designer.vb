@@ -23,51 +23,49 @@ Partial Class AdminDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont20 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid7 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick7 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont21 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid8 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick8 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont22 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid9 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim PointLabel3 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
-        Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim LPoint15 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint16 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint17 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint18 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint19 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint20 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim ChartFont25 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont26 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont27 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont28 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid10 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick10 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont29 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid11 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick11 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont30 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid12 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim PointLabel4 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
-        Dim ChartFont31 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Tick12 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont32 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
+        Dim ChartFont1 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont2 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont3 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont4 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid1 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick1 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont5 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid2 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick2 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont6 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid3 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel1 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont7 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick3 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont8 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim LPoint1 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint2 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint3 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint4 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint5 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint6 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
+        Dim ChartFont9 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont10 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont11 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont12 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid4 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick4 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont13 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid5 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick5 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont14 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid6 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel2 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont15 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick6 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont16 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim LPoint7 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint8 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint9 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint10 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint11 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint12 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -102,19 +100,17 @@ Partial Class AdminDashboard
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.namelb = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.messagelb = New System.Windows.Forms.Label()
         Me.adminlb = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.welcomeblb = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.timelb = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.datelb = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GunaStackedBarDataset1 = New Guna.Charts.WinForms.GunaStackedBarDataset()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.GunaBubbleDataset1 = New Guna.Charts.WinForms.GunaBubbleDataset()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -225,16 +221,15 @@ Partial Class AdminDashboard
         '
         'todaysnumofTransnumlb
         '
-        Me.todaysnumofTransnumlb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.todaysnumofTransnumlb.AutoSize = True
         Me.todaysnumofTransnumlb.BackColor = System.Drawing.Color.Transparent
         Me.todaysnumofTransnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.todaysnumofTransnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.todaysnumofTransnumlb.Location = New System.Drawing.Point(150, 53)
+        Me.todaysnumofTransnumlb.Location = New System.Drawing.Point(146, 66)
         Me.todaysnumofTransnumlb.Name = "todaysnumofTransnumlb"
-        Me.todaysnumofTransnumlb.Size = New System.Drawing.Size(24, 25)
+        Me.todaysnumofTransnumlb.Size = New System.Drawing.Size(200, 35)
         Me.todaysnumofTransnumlb.TabIndex = 12
         Me.todaysnumofTransnumlb.Text = "6"
+        Me.todaysnumofTransnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tdaystransclb
         '
@@ -243,7 +238,7 @@ Partial Class AdminDashboard
         Me.tdaystransclb.BackColor = System.Drawing.Color.Transparent
         Me.tdaystransclb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tdaystransclb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.tdaystransclb.Location = New System.Drawing.Point(107, 14)
+        Me.tdaystransclb.Location = New System.Drawing.Point(95, 14)
         Me.tdaystransclb.Name = "tdaystransclb"
         Me.tdaystransclb.Size = New System.Drawing.Size(200, 25)
         Me.tdaystransclb.TabIndex = 11
@@ -283,16 +278,15 @@ Partial Class AdminDashboard
         '
         'totalstocknumlb
         '
-        Me.totalstocknumlb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.totalstocknumlb.AutoSize = True
         Me.totalstocknumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalstocknumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalstocknumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalstocknumlb.Location = New System.Drawing.Point(154, 53)
+        Me.totalstocknumlb.Location = New System.Drawing.Point(158, 66)
         Me.totalstocknumlb.Name = "totalstocknumlb"
-        Me.totalstocknumlb.Size = New System.Drawing.Size(24, 25)
+        Me.totalstocknumlb.Size = New System.Drawing.Size(200, 35)
         Me.totalstocknumlb.TabIndex = 12
         Me.totalstocknumlb.Text = "6"
+        Me.totalstocknumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totalstocklb
         '
@@ -341,16 +335,15 @@ Partial Class AdminDashboard
         '
         'totalprodnumlb
         '
-        Me.totalprodnumlb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.totalprodnumlb.AutoSize = True
         Me.totalprodnumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalprodnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalprodnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalprodnumlb.Location = New System.Drawing.Point(156, 53)
+        Me.totalprodnumlb.Location = New System.Drawing.Point(148, 66)
         Me.totalprodnumlb.Name = "totalprodnumlb"
-        Me.totalprodnumlb.Size = New System.Drawing.Size(36, 25)
+        Me.totalprodnumlb.Size = New System.Drawing.Size(200, 35)
         Me.totalprodnumlb.TabIndex = 12
         Me.totalprodnumlb.Text = "25"
+        Me.totalprodnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totalprodlb
         '
@@ -399,16 +392,15 @@ Partial Class AdminDashboard
         '
         'totalusersnumlb
         '
-        Me.totalusersnumlb.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.totalusersnumlb.AutoSize = True
         Me.totalusersnumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalusersnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalusersnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalusersnumlb.Location = New System.Drawing.Point(156, 53)
+        Me.totalusersnumlb.Location = New System.Drawing.Point(145, 66)
         Me.totalusersnumlb.Name = "totalusersnumlb"
-        Me.totalusersnumlb.Size = New System.Drawing.Size(24, 25)
+        Me.totalusersnumlb.Size = New System.Drawing.Size(200, 35)
         Me.totalusersnumlb.TabIndex = 10
         Me.totalusersnumlb.Text = "6"
+        Me.totalusersnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totaluserslb
         '
@@ -484,57 +476,58 @@ Partial Class AdminDashboard
         Me.productAreachrt.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.productAreachrt.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaAreaDataset1})
         Me.productAreachrt.Dock = System.Windows.Forms.DockStyle.Fill
-        ChartFont17.FontName = "Arial"
-        Me.productAreachrt.Legend.LabelFont = ChartFont17
+        ChartFont1.FontName = "Arial"
+        Me.productAreachrt.Legend.LabelFont = ChartFont1
+        Me.productAreachrt.Legend.LabelForeColor = System.Drawing.Color.White
         Me.productAreachrt.Location = New System.Drawing.Point(0, 0)
         Me.productAreachrt.Name = "productAreachrt"
         Me.productAreachrt.PaletteCustomColors.FillColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))})
         Me.productAreachrt.Size = New System.Drawing.Size(476, 167)
         Me.productAreachrt.TabIndex = 0
-        ChartFont18.FontName = "Arial"
-        ChartFont18.Size = 12
-        ChartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.productAreachrt.Title.Font = ChartFont18
-        ChartFont19.FontName = "Arial"
-        Me.productAreachrt.Tooltips.BodyFont = ChartFont19
-        ChartFont20.FontName = "Arial"
-        ChartFont20.Size = 9
-        ChartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.productAreachrt.Tooltips.TitleFont = ChartFont20
-        Grid7.Color = System.Drawing.Color.WhiteSmoke
-        Grid7.ZeroLineColor = System.Drawing.Color.WhiteSmoke
-        Me.productAreachrt.XAxes.GridLines = Grid7
-        ChartFont21.FontName = "Arial"
-        Tick7.Font = ChartFont21
-        Me.productAreachrt.XAxes.Ticks = Tick7
-        Me.productAreachrt.YAxes.GridLines = Grid8
-        ChartFont22.FontName = "Arial"
-        Tick8.Font = ChartFont22
-        Me.productAreachrt.YAxes.Ticks = Tick8
-        Me.productAreachrt.ZAxes.GridLines = Grid9
-        ChartFont23.FontName = "Arial"
-        PointLabel3.Font = ChartFont23
-        Me.productAreachrt.ZAxes.PointLabels = PointLabel3
-        ChartFont24.FontName = "Arial"
-        Tick9.Font = ChartFont24
-        Me.productAreachrt.ZAxes.Ticks = Tick9
+        ChartFont2.FontName = "Arial"
+        ChartFont2.Size = 12
+        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.productAreachrt.Title.Font = ChartFont2
+        ChartFont3.FontName = "Arial"
+        Me.productAreachrt.Tooltips.BodyFont = ChartFont3
+        ChartFont4.FontName = "Arial"
+        ChartFont4.Size = 9
+        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.productAreachrt.Tooltips.TitleFont = ChartFont4
+        Grid1.Color = System.Drawing.Color.WhiteSmoke
+        Grid1.ZeroLineColor = System.Drawing.Color.WhiteSmoke
+        Me.productAreachrt.XAxes.GridLines = Grid1
+        ChartFont5.FontName = "Arial"
+        Tick1.Font = ChartFont5
+        Me.productAreachrt.XAxes.Ticks = Tick1
+        Me.productAreachrt.YAxes.GridLines = Grid2
+        ChartFont6.FontName = "Arial"
+        Tick2.Font = ChartFont6
+        Me.productAreachrt.YAxes.Ticks = Tick2
+        Me.productAreachrt.ZAxes.GridLines = Grid3
+        ChartFont7.FontName = "Arial"
+        PointLabel1.Font = ChartFont7
+        Me.productAreachrt.ZAxes.PointLabels = PointLabel1
+        ChartFont8.FontName = "Arial"
+        Tick3.Font = ChartFont8
+        Me.productAreachrt.ZAxes.Ticks = Tick3
         '
         'GunaAreaDataset1
         '
         Me.GunaAreaDataset1.BorderColor = System.Drawing.Color.Empty
-        LPoint15.Label = "Monday"
-        LPoint15.Y = 15.0R
-        LPoint16.Label = "Tuesday"
-        LPoint16.Y = 18.0R
-        LPoint17.Label = "Wednesday"
-        LPoint17.Y = 10.0R
-        LPoint18.Label = "Thursday"
-        LPoint18.Y = 20.0R
-        LPoint19.Label = "Friday"
-        LPoint19.Y = 35.0R
-        LPoint20.Label = "Saturday"
-        LPoint20.Y = 38.0R
-        Me.GunaAreaDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint15, LPoint16, LPoint17, LPoint18, LPoint19, LPoint20})
+        LPoint1.Label = "Monday"
+        LPoint1.Y = 15.0R
+        LPoint2.Label = "Tuesday"
+        LPoint2.Y = 18.0R
+        LPoint3.Label = "Wednesday"
+        LPoint3.Y = 10.0R
+        LPoint4.Label = "Thursday"
+        LPoint4.Y = 20.0R
+        LPoint5.Label = "Friday"
+        LPoint5.Y = 35.0R
+        LPoint6.Label = "Saturday"
+        LPoint6.Y = 38.0R
+        Me.GunaAreaDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2, LPoint3, LPoint4, LPoint5, LPoint6})
         Me.GunaAreaDataset1.FillColor = System.Drawing.Color.Empty
         Me.GunaAreaDataset1.IndexLabelForeColor = System.Drawing.Color.RosyBrown
         Me.GunaAreaDataset1.Label = "Area1"
@@ -554,53 +547,57 @@ Partial Class AdminDashboard
         Me.weeklysaleschrt.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.weeklysaleschrt.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaPieDataset1})
         Me.weeklysaleschrt.Dock = System.Windows.Forms.DockStyle.Fill
-        ChartFont25.FontName = "Arial"
-        Me.weeklysaleschrt.Legend.LabelFont = ChartFont25
+        ChartFont9.FontName = "Arial"
+        Me.weeklysaleschrt.Legend.LabelFont = ChartFont9
+        Me.weeklysaleschrt.Legend.LabelForeColor = System.Drawing.Color.White
         Me.weeklysaleschrt.Location = New System.Drawing.Point(0, 0)
         Me.weeklysaleschrt.Name = "weeklysaleschrt"
         Me.weeklysaleschrt.Size = New System.Drawing.Size(477, 167)
         Me.weeklysaleschrt.TabIndex = 0
-        ChartFont26.FontName = "Arial"
-        ChartFont26.Size = 12
-        ChartFont26.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.weeklysaleschrt.Title.Font = ChartFont26
-        ChartFont27.FontName = "Arial"
-        Me.weeklysaleschrt.Tooltips.BodyFont = ChartFont27
-        ChartFont28.FontName = "Arial"
-        ChartFont28.Size = 9
-        ChartFont28.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.weeklysaleschrt.Tooltips.TitleFont = ChartFont28
-        Me.weeklysaleschrt.XAxes.GridLines = Grid10
-        ChartFont29.FontName = "Arial"
-        Tick10.Font = ChartFont29
-        Me.weeklysaleschrt.XAxes.Ticks = Tick10
-        Me.weeklysaleschrt.YAxes.GridLines = Grid11
-        ChartFont30.FontName = "Arial"
-        Tick11.Font = ChartFont30
-        Me.weeklysaleschrt.YAxes.Ticks = Tick11
-        Me.weeklysaleschrt.ZAxes.GridLines = Grid12
-        ChartFont31.FontName = "Arial"
-        PointLabel4.Font = ChartFont31
-        Me.weeklysaleschrt.ZAxes.PointLabels = PointLabel4
-        ChartFont32.FontName = "Arial"
-        Tick12.Font = ChartFont32
-        Me.weeklysaleschrt.ZAxes.Ticks = Tick12
+        ChartFont10.FontName = "Arial"
+        ChartFont10.Size = 12
+        ChartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.weeklysaleschrt.Title.Font = ChartFont10
+        ChartFont11.FontName = "Arial"
+        Me.weeklysaleschrt.Tooltips.BodyFont = ChartFont11
+        ChartFont12.FontName = "Arial"
+        ChartFont12.Size = 9
+        ChartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.weeklysaleschrt.Tooltips.TitleFont = ChartFont12
+        Grid4.Display = False
+        Me.weeklysaleschrt.XAxes.GridLines = Grid4
+        Tick4.Display = False
+        ChartFont13.FontName = "Arial"
+        Tick4.Font = ChartFont13
+        Me.weeklysaleschrt.XAxes.Ticks = Tick4
+        Me.weeklysaleschrt.YAxes.Display = False
+        Me.weeklysaleschrt.YAxes.GridLines = Grid5
+        ChartFont14.FontName = "Arial"
+        Tick5.Font = ChartFont14
+        Me.weeklysaleschrt.YAxes.Ticks = Tick5
+        Me.weeklysaleschrt.ZAxes.GridLines = Grid6
+        ChartFont15.FontName = "Arial"
+        PointLabel2.Font = ChartFont15
+        Me.weeklysaleschrt.ZAxes.PointLabels = PointLabel2
+        ChartFont16.FontName = "Arial"
+        Tick6.Font = ChartFont16
+        Me.weeklysaleschrt.ZAxes.Ticks = Tick6
         '
         'GunaPieDataset1
         '
-        LPoint1.Label = "Monday"
-        LPoint1.Y = 200.0R
-        LPoint2.Label = "Tuesday"
-        LPoint2.Y = 462.0R
-        LPoint3.Label = "Wednesday"
-        LPoint3.Y = 176.0R
-        LPoint4.Label = "Thursday"
-        LPoint4.Y = 358.0R
-        LPoint5.Label = "Friday 662"
-        LPoint5.Y = 0R
-        LPoint6.Label = "Saturday"
-        LPoint6.Y = 1587.0R
-        Me.GunaPieDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2, LPoint3, LPoint4, LPoint5, LPoint6})
+        LPoint7.Label = "Monday"
+        LPoint7.Y = 200.0R
+        LPoint8.Label = "Tuesday"
+        LPoint8.Y = 462.0R
+        LPoint9.Label = "Wednesday"
+        LPoint9.Y = 176.0R
+        LPoint10.Label = "Thursday"
+        LPoint10.Y = 358.0R
+        LPoint11.Label = "Friday 662"
+        LPoint11.Y = 0R
+        LPoint12.Label = "Saturday"
+        LPoint12.Y = 1587.0R
+        Me.GunaPieDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint7, LPoint8, LPoint9, LPoint10, LPoint11, LPoint12})
         Me.GunaPieDataset1.Label = "Pie1"
         Me.GunaPieDataset1.TargetChart = Me.weeklysaleschrt
         '
@@ -635,9 +632,9 @@ Partial Class AdminDashboard
         Me.Guna2Panel2.BorderRadius = 20
         Me.Guna2Panel2.BorderThickness = 1
         Me.Guna2Panel2.Controls.Add(Me.namelb)
-        Me.Guna2Panel2.Controls.Add(Me.Label1)
+        Me.Guna2Panel2.Controls.Add(Me.messagelb)
         Me.Guna2Panel2.Controls.Add(Me.adminlb)
-        Me.Guna2Panel2.Controls.Add(Me.Label3)
+        Me.Guna2Panel2.Controls.Add(Me.welcomeblb)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel2.Name = "Guna2Panel2"
@@ -657,18 +654,18 @@ Partial Class AdminDashboard
         Me.namelb.TabIndex = 3
         Me.namelb.Text = "Name"
         '
-        'Label1
+        'messagelb
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(368, 151)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(299, 50)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Manage your system, Keep your " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "coffee shop running smoothly." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.messagelb.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.messagelb.AutoSize = True
+        Me.messagelb.BackColor = System.Drawing.Color.Transparent
+        Me.messagelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.messagelb.ForeColor = System.Drawing.SystemColors.Control
+        Me.messagelb.Location = New System.Drawing.Point(368, 151)
+        Me.messagelb.Name = "messagelb"
+        Me.messagelb.Size = New System.Drawing.Size(299, 50)
+        Me.messagelb.TabIndex = 4
+        Me.messagelb.Text = "Manage your system, Keep your " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "coffee shop running smoothly." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'adminlb
         '
@@ -683,18 +680,18 @@ Partial Class AdminDashboard
         Me.adminlb.TabIndex = 3
         Me.adminlb.Text = "Admin"
         '
-        'Label3
+        'welcomeblb
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label3.Location = New System.Drawing.Point(368, 47)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(144, 25)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Welcome Back"
+        Me.welcomeblb.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.welcomeblb.AutoSize = True
+        Me.welcomeblb.BackColor = System.Drawing.Color.Transparent
+        Me.welcomeblb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcomeblb.ForeColor = System.Drawing.SystemColors.Control
+        Me.welcomeblb.Location = New System.Drawing.Point(368, 47)
+        Me.welcomeblb.Name = "welcomeblb"
+        Me.welcomeblb.Size = New System.Drawing.Size(144, 25)
+        Me.welcomeblb.TabIndex = 2
+        Me.welcomeblb.Text = "Welcome Back"
         '
         'Guna2Panel3
         '
@@ -740,7 +737,7 @@ Partial Class AdminDashboard
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 59)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 47)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(54, 53)
         Me.PictureBox1.TabIndex = 6
@@ -753,7 +750,7 @@ Partial Class AdminDashboard
         Me.datelb.BackColor = System.Drawing.Color.Transparent
         Me.datelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.datelb.ForeColor = System.Drawing.SystemColors.Control
-        Me.datelb.Location = New System.Drawing.Point(28, 75)
+        Me.datelb.Location = New System.Drawing.Point(14, 68)
         Me.datelb.Name = "datelb"
         Me.datelb.Size = New System.Drawing.Size(0, 25)
         Me.datelb.TabIndex = 5
@@ -761,15 +758,6 @@ Partial Class AdminDashboard
         'Timer1
         '
         Me.Timer1.Interval = 1000
-        '
-        'GunaStackedBarDataset1
-        '
-        LPoint7.Label = "Admin"
-        LPoint7.Y = 2.0R
-        LPoint8.Label = "Staff"
-        LPoint8.Y = 4.0R
-        Me.GunaStackedBarDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint7, LPoint8})
-        Me.GunaStackedBarDataset1.Label = "StackedBar1"
         '
         'Guna2Elipse1
         '
@@ -780,12 +768,6 @@ Partial Class AdminDashboard
         '
         Me.Guna2Elipse2.BorderRadius = 30
         Me.Guna2Elipse2.TargetControl = Me.weeklysaleschrt
-        '
-        'GunaBubbleDataset1
-        '
-        Me.GunaBubbleDataset1.Label = "Bubble1"
-        Me.GunaBubbleDataset1.PointStyle = Guna.Charts.WinForms.PointStyle.Circle
-        Me.GunaBubbleDataset1.Rotation = 0
         '
         'AdminDashboard
         '
@@ -842,8 +824,8 @@ Partial Class AdminDashboard
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents adminlb As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents welcomeblb As Label
+    Friend WithEvents messagelb As Label
     Friend WithEvents namelb As Label
     Friend WithEvents datelb As Label
     Friend WithEvents Timer1 As Timer
@@ -856,7 +838,6 @@ Partial Class AdminDashboard
     Friend WithEvents Guna2CustomGradientPanel3 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents productAreachrt As Guna.Charts.WinForms.GunaChart
     Friend WithEvents GunaAreaDataset1 As Guna.Charts.WinForms.GunaAreaDataset
-    Friend WithEvents GunaStackedBarDataset1 As Guna.Charts.WinForms.GunaStackedBarDataset
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents weeklysaleschrt As Guna.Charts.WinForms.GunaChart
@@ -868,11 +849,10 @@ Partial Class AdminDashboard
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents totalusersnumlb As Label
     Friend WithEvents totaluserslb As Label
-    Friend WithEvents GunaBubbleDataset1 As Guna.Charts.WinForms.GunaBubbleDataset
-    Friend WithEvents todaysnumofTransnumlb As Label
     Friend WithEvents tdaystransclb As Label
-    Friend WithEvents totalstocknumlb As Label
     Friend WithEvents totalstocklb As Label
-    Friend WithEvents totalprodnumlb As Label
     Friend WithEvents totalprodlb As Label
+    Friend WithEvents todaysnumofTransnumlb As Label
+    Friend WithEvents totalstocknumlb As Label
+    Friend WithEvents totalprodnumlb As Label
 End Class

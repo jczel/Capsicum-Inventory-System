@@ -93,7 +93,7 @@ Partial Class Owner
         Me.Guna2Panel4.Controls.Add(Me.Label2)
         Me.Guna2Panel4.Controls.Add(Me.Label1)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel4.FillColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel4.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1061, 98)
@@ -166,7 +166,7 @@ Partial Class Owner
         '
         Me.Guna2Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.FillColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(191, 664)
