@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Text.RegularExpressions
 
-Public Class loginform
+Public Class Form1login
 
 
 
@@ -16,9 +16,6 @@ Public Class loginform
         End If
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 
     Private Sub loginbttn_Click_1(sender As Object, e As EventArgs) Handles loginbttn.Click
 
@@ -35,7 +32,7 @@ Public Class loginform
 
 
         Try
-            connect()
+            Connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
             query = "SELECT * FROM USER_ACCOUNT WHERE username=@username AND password=@password"
@@ -68,7 +65,4 @@ Public Class loginform
 
 
 
-    Private Sub systemtitlelb_Click(sender As Object, e As EventArgs) Handles systemtitlelb.Click
-
-    End Sub
 End Class
