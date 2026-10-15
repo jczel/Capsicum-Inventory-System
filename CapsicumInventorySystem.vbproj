@@ -166,6 +166,12 @@
     <Compile Include="StaffDashboard.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="StaffMenu.Designer.vb">
+      <DependentUpon>StaffMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin.resx">
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffDashboard.resx">
       <DependentUpon>StaffDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

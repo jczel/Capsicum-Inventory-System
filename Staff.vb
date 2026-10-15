@@ -4,11 +4,10 @@
     End Sub
 
     Private Sub Staff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Dim StaffDashboard As New StaffDashboard()
+        Dim staffMenu As New StaffMenu()
         Guna2Panel5.Controls.Clear()
-        StaffDashboard.Dock = DockStyle.Fill
-        Guna2Panel5.Controls.Add(StaffDashboard)
+        staffMenu.Dock = DockStyle.Fill
+        Guna2Panel5.Controls.Add(staffMenu)
 
     End Sub
 
