@@ -666,7 +666,6 @@ Partial Class OwnerDashboard
         'ownerlb
         '
         Me.ownerlb.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.ownerlb.AutoSize = True
         Me.ownerlb.BackColor = System.Drawing.Color.Transparent
         Me.ownerlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ownerlb.ForeColor = System.Drawing.SystemColors.Control
@@ -794,6 +793,10 @@ Partial Class OwnerDashboard
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
+    End Sub
+
+    Private Sub NewMethod()
+        Me.ownerlb.AutoSize = True
     End Sub
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
