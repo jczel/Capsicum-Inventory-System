@@ -59,7 +59,7 @@ Partial Class Owner
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1258, 664)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1896, 1048)
         Me.Guna2Panel1.TabIndex = 2
         '
         'Guna2Panel3
@@ -68,7 +68,7 @@ Partial Class Owner
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(191, 0)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1067, 664)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1705, 1048)
         Me.Guna2Panel3.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -83,7 +83,7 @@ Partial Class Owner
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.77778!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.22222!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1067, 664)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1705, 1048)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Guna2Panel4
@@ -96,7 +96,7 @@ Partial Class Owner
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel4.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(1061, 98)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1699, 159)
         Me.Guna2Panel4.TabIndex = 0
         '
         'Guna2Button7
@@ -113,7 +113,7 @@ Partial Class Owner
         Me.Guna2Button7.ForeColor = System.Drawing.Color.White
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(962, 22)
+        Me.Guna2Button7.Location = New System.Drawing.Point(1600, 52)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(80, 59)
         Me.Guna2Button7.TabIndex = 0
@@ -122,7 +122,7 @@ Partial Class Owner
         '
         Me.Guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(826, 3)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1464, 33)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(113, 92)
         Me.Guna2PictureBox1.TabIndex = 1
@@ -135,7 +135,7 @@ Partial Class Owner
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(712, 52)
+        Me.Label2.Location = New System.Drawing.Point(1350, 82)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 29)
         Me.Label2.TabIndex = 0
@@ -148,7 +148,7 @@ Partial Class Owner
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(16, 33)
+        Me.Label1.Location = New System.Drawing.Point(16, 63)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(183, 37)
         Me.Label1.TabIndex = 0
@@ -157,9 +157,9 @@ Partial Class Owner
         'Guna2Panel5
         '
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel5.Location = New System.Drawing.Point(3, 107)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(3, 168)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(1061, 554)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(1699, 877)
         Me.Guna2Panel5.TabIndex = 1
         '
         'Guna2Panel2
@@ -169,7 +169,7 @@ Partial Class Owner
         Me.Guna2Panel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(191, 664)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(191, 1048)
         Me.Guna2Panel2.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -194,7 +194,7 @@ Partial Class Owner
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(191, 664)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(191, 1048)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Guna2Button5
@@ -211,9 +211,9 @@ Partial Class Owner
         Me.Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), System.Drawing.Image)
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button5.Location = New System.Drawing.Point(3, 438)
+        Me.Guna2Button5.Location = New System.Drawing.Point(3, 688)
         Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Button5.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Button5.TabIndex = 5
         Me.Guna2Button5.Text = "Logout"
         Me.Guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -233,9 +233,9 @@ Partial Class Owner
         Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button4.Location = New System.Drawing.Point(3, 351)
+        Me.Guna2Button4.Location = New System.Drawing.Point(3, 551)
         Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Button4.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Button4.TabIndex = 4
         Me.Guna2Button4.Text = "Print Report"
         Me.Guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -255,9 +255,9 @@ Partial Class Owner
         Me.Guna2Button3.Image = CType(resources.GetObject("Guna2Button3.Image"), System.Drawing.Image)
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button3.Location = New System.Drawing.Point(3, 264)
+        Me.Guna2Button3.Location = New System.Drawing.Point(3, 414)
         Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Button3.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Button3.TabIndex = 3
         Me.Guna2Button3.Text = "Transaction History"
         Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -277,9 +277,9 @@ Partial Class Owner
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button2.Location = New System.Drawing.Point(3, 177)
+        Me.Guna2Button2.Location = New System.Drawing.Point(3, 277)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Button2.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Button2.TabIndex = 2
         Me.Guna2Button2.Text = "Generate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Report"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -292,7 +292,7 @@ Partial Class Owner
         Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel6.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Panel6.TabIndex = 0
         '
         'PictureBox1
@@ -302,7 +302,7 @@ Partial Class Owner
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(33, 11)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(131, 70)
+        Me.PictureBox1.Size = New System.Drawing.Size(131, 120)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -320,9 +320,9 @@ Partial Class Owner
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button1.Location = New System.Drawing.Point(3, 90)
+        Me.Guna2Button1.Location = New System.Drawing.Point(3, 140)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(185, 81)
+        Me.Guna2Button1.Size = New System.Drawing.Size(185, 131)
         Me.Guna2Button1.TabIndex = 1
         Me.Guna2Button1.Text = "Dashboard"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -332,7 +332,7 @@ Partial Class Owner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1258, 664)
+        Me.ClientSize = New System.Drawing.Size(1896, 1048)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Name = "Owner"
         Me.ShowInTaskbar = False

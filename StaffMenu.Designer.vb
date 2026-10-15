@@ -31,6 +31,8 @@ Partial Class StaffMenu
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -44,39 +46,37 @@ Partial Class StaffMenu
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.allitmbtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel12 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel13 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button11 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button12 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel12 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button13 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button14 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel13 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button15 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button16 = New Guna.UI2.WinForms.Guna2Button()
@@ -168,17 +168,17 @@ Partial Class StaffMenu
         Me.Guna2Panel4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
-        Me.Guna2Panel11.SuspendLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2Panel12.SuspendLayout()
-        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2Panel13.SuspendLayout()
-        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel6.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel7.SuspendLayout()
-        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel8.SuspendLayout()
+        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel11.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
+        Me.Guna2Panel12.SuspendLayout()
+        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel13.SuspendLayout()
         CType(Me.Guna2PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel14.SuspendLayout()
         CType(Me.Guna2PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,8 +211,9 @@ Partial Class StaffMenu
         Me.Guna2Panel1.Controls.Add(Me.TableLayoutPanel1)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1133, 570)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1700, 877)
         Me.Guna2Panel1.TabIndex = 0
         '
         'TableLayoutPanel1
@@ -224,27 +225,30 @@ Partial Class StaffMenu
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1133, 570)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1700, 877)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Guna2Panel3
         '
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel3.Location = New System.Drawing.Point(834, 3)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(1251, 5)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(296, 564)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(445, 867)
         Me.Guna2Panel3.TabIndex = 1
         '
         'Guna2Panel2
         '
         Me.Guna2Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(825, 564)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1239, 867)
         Me.Guna2Panel2.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -254,11 +258,12 @@ Partial Class StaffMenu
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel21, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel16, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel11, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel4, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 5
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.36214!))
@@ -266,16 +271,17 @@ Partial Class StaffMenu
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.40947!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.40947!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.40947!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(825, 564)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1239, 867)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Guna2Panel5
         '
         Me.Guna2Panel5.Controls.Add(Me.TableLayoutPanel4)
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel5.Location = New System.Drawing.Point(3, 61)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(4, 94)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(819, 120)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(1231, 184)
         Me.Guna2Panel5.TabIndex = 3
         '
         'TableLayoutPanel4
@@ -285,16 +291,17 @@ Partial Class StaffMenu
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813!))
-        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel13, 3, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel12, 2, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel11, 1, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel8, 3, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel7, 2, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel6, 1, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Guna2Panel9, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(819, 120)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1231, 184)
         Me.TableLayoutPanel4.TabIndex = 0
         '
         'Guna2Panel9
@@ -310,13 +317,58 @@ Partial Class StaffMenu
         Me.Guna2Panel9.Controls.Add(Me.Guna2PictureBox1)
         Me.Guna2Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel9.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel9.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel9.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel9.Name = "Guna2Panel9"
         Me.Guna2Panel9.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel9.ShadowDecoration.Depth = 5
         Me.Guna2Panel9.ShadowDecoration.Enabled = True
-        Me.Guna2Panel9.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel9.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel9.TabIndex = 2
+        '
+        'Guna2TextBox2
+        '
+        Me.Guna2TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2TextBox2.BorderRadius = 5
+        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox2.DefaultText = "0"
+        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
+        Me.Guna2TextBox2.Name = "Guna2TextBox2"
+        Me.Guna2TextBox2.PlaceholderText = ""
+        Me.Guna2TextBox2.SelectedText = ""
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(51, 37)
+        Me.Guna2TextBox2.TabIndex = 5
+        Me.Guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Guna2Button6
+        '
+        Me.Guna2Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Button6.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button6.BorderRadius = 10
+        Me.Guna2Button6.BorderThickness = 1
+        Me.Guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button6.FillColor = System.Drawing.Color.White
+        Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2Button6.ForeColor = System.Drawing.Color.Black
+        Me.Guna2Button6.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Button6.Name = "Guna2Button6"
+        Me.Guna2Button6.Size = New System.Drawing.Size(57, 38)
+        Me.Guna2Button6.TabIndex = 4
+        Me.Guna2Button6.Text = "-"
+        Me.Guna2Button6.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Guna2Button5
         '
@@ -331,36 +383,37 @@ Partial Class StaffMenu
         Me.Guna2Button5.FillColor = System.Drawing.Color.White
         Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button5.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button5.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button5.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button5.TabIndex = 3
         Me.Guna2Button5.Text = "+"
         Me.Guna2Button5.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label2
         '
-        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(82, 41)
+        Me.Label2.Location = New System.Drawing.Point(125, 63)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 19)
+        Me.Label2.Size = New System.Drawing.Size(72, 31)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "₱149"
         '
         'Label1
         '
-        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(82, 22)
+        Me.Label1.Location = New System.Drawing.Point(125, 34)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 19)
+        Me.Label1.Size = New System.Drawing.Size(133, 31)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Capuccino"
         '
@@ -373,9 +426,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox1.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
@@ -385,9 +439,10 @@ Partial Class StaffMenu
         Me.Guna2Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel4.Controls.Add(Me.TableLayoutPanel3)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel4.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(819, 52)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1231, 79)
         Me.Guna2Panel4.TabIndex = 2
         '
         'TableLayoutPanel3
@@ -407,10 +462,11 @@ Partial Class StaffMenu
         Me.TableLayoutPanel3.Controls.Add(Me.allitmbtn, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(819, 52)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1231, 79)
         Me.TableLayoutPanel3.TabIndex = 0
         '
         'Guna2Button4
@@ -431,12 +487,13 @@ Partial Class StaffMenu
         Me.Guna2Button4.HoverState.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2Button4.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Guna2Button4.Location = New System.Drawing.Point(499, 3)
+        Me.Guna2Button4.Location = New System.Drawing.Point(748, 5)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.ShadowDecoration.BorderRadius = 10
         Me.Guna2Button4.ShadowDecoration.Depth = 2
         Me.Guna2Button4.ShadowDecoration.Enabled = True
-        Me.Guna2Button4.Size = New System.Drawing.Size(118, 46)
+        Me.Guna2Button4.Size = New System.Drawing.Size(178, 69)
         Me.Guna2Button4.TabIndex = 12
         Me.Guna2Button4.Text = "Snacks"
         '
@@ -458,12 +515,13 @@ Partial Class StaffMenu
         Me.Guna2Button3.HoverState.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2Button3.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Guna2Button3.Location = New System.Drawing.Point(375, 3)
+        Me.Guna2Button3.Location = New System.Drawing.Point(562, 5)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.ShadowDecoration.BorderRadius = 10
         Me.Guna2Button3.ShadowDecoration.Depth = 2
         Me.Guna2Button3.ShadowDecoration.Enabled = True
-        Me.Guna2Button3.Size = New System.Drawing.Size(118, 46)
+        Me.Guna2Button3.Size = New System.Drawing.Size(178, 69)
         Me.Guna2Button3.TabIndex = 11
         Me.Guna2Button3.Text = "Beverages"
         '
@@ -485,12 +543,13 @@ Partial Class StaffMenu
         Me.Guna2Button2.HoverState.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Guna2Button2.Location = New System.Drawing.Point(251, 3)
+        Me.Guna2Button2.Location = New System.Drawing.Point(376, 5)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.BorderRadius = 10
         Me.Guna2Button2.ShadowDecoration.Depth = 2
         Me.Guna2Button2.ShadowDecoration.Enabled = True
-        Me.Guna2Button2.Size = New System.Drawing.Size(118, 46)
+        Me.Guna2Button2.Size = New System.Drawing.Size(178, 69)
         Me.Guna2Button2.TabIndex = 10
         Me.Guna2Button2.Text = "Non-Coffee"
         '
@@ -512,12 +571,13 @@ Partial Class StaffMenu
         Me.Guna2Button1.HoverState.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Guna2Button1.Location = New System.Drawing.Point(127, 3)
+        Me.Guna2Button1.Location = New System.Drawing.Point(190, 5)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.BorderRadius = 10
         Me.Guna2Button1.ShadowDecoration.Depth = 2
         Me.Guna2Button1.ShadowDecoration.Enabled = True
-        Me.Guna2Button1.Size = New System.Drawing.Size(118, 46)
+        Me.Guna2Button1.Size = New System.Drawing.Size(178, 69)
         Me.Guna2Button1.TabIndex = 9
         Me.Guna2Button1.Text = "Coffee"
         '
@@ -526,9 +586,10 @@ Partial Class StaffMenu
         Me.Guna2Panel10.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel10.Controls.Add(Me.Guna2TextBox1)
         Me.Guna2Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel10.Location = New System.Drawing.Point(623, 3)
+        Me.Guna2Panel10.Location = New System.Drawing.Point(934, 5)
+        Me.Guna2Panel10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel10.Name = "Guna2Panel10"
-        Me.Guna2Panel10.Size = New System.Drawing.Size(193, 46)
+        Me.Guna2Panel10.Size = New System.Drawing.Size(293, 69)
         Me.Guna2Panel10.TabIndex = 7
         '
         'Guna2TextBox1
@@ -548,10 +609,11 @@ Partial Class StaffMenu
         Me.Guna2TextBox1.IconLeft = CType(resources.GetObject("Guna2TextBox1.IconLeft"), System.Drawing.Image)
         Me.Guna2TextBox1.IconLeftOffset = New System.Drawing.Point(10, 0)
         Me.Guna2TextBox1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(8, 9, 8, 9)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PlaceholderText = "Search food"
         Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(193, 46)
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(293, 69)
         Me.Guna2TextBox1.TabIndex = 0
         '
         'allitmbtn
@@ -572,77 +634,37 @@ Partial Class StaffMenu
         Me.allitmbtn.HoverState.BorderColor = System.Drawing.Color.Transparent
         Me.allitmbtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.allitmbtn.HoverState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.allitmbtn.Location = New System.Drawing.Point(3, 3)
+        Me.allitmbtn.Location = New System.Drawing.Point(4, 5)
+        Me.allitmbtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.allitmbtn.Name = "allitmbtn"
         Me.allitmbtn.ShadowDecoration.BorderRadius = 10
         Me.allitmbtn.ShadowDecoration.Depth = 2
         Me.allitmbtn.ShadowDecoration.Enabled = True
-        Me.allitmbtn.Size = New System.Drawing.Size(118, 46)
+        Me.allitmbtn.Size = New System.Drawing.Size(178, 69)
         Me.allitmbtn.TabIndex = 8
         Me.allitmbtn.Text = "All items"
         '
-        'Guna2Button6
+        'Guna2Panel6
         '
-        Me.Guna2Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Button6.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.BorderRadius = 10
-        Me.Guna2Button6.BorderThickness = 1
-        Me.Guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button6.FillColor = System.Drawing.Color.White
-        Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button6.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button6.Location = New System.Drawing.Point(156, 62)
-        Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.Size = New System.Drawing.Size(38, 25)
-        Me.Guna2Button6.TabIndex = 4
-        Me.Guna2Button6.Text = "-"
-        Me.Guna2Button6.TextOffset = New System.Drawing.Point(1, -2)
-        '
-        'Guna2TextBox2
-        '
-        Me.Guna2TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2TextBox2.BorderRadius = 5
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = "0"
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(120, 63)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PlaceholderText = ""
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(34, 24)
-        Me.Guna2TextBox2.TabIndex = 5
-        Me.Guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Guna2Panel11
-        '
-        Me.Guna2Panel11.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel11.BorderRadius = 20
-        Me.Guna2Panel11.BorderThickness = 1
-        Me.Guna2Panel11.Controls.Add(Me.Guna2TextBox3)
-        Me.Guna2Panel11.Controls.Add(Me.Guna2Button7)
-        Me.Guna2Panel11.Controls.Add(Me.Guna2Button8)
-        Me.Guna2Panel11.Controls.Add(Me.Label3)
-        Me.Guna2Panel11.Controls.Add(Me.Label4)
-        Me.Guna2Panel11.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel11.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel11.Location = New System.Drawing.Point(207, 3)
-        Me.Guna2Panel11.Name = "Guna2Panel11"
-        Me.Guna2Panel11.ShadowDecoration.BorderRadius = 20
-        Me.Guna2Panel11.ShadowDecoration.Depth = 5
-        Me.Guna2Panel11.ShadowDecoration.Enabled = True
-        Me.Guna2Panel11.Size = New System.Drawing.Size(198, 114)
-        Me.Guna2Panel11.TabIndex = 3
+        Me.Guna2Panel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel6.BorderRadius = 20
+        Me.Guna2Panel6.BorderThickness = 1
+        Me.Guna2Panel6.Controls.Add(Me.Guna2TextBox3)
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Button7)
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Button8)
+        Me.Guna2Panel6.Controls.Add(Me.Label3)
+        Me.Guna2Panel6.Controls.Add(Me.Label4)
+        Me.Guna2Panel6.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel6.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel6.Location = New System.Drawing.Point(311, 5)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.ShadowDecoration.BorderRadius = 20
+        Me.Guna2Panel6.ShadowDecoration.Depth = 5
+        Me.Guna2Panel6.ShadowDecoration.Enabled = True
+        Me.Guna2Panel6.Size = New System.Drawing.Size(299, 174)
+        Me.Guna2Panel6.TabIndex = 3
         '
         'Guna2TextBox3
         '
@@ -658,11 +680,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox3.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox3.Name = "Guna2TextBox3"
         Me.Guna2TextBox3.PlaceholderText = ""
         Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox3.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox3.TabIndex = 5
         Me.Guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -679,9 +702,10 @@ Partial Class StaffMenu
         Me.Guna2Button7.FillColor = System.Drawing.Color.White
         Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button7.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button7.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button7.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button7.TabIndex = 4
         Me.Guna2Button7.Text = "-"
         Me.Guna2Button7.TextOffset = New System.Drawing.Point(1, -2)
@@ -699,36 +723,37 @@ Partial Class StaffMenu
         Me.Guna2Button8.FillColor = System.Drawing.Color.White
         Me.Guna2Button8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button8.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button8.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button8.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button8.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button8.TabIndex = 3
         Me.Guna2Button8.Text = "+"
         Me.Guna2Button8.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label3
         '
-        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(82, 41)
+        Me.Label3.Location = New System.Drawing.Point(125, 63)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 19)
+        Me.Label3.Size = New System.Drawing.Size(72, 31)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "₱149"
         '
         'Label4
         '
-        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(82, 22)
+        Me.Label4.Location = New System.Drawing.Point(125, 34)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 19)
+        Me.Label4.Size = New System.Drawing.Size(133, 31)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Capuccino"
         '
@@ -741,33 +766,35 @@ Partial Class StaffMenu
         Me.Guna2PictureBox2.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 0
         Me.Guna2PictureBox2.TabStop = False
         '
-        'Guna2Panel12
+        'Guna2Panel7
         '
-        Me.Guna2Panel12.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel12.BorderRadius = 20
-        Me.Guna2Panel12.BorderThickness = 1
-        Me.Guna2Panel12.Controls.Add(Me.Guna2TextBox4)
-        Me.Guna2Panel12.Controls.Add(Me.Guna2Button9)
-        Me.Guna2Panel12.Controls.Add(Me.Guna2Button10)
-        Me.Guna2Panel12.Controls.Add(Me.Label5)
-        Me.Guna2Panel12.Controls.Add(Me.Label6)
-        Me.Guna2Panel12.Controls.Add(Me.Guna2PictureBox3)
-        Me.Guna2Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel12.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel12.Location = New System.Drawing.Point(411, 3)
-        Me.Guna2Panel12.Name = "Guna2Panel12"
-        Me.Guna2Panel12.ShadowDecoration.BorderRadius = 20
-        Me.Guna2Panel12.ShadowDecoration.Depth = 5
-        Me.Guna2Panel12.ShadowDecoration.Enabled = True
-        Me.Guna2Panel12.Size = New System.Drawing.Size(198, 114)
-        Me.Guna2Panel12.TabIndex = 4
+        Me.Guna2Panel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel7.BorderRadius = 20
+        Me.Guna2Panel7.BorderThickness = 1
+        Me.Guna2Panel7.Controls.Add(Me.Guna2TextBox4)
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Button9)
+        Me.Guna2Panel7.Controls.Add(Me.Guna2Button10)
+        Me.Guna2Panel7.Controls.Add(Me.Label5)
+        Me.Guna2Panel7.Controls.Add(Me.Label6)
+        Me.Guna2Panel7.Controls.Add(Me.Guna2PictureBox3)
+        Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel7.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel7.Location = New System.Drawing.Point(618, 5)
+        Me.Guna2Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.ShadowDecoration.BorderRadius = 20
+        Me.Guna2Panel7.ShadowDecoration.Depth = 5
+        Me.Guna2Panel7.ShadowDecoration.Enabled = True
+        Me.Guna2Panel7.Size = New System.Drawing.Size(299, 174)
+        Me.Guna2Panel7.TabIndex = 4
         '
         'Guna2TextBox4
         '
@@ -783,11 +810,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox4.Name = "Guna2TextBox4"
         Me.Guna2TextBox4.PlaceholderText = ""
         Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox4.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox4.TabIndex = 5
         Me.Guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -804,9 +832,10 @@ Partial Class StaffMenu
         Me.Guna2Button9.FillColor = System.Drawing.Color.White
         Me.Guna2Button9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button9.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button9.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button9.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button9.Name = "Guna2Button9"
-        Me.Guna2Button9.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button9.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button9.TabIndex = 4
         Me.Guna2Button9.Text = "-"
         Me.Guna2Button9.TextOffset = New System.Drawing.Point(1, -2)
@@ -824,36 +853,37 @@ Partial Class StaffMenu
         Me.Guna2Button10.FillColor = System.Drawing.Color.White
         Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button10.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button10.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button10.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button10.Name = "Guna2Button10"
-        Me.Guna2Button10.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button10.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button10.TabIndex = 3
         Me.Guna2Button10.Text = "+"
         Me.Guna2Button10.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label5
         '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(82, 41)
+        Me.Label5.Location = New System.Drawing.Point(125, 63)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 19)
+        Me.Label5.Size = New System.Drawing.Size(72, 31)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "₱149"
         '
         'Label6
         '
-        Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(82, 22)
+        Me.Label6.Location = New System.Drawing.Point(125, 34)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 19)
+        Me.Label6.Size = New System.Drawing.Size(133, 31)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Capuccino"
         '
@@ -866,33 +896,35 @@ Partial Class StaffMenu
         Me.Guna2PictureBox3.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox3.Image = CType(resources.GetObject("Guna2PictureBox3.Image"), System.Drawing.Image)
         Me.Guna2PictureBox3.ImageRotate = 0!
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
-        Me.Guna2PictureBox3.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox3.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox3.TabIndex = 0
         Me.Guna2PictureBox3.TabStop = False
         '
-        'Guna2Panel13
+        'Guna2Panel8
         '
-        Me.Guna2Panel13.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel13.BorderRadius = 20
-        Me.Guna2Panel13.BorderThickness = 1
-        Me.Guna2Panel13.Controls.Add(Me.Guna2TextBox5)
-        Me.Guna2Panel13.Controls.Add(Me.Guna2Button11)
-        Me.Guna2Panel13.Controls.Add(Me.Guna2Button12)
-        Me.Guna2Panel13.Controls.Add(Me.Label7)
-        Me.Guna2Panel13.Controls.Add(Me.Label8)
-        Me.Guna2Panel13.Controls.Add(Me.Guna2PictureBox4)
-        Me.Guna2Panel13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel13.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel13.Location = New System.Drawing.Point(615, 3)
-        Me.Guna2Panel13.Name = "Guna2Panel13"
-        Me.Guna2Panel13.ShadowDecoration.BorderRadius = 20
-        Me.Guna2Panel13.ShadowDecoration.Depth = 5
-        Me.Guna2Panel13.ShadowDecoration.Enabled = True
-        Me.Guna2Panel13.Size = New System.Drawing.Size(201, 114)
-        Me.Guna2Panel13.TabIndex = 5
+        Me.Guna2Panel8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel8.BorderRadius = 20
+        Me.Guna2Panel8.BorderThickness = 1
+        Me.Guna2Panel8.Controls.Add(Me.Guna2TextBox5)
+        Me.Guna2Panel8.Controls.Add(Me.Guna2Button11)
+        Me.Guna2Panel8.Controls.Add(Me.Guna2Button12)
+        Me.Guna2Panel8.Controls.Add(Me.Label7)
+        Me.Guna2Panel8.Controls.Add(Me.Label8)
+        Me.Guna2Panel8.Controls.Add(Me.Guna2PictureBox4)
+        Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel8.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel8.Location = New System.Drawing.Point(925, 5)
+        Me.Guna2Panel8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel8.Name = "Guna2Panel8"
+        Me.Guna2Panel8.ShadowDecoration.BorderRadius = 20
+        Me.Guna2Panel8.ShadowDecoration.Depth = 5
+        Me.Guna2Panel8.ShadowDecoration.Enabled = True
+        Me.Guna2Panel8.Size = New System.Drawing.Size(302, 174)
+        Me.Guna2Panel8.TabIndex = 5
         '
         'Guna2TextBox5
         '
@@ -908,11 +940,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(123, 63)
+        Me.Guna2TextBox5.Location = New System.Drawing.Point(185, 109)
+        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox5.Name = "Guna2TextBox5"
         Me.Guna2TextBox5.PlaceholderText = ""
         Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox5.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox5.TabIndex = 5
         Me.Guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -929,9 +962,10 @@ Partial Class StaffMenu
         Me.Guna2Button11.FillColor = System.Drawing.Color.White
         Me.Guna2Button11.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button11.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button11.Location = New System.Drawing.Point(159, 62)
+        Me.Guna2Button11.Location = New System.Drawing.Point(239, 107)
+        Me.Guna2Button11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button11.Name = "Guna2Button11"
-        Me.Guna2Button11.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button11.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button11.TabIndex = 4
         Me.Guna2Button11.Text = "-"
         Me.Guna2Button11.TextOffset = New System.Drawing.Point(1, -2)
@@ -949,36 +983,37 @@ Partial Class StaffMenu
         Me.Guna2Button12.FillColor = System.Drawing.Color.White
         Me.Guna2Button12.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button12.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button12.Location = New System.Drawing.Point(83, 62)
+        Me.Guna2Button12.Location = New System.Drawing.Point(125, 107)
+        Me.Guna2Button12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button12.Name = "Guna2Button12"
-        Me.Guna2Button12.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button12.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button12.TabIndex = 3
         Me.Guna2Button12.Text = "+"
         Me.Guna2Button12.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label7
         '
-        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(85, 41)
+        Me.Label7.Location = New System.Drawing.Point(128, 63)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 19)
+        Me.Label7.Size = New System.Drawing.Size(72, 31)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "₱149"
         '
         'Label8
         '
-        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(85, 22)
+        Me.Label8.Location = New System.Drawing.Point(128, 34)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 19)
+        Me.Label8.Size = New System.Drawing.Size(133, 31)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Capuccino"
         '
@@ -991,21 +1026,23 @@ Partial Class StaffMenu
         Me.Guna2PictureBox4.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox4.Image = CType(resources.GetObject("Guna2PictureBox4.Image"), System.Drawing.Image)
         Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
-        Me.Guna2PictureBox4.Size = New System.Drawing.Size(74, 89)
+        Me.Guna2PictureBox4.Size = New System.Drawing.Size(111, 136)
         Me.Guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox4.TabIndex = 0
         Me.Guna2PictureBox4.TabStop = False
         '
-        'Guna2Panel6
+        'Guna2Panel11
         '
-        Me.Guna2Panel6.Controls.Add(Me.TableLayoutPanel5)
-        Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel6.Location = New System.Drawing.Point(3, 187)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(819, 120)
-        Me.Guna2Panel6.TabIndex = 4
+        Me.Guna2Panel11.Controls.Add(Me.TableLayoutPanel5)
+        Me.Guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel11.Location = New System.Drawing.Point(4, 288)
+        Me.Guna2Panel11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel11.Name = "Guna2Panel11"
+        Me.Guna2Panel11.Size = New System.Drawing.Size(1231, 184)
+        Me.Guna2Panel11.TabIndex = 4
         '
         'TableLayoutPanel5
         '
@@ -1014,38 +1051,40 @@ Partial Class StaffMenu
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813!))
-        Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel7, 3, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel8, 2, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel12, 3, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel13, 2, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel14, 1, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Guna2Panel15, 0, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(819, 120)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1231, 184)
         Me.TableLayoutPanel5.TabIndex = 0
         '
-        'Guna2Panel7
+        'Guna2Panel12
         '
-        Me.Guna2Panel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel7.BorderRadius = 20
-        Me.Guna2Panel7.BorderThickness = 1
-        Me.Guna2Panel7.Controls.Add(Me.Guna2TextBox6)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button13)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2Button14)
-        Me.Guna2Panel7.Controls.Add(Me.Label9)
-        Me.Guna2Panel7.Controls.Add(Me.Label10)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2PictureBox5)
-        Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel7.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel7.Location = New System.Drawing.Point(615, 3)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.ShadowDecoration.BorderRadius = 20
-        Me.Guna2Panel7.ShadowDecoration.Depth = 5
-        Me.Guna2Panel7.ShadowDecoration.Enabled = True
-        Me.Guna2Panel7.Size = New System.Drawing.Size(201, 114)
-        Me.Guna2Panel7.TabIndex = 5
+        Me.Guna2Panel12.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel12.BorderRadius = 20
+        Me.Guna2Panel12.BorderThickness = 1
+        Me.Guna2Panel12.Controls.Add(Me.Guna2TextBox6)
+        Me.Guna2Panel12.Controls.Add(Me.Guna2Button13)
+        Me.Guna2Panel12.Controls.Add(Me.Guna2Button14)
+        Me.Guna2Panel12.Controls.Add(Me.Label9)
+        Me.Guna2Panel12.Controls.Add(Me.Label10)
+        Me.Guna2Panel12.Controls.Add(Me.Guna2PictureBox5)
+        Me.Guna2Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel12.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel12.Location = New System.Drawing.Point(925, 5)
+        Me.Guna2Panel12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel12.Name = "Guna2Panel12"
+        Me.Guna2Panel12.ShadowDecoration.BorderRadius = 20
+        Me.Guna2Panel12.ShadowDecoration.Depth = 5
+        Me.Guna2Panel12.ShadowDecoration.Enabled = True
+        Me.Guna2Panel12.Size = New System.Drawing.Size(302, 174)
+        Me.Guna2Panel12.TabIndex = 5
         '
         'Guna2TextBox6
         '
@@ -1061,11 +1100,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(123, 63)
+        Me.Guna2TextBox6.Location = New System.Drawing.Point(185, 109)
+        Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox6.Name = "Guna2TextBox6"
         Me.Guna2TextBox6.PlaceholderText = ""
         Me.Guna2TextBox6.SelectedText = ""
-        Me.Guna2TextBox6.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox6.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox6.TabIndex = 5
         Me.Guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1082,9 +1122,10 @@ Partial Class StaffMenu
         Me.Guna2Button13.FillColor = System.Drawing.Color.White
         Me.Guna2Button13.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button13.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button13.Location = New System.Drawing.Point(159, 62)
+        Me.Guna2Button13.Location = New System.Drawing.Point(239, 107)
+        Me.Guna2Button13.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button13.Name = "Guna2Button13"
-        Me.Guna2Button13.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button13.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button13.TabIndex = 4
         Me.Guna2Button13.Text = "-"
         Me.Guna2Button13.TextOffset = New System.Drawing.Point(1, -2)
@@ -1102,36 +1143,37 @@ Partial Class StaffMenu
         Me.Guna2Button14.FillColor = System.Drawing.Color.White
         Me.Guna2Button14.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button14.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button14.Location = New System.Drawing.Point(83, 62)
+        Me.Guna2Button14.Location = New System.Drawing.Point(125, 107)
+        Me.Guna2Button14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button14.Name = "Guna2Button14"
-        Me.Guna2Button14.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button14.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button14.TabIndex = 3
         Me.Guna2Button14.Text = "+"
         Me.Guna2Button14.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label9
         '
-        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(85, 41)
+        Me.Label9.Location = New System.Drawing.Point(128, 63)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(46, 19)
+        Me.Label9.Size = New System.Drawing.Size(72, 31)
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "₱149"
         '
         'Label10
         '
-        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(85, 22)
+        Me.Label10.Location = New System.Drawing.Point(128, 34)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(88, 19)
+        Me.Label10.Size = New System.Drawing.Size(133, 31)
         Me.Label10.TabIndex = 1
         Me.Label10.Text = "Capuccino"
         '
@@ -1144,33 +1186,35 @@ Partial Class StaffMenu
         Me.Guna2PictureBox5.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox5.Image = CType(resources.GetObject("Guna2PictureBox5.Image"), System.Drawing.Image)
         Me.Guna2PictureBox5.ImageRotate = 0!
-        Me.Guna2PictureBox5.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
-        Me.Guna2PictureBox5.Size = New System.Drawing.Size(74, 89)
+        Me.Guna2PictureBox5.Size = New System.Drawing.Size(111, 136)
         Me.Guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox5.TabIndex = 0
         Me.Guna2PictureBox5.TabStop = False
         '
-        'Guna2Panel8
+        'Guna2Panel13
         '
-        Me.Guna2Panel8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel8.BorderRadius = 20
-        Me.Guna2Panel8.BorderThickness = 1
-        Me.Guna2Panel8.Controls.Add(Me.Guna2TextBox7)
-        Me.Guna2Panel8.Controls.Add(Me.Guna2Button15)
-        Me.Guna2Panel8.Controls.Add(Me.Guna2Button16)
-        Me.Guna2Panel8.Controls.Add(Me.Label11)
-        Me.Guna2Panel8.Controls.Add(Me.Label12)
-        Me.Guna2Panel8.Controls.Add(Me.Guna2PictureBox6)
-        Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel8.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel8.Location = New System.Drawing.Point(411, 3)
-        Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.ShadowDecoration.BorderRadius = 20
-        Me.Guna2Panel8.ShadowDecoration.Depth = 5
-        Me.Guna2Panel8.ShadowDecoration.Enabled = True
-        Me.Guna2Panel8.Size = New System.Drawing.Size(198, 114)
-        Me.Guna2Panel8.TabIndex = 4
+        Me.Guna2Panel13.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel13.BorderRadius = 20
+        Me.Guna2Panel13.BorderThickness = 1
+        Me.Guna2Panel13.Controls.Add(Me.Guna2TextBox7)
+        Me.Guna2Panel13.Controls.Add(Me.Guna2Button15)
+        Me.Guna2Panel13.Controls.Add(Me.Guna2Button16)
+        Me.Guna2Panel13.Controls.Add(Me.Label11)
+        Me.Guna2Panel13.Controls.Add(Me.Label12)
+        Me.Guna2Panel13.Controls.Add(Me.Guna2PictureBox6)
+        Me.Guna2Panel13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel13.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel13.Location = New System.Drawing.Point(618, 5)
+        Me.Guna2Panel13.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel13.Name = "Guna2Panel13"
+        Me.Guna2Panel13.ShadowDecoration.BorderRadius = 20
+        Me.Guna2Panel13.ShadowDecoration.Depth = 5
+        Me.Guna2Panel13.ShadowDecoration.Enabled = True
+        Me.Guna2Panel13.Size = New System.Drawing.Size(299, 174)
+        Me.Guna2Panel13.TabIndex = 4
         '
         'Guna2TextBox7
         '
@@ -1186,11 +1230,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox7.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox7.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox7.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox7.Name = "Guna2TextBox7"
         Me.Guna2TextBox7.PlaceholderText = ""
         Me.Guna2TextBox7.SelectedText = ""
-        Me.Guna2TextBox7.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox7.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox7.TabIndex = 5
         Me.Guna2TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1207,9 +1252,10 @@ Partial Class StaffMenu
         Me.Guna2Button15.FillColor = System.Drawing.Color.White
         Me.Guna2Button15.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button15.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button15.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button15.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button15.Name = "Guna2Button15"
-        Me.Guna2Button15.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button15.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button15.TabIndex = 4
         Me.Guna2Button15.Text = "-"
         Me.Guna2Button15.TextOffset = New System.Drawing.Point(1, -2)
@@ -1227,36 +1273,37 @@ Partial Class StaffMenu
         Me.Guna2Button16.FillColor = System.Drawing.Color.White
         Me.Guna2Button16.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button16.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button16.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button16.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button16.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button16.Name = "Guna2Button16"
-        Me.Guna2Button16.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button16.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button16.TabIndex = 3
         Me.Guna2Button16.Text = "+"
         Me.Guna2Button16.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label11
         '
-        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(82, 41)
+        Me.Label11.Location = New System.Drawing.Point(125, 63)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(46, 19)
+        Me.Label11.Size = New System.Drawing.Size(72, 31)
         Me.Label11.TabIndex = 2
         Me.Label11.Text = "₱149"
         '
         'Label12
         '
-        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(82, 22)
+        Me.Label12.Location = New System.Drawing.Point(125, 34)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(88, 19)
+        Me.Label12.Size = New System.Drawing.Size(133, 31)
         Me.Label12.TabIndex = 1
         Me.Label12.Text = "Capuccino"
         '
@@ -1269,9 +1316,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox6.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox6.Image = CType(resources.GetObject("Guna2PictureBox6.Image"), System.Drawing.Image)
         Me.Guna2PictureBox6.ImageRotate = 0!
-        Me.Guna2PictureBox6.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox6.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox6.Name = "Guna2PictureBox6"
-        Me.Guna2PictureBox6.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox6.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox6.TabIndex = 0
         Me.Guna2PictureBox6.TabStop = False
@@ -1289,12 +1337,13 @@ Partial Class StaffMenu
         Me.Guna2Panel14.Controls.Add(Me.Guna2PictureBox7)
         Me.Guna2Panel14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel14.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel14.Location = New System.Drawing.Point(207, 3)
+        Me.Guna2Panel14.Location = New System.Drawing.Point(311, 5)
+        Me.Guna2Panel14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel14.Name = "Guna2Panel14"
         Me.Guna2Panel14.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel14.ShadowDecoration.Depth = 5
         Me.Guna2Panel14.ShadowDecoration.Enabled = True
-        Me.Guna2Panel14.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel14.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel14.TabIndex = 3
         '
         'Guna2TextBox8
@@ -1311,11 +1360,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox8.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox8.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox8.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox8.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox8.Name = "Guna2TextBox8"
         Me.Guna2TextBox8.PlaceholderText = ""
         Me.Guna2TextBox8.SelectedText = ""
-        Me.Guna2TextBox8.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox8.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox8.TabIndex = 5
         Me.Guna2TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1332,9 +1382,10 @@ Partial Class StaffMenu
         Me.Guna2Button17.FillColor = System.Drawing.Color.White
         Me.Guna2Button17.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button17.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button17.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button17.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button17.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button17.Name = "Guna2Button17"
-        Me.Guna2Button17.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button17.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button17.TabIndex = 4
         Me.Guna2Button17.Text = "-"
         Me.Guna2Button17.TextOffset = New System.Drawing.Point(1, -2)
@@ -1352,36 +1403,37 @@ Partial Class StaffMenu
         Me.Guna2Button18.FillColor = System.Drawing.Color.White
         Me.Guna2Button18.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button18.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button18.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button18.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button18.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button18.Name = "Guna2Button18"
-        Me.Guna2Button18.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button18.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button18.TabIndex = 3
         Me.Guna2Button18.Text = "+"
         Me.Guna2Button18.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label13
         '
-        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(82, 41)
+        Me.Label13.Location = New System.Drawing.Point(125, 63)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(46, 19)
+        Me.Label13.Size = New System.Drawing.Size(72, 31)
         Me.Label13.TabIndex = 2
         Me.Label13.Text = "₱149"
         '
         'Label14
         '
-        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(82, 22)
+        Me.Label14.Location = New System.Drawing.Point(125, 34)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(88, 19)
+        Me.Label14.Size = New System.Drawing.Size(133, 31)
         Me.Label14.TabIndex = 1
         Me.Label14.Text = "Capuccino"
         '
@@ -1394,9 +1446,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox7.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox7.Image = CType(resources.GetObject("Guna2PictureBox7.Image"), System.Drawing.Image)
         Me.Guna2PictureBox7.ImageRotate = 0!
-        Me.Guna2PictureBox7.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox7.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox7.Name = "Guna2PictureBox7"
-        Me.Guna2PictureBox7.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox7.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox7.TabIndex = 0
         Me.Guna2PictureBox7.TabStop = False
@@ -1414,12 +1467,13 @@ Partial Class StaffMenu
         Me.Guna2Panel15.Controls.Add(Me.Guna2PictureBox8)
         Me.Guna2Panel15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel15.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel15.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel15.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel15.Name = "Guna2Panel15"
         Me.Guna2Panel15.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel15.ShadowDecoration.Depth = 5
         Me.Guna2Panel15.ShadowDecoration.Enabled = True
-        Me.Guna2Panel15.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel15.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel15.TabIndex = 2
         '
         'Guna2TextBox9
@@ -1436,11 +1490,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox9.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox9.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox9.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox9.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox9.Name = "Guna2TextBox9"
         Me.Guna2TextBox9.PlaceholderText = ""
         Me.Guna2TextBox9.SelectedText = ""
-        Me.Guna2TextBox9.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox9.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox9.TabIndex = 5
         Me.Guna2TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1457,9 +1512,10 @@ Partial Class StaffMenu
         Me.Guna2Button19.FillColor = System.Drawing.Color.White
         Me.Guna2Button19.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button19.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button19.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button19.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button19.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button19.Name = "Guna2Button19"
-        Me.Guna2Button19.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button19.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button19.TabIndex = 4
         Me.Guna2Button19.Text = "-"
         Me.Guna2Button19.TextOffset = New System.Drawing.Point(1, -2)
@@ -1477,36 +1533,37 @@ Partial Class StaffMenu
         Me.Guna2Button20.FillColor = System.Drawing.Color.White
         Me.Guna2Button20.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button20.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button20.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button20.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button20.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button20.Name = "Guna2Button20"
-        Me.Guna2Button20.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button20.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button20.TabIndex = 3
         Me.Guna2Button20.Text = "+"
         Me.Guna2Button20.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label15
         '
-        Me.Label15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(82, 41)
+        Me.Label15.Location = New System.Drawing.Point(125, 63)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(46, 19)
+        Me.Label15.Size = New System.Drawing.Size(72, 31)
         Me.Label15.TabIndex = 2
         Me.Label15.Text = "₱149"
         '
         'Label16
         '
-        Me.Label16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(82, 22)
+        Me.Label16.Location = New System.Drawing.Point(125, 34)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(88, 19)
+        Me.Label16.Size = New System.Drawing.Size(133, 31)
         Me.Label16.TabIndex = 1
         Me.Label16.Text = "Capuccino"
         '
@@ -1519,9 +1576,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox8.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox8.Image = CType(resources.GetObject("Guna2PictureBox8.Image"), System.Drawing.Image)
         Me.Guna2PictureBox8.ImageRotate = 0!
-        Me.Guna2PictureBox8.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox8.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox8.Name = "Guna2PictureBox8"
-        Me.Guna2PictureBox8.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox8.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox8.TabIndex = 0
         Me.Guna2PictureBox8.TabStop = False
@@ -1530,9 +1588,10 @@ Partial Class StaffMenu
         '
         Me.Guna2Panel16.Controls.Add(Me.TableLayoutPanel6)
         Me.Guna2Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel16.Location = New System.Drawing.Point(3, 313)
+        Me.Guna2Panel16.Location = New System.Drawing.Point(4, 482)
+        Me.Guna2Panel16.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel16.Name = "Guna2Panel16"
-        Me.Guna2Panel16.Size = New System.Drawing.Size(819, 120)
+        Me.Guna2Panel16.Size = New System.Drawing.Size(1231, 184)
         Me.Guna2Panel16.TabIndex = 5
         '
         'TableLayoutPanel6
@@ -1548,10 +1607,11 @@ Partial Class StaffMenu
         Me.TableLayoutPanel6.Controls.Add(Me.Guna2Panel20, 0, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(819, 120)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1231, 184)
         Me.TableLayoutPanel6.TabIndex = 0
         '
         'Guna2Panel17
@@ -1567,12 +1627,13 @@ Partial Class StaffMenu
         Me.Guna2Panel17.Controls.Add(Me.Guna2PictureBox9)
         Me.Guna2Panel17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel17.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel17.Location = New System.Drawing.Point(615, 3)
+        Me.Guna2Panel17.Location = New System.Drawing.Point(925, 5)
+        Me.Guna2Panel17.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel17.Name = "Guna2Panel17"
         Me.Guna2Panel17.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel17.ShadowDecoration.Depth = 5
         Me.Guna2Panel17.ShadowDecoration.Enabled = True
-        Me.Guna2Panel17.Size = New System.Drawing.Size(201, 114)
+        Me.Guna2Panel17.Size = New System.Drawing.Size(302, 174)
         Me.Guna2Panel17.TabIndex = 5
         '
         'Guna2TextBox10
@@ -1589,11 +1650,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox10.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox10.Location = New System.Drawing.Point(123, 63)
+        Me.Guna2TextBox10.Location = New System.Drawing.Point(185, 109)
+        Me.Guna2TextBox10.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox10.Name = "Guna2TextBox10"
         Me.Guna2TextBox10.PlaceholderText = ""
         Me.Guna2TextBox10.SelectedText = ""
-        Me.Guna2TextBox10.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox10.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox10.TabIndex = 5
         Me.Guna2TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1610,9 +1672,10 @@ Partial Class StaffMenu
         Me.Guna2Button21.FillColor = System.Drawing.Color.White
         Me.Guna2Button21.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button21.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button21.Location = New System.Drawing.Point(159, 62)
+        Me.Guna2Button21.Location = New System.Drawing.Point(239, 107)
+        Me.Guna2Button21.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button21.Name = "Guna2Button21"
-        Me.Guna2Button21.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button21.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button21.TabIndex = 4
         Me.Guna2Button21.Text = "-"
         Me.Guna2Button21.TextOffset = New System.Drawing.Point(1, -2)
@@ -1630,36 +1693,37 @@ Partial Class StaffMenu
         Me.Guna2Button22.FillColor = System.Drawing.Color.White
         Me.Guna2Button22.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button22.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button22.Location = New System.Drawing.Point(83, 62)
+        Me.Guna2Button22.Location = New System.Drawing.Point(125, 107)
+        Me.Guna2Button22.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button22.Name = "Guna2Button22"
-        Me.Guna2Button22.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button22.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button22.TabIndex = 3
         Me.Guna2Button22.Text = "+"
         Me.Guna2Button22.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label17
         '
-        Me.Label17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(85, 41)
+        Me.Label17.Location = New System.Drawing.Point(128, 63)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(46, 19)
+        Me.Label17.Size = New System.Drawing.Size(72, 31)
         Me.Label17.TabIndex = 2
         Me.Label17.Text = "₱149"
         '
         'Label18
         '
-        Me.Label18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(85, 22)
+        Me.Label18.Location = New System.Drawing.Point(128, 34)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(88, 19)
+        Me.Label18.Size = New System.Drawing.Size(133, 31)
         Me.Label18.TabIndex = 1
         Me.Label18.Text = "Capuccino"
         '
@@ -1672,9 +1736,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox9.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox9.Image = CType(resources.GetObject("Guna2PictureBox9.Image"), System.Drawing.Image)
         Me.Guna2PictureBox9.ImageRotate = 0!
-        Me.Guna2PictureBox9.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox9.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox9.Name = "Guna2PictureBox9"
-        Me.Guna2PictureBox9.Size = New System.Drawing.Size(74, 89)
+        Me.Guna2PictureBox9.Size = New System.Drawing.Size(111, 136)
         Me.Guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox9.TabIndex = 0
         Me.Guna2PictureBox9.TabStop = False
@@ -1692,12 +1757,13 @@ Partial Class StaffMenu
         Me.Guna2Panel18.Controls.Add(Me.Guna2PictureBox10)
         Me.Guna2Panel18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel18.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel18.Location = New System.Drawing.Point(411, 3)
+        Me.Guna2Panel18.Location = New System.Drawing.Point(618, 5)
+        Me.Guna2Panel18.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel18.Name = "Guna2Panel18"
         Me.Guna2Panel18.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel18.ShadowDecoration.Depth = 5
         Me.Guna2Panel18.ShadowDecoration.Enabled = True
-        Me.Guna2Panel18.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel18.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel18.TabIndex = 4
         '
         'Guna2TextBox11
@@ -1714,11 +1780,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox11.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox11.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox11.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox11.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox11.Name = "Guna2TextBox11"
         Me.Guna2TextBox11.PlaceholderText = ""
         Me.Guna2TextBox11.SelectedText = ""
-        Me.Guna2TextBox11.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox11.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox11.TabIndex = 5
         Me.Guna2TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1735,9 +1802,10 @@ Partial Class StaffMenu
         Me.Guna2Button23.FillColor = System.Drawing.Color.White
         Me.Guna2Button23.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button23.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button23.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button23.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button23.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button23.Name = "Guna2Button23"
-        Me.Guna2Button23.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button23.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button23.TabIndex = 4
         Me.Guna2Button23.Text = "-"
         Me.Guna2Button23.TextOffset = New System.Drawing.Point(1, -2)
@@ -1755,36 +1823,37 @@ Partial Class StaffMenu
         Me.Guna2Button24.FillColor = System.Drawing.Color.White
         Me.Guna2Button24.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button24.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button24.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button24.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button24.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button24.Name = "Guna2Button24"
-        Me.Guna2Button24.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button24.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button24.TabIndex = 3
         Me.Guna2Button24.Text = "+"
         Me.Guna2Button24.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label19
         '
-        Me.Label19.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label19.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(82, 41)
+        Me.Label19.Location = New System.Drawing.Point(125, 63)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(46, 19)
+        Me.Label19.Size = New System.Drawing.Size(72, 31)
         Me.Label19.TabIndex = 2
         Me.Label19.Text = "₱149"
         '
         'Label20
         '
-        Me.Label20.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label20.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(82, 22)
+        Me.Label20.Location = New System.Drawing.Point(125, 34)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(88, 19)
+        Me.Label20.Size = New System.Drawing.Size(133, 31)
         Me.Label20.TabIndex = 1
         Me.Label20.Text = "Capuccino"
         '
@@ -1797,9 +1866,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox10.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox10.Image = CType(resources.GetObject("Guna2PictureBox10.Image"), System.Drawing.Image)
         Me.Guna2PictureBox10.ImageRotate = 0!
-        Me.Guna2PictureBox10.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox10.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox10.Name = "Guna2PictureBox10"
-        Me.Guna2PictureBox10.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox10.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox10.TabIndex = 0
         Me.Guna2PictureBox10.TabStop = False
@@ -1817,12 +1887,13 @@ Partial Class StaffMenu
         Me.Guna2Panel19.Controls.Add(Me.Guna2PictureBox11)
         Me.Guna2Panel19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel19.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel19.Location = New System.Drawing.Point(207, 3)
+        Me.Guna2Panel19.Location = New System.Drawing.Point(311, 5)
+        Me.Guna2Panel19.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel19.Name = "Guna2Panel19"
         Me.Guna2Panel19.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel19.ShadowDecoration.Depth = 5
         Me.Guna2Panel19.ShadowDecoration.Enabled = True
-        Me.Guna2Panel19.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel19.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel19.TabIndex = 3
         '
         'Guna2TextBox12
@@ -1839,11 +1910,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox12.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox12.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox12.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox12.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox12.Name = "Guna2TextBox12"
         Me.Guna2TextBox12.PlaceholderText = ""
         Me.Guna2TextBox12.SelectedText = ""
-        Me.Guna2TextBox12.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox12.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox12.TabIndex = 5
         Me.Guna2TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1860,9 +1932,10 @@ Partial Class StaffMenu
         Me.Guna2Button25.FillColor = System.Drawing.Color.White
         Me.Guna2Button25.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button25.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button25.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button25.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button25.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button25.Name = "Guna2Button25"
-        Me.Guna2Button25.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button25.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button25.TabIndex = 4
         Me.Guna2Button25.Text = "-"
         Me.Guna2Button25.TextOffset = New System.Drawing.Point(1, -2)
@@ -1880,36 +1953,37 @@ Partial Class StaffMenu
         Me.Guna2Button26.FillColor = System.Drawing.Color.White
         Me.Guna2Button26.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button26.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button26.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button26.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button26.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button26.Name = "Guna2Button26"
-        Me.Guna2Button26.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button26.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button26.TabIndex = 3
         Me.Guna2Button26.Text = "+"
         Me.Guna2Button26.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label21
         '
-        Me.Label21.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label21.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(82, 41)
+        Me.Label21.Location = New System.Drawing.Point(125, 63)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(46, 19)
+        Me.Label21.Size = New System.Drawing.Size(72, 31)
         Me.Label21.TabIndex = 2
         Me.Label21.Text = "₱149"
         '
         'Label22
         '
-        Me.Label22.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label22.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(82, 22)
+        Me.Label22.Location = New System.Drawing.Point(125, 34)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(88, 19)
+        Me.Label22.Size = New System.Drawing.Size(133, 31)
         Me.Label22.TabIndex = 1
         Me.Label22.Text = "Capuccino"
         '
@@ -1922,9 +1996,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox11.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox11.Image = CType(resources.GetObject("Guna2PictureBox11.Image"), System.Drawing.Image)
         Me.Guna2PictureBox11.ImageRotate = 0!
-        Me.Guna2PictureBox11.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox11.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox11.Name = "Guna2PictureBox11"
-        Me.Guna2PictureBox11.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox11.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox11.TabIndex = 0
         Me.Guna2PictureBox11.TabStop = False
@@ -1942,12 +2017,13 @@ Partial Class StaffMenu
         Me.Guna2Panel20.Controls.Add(Me.Guna2PictureBox12)
         Me.Guna2Panel20.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel20.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel20.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel20.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel20.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel20.Name = "Guna2Panel20"
         Me.Guna2Panel20.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel20.ShadowDecoration.Depth = 5
         Me.Guna2Panel20.ShadowDecoration.Enabled = True
-        Me.Guna2Panel20.Size = New System.Drawing.Size(198, 114)
+        Me.Guna2Panel20.Size = New System.Drawing.Size(299, 174)
         Me.Guna2Panel20.TabIndex = 2
         '
         'Guna2TextBox13
@@ -1964,11 +2040,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox13.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox13.Location = New System.Drawing.Point(120, 63)
+        Me.Guna2TextBox13.Location = New System.Drawing.Point(182, 109)
+        Me.Guna2TextBox13.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox13.Name = "Guna2TextBox13"
         Me.Guna2TextBox13.PlaceholderText = ""
         Me.Guna2TextBox13.SelectedText = ""
-        Me.Guna2TextBox13.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox13.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox13.TabIndex = 5
         Me.Guna2TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1985,9 +2062,10 @@ Partial Class StaffMenu
         Me.Guna2Button27.FillColor = System.Drawing.Color.White
         Me.Guna2Button27.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button27.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button27.Location = New System.Drawing.Point(156, 62)
+        Me.Guna2Button27.Location = New System.Drawing.Point(236, 107)
+        Me.Guna2Button27.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button27.Name = "Guna2Button27"
-        Me.Guna2Button27.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button27.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button27.TabIndex = 4
         Me.Guna2Button27.Text = "-"
         Me.Guna2Button27.TextOffset = New System.Drawing.Point(1, -2)
@@ -2005,36 +2083,37 @@ Partial Class StaffMenu
         Me.Guna2Button28.FillColor = System.Drawing.Color.White
         Me.Guna2Button28.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button28.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button28.Location = New System.Drawing.Point(80, 62)
+        Me.Guna2Button28.Location = New System.Drawing.Point(122, 107)
+        Me.Guna2Button28.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button28.Name = "Guna2Button28"
-        Me.Guna2Button28.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button28.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button28.TabIndex = 3
         Me.Guna2Button28.Text = "+"
         Me.Guna2Button28.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label23
         '
-        Me.Label23.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label23.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(82, 41)
+        Me.Label23.Location = New System.Drawing.Point(125, 63)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(46, 19)
+        Me.Label23.Size = New System.Drawing.Size(72, 31)
         Me.Label23.TabIndex = 2
         Me.Label23.Text = "₱149"
         '
         'Label24
         '
-        Me.Label24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label24.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(82, 22)
+        Me.Label24.Location = New System.Drawing.Point(125, 34)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(88, 19)
+        Me.Label24.Size = New System.Drawing.Size(133, 31)
         Me.Label24.TabIndex = 1
         Me.Label24.Text = "Capuccino"
         '
@@ -2047,9 +2126,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox12.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox12.Image = CType(resources.GetObject("Guna2PictureBox12.Image"), System.Drawing.Image)
         Me.Guna2PictureBox12.ImageRotate = 0!
-        Me.Guna2PictureBox12.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox12.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox12.Name = "Guna2PictureBox12"
-        Me.Guna2PictureBox12.Size = New System.Drawing.Size(71, 89)
+        Me.Guna2PictureBox12.Size = New System.Drawing.Size(108, 136)
         Me.Guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox12.TabIndex = 0
         Me.Guna2PictureBox12.TabStop = False
@@ -2058,9 +2138,10 @@ Partial Class StaffMenu
         '
         Me.Guna2Panel21.Controls.Add(Me.TableLayoutPanel7)
         Me.Guna2Panel21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel21.Location = New System.Drawing.Point(3, 439)
+        Me.Guna2Panel21.Location = New System.Drawing.Point(4, 676)
+        Me.Guna2Panel21.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel21.Name = "Guna2Panel21"
-        Me.Guna2Panel21.Size = New System.Drawing.Size(819, 122)
+        Me.Guna2Panel21.Size = New System.Drawing.Size(1231, 186)
         Me.Guna2Panel21.TabIndex = 6
         '
         'TableLayoutPanel7
@@ -2076,10 +2157,11 @@ Partial Class StaffMenu
         Me.TableLayoutPanel7.Controls.Add(Me.Guna2Panel25, 0, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(819, 122)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(1231, 186)
         Me.TableLayoutPanel7.TabIndex = 0
         '
         'Guna2Panel22
@@ -2095,12 +2177,13 @@ Partial Class StaffMenu
         Me.Guna2Panel22.Controls.Add(Me.Guna2PictureBox13)
         Me.Guna2Panel22.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel22.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel22.Location = New System.Drawing.Point(615, 3)
+        Me.Guna2Panel22.Location = New System.Drawing.Point(925, 5)
+        Me.Guna2Panel22.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel22.Name = "Guna2Panel22"
         Me.Guna2Panel22.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel22.ShadowDecoration.Depth = 5
         Me.Guna2Panel22.ShadowDecoration.Enabled = True
-        Me.Guna2Panel22.Size = New System.Drawing.Size(201, 116)
+        Me.Guna2Panel22.Size = New System.Drawing.Size(302, 176)
         Me.Guna2Panel22.TabIndex = 5
         '
         'Guna2TextBox14
@@ -2117,11 +2200,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox14.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox14.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox14.Location = New System.Drawing.Point(123, 65)
+        Me.Guna2TextBox14.Location = New System.Drawing.Point(185, 111)
+        Me.Guna2TextBox14.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox14.Name = "Guna2TextBox14"
         Me.Guna2TextBox14.PlaceholderText = ""
         Me.Guna2TextBox14.SelectedText = ""
-        Me.Guna2TextBox14.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox14.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox14.TabIndex = 5
         Me.Guna2TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2138,9 +2222,10 @@ Partial Class StaffMenu
         Me.Guna2Button29.FillColor = System.Drawing.Color.White
         Me.Guna2Button29.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button29.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button29.Location = New System.Drawing.Point(159, 64)
+        Me.Guna2Button29.Location = New System.Drawing.Point(239, 109)
+        Me.Guna2Button29.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button29.Name = "Guna2Button29"
-        Me.Guna2Button29.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button29.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button29.TabIndex = 4
         Me.Guna2Button29.Text = "-"
         Me.Guna2Button29.TextOffset = New System.Drawing.Point(1, -2)
@@ -2158,36 +2243,37 @@ Partial Class StaffMenu
         Me.Guna2Button30.FillColor = System.Drawing.Color.White
         Me.Guna2Button30.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button30.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button30.Location = New System.Drawing.Point(83, 64)
+        Me.Guna2Button30.Location = New System.Drawing.Point(125, 109)
+        Me.Guna2Button30.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button30.Name = "Guna2Button30"
-        Me.Guna2Button30.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button30.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button30.TabIndex = 3
         Me.Guna2Button30.Text = "+"
         Me.Guna2Button30.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label25
         '
-        Me.Label25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label25.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(85, 41)
+        Me.Label25.Location = New System.Drawing.Point(128, 63)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(46, 19)
+        Me.Label25.Size = New System.Drawing.Size(72, 31)
         Me.Label25.TabIndex = 2
         Me.Label25.Text = "₱149"
         '
         'Label26
         '
-        Me.Label26.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label26.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(85, 22)
+        Me.Label26.Location = New System.Drawing.Point(128, 34)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(88, 19)
+        Me.Label26.Size = New System.Drawing.Size(133, 31)
         Me.Label26.TabIndex = 1
         Me.Label26.Text = "Capuccino"
         '
@@ -2200,9 +2286,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox13.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox13.Image = CType(resources.GetObject("Guna2PictureBox13.Image"), System.Drawing.Image)
         Me.Guna2PictureBox13.ImageRotate = 0!
-        Me.Guna2PictureBox13.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox13.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox13.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox13.Name = "Guna2PictureBox13"
-        Me.Guna2PictureBox13.Size = New System.Drawing.Size(74, 91)
+        Me.Guna2PictureBox13.Size = New System.Drawing.Size(111, 138)
         Me.Guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox13.TabIndex = 0
         Me.Guna2PictureBox13.TabStop = False
@@ -2220,12 +2307,13 @@ Partial Class StaffMenu
         Me.Guna2Panel23.Controls.Add(Me.Guna2PictureBox14)
         Me.Guna2Panel23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel23.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel23.Location = New System.Drawing.Point(411, 3)
+        Me.Guna2Panel23.Location = New System.Drawing.Point(618, 5)
+        Me.Guna2Panel23.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel23.Name = "Guna2Panel23"
         Me.Guna2Panel23.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel23.ShadowDecoration.Depth = 5
         Me.Guna2Panel23.ShadowDecoration.Enabled = True
-        Me.Guna2Panel23.Size = New System.Drawing.Size(198, 116)
+        Me.Guna2Panel23.Size = New System.Drawing.Size(299, 176)
         Me.Guna2Panel23.TabIndex = 4
         '
         'Guna2TextBox15
@@ -2242,11 +2330,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox15.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox15.Location = New System.Drawing.Point(120, 65)
+        Me.Guna2TextBox15.Location = New System.Drawing.Point(182, 111)
+        Me.Guna2TextBox15.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox15.Name = "Guna2TextBox15"
         Me.Guna2TextBox15.PlaceholderText = ""
         Me.Guna2TextBox15.SelectedText = ""
-        Me.Guna2TextBox15.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox15.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox15.TabIndex = 5
         Me.Guna2TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2263,9 +2352,10 @@ Partial Class StaffMenu
         Me.Guna2Button31.FillColor = System.Drawing.Color.White
         Me.Guna2Button31.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button31.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button31.Location = New System.Drawing.Point(156, 64)
+        Me.Guna2Button31.Location = New System.Drawing.Point(236, 109)
+        Me.Guna2Button31.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button31.Name = "Guna2Button31"
-        Me.Guna2Button31.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button31.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button31.TabIndex = 4
         Me.Guna2Button31.Text = "-"
         Me.Guna2Button31.TextOffset = New System.Drawing.Point(1, -2)
@@ -2283,36 +2373,37 @@ Partial Class StaffMenu
         Me.Guna2Button32.FillColor = System.Drawing.Color.White
         Me.Guna2Button32.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button32.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button32.Location = New System.Drawing.Point(80, 64)
+        Me.Guna2Button32.Location = New System.Drawing.Point(122, 109)
+        Me.Guna2Button32.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button32.Name = "Guna2Button32"
-        Me.Guna2Button32.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button32.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button32.TabIndex = 3
         Me.Guna2Button32.Text = "+"
         Me.Guna2Button32.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label27
         '
-        Me.Label27.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label27.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(82, 41)
+        Me.Label27.Location = New System.Drawing.Point(125, 63)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(46, 19)
+        Me.Label27.Size = New System.Drawing.Size(72, 31)
         Me.Label27.TabIndex = 2
         Me.Label27.Text = "₱149"
         '
         'Label28
         '
-        Me.Label28.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label28.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label28.Location = New System.Drawing.Point(82, 22)
+        Me.Label28.Location = New System.Drawing.Point(125, 34)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(88, 19)
+        Me.Label28.Size = New System.Drawing.Size(133, 31)
         Me.Label28.TabIndex = 1
         Me.Label28.Text = "Capuccino"
         '
@@ -2325,9 +2416,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox14.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox14.Image = CType(resources.GetObject("Guna2PictureBox14.Image"), System.Drawing.Image)
         Me.Guna2PictureBox14.ImageRotate = 0!
-        Me.Guna2PictureBox14.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox14.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox14.Name = "Guna2PictureBox14"
-        Me.Guna2PictureBox14.Size = New System.Drawing.Size(71, 91)
+        Me.Guna2PictureBox14.Size = New System.Drawing.Size(108, 138)
         Me.Guna2PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox14.TabIndex = 0
         Me.Guna2PictureBox14.TabStop = False
@@ -2345,12 +2437,13 @@ Partial Class StaffMenu
         Me.Guna2Panel24.Controls.Add(Me.Guna2PictureBox15)
         Me.Guna2Panel24.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel24.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel24.Location = New System.Drawing.Point(207, 3)
+        Me.Guna2Panel24.Location = New System.Drawing.Point(311, 5)
+        Me.Guna2Panel24.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel24.Name = "Guna2Panel24"
         Me.Guna2Panel24.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel24.ShadowDecoration.Depth = 5
         Me.Guna2Panel24.ShadowDecoration.Enabled = True
-        Me.Guna2Panel24.Size = New System.Drawing.Size(198, 116)
+        Me.Guna2Panel24.Size = New System.Drawing.Size(299, 176)
         Me.Guna2Panel24.TabIndex = 3
         '
         'Guna2TextBox16
@@ -2367,11 +2460,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox16.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox16.Location = New System.Drawing.Point(120, 65)
+        Me.Guna2TextBox16.Location = New System.Drawing.Point(182, 111)
+        Me.Guna2TextBox16.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox16.Name = "Guna2TextBox16"
         Me.Guna2TextBox16.PlaceholderText = ""
         Me.Guna2TextBox16.SelectedText = ""
-        Me.Guna2TextBox16.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox16.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox16.TabIndex = 5
         Me.Guna2TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2388,9 +2482,10 @@ Partial Class StaffMenu
         Me.Guna2Button33.FillColor = System.Drawing.Color.White
         Me.Guna2Button33.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button33.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button33.Location = New System.Drawing.Point(156, 64)
+        Me.Guna2Button33.Location = New System.Drawing.Point(236, 109)
+        Me.Guna2Button33.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button33.Name = "Guna2Button33"
-        Me.Guna2Button33.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button33.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button33.TabIndex = 4
         Me.Guna2Button33.Text = "-"
         Me.Guna2Button33.TextOffset = New System.Drawing.Point(1, -2)
@@ -2408,36 +2503,37 @@ Partial Class StaffMenu
         Me.Guna2Button34.FillColor = System.Drawing.Color.White
         Me.Guna2Button34.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button34.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button34.Location = New System.Drawing.Point(80, 64)
+        Me.Guna2Button34.Location = New System.Drawing.Point(122, 109)
+        Me.Guna2Button34.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button34.Name = "Guna2Button34"
-        Me.Guna2Button34.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button34.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button34.TabIndex = 3
         Me.Guna2Button34.Text = "+"
         Me.Guna2Button34.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label29
         '
-        Me.Label29.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label29.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label29.Location = New System.Drawing.Point(82, 41)
+        Me.Label29.Location = New System.Drawing.Point(125, 63)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(46, 19)
+        Me.Label29.Size = New System.Drawing.Size(72, 31)
         Me.Label29.TabIndex = 2
         Me.Label29.Text = "₱149"
         '
         'Label30
         '
-        Me.Label30.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label30.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(82, 22)
+        Me.Label30.Location = New System.Drawing.Point(125, 34)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(88, 19)
+        Me.Label30.Size = New System.Drawing.Size(133, 31)
         Me.Label30.TabIndex = 1
         Me.Label30.Text = "Capuccino"
         '
@@ -2450,9 +2546,10 @@ Partial Class StaffMenu
         Me.Guna2PictureBox15.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox15.Image = CType(resources.GetObject("Guna2PictureBox15.Image"), System.Drawing.Image)
         Me.Guna2PictureBox15.ImageRotate = 0!
-        Me.Guna2PictureBox15.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox15.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox15.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox15.Name = "Guna2PictureBox15"
-        Me.Guna2PictureBox15.Size = New System.Drawing.Size(71, 91)
+        Me.Guna2PictureBox15.Size = New System.Drawing.Size(108, 138)
         Me.Guna2PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox15.TabIndex = 0
         Me.Guna2PictureBox15.TabStop = False
@@ -2470,12 +2567,13 @@ Partial Class StaffMenu
         Me.Guna2Panel25.Controls.Add(Me.Guna2PictureBox16)
         Me.Guna2Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel25.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel25.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel25.Location = New System.Drawing.Point(4, 5)
+        Me.Guna2Panel25.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Panel25.Name = "Guna2Panel25"
         Me.Guna2Panel25.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel25.ShadowDecoration.Depth = 5
         Me.Guna2Panel25.ShadowDecoration.Enabled = True
-        Me.Guna2Panel25.Size = New System.Drawing.Size(198, 116)
+        Me.Guna2Panel25.Size = New System.Drawing.Size(299, 176)
         Me.Guna2Panel25.TabIndex = 2
         '
         'Guna2TextBox17
@@ -2492,11 +2590,12 @@ Partial Class StaffMenu
         Me.Guna2TextBox17.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox17.Location = New System.Drawing.Point(120, 65)
+        Me.Guna2TextBox17.Location = New System.Drawing.Point(182, 111)
+        Me.Guna2TextBox17.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.Guna2TextBox17.Name = "Guna2TextBox17"
         Me.Guna2TextBox17.PlaceholderText = ""
         Me.Guna2TextBox17.SelectedText = ""
-        Me.Guna2TextBox17.Size = New System.Drawing.Size(34, 24)
+        Me.Guna2TextBox17.Size = New System.Drawing.Size(51, 37)
         Me.Guna2TextBox17.TabIndex = 5
         Me.Guna2TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2513,9 +2612,10 @@ Partial Class StaffMenu
         Me.Guna2Button35.FillColor = System.Drawing.Color.White
         Me.Guna2Button35.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button35.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button35.Location = New System.Drawing.Point(156, 64)
+        Me.Guna2Button35.Location = New System.Drawing.Point(236, 109)
+        Me.Guna2Button35.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button35.Name = "Guna2Button35"
-        Me.Guna2Button35.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button35.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button35.TabIndex = 4
         Me.Guna2Button35.Text = "-"
         Me.Guna2Button35.TextOffset = New System.Drawing.Point(1, -2)
@@ -2533,36 +2633,37 @@ Partial Class StaffMenu
         Me.Guna2Button36.FillColor = System.Drawing.Color.White
         Me.Guna2Button36.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button36.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button36.Location = New System.Drawing.Point(80, 64)
+        Me.Guna2Button36.Location = New System.Drawing.Point(122, 109)
+        Me.Guna2Button36.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2Button36.Name = "Guna2Button36"
-        Me.Guna2Button36.Size = New System.Drawing.Size(38, 25)
+        Me.Guna2Button36.Size = New System.Drawing.Size(57, 38)
         Me.Guna2Button36.TabIndex = 3
         Me.Guna2Button36.Text = "+"
         Me.Guna2Button36.TextOffset = New System.Drawing.Point(1, -2)
         '
         'Label31
         '
-        Me.Label31.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label31.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label31.Location = New System.Drawing.Point(82, 41)
+        Me.Label31.Location = New System.Drawing.Point(125, 63)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(46, 19)
+        Me.Label31.Size = New System.Drawing.Size(72, 31)
         Me.Label31.TabIndex = 2
         Me.Label31.Text = "₱149"
         '
         'Label32
         '
-        Me.Label32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label32.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Label32.Location = New System.Drawing.Point(82, 22)
+        Me.Label32.Location = New System.Drawing.Point(125, 34)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(88, 19)
+        Me.Label32.Size = New System.Drawing.Size(133, 31)
         Me.Label32.TabIndex = 1
         Me.Label32.Text = "Capuccino"
         '
@@ -2575,20 +2676,22 @@ Partial Class StaffMenu
         Me.Guna2PictureBox16.FillColor = System.Drawing.Color.RosyBrown
         Me.Guna2PictureBox16.Image = CType(resources.GetObject("Guna2PictureBox16.Image"), System.Drawing.Image)
         Me.Guna2PictureBox16.ImageRotate = 0!
-        Me.Guna2PictureBox16.Location = New System.Drawing.Point(5, 13)
+        Me.Guna2PictureBox16.Location = New System.Drawing.Point(8, 20)
+        Me.Guna2PictureBox16.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2PictureBox16.Name = "Guna2PictureBox16"
-        Me.Guna2PictureBox16.Size = New System.Drawing.Size(71, 91)
+        Me.Guna2PictureBox16.Size = New System.Drawing.Size(108, 138)
         Me.Guna2PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox16.TabIndex = 0
         Me.Guna2PictureBox16.TabStop = False
         '
         'StaffMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Guna2Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "StaffMenu"
-        Me.Size = New System.Drawing.Size(1133, 570)
+        Me.Size = New System.Drawing.Size(1700, 877)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
@@ -2601,22 +2704,22 @@ Partial Class StaffMenu
         Me.Guna2Panel4.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.Guna2Panel10.ResumeLayout(False)
-        Me.Guna2Panel11.ResumeLayout(False)
-        Me.Guna2Panel11.PerformLayout()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2Panel12.ResumeLayout(False)
-        Me.Guna2Panel12.PerformLayout()
-        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2Panel13.ResumeLayout(False)
-        Me.Guna2Panel13.PerformLayout()
-        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel6.ResumeLayout(False)
-        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.Guna2Panel6.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
-        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel8.PerformLayout()
+        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel11.ResumeLayout(False)
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.Guna2Panel12.ResumeLayout(False)
+        Me.Guna2Panel12.PerformLayout()
+        CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel13.ResumeLayout(False)
+        Me.Guna2Panel13.PerformLayout()
         CType(Me.Guna2PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel14.ResumeLayout(False)
         Me.Guna2Panel14.PerformLayout()
@@ -2739,16 +2842,16 @@ Partial Class StaffMenu
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Guna2PictureBox12 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel12 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button13 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button14 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Guna2PictureBox5 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox7 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button15 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button16 As Guna.UI2.WinForms.Guna2Button
@@ -2769,21 +2872,21 @@ Partial Class StaffMenu
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Guna2PictureBox8 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel13 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button11 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button12 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel12 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
