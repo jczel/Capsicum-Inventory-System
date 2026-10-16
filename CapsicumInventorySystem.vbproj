@@ -132,6 +132,12 @@
       <DependentUpon>Form1login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuManagement.Designer.vb">
+      <DependentUpon>MenuManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -179,6 +185,12 @@
     <Compile Include="StaffMenu.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Usermanagement.Designer.vb">
+      <DependentUpon>Usermanagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usermanagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Add-Ons.resx">
@@ -196,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1login.resx">
       <DependentUpon>Form1login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuManagement.resx">
+      <DependentUpon>MenuManagement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -218,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffMenu.resx">
       <DependentUpon>StaffMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usermanagement.resx">
+      <DependentUpon>Usermanagement.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
