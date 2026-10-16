@@ -7,7 +7,7 @@ Public Class CreateAccount
     Private Sub CreateAccount_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
         gender()
-
+        roless()
     End Sub
 
     Sub savedata()
@@ -16,7 +16,7 @@ Public Class CreateAccount
                 sqlconn.Open()
             End If
 
-            query = "INSERT INTO USER_ACCOUNT (firstname, lastname, username, birthdate, password, usertype, gender) VALUES (@firstname, @lastname, @username, @birthdate, @password, @usertype, @gender)"
+            query = "INSERT INTO Users (firstname, lastname, username, birthdate, password, role, gender) VALUES (@firstname, @lastname, @username, @birthdate, @password, @role, @gender)"
             cmd = New SqlCommand(query, sqlconn)
             With cmd.Parameters
                 .AddWithValue("@firstname", fnametxtbx.Text.Trim())
@@ -24,6 +24,7 @@ Public Class CreateAccount
                 .AddWithValue("@username", usernametxtbx.Text.Trim())
                 .AddWithValue("@birthdate", birthdatetimepicker.Value.Date)
                 .AddWithValue("@password", passwtxtbx.Text)
+                .AddWithValue("@role", rolecmbbox.Text)
                 .AddWithValue("@gender", gendercmbbx.Text)
             End With
             cmd.ExecuteNonQuery()
@@ -75,7 +76,7 @@ Public Class CreateAccount
         Try
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT COUNT(*) FROM USER_ACCOUNT WHERE username=@username"
+            query = "SELECT COUNT(*) FROM Users WHERE username=@username"
             cmd = New SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
             Dim count As Integer = CInt(cmd.ExecuteScalar())
@@ -97,7 +98,12 @@ Public Class CreateAccount
 
     End Sub
 
-
+    Sub roless()
+        rolecmbbox.Items.Clear()
+        rolecmbbox.Items.Add("Admin")
+        rolecmbbox.Items.Add("Owner")
+        rolecmbbox.Items.Add("Staff")
+    End Sub
 
     Sub gender()
         gendercmbbx.Items.Clear()
@@ -114,7 +120,7 @@ Public Class CreateAccount
         gendercmbbx.SelectedIndex = -1
     End Sub
 
-    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles loginlinklb.LinkClicked
+    Private Sub loginlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
 
         Form1login.Show()
@@ -123,5 +129,9 @@ Public Class CreateAccount
 
     Private Sub CreateAccount_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
+    End Sub
+
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles rolecmbbox.SelectedIndexChanged
+
     End Sub
 End Class

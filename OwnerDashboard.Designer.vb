@@ -24,48 +24,48 @@ Partial Class OwnerDashboard
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OwnerDashboard))
-        Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont20 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid7 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick7 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont21 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid8 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick8 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont22 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid9 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim PointLabel3 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
-        Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim LPoint13 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint14 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint15 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint16 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint17 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint18 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim ChartFont25 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont26 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont27 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim ChartFont28 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid10 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick10 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont29 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid11 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim Tick11 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont30 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Grid12 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
-        Dim PointLabel4 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
-        Dim ChartFont31 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim Tick12 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
-        Dim ChartFont32 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont1 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont2 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont3 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont4 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid1 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick1 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont5 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid2 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick2 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont6 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid3 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel1 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont7 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick3 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont8 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim LPoint1 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint2 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint3 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint4 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint5 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Dim LPoint6 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim ChartFont9 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont10 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont11 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont12 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid4 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick4 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont13 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid5 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick5 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont14 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid6 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel2 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont15 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick6 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont16 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim LPoint7 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint8 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint9 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint10 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint11 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint12 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -141,7 +141,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel1.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1029, 570)
         Me.Guna2Panel1.TabIndex = 1
@@ -151,7 +151,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel4.Controls.Add(Me.TableLayoutPanel2)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.Location = New System.Drawing.Point(0, 175)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1029, 395)
         Me.Guna2Panel4.TabIndex = 1
@@ -164,7 +164,7 @@ Partial Class OwnerDashboard
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.34177!))
@@ -177,7 +177,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel5.Controls.Add(Me.TableLayoutPanel3)
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel5.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.Size = New System.Drawing.Size(1025, 143)
         Me.Guna2Panel5.TabIndex = 0
@@ -195,7 +195,7 @@ Partial Class OwnerDashboard
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2CustomGradientPanel2, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -215,7 +215,7 @@ Partial Class OwnerDashboard
         Me.Guna2CustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel5.Location = New System.Drawing.Point(770, 2)
-        Me.Guna2CustomGradientPanel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel5.Name = "Guna2CustomGradientPanel5"
         Me.Guna2CustomGradientPanel5.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel5.ShadowDecoration.Color = System.Drawing.Color.DimGray
@@ -257,7 +257,7 @@ Partial Class OwnerDashboard
         Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox6.Location = New System.Drawing.Point(8, 40)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(59, 57)
         Me.PictureBox6.TabIndex = 9
@@ -276,7 +276,7 @@ Partial Class OwnerDashboard
         Me.Guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel4.Location = New System.Drawing.Point(514, 2)
-        Me.Guna2CustomGradientPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel4.Name = "Guna2CustomGradientPanel4"
         Me.Guna2CustomGradientPanel4.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel4.ShadowDecoration.Color = System.Drawing.Color.DimGray
@@ -318,7 +318,7 @@ Partial Class OwnerDashboard
         Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox5.Location = New System.Drawing.Point(11, 40)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(59, 57)
         Me.PictureBox5.TabIndex = 9
@@ -337,7 +337,7 @@ Partial Class OwnerDashboard
         Me.Guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel3.Location = New System.Drawing.Point(258, 2)
-        Me.Guna2CustomGradientPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel3.Name = "Guna2CustomGradientPanel3"
         Me.Guna2CustomGradientPanel3.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel3.ShadowDecoration.Color = System.Drawing.Color.DimGray
@@ -379,7 +379,7 @@ Partial Class OwnerDashboard
         Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox4.Location = New System.Drawing.Point(12, 40)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(59, 57)
         Me.PictureBox4.TabIndex = 9
@@ -398,7 +398,7 @@ Partial Class OwnerDashboard
         Me.Guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2CustomGradientPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
         Me.Guna2CustomGradientPanel2.ShadowDecoration.BorderRadius = 20
         Me.Guna2CustomGradientPanel2.ShadowDecoration.Color = System.Drawing.Color.DimGray
@@ -441,7 +441,7 @@ Partial Class OwnerDashboard
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox3.Location = New System.Drawing.Point(12, 40)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(59, 57)
         Me.PictureBox3.TabIndex = 8
@@ -452,7 +452,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel6.Controls.Add(Me.Guna2Panel7)
         Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel6.Location = New System.Drawing.Point(2, 149)
-        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(1025, 244)
         Me.Guna2Panel6.TabIndex = 1
@@ -463,7 +463,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel7.Controls.Add(Me.TableLayoutPanel4)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.Size = New System.Drawing.Size(1025, 244)
         Me.Guna2Panel7.TabIndex = 0
@@ -477,7 +477,7 @@ Partial Class OwnerDashboard
         Me.TableLayoutPanel4.Controls.Add(Me.Panel1, 1, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -490,7 +490,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel13.Controls.Add(Me.weeklysalesareachrt)
         Me.Guna2Panel13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel13.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel13.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel13.Name = "Guna2Panel13"
         Me.Guna2Panel13.Size = New System.Drawing.Size(508, 240)
         Me.Guna2Panel13.TabIndex = 2
@@ -501,60 +501,60 @@ Partial Class OwnerDashboard
         Me.weeklysalesareachrt.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaBarDataset1})
         Me.weeklysalesareachrt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.weeklysalesareachrt.Legend.Align = Guna.Charts.WinForms.ChartTextAlignment.Start
-        ChartFont17.FontName = "Arial"
-        Me.weeklysalesareachrt.Legend.LabelFont = ChartFont17
+        ChartFont1.FontName = "Arial"
+        Me.weeklysalesareachrt.Legend.LabelFont = ChartFont1
         Me.weeklysalesareachrt.Legend.LabelForeColor = System.Drawing.Color.White
         Me.weeklysalesareachrt.Location = New System.Drawing.Point(0, 0)
-        Me.weeklysalesareachrt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.weeklysalesareachrt.Margin = New System.Windows.Forms.Padding(2)
         Me.weeklysalesareachrt.Name = "weeklysalesareachrt"
         Me.weeklysalesareachrt.PaletteCustomColors.FillColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))})
         Me.weeklysalesareachrt.Size = New System.Drawing.Size(508, 240)
         Me.weeklysalesareachrt.TabIndex = 0
-        ChartFont18.FontName = "Arial"
-        ChartFont18.Size = 12
-        ChartFont18.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.weeklysalesareachrt.Title.Font = ChartFont18
-        ChartFont19.FontName = "Arial"
-        Me.weeklysalesareachrt.Tooltips.BodyFont = ChartFont19
-        ChartFont20.FontName = "Arial"
-        ChartFont20.Size = 9
-        ChartFont20.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.weeklysalesareachrt.Tooltips.TitleFont = ChartFont20
-        Grid7.Color = System.Drawing.Color.WhiteSmoke
-        Grid7.ZeroLineColor = System.Drawing.Color.WhiteSmoke
-        Me.weeklysalesareachrt.XAxes.GridLines = Grid7
-        ChartFont21.FontName = "Arial"
-        Tick7.Font = ChartFont21
-        Tick7.ForeColor = System.Drawing.Color.White
-        Me.weeklysalesareachrt.XAxes.Ticks = Tick7
-        Me.weeklysalesareachrt.YAxes.GridLines = Grid8
-        ChartFont22.FontName = "Arial"
-        Tick8.Font = ChartFont22
-        Tick8.ForeColor = System.Drawing.Color.White
-        Me.weeklysalesareachrt.YAxes.Ticks = Tick8
-        Me.weeklysalesareachrt.ZAxes.GridLines = Grid9
-        ChartFont23.FontName = "Arial"
-        PointLabel3.Font = ChartFont23
-        Me.weeklysalesareachrt.ZAxes.PointLabels = PointLabel3
-        ChartFont24.FontName = "Arial"
-        Tick9.Font = ChartFont24
-        Me.weeklysalesareachrt.ZAxes.Ticks = Tick9
+        ChartFont2.FontName = "Arial"
+        ChartFont2.Size = 12
+        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.weeklysalesareachrt.Title.Font = ChartFont2
+        ChartFont3.FontName = "Arial"
+        Me.weeklysalesareachrt.Tooltips.BodyFont = ChartFont3
+        ChartFont4.FontName = "Arial"
+        ChartFont4.Size = 9
+        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.weeklysalesareachrt.Tooltips.TitleFont = ChartFont4
+        Grid1.Color = System.Drawing.Color.WhiteSmoke
+        Grid1.ZeroLineColor = System.Drawing.Color.WhiteSmoke
+        Me.weeklysalesareachrt.XAxes.GridLines = Grid1
+        ChartFont5.FontName = "Arial"
+        Tick1.Font = ChartFont5
+        Tick1.ForeColor = System.Drawing.Color.White
+        Me.weeklysalesareachrt.XAxes.Ticks = Tick1
+        Me.weeklysalesareachrt.YAxes.GridLines = Grid2
+        ChartFont6.FontName = "Arial"
+        Tick2.Font = ChartFont6
+        Tick2.ForeColor = System.Drawing.Color.White
+        Me.weeklysalesareachrt.YAxes.Ticks = Tick2
+        Me.weeklysalesareachrt.ZAxes.GridLines = Grid3
+        ChartFont7.FontName = "Arial"
+        PointLabel1.Font = ChartFont7
+        Me.weeklysalesareachrt.ZAxes.PointLabels = PointLabel1
+        ChartFont8.FontName = "Arial"
+        Tick3.Font = ChartFont8
+        Me.weeklysalesareachrt.ZAxes.Ticks = Tick3
         '
         'GunaBarDataset1
         '
-        LPoint13.Label = "Mon"
-        LPoint13.Y = 2050.0R
-        LPoint14.Label = "Tues"
-        LPoint14.Y = 2381.0R
-        LPoint15.Label = "Wed"
-        LPoint15.Y = 2654.0R
-        LPoint16.Label = "Thurs"
-        LPoint16.Y = 3567.0R
-        LPoint17.Label = "Fri"
-        LPoint17.Y = 4560.0R
-        LPoint18.Label = "Sat"
-        LPoint18.Y = 3221.0R
-        Me.GunaBarDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint13, LPoint14, LPoint15, LPoint16, LPoint17, LPoint18})
+        LPoint1.Label = "Mon"
+        LPoint1.Y = 2050.0R
+        LPoint2.Label = "Tues"
+        LPoint2.Y = 2381.0R
+        LPoint3.Label = "Wed"
+        LPoint3.Y = 2654.0R
+        LPoint4.Label = "Thurs"
+        LPoint4.Y = 3567.0R
+        LPoint5.Label = "Fri"
+        LPoint5.Y = 4560.0R
+        LPoint6.Label = "Sat"
+        LPoint6.Y = 3221.0R
+        Me.GunaBarDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2, LPoint3, LPoint4, LPoint5, LPoint6})
         Me.GunaBarDataset1.Label = "Weekly Sales Chart"
         Me.GunaBarDataset1.TargetChart = Me.weeklysalesareachrt
         '
@@ -563,7 +563,7 @@ Partial Class OwnerDashboard
         Me.Panel1.Controls.Add(Me.revenueareachrt)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(514, 2)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(509, 240)
         Me.Panel1.TabIndex = 3
@@ -574,11 +574,11 @@ Partial Class OwnerDashboard
         Me.revenueareachrt.Datasets.AddRange(New Guna.Charts.Interfaces.IGunaDataset() {Me.GunaLineDataset1})
         Me.revenueareachrt.Dock = System.Windows.Forms.DockStyle.Fill
         Me.revenueareachrt.Legend.Align = Guna.Charts.WinForms.ChartTextAlignment.Start
-        ChartFont25.FontName = "Arial"
-        Me.revenueareachrt.Legend.LabelFont = ChartFont25
+        ChartFont9.FontName = "Arial"
+        Me.revenueareachrt.Legend.LabelFont = ChartFont9
         Me.revenueareachrt.Legend.LabelForeColor = System.Drawing.Color.White
         Me.revenueareachrt.Location = New System.Drawing.Point(0, 0)
-        Me.revenueareachrt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.revenueareachrt.Margin = New System.Windows.Forms.Padding(2)
         Me.revenueareachrt.Name = "revenueareachrt"
         Me.revenueareachrt.PaletteCustomColors.BorderColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))})
         Me.revenueareachrt.PaletteCustomColors.FillColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))})
@@ -586,51 +586,51 @@ Partial Class OwnerDashboard
         Me.revenueareachrt.PaletteCustomColors.PointFillColors.AddRange(New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))})
         Me.revenueareachrt.Size = New System.Drawing.Size(509, 240)
         Me.revenueareachrt.TabIndex = 0
-        ChartFont26.FontName = "Arial"
-        ChartFont26.Size = 12
-        ChartFont26.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.revenueareachrt.Title.Font = ChartFont26
+        ChartFont10.FontName = "Arial"
+        ChartFont10.Size = 12
+        ChartFont10.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.revenueareachrt.Title.Font = ChartFont10
         Me.revenueareachrt.Title.Text = "Revenue Chart"
-        ChartFont27.FontName = "Arial"
-        Me.revenueareachrt.Tooltips.BodyFont = ChartFont27
-        ChartFont28.FontName = "Arial"
-        ChartFont28.Size = 9
-        ChartFont28.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
-        Me.revenueareachrt.Tooltips.TitleFont = ChartFont28
-        Me.revenueareachrt.XAxes.GridLines = Grid10
-        ChartFont29.FontName = "Arial"
-        Tick10.Font = ChartFont29
-        Tick10.ForeColor = System.Drawing.Color.White
-        Me.revenueareachrt.XAxes.Ticks = Tick10
-        Me.revenueareachrt.YAxes.GridLines = Grid11
-        ChartFont30.FontName = "Arial"
-        Tick11.Font = ChartFont30
-        Tick11.ForeColor = System.Drawing.Color.White
-        Me.revenueareachrt.YAxes.Ticks = Tick11
-        Me.revenueareachrt.ZAxes.GridLines = Grid12
-        ChartFont31.FontName = "Arial"
-        PointLabel4.Font = ChartFont31
-        Me.revenueareachrt.ZAxes.PointLabels = PointLabel4
-        ChartFont32.FontName = "Arial"
-        Tick12.Font = ChartFont32
-        Me.revenueareachrt.ZAxes.Ticks = Tick12
+        ChartFont11.FontName = "Arial"
+        Me.revenueareachrt.Tooltips.BodyFont = ChartFont11
+        ChartFont12.FontName = "Arial"
+        ChartFont12.Size = 9
+        ChartFont12.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.revenueareachrt.Tooltips.TitleFont = ChartFont12
+        Me.revenueareachrt.XAxes.GridLines = Grid4
+        ChartFont13.FontName = "Arial"
+        Tick4.Font = ChartFont13
+        Tick4.ForeColor = System.Drawing.Color.White
+        Me.revenueareachrt.XAxes.Ticks = Tick4
+        Me.revenueareachrt.YAxes.GridLines = Grid5
+        ChartFont14.FontName = "Arial"
+        Tick5.Font = ChartFont14
+        Tick5.ForeColor = System.Drawing.Color.White
+        Me.revenueareachrt.YAxes.Ticks = Tick5
+        Me.revenueareachrt.ZAxes.GridLines = Grid6
+        ChartFont15.FontName = "Arial"
+        PointLabel2.Font = ChartFont15
+        Me.revenueareachrt.ZAxes.PointLabels = PointLabel2
+        ChartFont16.FontName = "Arial"
+        Tick6.Font = ChartFont16
+        Me.revenueareachrt.ZAxes.Ticks = Tick6
         '
         'GunaLineDataset1
         '
         Me.GunaLineDataset1.BorderColor = System.Drawing.Color.Empty
-        LPoint1.Label = "Mon"
-        LPoint1.Y = 2567.0R
-        LPoint2.Label = "Tues"
-        LPoint2.Y = 3458.0R
-        LPoint3.Label = "Wed"
-        LPoint3.Y = 2344.0R
-        LPoint4.Label = "Thurs"
-        LPoint4.Y = 4785.0R
-        LPoint5.Label = "Fri"
-        LPoint5.Y = 5678.0R
-        LPoint6.Label = "Sat"
-        LPoint6.Y = 4572.0R
-        Me.GunaLineDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2, LPoint3, LPoint4, LPoint5, LPoint6})
+        LPoint7.Label = "Mon"
+        LPoint7.Y = 2567.0R
+        LPoint8.Label = "Tues"
+        LPoint8.Y = 3458.0R
+        LPoint9.Label = "Wed"
+        LPoint9.Y = 2344.0R
+        LPoint10.Label = "Thurs"
+        LPoint10.Y = 4785.0R
+        LPoint11.Label = "Fri"
+        LPoint11.Y = 5678.0R
+        LPoint12.Label = "Sat"
+        LPoint12.Y = 4572.0R
+        Me.GunaLineDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint7, LPoint8, LPoint9, LPoint10, LPoint11, LPoint12})
         Me.GunaLineDataset1.FillColor = System.Drawing.Color.Empty
         Me.GunaLineDataset1.Label = "Revenue Chart"
         Me.GunaLineDataset1.TargetChart = Me.revenueareachrt
@@ -640,7 +640,7 @@ Partial Class OwnerDashboard
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.TableLayoutPanel1)
         Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1029, 175)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
@@ -654,7 +654,7 @@ Partial Class OwnerDashboard
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -673,7 +673,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel2.Controls.Add(Me.welcomebacklb)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel2.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(730, 171)
         Me.Guna2Panel2.TabIndex = 0
@@ -683,12 +683,12 @@ Partial Class OwnerDashboard
         Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.namelb.AutoSize = True
         Me.namelb.BackColor = System.Drawing.Color.Transparent
-        Me.namelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelb.ForeColor = System.Drawing.SystemColors.Control
         Me.namelb.Location = New System.Drawing.Point(480, 64)
         Me.namelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelb.Name = "namelb"
-        Me.namelb.Size = New System.Drawing.Size(45, 17)
+        Me.namelb.Size = New System.Drawing.Size(48, 18)
         Me.namelb.TabIndex = 3
         Me.namelb.Text = "Name"
         '
@@ -743,7 +743,7 @@ Partial Class OwnerDashboard
         Me.Guna2Panel3.Controls.Add(Me.datelb)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(736, 2)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(291, 171)
         Me.Guna2Panel3.TabIndex = 1
@@ -767,7 +767,7 @@ Partial Class OwnerDashboard
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Location = New System.Drawing.Point(23, 95)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(36, 36)
         Me.PictureBox2.TabIndex = 7
@@ -779,7 +779,7 @@ Partial Class OwnerDashboard
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(23, 38)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 34)
         Me.PictureBox1.TabIndex = 6
@@ -807,7 +807,7 @@ Partial Class OwnerDashboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Guna2Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "OwnerDashboard"
         Me.Size = New System.Drawing.Size(1029, 570)
         Me.Guna2Panel1.ResumeLayout(False)

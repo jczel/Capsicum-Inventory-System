@@ -32,37 +32,61 @@ Public Class Form1login
 
 
         Try
-            Connect()
+            connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT * FROM USER_ACCOUNT WHERE username=@username AND password=@password"
+            query = "SELECT username, role, firstname, lastname FROM Users WHERE username=@username AND password=@password"
             cmd = New SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
             cmd.Parameters.AddWithValue("@password", passwordtxtbx.Text)
 
+
             Dim dr As SqlDataReader = cmd.ExecuteReader()
 
-            If dr.HasRows Then
-                MsgBox("Login successfully", MsgBoxStyle.Information)
+            If dr.Read() Then
+                LoggedUsername = dr("username").ToString()
+                LoggedRole = dr("role").ToString().Trim()
+                LoggedFirstName = dr("firstname").ToString()
+                LoggedLastName = dr("lastname").ToString()
+
+                dr.Close()
+                sqlconn.Close()
+
+                MessageBox.Show("Login success! ")
+
+                If LoggedRole = "Owner" Then
+                    Dim f As New Owner()
+                    f.Show()
+                    Me.Hide()
+                ElseIf LoggedRole = "Admin" Then
+                    Dim f As New Admin()
+                    f.Show()
+                    Me.Hide()
+                ElseIf LoggedRole = "Staff" Then
+                    Dim f As New Staff()
+                    f.Show()
+                    Me.Hide()
+                End If
 
             Else
-                MessageBox.Show("Invalid username or password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dr.Close()
+                sqlconn.Close()
+                MsgBox("Invalid username or password!", MsgBoxStyle.Critical)
             End If
-            dr.Close()
 
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Login Error: " & ex.Message)
         Finally
-            sqlconn.Close()
+            If sqlconn IsNot Nothing AndAlso sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
-
     End Sub
 
-    Private Sub createaccntlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles createaccntlinklb.LinkClicked
+    Private Sub createaccntlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) 
         CreateAccount.Show()
         Me.Hide()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-
+    End Sub
 End Class
