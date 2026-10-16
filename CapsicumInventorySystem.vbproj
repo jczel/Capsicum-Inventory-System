@@ -161,6 +161,7 @@
     <Compile Include="OwnerDashboard.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SessionModule.vb" />
     <Compile Include="Staff.Designer.vb">
       <DependentUpon>Staff.vb</DependentUpon>
     </Compile>

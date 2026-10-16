@@ -688,12 +688,12 @@ Partial Class AdminDashboard
         Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.namelb.AutoSize = True
         Me.namelb.BackColor = System.Drawing.Color.Transparent
-        Me.namelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelb.ForeColor = System.Drawing.SystemColors.Control
         Me.namelb.Location = New System.Drawing.Point(479, 64)
         Me.namelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelb.Name = "namelb"
-        Me.namelb.Size = New System.Drawing.Size(45, 17)
+        Me.namelb.Size = New System.Drawing.Size(48, 18)
         Me.namelb.TabIndex = 3
         Me.namelb.Text = "Name"
         '
