@@ -55,7 +55,7 @@ Partial Class StaffMenu
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Panel21 = New Guna.UI2.WinForms.Guna2Panel()
+
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel22 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button70 = New Guna.UI2.WinForms.Guna2Button()
