@@ -9,6 +9,9 @@
     End Sub
 
     Private Sub manageUserAccbttn_Click(sender As Object, e As EventArgs) Handles manageUserAccbttn.Click
-
+        Dim userRec As New UserRecords()
+        Guna2Panel5.Controls.Clear()
+        userRec.Dock = DockStyle.Fill
+        Guna2Panel5.Controls.Add(userRec)
     End Sub
 End Class
