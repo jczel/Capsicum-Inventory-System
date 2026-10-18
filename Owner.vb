@@ -10,4 +10,12 @@
 
     End Sub
 
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        Form1login.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Owner_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
+    End Sub
 End Class

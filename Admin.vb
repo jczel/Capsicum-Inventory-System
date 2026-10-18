@@ -14,4 +14,15 @@
         userRec.Dock = DockStyle.Fill
         Guna2Panel5.Controls.Add(userRec)
     End Sub
+
+    Private Sub logoutbttn_Click(sender As Object, e As EventArgs)
+        Form1login.Show()
+        Me.Hide()
+    End Sub
+
+
+
+    Private Sub Admin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
+    End Sub
 End Class
