@@ -59,7 +59,7 @@ Partial Class Admin
         '
         Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1264, 681)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class Admin
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1264, 681)
         Me.Guna2Panel1.TabIndex = 1
@@ -80,7 +80,7 @@ Partial Class Admin
         Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel1)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(231, 0)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(1033, 681)
         Me.Guna2Panel3.TabIndex = 1
@@ -93,7 +93,7 @@ Partial Class Admin
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel5, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.77778!))
@@ -126,7 +126,7 @@ Partial Class Admin
         Me.logopicturebx.FillColor = System.Drawing.Color.Transparent
         Me.logopicturebx.ImageRotate = 0!
         Me.logopicturebx.Location = New System.Drawing.Point(2, 34)
-        Me.logopicturebx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.logopicturebx.Margin = New System.Windows.Forms.Padding(2)
         Me.logopicturebx.Name = "logopicturebx"
         Me.logopicturebx.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.logopicturebx.Size = New System.Drawing.Size(66, 38)
@@ -148,7 +148,7 @@ Partial Class Admin
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(963, 34)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(53, 38)
         Me.Guna2Button7.TabIndex = 0
@@ -158,7 +158,7 @@ Partial Class Admin
         Me.rolepicturebx.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.rolepicturebx.ImageRotate = 0!
         Me.rolepicturebx.Location = New System.Drawing.Point(873, 22)
-        Me.rolepicturebx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rolepicturebx.Margin = New System.Windows.Forms.Padding(2)
         Me.rolepicturebx.Name = "rolepicturebx"
         Me.rolepicturebx.Size = New System.Drawing.Size(75, 60)
         Me.rolepicturebx.TabIndex = 1
@@ -196,7 +196,7 @@ Partial Class Admin
         '
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel5.Location = New System.Drawing.Point(2, 109)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.Size = New System.Drawing.Size(1029, 570)
         Me.Guna2Panel5.TabIndex = 1
@@ -208,7 +208,7 @@ Partial Class Admin
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(231, 681)
         Me.Guna2Panel2.TabIndex = 0
@@ -226,7 +226,7 @@ Partial Class Admin
         Me.TableLayoutPanel2.Controls.Add(Me.dashbttn, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 7
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
@@ -254,7 +254,7 @@ Partial Class Admin
         Me.logoutbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.logoutbttn.ImageSize = New System.Drawing.Size(30, 30)
         Me.logoutbttn.Location = New System.Drawing.Point(2, 447)
-        Me.logoutbttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.logoutbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.logoutbttn.Name = "logoutbttn"
         Me.logoutbttn.Size = New System.Drawing.Size(227, 85)
         Me.logoutbttn.TabIndex = 5
@@ -277,7 +277,7 @@ Partial Class Admin
         Me.manageinventorybttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.manageinventorybttn.ImageSize = New System.Drawing.Size(30, 30)
         Me.manageinventorybttn.Location = New System.Drawing.Point(2, 358)
-        Me.manageinventorybttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.manageinventorybttn.Margin = New System.Windows.Forms.Padding(2)
         Me.manageinventorybttn.Name = "manageinventorybttn"
         Me.manageinventorybttn.Size = New System.Drawing.Size(227, 85)
         Me.manageinventorybttn.TabIndex = 4
@@ -300,7 +300,7 @@ Partial Class Admin
         Me.productinfobttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.productinfobttn.ImageSize = New System.Drawing.Size(30, 30)
         Me.productinfobttn.Location = New System.Drawing.Point(2, 269)
-        Me.productinfobttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.productinfobttn.Margin = New System.Windows.Forms.Padding(2)
         Me.productinfobttn.Name = "productinfobttn"
         Me.productinfobttn.Size = New System.Drawing.Size(227, 85)
         Me.productinfobttn.TabIndex = 3
@@ -323,7 +323,7 @@ Partial Class Admin
         Me.manageUserAccbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.manageUserAccbttn.ImageSize = New System.Drawing.Size(30, 30)
         Me.manageUserAccbttn.Location = New System.Drawing.Point(2, 180)
-        Me.manageUserAccbttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.manageUserAccbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.manageUserAccbttn.Name = "manageUserAccbttn"
         Me.manageUserAccbttn.Size = New System.Drawing.Size(227, 85)
         Me.manageUserAccbttn.TabIndex = 2
@@ -337,7 +337,7 @@ Partial Class Admin
         Me.Guna2Panel6.Controls.Add(Me.PictureBox1)
         Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel6.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Panel6.TabIndex = 0
@@ -348,7 +348,7 @@ Partial Class Admin
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(70, 2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(87, 78)
         Me.PictureBox1.TabIndex = 1
@@ -369,7 +369,7 @@ Partial Class Admin
         Me.dashbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.dashbttn.ImageSize = New System.Drawing.Size(30, 30)
         Me.dashbttn.Location = New System.Drawing.Point(2, 91)
-        Me.dashbttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dashbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.dashbttn.Name = "dashbttn"
         Me.dashbttn.Size = New System.Drawing.Size(227, 85)
         Me.dashbttn.TabIndex = 1
@@ -385,7 +385,7 @@ Partial Class Admin
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Admin"
         Me.Text = "Admin"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
