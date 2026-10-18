@@ -192,6 +192,12 @@
     <Compile Include="Usermanagement.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserRecords.Designer.vb">
+      <DependentUpon>UserRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserRecords.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin.resx">
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usermanagement.resx">
       <DependentUpon>Usermanagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRecords.resx">
+      <DependentUpon>UserRecords.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
