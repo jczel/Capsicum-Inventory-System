@@ -99,7 +99,7 @@ Partial Class StaffMenu
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
+
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button11 = New Guna.UI2.WinForms.Guna2Button()
