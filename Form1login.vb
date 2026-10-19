@@ -35,7 +35,7 @@ Public Class Form1login
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT username, role, firstname, lastname FROM Users WHERE username=@username AND password=@password"
+            query = "SELECT username, role, firstname, lastname FROM UserAccount WHERE username=@username AND password=@password"
             cmd = New SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
             cmd.Parameters.AddWithValue("@password", passwordtxtbx.Text)
@@ -86,5 +86,9 @@ Public Class Form1login
 
     Private Sub Form1login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class
