@@ -329,5 +329,7 @@ Public Class Usermanagement
         e.Cancel = False
     End Sub
 
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
 
+    End Sub
 End Class
