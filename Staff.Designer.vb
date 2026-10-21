@@ -60,7 +60,7 @@ Partial Class Staff
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1264, 681)
         Me.Guna2Panel1.TabIndex = 3
@@ -70,7 +70,7 @@ Partial Class Staff
         Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel1)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(231, 0)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.Size = New System.Drawing.Size(1033, 681)
         Me.Guna2Panel3.TabIndex = 1
@@ -83,7 +83,7 @@ Partial Class Staff
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel5, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.77778!))
@@ -100,7 +100,7 @@ Partial Class Staff
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel4.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1029, 103)
         Me.Guna2Panel4.TabIndex = 0
@@ -120,7 +120,7 @@ Partial Class Staff
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(933, 28)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(45, 42)
         Me.Guna2Button7.TabIndex = 0
@@ -130,7 +130,7 @@ Partial Class Staff
         Me.Guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(841, 19)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(75, 60)
         Me.Guna2PictureBox1.TabIndex = 1
@@ -168,7 +168,7 @@ Partial Class Staff
         '
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel5.Location = New System.Drawing.Point(2, 109)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.Size = New System.Drawing.Size(1029, 570)
         Me.Guna2Panel5.TabIndex = 1
@@ -179,7 +179,7 @@ Partial Class Staff
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(231, 681)
         Me.Guna2Panel2.TabIndex = 0
@@ -197,7 +197,7 @@ Partial Class Staff
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 7
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
@@ -225,7 +225,7 @@ Partial Class Staff
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button1.Location = New System.Drawing.Point(2, 180)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Button1.TabIndex = 6
@@ -248,7 +248,7 @@ Partial Class Staff
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button5.Location = New System.Drawing.Point(2, 447)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Button5.TabIndex = 5
@@ -271,7 +271,7 @@ Partial Class Staff
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button4.Location = New System.Drawing.Point(2, 358)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Button4.TabIndex = 4
@@ -294,7 +294,7 @@ Partial Class Staff
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button3.Location = New System.Drawing.Point(2, 269)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Button3.TabIndex = 3
@@ -317,7 +317,7 @@ Partial Class Staff
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button2.Location = New System.Drawing.Point(2, 91)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Button2.TabIndex = 2
@@ -331,7 +331,7 @@ Partial Class Staff
         Me.Guna2Panel6.Controls.Add(Me.PictureBox1)
         Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel6.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.Size = New System.Drawing.Size(227, 85)
         Me.Guna2Panel6.TabIndex = 0
@@ -342,7 +342,7 @@ Partial Class Staff
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(74, 7)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(87, 79)
         Me.PictureBox1.TabIndex = 1
@@ -364,7 +364,7 @@ Partial Class Staff
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.Guna2Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Staff"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Staff"

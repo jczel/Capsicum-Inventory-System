@@ -332,4 +332,48 @@ Public Class Usermanagement
     Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
 
     End Sub
+
+    Private Sub firstname_TextChanged(sender As Object, e As EventArgs) Handles firstname.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub gendercmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gendercmbox.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub rolecmbbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles rolecmbbox.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub confirmpass_TextChanged(sender As Object, e As EventArgs) Handles confirmpass.TextChanged
+
+    End Sub
+
+    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
+
+    End Sub
+
+    Private Sub birthdate_ValueChanged(sender As Object, e As EventArgs) Handles birthdate.ValueChanged
+
+    End Sub
+
+    Private Sub username_TextChanged(sender As Object, e As EventArgs) Handles username.TextChanged
+
+    End Sub
+
+    Private Sub lastname_TextChanged(sender As Object, e As EventArgs) Handles lastname.TextChanged
+
+    End Sub
 End Class
