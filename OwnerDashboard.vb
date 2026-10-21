@@ -18,4 +18,8 @@
     Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
 
     End Sub
+
+    Private Sub todaysalesnumlb_Click(sender As Object, e As EventArgs) Handles todaysalesnumlb.Click
+
+    End Sub
 End Class

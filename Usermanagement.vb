@@ -345,35 +345,6 @@ Public Class Usermanagement
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
 
-    Private Sub gendercmbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gendercmbox.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub rolecmbbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles rolecmbbox.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub confirmpass_TextChanged(sender As Object, e As EventArgs) Handles confirmpass.TextChanged
-
-    End Sub
-
-    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
-
-    End Sub
-
-    Private Sub birthdate_ValueChanged(sender As Object, e As EventArgs) Handles birthdate.ValueChanged
-
-    End Sub
-
-    Private Sub username_TextChanged(sender As Object, e As EventArgs) Handles username.TextChanged
-
-    End Sub
-
-    Private Sub lastname_TextChanged(sender As Object, e As EventArgs) Handles lastname.TextChanged
-
-    End Sub
 End Class

@@ -3,7 +3,12 @@
 
     End Sub
 
-    Private Sub MenuManagement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Guna2DataGridView1.Rows.Add("1", "Burger", "5.99", "Available")
+
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class

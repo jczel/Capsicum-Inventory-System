@@ -29,12 +29,11 @@ Partial Class Staff
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
@@ -43,17 +42,17 @@ Partial Class Staff
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel6.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -95,9 +94,8 @@ Partial Class Staff
         '
         'Guna2Panel4
         '
-        Me.Guna2Panel4.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel4.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel4.Controls.Add(Me.Label2)
+        Me.Guna2Panel4.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel4.Controls.Add(Me.Label1)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
@@ -126,31 +124,6 @@ Partial Class Staff
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.Size = New System.Drawing.Size(45, 42)
         Me.Guna2Button7.TabIndex = 0
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(841, 19)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(75, 60)
-        Me.Guna2PictureBox1.TabIndex = 1
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(765, 51)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 19)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Staff"
         '
         'Label1
         '
@@ -212,6 +185,19 @@ Partial Class Staff
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.60508!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 681)
         Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 537)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(225, 141)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 8
+        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Button1
         '
@@ -361,18 +347,17 @@ Partial Class Staff
         Me.Guna2NotificationPaint1.Offset = New System.Drawing.Point(-7, 0)
         Me.Guna2NotificationPaint1.TargetControl = Me.Guna2Button7
         '
-        'Guna2PictureBox2
+        'Guna2PictureBox1
         '
-        Me.Guna2PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 825)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(340, 220)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox2.TabIndex = 8
-        Me.Guna2PictureBox2.TabStop = False
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(807, 25)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(113, 60)
+        Me.Guna2PictureBox1.TabIndex = 2
+        Me.Guna2PictureBox1.TabStop = False
         '
         'Staff
         '
@@ -390,12 +375,12 @@ Partial Class Staff
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel4.PerformLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel2.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel6.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -405,8 +390,6 @@ Partial Class Staff
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
@@ -420,4 +403,5 @@ Partial Class Staff
     Friend WithEvents Guna2NotificationPaint1 As Guna.UI2.WinForms.Guna2NotificationPaint
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
 End Class
