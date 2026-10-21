@@ -35,13 +35,17 @@ Partial Class Admin
         Me.dashboardlb = New System.Windows.Forms.Label()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.manageUserAccbttn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.dashbttn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.productinfobttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageUserAccbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageUserAccbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.productinfobttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageinventorybttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.logoutbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.dashbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.logoutbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -49,9 +53,10 @@ Partial Class Admin
         CType(Me.logopicturebx, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rolepicturebx, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2CustomGradientPanel1
@@ -212,78 +217,163 @@ Partial Class Admin
         Me.Guna2Panel2.Size = New System.Drawing.Size(231, 681)
         Me.Guna2Panel2.TabIndex = 0
         '
-        'TableLayoutPanel2
+        Me.dashbttn.Animated = True
+        Me.dashbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.dashbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.dashbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.dashbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.dashbttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dashbttn.FillColor = System.Drawing.Color.Transparent
+        Me.dashbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dashbttn.ForeColor = System.Drawing.Color.White
+        Me.dashbttn.Image = CType(resources.GetObject("dashbttn.Image"), System.Drawing.Image)
+        Me.dashbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.dashbttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.dashbttn.Location = New System.Drawing.Point(3, 140)
+        Me.dashbttn.Name = "dashbttn"
+        Me.dashbttn.Size = New System.Drawing.Size(340, 131)
+        Me.dashbttn.TabIndex = 1
+        Me.dashbttn.Text = "Dashboard"
+        Me.dashbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.dashbttn.UseTransparentBackground = True
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(346, 1048)
+        'manageinventorybttn
         '
-        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel2.ColumnCount = 1
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button2, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button1, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.manageUserAccbttn, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.dashbttn, 0, 1)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 7
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 681)
-        Me.TableLayoutPanel2.TabIndex = 0
+        Me.manageinventorybttn.Animated = True
+        Me.manageinventorybttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageinventorybttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageinventorybttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageinventorybttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageinventorybttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.manageinventorybttn.FillColor = System.Drawing.Color.Transparent
+        Me.manageinventorybttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.manageinventorybttn.ForeColor = System.Drawing.Color.White
+        Me.manageinventorybttn.Image = CType(resources.GetObject("manageinventorybttn.Image"), System.Drawing.Image)
+        Me.manageinventorybttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.manageinventorybttn.Location = New System.Drawing.Point(3, 551)
+        Me.manageinventorybttn.Name = "manageinventorybttn"
+        Me.manageinventorybttn.Size = New System.Drawing.Size(340, 131)
+        Me.manageinventorybttn.TabIndex = 4
+        Me.manageinventorybttn.Text = "Manage Inventory"
+        Me.manageinventorybttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.UseTransparentBackground = True
         '
-        'manageUserAccbttn
+        'productinfobttn
         '
-        Me.manageUserAccbttn.Animated = True
-        Me.manageUserAccbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageUserAccbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageUserAccbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageUserAccbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageUserAccbttn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.manageUserAccbttn.FillColor = System.Drawing.Color.Transparent
-        Me.manageUserAccbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.manageUserAccbttn.ForeColor = System.Drawing.Color.White
-        Me.manageUserAccbttn.Image = CType(resources.GetObject("manageUserAccbttn.Image"), System.Drawing.Image)
-        Me.manageUserAccbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.manageUserAccbttn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.manageUserAccbttn.Location = New System.Drawing.Point(2, 180)
-        Me.manageUserAccbttn.Margin = New System.Windows.Forms.Padding(2)
-        Me.manageUserAccbttn.Name = "manageUserAccbttn"
-        Me.manageUserAccbttn.Size = New System.Drawing.Size(227, 85)
-        Me.manageUserAccbttn.TabIndex = 2
-        Me.manageUserAccbttn.Text = "Manage Accounts"
-        Me.manageUserAccbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.manageUserAccbttn.UseTransparentBackground = True
+        Me.productinfobttn.Animated = True
+        Me.productinfobttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.productinfobttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.productinfobttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.productinfobttn.FillColor = System.Drawing.Color.Transparent
+        Me.productinfobttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.productinfobttn.ForeColor = System.Drawing.Color.White
+        Me.productinfobttn.Image = CType(resources.GetObject("productinfobttn.Image"), System.Drawing.Image)
+        Me.productinfobttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.productinfobttn.Location = New System.Drawing.Point(3, 414)
+        Me.productinfobttn.Name = "productinfobttn"
+        Me.productinfobttn.Size = New System.Drawing.Size(340, 131)
+        Me.productinfobttn.TabIndex = 3
+        Me.productinfobttn.Text = "Product Information"
+        Me.productinfobttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.UseTransparentBackground = True
         '
-        'Guna2Panel6
+        Me.manageinventorybttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.UseTransparentBackground = True
         '
-        Me.Guna2Panel6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel6.Controls.Add(Me.PictureBox1)
-        Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel6.Location = New System.Drawing.Point(2, 2)
-        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Panel6.TabIndex = 0
+        'productinfobttn
         '
-        'PictureBox1
+        Me.productinfobttn.Animated = True
+        Me.productinfobttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.productinfobttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.productinfobttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.productinfobttn.FillColor = System.Drawing.Color.Transparent
+        Me.productinfobttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.productinfobttn.ForeColor = System.Drawing.Color.White
+        Me.productinfobttn.Image = CType(resources.GetObject("productinfobttn.Image"), System.Drawing.Image)
+        Me.productinfobttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.productinfobttn.Location = New System.Drawing.Point(3, 414)
+        Me.productinfobttn.Name = "productinfobttn"
+        Me.productinfobttn.Size = New System.Drawing.Size(340, 131)
+        Me.productinfobttn.TabIndex = 3
+        Me.productinfobttn.Text = "Product Information"
+        Me.productinfobttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.UseTransparentBackground = True
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(70, 2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(87, 78)
+        Me.productinfobttn.Animated = True
+        Me.productinfobttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.productinfobttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.productinfobttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.productinfobttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.productinfobttn.FillColor = System.Drawing.Color.Transparent
+        Me.productinfobttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.productinfobttn.ForeColor = System.Drawing.Color.White
+        Me.productinfobttn.Image = CType(resources.GetObject("productinfobttn.Image"), System.Drawing.Image)
+        Me.productinfobttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.productinfobttn.Location = New System.Drawing.Point(3, 414)
+        Me.productinfobttn.Name = "productinfobttn"
+        Me.productinfobttn.Size = New System.Drawing.Size(340, 131)
+        Me.productinfobttn.TabIndex = 3
+        Me.productinfobttn.Text = "Product Information"
+        Me.productinfobttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.productinfobttn.UseTransparentBackground = True
+        Me.productinfobttn.TabIndex = 3
+        Me.productinfobttn.Text = "Product Information"
+        Me.productinfobttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.Animated = True
+        Me.manageinventorybttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageinventorybttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageinventorybttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageinventorybttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageinventorybttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.manageinventorybttn.FillColor = System.Drawing.Color.Transparent
+        Me.manageinventorybttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.manageinventorybttn.ForeColor = System.Drawing.Color.White
+        Me.manageinventorybttn.Image = CType(resources.GetObject("manageinventorybttn.Image"), System.Drawing.Image)
+        Me.manageinventorybttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.manageinventorybttn.Location = New System.Drawing.Point(3, 551)
+        Me.manageinventorybttn.Name = "manageinventorybttn"
+        Me.manageinventorybttn.Size = New System.Drawing.Size(340, 131)
+        Me.manageinventorybttn.TabIndex = 4
+        Me.manageinventorybttn.Text = "Manage Inventory"
+        Me.manageinventorybttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.manageinventorybttn.UseTransparentBackground = True
+        Me.PictureBox1.Size = New System.Drawing.Size(130, 120)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'dashbttn
+        'productinfobttn
+        '
+        Me.dashbttn.Animated = True
+        Me.dashbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.dashbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.dashbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.dashbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.dashbttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dashbttn.FillColor = System.Drawing.Color.Transparent
+        Me.dashbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dashbttn.ForeColor = System.Drawing.Color.White
+        Me.dashbttn.Image = CType(resources.GetObject("dashbttn.Image"), System.Drawing.Image)
+        Me.dashbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.dashbttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.dashbttn.Location = New System.Drawing.Point(3, 140)
+        Me.dashbttn.Name = "dashbttn"
+        Me.dashbttn.Size = New System.Drawing.Size(340, 131)
+        Me.dashbttn.TabIndex = 1
+        Me.dashbttn.Text = "Dashboard"
+        Me.dashbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.dashbttn.UseTransparentBackground = True
+        '
+        'manageinventorybttn
         '
         Me.dashbttn.Animated = True
         Me.dashbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -352,6 +442,55 @@ Partial Class Admin
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.UseTransparentBackground = True
         '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.logoutbttn, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.manageinventorybttn, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.productinfobttn, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.manageUserAccbttn, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.dashbttn, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox1, 0, 6)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 7
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.1579!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(346, 1048)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
+        Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+        Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+        Friend WithEvents dashbttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageinventorybttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents productinfobttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageUserAccbttn As Guna.UI2.WinForms.Guna2Button
+        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(3, 825)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(340, 220)
+        Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+        Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageinventorybttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents productinfobttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageUserAccbttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents dashbttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+        Me.Guna2PictureBox1.TabIndex = 7
+        Me.Guna2PictureBox1.TabStop = False
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -364,17 +503,19 @@ Partial Class Admin
         Me.Name = "Admin"
         Me.Text = "Admin"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel3.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.Guna2Panel4.ResumeLayout(False)
+        Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+        Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
+        Friend WithEvents dashbttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageinventorybttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents productinfobttn As Guna.UI2.WinForms.Guna2Button
+        Friend WithEvents manageUserAccbttn As Guna.UI2.WinForms.Guna2Button
         Me.Guna2Panel4.PerformLayout()
         CType(Me.logopicturebx, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rolepicturebx, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel2.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Guna2Panel6.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -389,10 +530,11 @@ Partial Class Admin
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents dashbttn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents manageinventorybttn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents productinfobttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents manageUserAccbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents dashboardlb As Label
     Friend WithEvents rolelb As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents rolepicturebx As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents logopicturebx As Guna.UI2.WinForms.Guna2CirclePictureBox
