@@ -8,14 +8,13 @@
 
     End Sub
 
-    Private Sub manageUserAccbttn_Click(sender As Object, e As EventArgs) Handles manageUserAccbttn.Click
-        Dim userRec As New UserRecords()
-        Guna2Panel5.Controls.Clear()
-        userRec.Dock = DockStyle.Fill
-        Guna2Panel5.Controls.Add(userRec)
+
+
+    Private Sub Admin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
     End Sub
 
-    Private Sub logoutbttn_Click(sender As Object, e As EventArgs)
+    Private Sub logoutbttn_Click_1(sender As Object, e As EventArgs)
         Form1login.Show()
         Me.Hide()
     End Sub
