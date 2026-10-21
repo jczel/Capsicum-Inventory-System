@@ -25,4 +25,8 @@
     Private Sub Admin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
     End Sub
+
+    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class
