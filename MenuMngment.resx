@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Guna2TextBox2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Guna2TextBox2.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAASdJREFUSEvd
+        lU0OgjAQhTmFd9ClZ3CttzExEcLKWNgRqguXXsONWy/hUbRveEUiWFoiMfFLmsDr/JTOtET/TbIvV3Gm
+        z4k63GOlHxjyDM3M0SycNCvnidJXG/TTgA1s6ebHVh2WjSBY7Xqr9JTT0WZXzKDJHO3gw2k3WI11ilV5
+        ovwR2Fh7ry95bUt/cItNAl9K3UhBq9XcKXkDH0niKjw6QxKY/aXkDWsC3zOlNrYVUURK3qAJ5AtMDEpt
+        ZAVm8DWYXv/RE9gtava8L3I2jK97i0Yv8thtCgYetIsE7ztoYMBVIcEx0rxYUHbTddk1z4b0fLXn9WUn
+        I9O3ND9OaOYm6Lo2K0dw0UKSACk8fi5s4Spo+4eDoIOT+PKehPJ3qZOMleAHRNETvWZnHfBaZFoAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -144,21 +159,6 @@
   <metadata name="Column20.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Guna2TextBox2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Guna2TextBox2.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAEnSURBVEhL3ZVNDoIwEIU5hXfQpWdwrbcxMRHCyljYEaoLl17DjVsv4VG0b3hFIlhaIjHxS5rA
-        6/yUzrRE/02yL1dxps+JOtxjpR8Y8gzNzNEsnDQr54nSVxv004ANbOnmx1Ydlo0gWO16q/SU09FmV8yg
-        yRzt4MNpN1iNdYpVeaL8EdhYe68veW1Lf3CLTQJfSt1IQavV3Cl5Ax9J4io8OkMSmP2l5A1rAt8zpTa2
-        FVFESt6gCeQLTAxKbWQFZvA1mF7/0RPYLWr2vC9yNoyve4tGL/LYbQoGHrSLBO87aGDAVSHBMdK8WFB2
-        03XZNc+G9Hy15/VlJyPTtzQ/TmjmJui6NitHcNFCkgApPH4ubOEqaPuHg6CDk/jynoTyd6mTjJXgB0TR
-        E71mZx3wWmRaAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="Guna2CirclePictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAfQCAYAAACaOMR5AAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s

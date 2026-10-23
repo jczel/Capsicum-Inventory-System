@@ -1,5 +1,9 @@
 ﻿Public Class AdminDashboard
+
     Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        connect()
+        userCounts(totaluserslb)
+        showUser(namelb, adminlb)
         Timer1.Start()
         namelb.Text = LoggedFirstName
     End Sub

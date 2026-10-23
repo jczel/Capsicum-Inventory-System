@@ -17,4 +17,14 @@ Module connection
         End Try
     End Sub
 
+    Public Sub userCounts(label As Label)
+        query = "SELECT COUNT(*) FROM UserAccount"
+
+        Using cmd As New SqlCommand(query, sqlconn)
+            Dim countUser As Integer = Convert.ToInt32(cmd.ExecuteScalar)
+
+            label.Text = countUser.ToString()
+        End Using
+    End Sub
+
 End Module
