@@ -59,6 +59,8 @@ Partial Class MenuMngment
         Me.quantitytxbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.SizeFilterCmbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -103,6 +105,7 @@ Partial Class MenuMngment
         Guna2TextBox2.SelectedText = ""
         Guna2TextBox2.Size = New System.Drawing.Size(332, 36)
         Guna2TextBox2.TabIndex = 22
+        Guna2TextBox2.TextOffset = New System.Drawing.Point(10, 0)
         '
         'Guna2CustomGradientPanel1
         '
@@ -547,6 +550,8 @@ Partial Class MenuMngment
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BorderRadius = 10
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
+        Me.Guna2Panel1.Controls.Add(Me.SizeFilterCmbx)
         Me.Guna2Panel1.Controls.Add(Me.Label3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button3)
         Me.Guna2Panel1.Controls.Add(Guna2TextBox2)
@@ -561,6 +566,45 @@ Partial Class MenuMngment
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
         Me.Guna2Panel1.Size = New System.Drawing.Size(1158, 81)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Button4.BorderRadius = 18
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Location = New System.Drawing.Point(506, 29)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(46, 36)
+        Me.Guna2Button4.TabIndex = 68
+        Me.Guna2Button4.Text = "+"
+        Me.Guna2Button4.TextOffset = New System.Drawing.Point(0, -1)
+        '
+        'SizeFilterCmbx
+        '
+        Me.SizeFilterCmbx.BackColor = System.Drawing.Color.Transparent
+        Me.SizeFilterCmbx.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SizeFilterCmbx.BorderRadius = 10
+        Me.SizeFilterCmbx.BorderThickness = 2
+        Me.SizeFilterCmbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.SizeFilterCmbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SizeFilterCmbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SizeFilterCmbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SizeFilterCmbx.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.SizeFilterCmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SizeFilterCmbx.ItemHeight = 30
+        Me.SizeFilterCmbx.Items.AddRange(New Object() {"All", "Small", "Medium", "Large"})
+        Me.SizeFilterCmbx.Location = New System.Drawing.Point(402, 29)
+        Me.SizeFilterCmbx.Name = "SizeFilterCmbx"
+        Me.SizeFilterCmbx.Size = New System.Drawing.Size(98, 36)
+        Me.SizeFilterCmbx.StartIndex = 0
+        Me.SizeFilterCmbx.TabIndex = 67
+        Me.SizeFilterCmbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
@@ -583,7 +627,7 @@ Partial Class MenuMngment
         Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
         Me.Guna2Button3.Location = New System.Drawing.Point(1010, 24)
         Me.Guna2Button3.Name = "Guna2Button3"
@@ -689,4 +733,6 @@ Partial Class MenuMngment
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Label3 As Label
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents SizeFilterCmbx As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
 End Class

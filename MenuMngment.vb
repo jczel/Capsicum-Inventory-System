@@ -9,7 +9,7 @@ Public Class MenuMngment
         Using cmd As New SqlCommand(query, sqlconn)
             Using dr = cmd.ExecuteReader()
                 While dr.Read
-                    PrdctTble.Rows.Add(dr("Producr"),
+                    PrdctTble.Rows.Add(dr("ProductID"),
                                        dr("ProductName"),
                                        dr("Category"),
                                        dr("Size"),
@@ -45,8 +45,18 @@ Public Class MenuMngment
         If Not quantitytxbx.Text = "" Then
             If Convert.ToInt32(quantitytxbx.Text) > maxQuantity Then
                 MsgBox("invalid input")
+                quantitytxbx.Clear()
             End If
         End If
 
+    End Sub
+
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+        Dim result As String = MsgBox(InputBox("Enter size"))
+
+        If MsgBoxResult.Ok Then
+            SizeFilterCmbx.Items.Add(result)
+        End If
     End Sub
 End Class
