@@ -246,11 +246,11 @@ Public Class Usermanagement
             End If
             MsgBox("Data added")
             savedata()
-                readdata()
-                Clear()
-                CreateNewAutoNumber()
-                AutoNumber()
-                sqlconn.Close()
+            readdata()
+            Clear()
+            CreateNewAutoNumber()
+            AutoNumber()
+            sqlconn.Close()
         Catch ex As Exception
             MsgBox("Error checking duplicate: " & ex.Message)
             Return
