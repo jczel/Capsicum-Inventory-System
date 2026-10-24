@@ -22,6 +22,7 @@ Partial Class Admin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
@@ -39,6 +40,7 @@ Partial Class Admin
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.NotifCount = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -306,6 +308,16 @@ Partial Class Admin
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
+        'NotifCount
+        '
+        Me.NotifCount.Alignment = Guna.UI2.WinForms.Enums.CustomContentAlignment.TopRight
+        Me.NotifCount.BorderRadius = 8
+        Me.NotifCount.BorderThickness = 0
+        Me.NotifCount.Location = New System.Drawing.Point(21, 3)
+        Me.NotifCount.Offset = New System.Drawing.Point(-7, 3)
+        Me.NotifCount.Size = New System.Drawing.Size(17, 17)
+        Me.NotifCount.TargetControl = Me.Guna2Button7
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -344,4 +356,5 @@ Partial Class Admin
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents NotifCount As Guna.UI2.WinForms.Guna2NotificationPaint
 End Class

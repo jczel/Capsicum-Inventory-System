@@ -2,8 +2,10 @@
 
     Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
-        userCounts(totaluserslb)
+        userCounts(totalusersnumlb)
+        productCounts(totalprodnumlb)
         showUser(namelb, adminlb)
+        totalStock(totalstocknumlb)
         Timer1.Start()
         namelb.Text = LoggedFirstName
     End Sub
@@ -14,7 +16,7 @@
 
     End Sub
 
-    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
+    Private Sub todaysnumofTransnumlb_Click(sender As Object, e As EventArgs) Handles todaysnumofTransnumlb.Click
 
     End Sub
 End Class

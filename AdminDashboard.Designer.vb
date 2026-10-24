@@ -231,10 +231,10 @@ Partial Class AdminDashboard
         Me.todaysnumofTransnumlb.BackColor = System.Drawing.Color.Transparent
         Me.todaysnumofTransnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.todaysnumofTransnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.todaysnumofTransnumlb.Location = New System.Drawing.Point(155, 78)
+        Me.todaysnumofTransnumlb.Location = New System.Drawing.Point(148, 78)
         Me.todaysnumofTransnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.todaysnumofTransnumlb.Name = "todaysnumofTransnumlb"
-        Me.todaysnumofTransnumlb.Size = New System.Drawing.Size(31, 35)
+        Me.todaysnumofTransnumlb.Size = New System.Drawing.Size(60, 35)
         Me.todaysnumofTransnumlb.TabIndex = 12
         Me.todaysnumofTransnumlb.Text = "6"
         Me.todaysnumofTransnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -293,12 +293,12 @@ Partial Class AdminDashboard
         Me.totalstocknumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalstocknumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalstocknumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalstocknumlb.Location = New System.Drawing.Point(163, 78)
+        Me.totalstocknumlb.Location = New System.Drawing.Point(139, 79)
         Me.totalstocknumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.totalstocknumlb.Name = "totalstocknumlb"
-        Me.totalstocknumlb.Size = New System.Drawing.Size(22, 32)
+        Me.totalstocknumlb.Size = New System.Drawing.Size(67, 32)
         Me.totalstocknumlb.TabIndex = 12
-        Me.totalstocknumlb.Text = "6"
+        Me.totalstocknumlb.Text = "0"
         Me.totalstocknumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totalstocklb
@@ -355,12 +355,12 @@ Partial Class AdminDashboard
         Me.totalprodnumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalprodnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalprodnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalprodnumlb.Location = New System.Drawing.Point(148, 77)
+        Me.totalprodnumlb.Location = New System.Drawing.Point(128, 77)
         Me.totalprodnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.totalprodnumlb.Name = "totalprodnumlb"
-        Me.totalprodnumlb.Size = New System.Drawing.Size(36, 35)
+        Me.totalprodnumlb.Size = New System.Drawing.Size(63, 35)
         Me.totalprodnumlb.TabIndex = 12
-        Me.totalprodnumlb.Text = "25"
+        Me.totalprodnumlb.Text = "0"
         Me.totalprodnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totalprodlb
@@ -417,12 +417,12 @@ Partial Class AdminDashboard
         Me.totalusersnumlb.BackColor = System.Drawing.Color.Transparent
         Me.totalusersnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalusersnumlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.totalusersnumlb.Location = New System.Drawing.Point(142, 77)
+        Me.totalusersnumlb.Location = New System.Drawing.Point(119, 75)
         Me.totalusersnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.totalusersnumlb.Name = "totalusersnumlb"
-        Me.totalusersnumlb.Size = New System.Drawing.Size(26, 35)
+        Me.totalusersnumlb.Size = New System.Drawing.Size(60, 35)
         Me.totalusersnumlb.TabIndex = 10
-        Me.totalusersnumlb.Text = "6"
+        Me.totalusersnumlb.Text = "0"
         Me.totalusersnumlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'totaluserslb
@@ -686,14 +686,13 @@ Partial Class AdminDashboard
         'namelb
         '
         Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.namelb.AutoSize = True
         Me.namelb.BackColor = System.Drawing.Color.Transparent
         Me.namelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelb.ForeColor = System.Drawing.SystemColors.Control
         Me.namelb.Location = New System.Drawing.Point(479, 64)
         Me.namelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelb.Name = "namelb"
-        Me.namelb.Size = New System.Drawing.Size(48, 18)
+        Me.namelb.Size = New System.Drawing.Size(159, 18)
         Me.namelb.TabIndex = 3
         Me.namelb.Text = "Name"
         '

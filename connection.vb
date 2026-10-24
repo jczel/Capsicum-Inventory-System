@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Deployment.Internal
 
 Module connection
     Public sqlconn As New SqlConnection
@@ -27,4 +28,22 @@ Module connection
         End Using
     End Sub
 
+    Public Sub productCounts(label As Label)
+        query = "SELECT COUNT(*) FROM Product"
+        Using cmd As New SqlCommand(query, sqlconn)
+            Dim countProduct As Integer = Convert.ToInt32(cmd.ExecuteScalar)
+
+            label.Text = countProduct.ToString()
+        End Using
+    End Sub
+
+    Public Sub totalStock(label As Label)
+        query = "SELECT ISNULL(SUM(Quantity), 0) FROM Product"
+
+        Using cmd As New SqlCommand(query, sqlconn)
+            Dim countStocks As Integer = Convert.ToInt32(cmd.ExecuteScalar)
+
+            label.Text = countStocks.ToString()
+        End Using
+    End Sub
 End Module
