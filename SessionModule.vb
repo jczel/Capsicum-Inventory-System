@@ -16,7 +16,7 @@ Module SessionModule
             Using dr = cmd.ExecuteReader()
 
                 While dr.Read
-                    name.Text = dr("first_name") & " " & dr("last_name")
+                    name.Text = dr("firstname") & " " & dr("lastname")
                     role.Text = dr("role")
                 End While
             End Using
