@@ -9,7 +9,7 @@ Public Class Usermanagement
         readdata()
         roless()
         gender()
-        AutoNumber()
+
     End Sub
 
     Sub CreateNewAutoNumber()
@@ -61,7 +61,7 @@ Public Class Usermanagement
         cmd = New SqlClient.SqlCommand(query, sqlconn)
         dr = cmd.ExecuteReader
         While dr.Read
-            Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE")
+            Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE", "View")
         End While
 
         cmd.Dispose()
@@ -71,8 +71,25 @@ Public Class Usermanagement
 
             Guna2DataGridView1.Rows(i).Height = 100
         Next
+    End Sub
 
+    Private Sub showProfile(Id As Integer)
+        query = "SELECT * FROM UserAccount WHERE UserID = @UserID"
 
+        Using cmd As New SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@UserID", Id)
+
+            Using dr = cmd.ExecuteReader()
+                While dr.Read
+                    Label8.Text = dr("username")
+                    Label6.Text = dr("UserID").ToString()
+                    Label9.Text = dr("role")
+                    Label5.Text = dr("firstname") & " " & dr("lastname")
+                    Label7.Text = dr("gender")
+                    Label10.Text = Convert.ToDateTime(dr("birthdate")).ToString("MMMM dd, yyyy")
+                End While
+            End Using
+        End Using
     End Sub
 
     Sub savedata()
@@ -89,6 +106,7 @@ Public Class Usermanagement
             .AddWithValue("@role", rolecmbbox.Text)
             .AddWithValue("@gender", gendercmbox.Text)
             .AddWithValue("@image", ms.ToArray())
+
 
         End With
         cmd.ExecuteNonQuery()
@@ -131,7 +149,7 @@ Public Class Usermanagement
 
     Sub viewimage()
         Dim img() As Byte
-        query = "Select * from UserAccount where ID = '" & userid.Text & "'"
+        query = "Select * from UserAccount where UserID = '" & userid.Text & "'"
         cmd = New SqlCommand(query, sqlconn)
         dr = cmd.ExecuteReader
         While dr.Read
@@ -149,7 +167,7 @@ Public Class Usermanagement
     End Sub
     Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
         Dim i As Integer = Guna2DataGridView1.CurrentRow.Index
-        If e.ColumnIndex = 8 Then
+        If e.ColumnIndex = 9 Then
             userid.Text = Guna2DataGridView1.Item(0, i).Value
             firstname.Text = Guna2DataGridView1.Item(1, i).Value
             lastname.Text = Guna2DataGridView1.Item(2, i).Value
@@ -166,6 +184,12 @@ Public Class Usermanagement
                 delete(Guna2DataGridView1.Item(0, i).Value)
                 readdata()
             End If
+        ElseIf e.ColumnIndex = 11 Then
+            Dim selectedRow As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
+            Dim rowId As Integer = Convert.ToString(selectedRow.Cells("Column1").Value)
+
+            showProfile(rowId)
+
         End If
 
     End Sub
@@ -328,23 +352,6 @@ Public Class Usermanagement
         e.ThrowException = False
         e.Cancel = False
     End Sub
-
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub firstname_TextChanged(sender As Object, e As EventArgs) Handles firstname.TextChanged
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
 
 
 End Class
