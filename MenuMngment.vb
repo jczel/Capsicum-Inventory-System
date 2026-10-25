@@ -67,22 +67,7 @@ Public Class MenuMngment
         End If
     End Sub
 
-    Private Sub SizeFilterCmbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SizeFilterCmbx.SelectedIndexChanged
-        Dim size As String = SizeFilterCmbx.SelectedItem
 
-        Select Case size
-            Case "Small"
-                sizeFilter("Small")
-            Case "Medium"
-                sizeFilter("Medium")
-            Case "Large"
-                sizeFilter("Large")
-            Case Else
-                connect()
-                productTable()
-        End Select
-
-    End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         countNotif += 1
