@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Usermanagement
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Usermanagement
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -36,18 +36,6 @@ Partial Class Usermanagement
         Me.gendercmbox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.firstname = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.userid = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -60,6 +48,17 @@ Partial Class Usermanagement
         Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.firstname = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.userid = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -68,10 +67,11 @@ Partial Class Usermanagement
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2PictureBox1
@@ -275,6 +275,80 @@ Partial Class Usermanagement
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 50
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "UserID"
+        Me.Column1.Name = "Column1"
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Firstname"
+        Me.Column11.MinimumWidth = 8
+        Me.Column11.Name = "Column11"
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Lastname"
+        Me.Column12.MinimumWidth = 8
+        Me.Column12.Name = "Column12"
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Username"
+        Me.Column13.MinimumWidth = 8
+        Me.Column13.Name = "Column13"
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Birthdate"
+        Me.Column14.MinimumWidth = 8
+        Me.Column14.Name = "Column14"
+        '
+        'Column15
+        '
+        Me.Column15.HeaderText = "Password"
+        Me.Column15.MinimumWidth = 8
+        Me.Column15.Name = "Column15"
+        '
+        'Column16
+        '
+        Me.Column16.HeaderText = "Role"
+        Me.Column16.MinimumWidth = 8
+        Me.Column16.Name = "Column16"
+        '
+        'Column17
+        '
+        Me.Column17.HeaderText = "Gender"
+        Me.Column17.MinimumWidth = 8
+        Me.Column17.Name = "Column17"
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Image"
+        Me.Column18.MinimumWidth = 8
+        Me.Column18.Name = "Column18"
+        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Edit"
+        Me.Column19.MinimumWidth = 8
+        Me.Column19.Name = "Column19"
+        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Delete"
+        Me.Column20.MinimumWidth = 8
+        Me.Column20.Name = "Column20"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "View"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -384,6 +458,7 @@ Partial Class Usermanagement
         Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox2.Location = New System.Drawing.Point(922, 33)
+        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PlaceholderText = "Search ID, name, username.."
         Me.Guna2TextBox2.SelectedText = ""
@@ -422,101 +497,6 @@ Partial Class Usermanagement
         Me.Label4.Size = New System.Drawing.Size(200, 25)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Manage Accounts"
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel1.BorderColor = System.Drawing.Color.Peru
-        Me.Guna2Panel1.BorderRadius = 20
-        Me.Guna2Panel1.BorderThickness = 4
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Controls.Add(Me.Label10)
-        Me.Guna2Panel1.Controls.Add(Me.Label9)
-        Me.Guna2Panel1.Controls.Add(Me.Label8)
-        Me.Guna2Panel1.Controls.Add(Me.Label7)
-        Me.Guna2Panel1.Controls.Add(Me.Label6)
-        Me.Guna2Panel1.Controls.Add(Me.Label5)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
-        Me.Guna2Panel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Panel1.Location = New System.Drawing.Point(1085, 90)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(269, 466)
-        Me.Guna2Panel1.TabIndex = 23
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "UserID"
-        Me.Column1.Name = "Column1"
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Firstname"
-        Me.Column11.MinimumWidth = 8
-        Me.Column11.Name = "Column11"
-        '
-        'Column12
-        '
-        Me.Column12.HeaderText = "Lastname"
-        Me.Column12.MinimumWidth = 8
-        Me.Column12.Name = "Column12"
-        '
-        'Column13
-        '
-        Me.Column13.HeaderText = "Username"
-        Me.Column13.MinimumWidth = 8
-        Me.Column13.Name = "Column13"
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Birthdate"
-        Me.Column14.MinimumWidth = 8
-        Me.Column14.Name = "Column14"
-        '
-        'Column15
-        '
-        Me.Column15.HeaderText = "Password"
-        Me.Column15.MinimumWidth = 8
-        Me.Column15.Name = "Column15"
-        '
-        'Column16
-        '
-        Me.Column16.HeaderText = "Role"
-        Me.Column16.MinimumWidth = 8
-        Me.Column16.Name = "Column16"
-        '
-        'Column17
-        '
-        Me.Column17.HeaderText = "Gender"
-        Me.Column17.MinimumWidth = 8
-        Me.Column17.Name = "Column17"
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Image"
-        Me.Column18.MinimumWidth = 8
-        Me.Column18.Name = "Column18"
-        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Edit"
-        Me.Column19.MinimumWidth = 8
-        Me.Column19.Name = "Column19"
-        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Delete"
-        Me.Column20.MinimumWidth = 8
-        Me.Column20.Name = "Column20"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "View"
-        Me.Column2.Name = "Column2"
-        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Guna2CirclePictureBox1
         '
@@ -611,6 +591,27 @@ Partial Class Usermanagement
         Me.Guna2Panel2.Size = New System.Drawing.Size(269, 188)
         Me.Guna2Panel2.TabIndex = 7
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel1.BorderColor = System.Drawing.Color.Peru
+        Me.Guna2Panel1.BorderRadius = 20
+        Me.Guna2Panel1.BorderThickness = 4
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
+        Me.Guna2Panel1.Controls.Add(Me.Label10)
+        Me.Guna2Panel1.Controls.Add(Me.Label9)
+        Me.Guna2Panel1.Controls.Add(Me.Label8)
+        Me.Guna2Panel1.Controls.Add(Me.Label7)
+        Me.Guna2Panel1.Controls.Add(Me.Label6)
+        Me.Guna2Panel1.Controls.Add(Me.Label5)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2Panel1.Location = New System.Drawing.Point(1085, 90)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(269, 466)
+        Me.Guna2Panel1.TabIndex = 23
+        '
         'Usermanagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -641,9 +642,9 @@ Partial Class Usermanagement
         Me.Text = "Usermanagement"
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
-        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -681,13 +682,13 @@ Partial Class Usermanagement
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
     Friend WithEvents Column2 As DataGridViewButtonColumn
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class
