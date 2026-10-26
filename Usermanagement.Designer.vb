@@ -23,9 +23,9 @@ Partial Class Usermanagement
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.lastname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.username = New Guna.UI2.WinForms.Guna2TextBox()
@@ -80,6 +80,7 @@ Partial Class Usermanagement
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(29, 44)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(183, 110)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 1
         Me.Guna2PictureBox1.TabStop = False
         '
@@ -101,7 +102,7 @@ Partial Class Usermanagement
         Me.lastname.PlaceholderText = "Lastname"
         Me.lastname.SelectedText = ""
         Me.lastname.Size = New System.Drawing.Size(183, 24)
-        Me.lastname.TabIndex = 3
+        Me.lastname.TabIndex = 2
         '
         'username
         '
@@ -121,7 +122,7 @@ Partial Class Usermanagement
         Me.username.PlaceholderText = "Username"
         Me.username.SelectedText = ""
         Me.username.Size = New System.Drawing.Size(183, 24)
-        Me.username.TabIndex = 4
+        Me.username.TabIndex = 3
         '
         'birthdate
         '
@@ -135,7 +136,7 @@ Partial Class Usermanagement
         Me.birthdate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.birthdate.Name = "birthdate"
         Me.birthdate.Size = New System.Drawing.Size(183, 27)
-        Me.birthdate.TabIndex = 5
+        Me.birthdate.TabIndex = 4
         Me.birthdate.Value = New Date(2026, 10, 16, 17, 53, 38, 520)
         '
         'password
@@ -156,7 +157,7 @@ Partial Class Usermanagement
         Me.password.PlaceholderText = "Password"
         Me.password.SelectedText = ""
         Me.password.Size = New System.Drawing.Size(183, 23)
-        Me.password.TabIndex = 6
+        Me.password.TabIndex = 5
         '
         'confirmpass
         '
@@ -176,7 +177,7 @@ Partial Class Usermanagement
         Me.confirmpass.PlaceholderText = "Confirm Password"
         Me.confirmpass.SelectedText = ""
         Me.confirmpass.Size = New System.Drawing.Size(183, 23)
-        Me.confirmpass.TabIndex = 7
+        Me.confirmpass.TabIndex = 6
         '
         'rolecmbbox
         '
@@ -193,7 +194,7 @@ Partial Class Usermanagement
         Me.rolecmbbox.Location = New System.Drawing.Point(29, 422)
         Me.rolecmbbox.Name = "rolecmbbox"
         Me.rolecmbbox.Size = New System.Drawing.Size(183, 36)
-        Me.rolecmbbox.TabIndex = 8
+        Me.rolecmbbox.TabIndex = 7
         '
         'gendercmbox
         '
@@ -210,7 +211,7 @@ Partial Class Usermanagement
         Me.gendercmbox.Location = New System.Drawing.Point(29, 476)
         Me.gendercmbox.Name = "gendercmbox"
         Me.gendercmbox.Size = New System.Drawing.Size(183, 36)
-        Me.gendercmbox.TabIndex = 9
+        Me.gendercmbox.TabIndex = 8
         '
         'Guna2Button1
         '
@@ -227,35 +228,35 @@ Partial Class Usermanagement
         Me.Guna2Button1.Location = New System.Drawing.Point(29, 518)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(183, 39)
-        Me.Guna2Button1.TabIndex = 10
+        Me.Guna2Button1.TabIndex = 9
         Me.Guna2Button1.Text = "Add"
         '
         'Guna2DataGridView1
         '
         Me.Guna2DataGridView1.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ColumnHeadersHeight = 40
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column11, Me.Column12, Me.Column13, Me.Column14, Me.Column15, Me.Column16, Me.Column17, Me.Column18, Me.Column19, Me.Column20, Me.Column2})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(245, 91)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
@@ -399,7 +400,7 @@ Partial Class Usermanagement
         Me.firstname.PlaceholderText = "Firstname"
         Me.firstname.SelectedText = ""
         Me.firstname.Size = New System.Drawing.Size(183, 24)
-        Me.firstname.TabIndex = 17
+        Me.firstname.TabIndex = 1
         '
         'userid
         '
@@ -411,10 +412,10 @@ Partial Class Usermanagement
         Me.userid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.userid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.userid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.userid.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.userid.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.userid.Location = New System.Drawing.Point(29, 162)
-        Me.userid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.userid.Margin = New System.Windows.Forms.Padding(4)
         Me.userid.Name = "userid"
         Me.userid.PlaceholderText = "User ID"
         Me.userid.SelectedText = ""
@@ -436,7 +437,7 @@ Partial Class Usermanagement
         Me.Guna2Button2.Location = New System.Drawing.Point(29, 563)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(183, 39)
-        Me.Guna2Button2.TabIndex = 19
+        Me.Guna2Button2.TabIndex = 10
         Me.Guna2Button2.Text = "Update"
         '
         'OpenFileDialog1
@@ -460,7 +461,7 @@ Partial Class Usermanagement
         Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox2.Location = New System.Drawing.Point(922, 33)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PlaceholderText = "Search ID, name, username.."
         Me.Guna2TextBox2.SelectedText = ""

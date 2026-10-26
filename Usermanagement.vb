@@ -6,131 +6,116 @@ Public Class Usermanagement
 
     Private Sub Usermanagement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         readdata()
         roless()
         gender()
-        'AutoNumber() tanggalin niyo na lang yung comment para gumana ulit
+        AutoNumber()
     End Sub
 
-    Sub CreateNewAutoNumber()
+    Sub AutoNumber()
         Try
-            Dim cmd As New SqlCommand
-            With cmd
-                .Connection = sqlconn
-                .CommandText = "SP_AutoNumber"
-                .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@pfx", "UID") '' Palitan nyo nalang si pfx
-            End With
-            cmd.ExecuteScalar()
+            query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
+            cmd = New SqlClient.SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@pfx", "UID")
+            Dim result As Object = cmd.ExecuteScalar()
             cmd.Dispose()
+
+            If IsDBNull(result) OrElse result Is Nothing Then
+                CreateNewAutoNumber()
+                query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
+                cmd = New SqlClient.SqlCommand(query, sqlconn)
+                cmd.Parameters.AddWithValue("@pfx", "UID")
+                userid.Text = Convert.ToString(cmd.ExecuteScalar())
+                cmd.Dispose()
+            Else
+                userid.Text = Convert.ToString(result)
+            End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
 
-
-    Sub AutoNumber()
-        Dim number As String
-        query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
-        cmd = New SqlClient.SqlCommand(query, sqlconn)
-        With cmd
-            .Parameters.AddWithValue("@Pfx", "UID") '' Palitan nyo nalang si pfx
-            If IsDBNull(cmd.ExecuteScalar) Then
-                CreateNewAutoNumber()
-                Dim number1 As String
-                query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
-                cmd = New SqlClient.SqlCommand(query, sqlconn)
-                With cmd
-                    .Parameters.AddWithValue("@pfx", "UID") '' Palitan nyo nalang si pfx
-                    number1 = Convert.ToString(cmd.ExecuteScalar)
-                    userid.Text = number1 ''palitan textboxname
-                End With
-                cmd.ExecuteNonQuery()
-                cmd.Dispose()
-            Else
-                number = Convert.ToString(cmd.ExecuteScalar)
-                userid.Text = number '' palitan textboxname
-            End If
-        End With
-        cmd.ExecuteNonQuery()
-        cmd.Dispose()
+    Sub CreateNewAutoNumber()
+        Try
+            Dim cmd2 As New SqlCommand("SP_AutoNumber", sqlconn)
+            cmd2.CommandType = CommandType.StoredProcedure
+            cmd2.Parameters.AddWithValue("@pfx", "UID")
+            cmd2.ExecuteNonQuery()
+            cmd2.Dispose()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
+
     Sub readdata()
-        Guna2DataGridView1.Rows.Clear()
-        query = "select * from UserAccount"
-        cmd = New SqlClient.SqlCommand(query, sqlconn)
-        dr = cmd.ExecuteReader
-        While dr.Read
-            Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE", "View")
-        End While
+        Try
+            Guna2DataGridView1.Rows.Clear()
+            query = "select * from UserAccount"
+            cmd = New SqlClient.SqlCommand(query, sqlconn)
+            dr = cmd.ExecuteReader()
+            While dr.Read
 
-        cmd.Dispose()
-        dr.Close()
+                Guna2DataGridView1.Rows.Add(dr("UserID").ToString(), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE")
+            End While
+            dr.Close()
+            cmd.Dispose()
 
-        For i = 0 To Guna2DataGridView1.Rows.Count - 1
-
-            Guna2DataGridView1.Rows(i).Height = 100
-        Next
-    End Sub
-
-    Private Sub showProfile(Id As Integer)
-        query = "SELECT * FROM UserAccount WHERE UserID = @UserID"
-
-        Using cmd As New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@UserID", Id)
-
-            Using dr = cmd.ExecuteReader()
-                While dr.Read
-                    Label8.Text = dr("username")
-                    Label6.Text = dr("UserID").ToString()
-                    Label9.Text = dr("role")
-                    Label5.Text = dr("firstname") & " " & dr("lastname")
-                    Label7.Text = dr("gender")
-                    Label10.Text = Convert.ToDateTime(dr("birthdate")).ToString("MMMM dd, yyyy")
-                End While
-            End Using
-        End Using
+            For i = 0 To Guna2DataGridView1.Rows.Count - 1
+                Guna2DataGridView1.Rows(i).Height = 100
+            Next
+        Catch ex As Exception
+            MsgBox("readdata error: " & ex.Message)
+        End Try
     End Sub
 
     Sub savedata()
-        Dim ms As New MemoryStream
-        Guna2PictureBox1.Image.Save(ms, Guna2PictureBox1.Image.RawFormat)
-        query = "Insert into UserAccount (UserID, firstname, lastname, username, birthdate, password, role, gender, image) values (@UserID, @firstname, @lastname, @username, @birthdate, @password, @role, @gender, @image);"
+        Dim imgData As Object = DBNull.Value
+        If Guna2PictureBox1.Image IsNot Nothing Then
+            Using ms As New MemoryStream
+                Guna2PictureBox1.Image.Save(ms, Guna2PictureBox1.Image.RawFormat)
+                imgData = ms.ToArray()
+            End Using
+        End If
+
+        query = "Insert into UserAccount (UserID, firstname, lastname, username, birthdate, password, role, gender, image) values (@UserID, @firstname, @lastname, @username, @birthdate, @password, @role, @gender, @image)"
         cmd = New SqlClient.SqlCommand(query, sqlconn)
         With cmd.Parameters
             .AddWithValue("@UserID", userid.Text)
             .AddWithValue("@firstname", firstname.Text)
             .AddWithValue("@lastname", lastname.Text)
             .AddWithValue("@username", username.Text)
+            .AddWithValue("@birthdate", birthdate.Value.Date)
             .AddWithValue("@password", password.Text)
             .AddWithValue("@role", rolecmbbox.Text)
             .AddWithValue("@gender", gendercmbox.Text)
-            .AddWithValue("@image", ms.ToArray())
-
-
+            .AddWithValue("@image", imgData) ' WALANG ()
         End With
         cmd.ExecuteNonQuery()
         cmd.Dispose()
-
     End Sub
 
     Sub updatedata()
-        Dim ms As New MemoryStream
-        Guna2PictureBox1.Image.Save(ms, Guna2PictureBox1.Image.RawFormat)
+        Dim imgData As Object = DBNull.Value
+        If Guna2PictureBox1.Image IsNot Nothing Then
+            Using ms As New MemoryStream
+                Guna2PictureBox1.Image.Save(ms, Guna2PictureBox1.Image.RawFormat)
+                imgData = ms.ToArray()
+            End Using
+        End If
 
-        query = "Update UserAccount set firstname = @firstname, username = @username, birthdate = @birthdate, 
-                password = @password, role = @role, gender = @gender, image = @image where UserID = '" & userid.Text & "'"
+        query = "Update UserAccount set firstname=@firstname, lastname=@lastname, username=@username, birthdate=@birthdate, password=@password, role=@role, gender=@gender, image=@image where UserID=@UserID"
         cmd = New SqlClient.SqlCommand(query, sqlconn)
         With cmd.Parameters
             .AddWithValue("@UserID", userid.Text)
             .AddWithValue("@firstname", firstname.Text)
             .AddWithValue("@lastname", lastname.Text)
             .AddWithValue("@username", username.Text)
+            .AddWithValue("@birthdate", birthdate.Value.Date)
             .AddWithValue("@password", password.Text)
             .AddWithValue("@role", rolecmbbox.Text)
             .AddWithValue("@gender", gendercmbox.Text)
-            .AddWithValue("@image", ms.ToArray())
-
+            .AddWithValue("@image", imgData)
         End With
         cmd.ExecuteNonQuery()
         cmd.Dispose()
@@ -139,64 +124,58 @@ Public Class Usermanagement
     Sub delete(ByVal id As String)
         query = "Delete From UserAccount where UserID = @UserID"
         cmd = New SqlCommand(query, sqlconn)
-        With cmd.Parameters
-            .AddWithValue("@UserID", id.ToString)
-        End With
+        cmd.Parameters.AddWithValue("@UserID", id)
         cmd.ExecuteNonQuery()
         cmd.Dispose()
-
     End Sub
 
     Sub viewimage()
-        Dim img() As Byte
-        query = "Select * from UserAccount where UserID = '" & userid.Text & "'"
-        cmd = New SqlCommand(query, sqlconn)
-        dr = cmd.ExecuteReader
-        While dr.Read
-            If IsDBNull(dr("image")) Then
-                Guna2PictureBox1.Image = Nothing
-            Else
-                img = dr("image")
-                Dim ms As New MemoryStream(img)
-                Guna2PictureBox1.Image = Image.FromStream(ms)
+        Try
+            Dim img() As Byte
+            query = "Select image from UserAccount where UserID = @UserID"
+            cmd = New SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@UserID", userid.Text)
+            dr = cmd.ExecuteReader()
+            If dr.Read() Then
+                If IsDBNull(dr("image")) Then
+                    Guna2PictureBox1.Image = Nothing
+                Else
+                    img = CType(dr("image"), Byte())
+                    Using ms As New MemoryStream(img)
+                        Guna2PictureBox1.Image = Image.FromStream(ms)
+                    End Using
+                End If
             End If
-        End While
-        dr.Close()
-        cmd.Dispose()
-
+            dr.Close()
+            cmd.Dispose()
+        Catch ex As Exception
+        End Try
     End Sub
+
     Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
-        Dim i As Integer = Guna2DataGridView1.CurrentRow.Index
+        If e.RowIndex < 0 Then Return
+        Dim i As Integer = e.RowIndex
         If e.ColumnIndex = 9 Then
-            userid.Text = Guna2DataGridView1.Item(0, i).Value
-            firstname.Text = Guna2DataGridView1.Item(1, i).Value
-            lastname.Text = Guna2DataGridView1.Item(2, i).Value
-            username.Text = Guna2DataGridView1.Item(3, i).Value
-            birthdate.Text = Guna2DataGridView1.Item(4, i).Value
-            password.Text = Guna2DataGridView1.Item(5, i).Value
-            confirmpass.Text = Guna2DataGridView1.Item(5, i).Value
-            rolecmbbox.Text = Guna2DataGridView1.Item(6, i).Value
-            gendercmbox.Text = Guna2DataGridView1.Item(7, i).Value
+            userid.Text = Guna2DataGridView1.Item(0, i).Value.ToString()
+            firstname.Text = Guna2DataGridView1.Item(1, i).Value.ToString()
+            lastname.Text = Guna2DataGridView1.Item(2, i).Value.ToString()
+            username.Text = Guna2DataGridView1.Item(3, i).Value.ToString()
+            birthdate.Text = Guna2DataGridView1.Item(4, i).Value.ToString()
+            password.Text = Guna2DataGridView1.Item(5, i).Value.ToString()
+            confirmpass.Text = Guna2DataGridView1.Item(5, i).Value.ToString()
+            rolecmbbox.Text = Guna2DataGridView1.Item(6, i).Value.ToString()
+            gendercmbox.Text = Guna2DataGridView1.Item(7, i).Value.ToString()
             viewimage()
         ElseIf e.ColumnIndex = 10 Then
             Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
             If confirm = MsgBoxResult.Yes Then
-                delete(Guna2DataGridView1.Item(0, i).Value)
+                delete(Guna2DataGridView1.Item(0, i).Value.ToString())
                 readdata()
+                AutoNumber()
             End If
-        ElseIf e.ColumnIndex = 11 Then
-            Dim selectedRow As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
-            Dim rowId As Integer = Convert.ToString(selectedRow.Cells("Column1").Value)
-
-            showProfile(rowId)
-
         End If
-
     End Sub
 
-    Private Sub Guna2TextBox7_TextChanged(sender As Object, e As EventArgs) Handles userid.TextChanged
-
-    End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         If firstname.Text = "" Then MsgBox("First Name Cannot be blank", MsgBoxStyle.Critical) : Return
@@ -206,6 +185,16 @@ Public Class Usermanagement
         If gendercmbox.Text = "" Then MsgBox("Select Gender", MsgBoxStyle.Critical) : Return
         If Guna2PictureBox1.Text Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
 
+
+        If Not Regex.IsMatch(firstname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("First Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
+
+        If Not Regex.IsMatch(lastname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("Last Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
 
         If password.Text <> confirmpass.Text Then
             MsgBox("Password and confirm password does not match", MsgBoxStyle.Critical)
@@ -284,7 +273,7 @@ Public Class Usermanagement
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
         OpenFileDialog1.FileName = ""
-        OpenFileDialog1.FileName = "IMAGES FILES ONLY (*.jpg,*.png,*.gif|*.jpg; *.png; *.gif"
+        OpenFileDialog1.FileName = "IMAGES FILES ONLY (.jpg,.png,*.gif|*.jpg; *.png; *.gif"
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             Guna2PictureBox1.Image = Image.FromFile(OpenFileDialog1.FileName)
         End If
@@ -296,6 +285,17 @@ Public Class Usermanagement
         If username.Text = "" Then MsgBox("Username Cannot be blank", MsgBoxStyle.Critical) : Return
         If password.Text = "" Then MsgBox("Password Cannot be blank", MsgBoxStyle.Critical) : Return
         If gendercmbox.Text = "" Then MsgBox("Select Gender", MsgBoxStyle.Critical) : Return
+
+        If Not Regex.IsMatch(firstname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("First Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
+
+        If Not Regex.IsMatch(lastname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("Last Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
+
 
 
         If password.Text <> confirmpass.Text Then
@@ -352,6 +352,5 @@ Public Class Usermanagement
         e.ThrowException = False
         e.Cancel = False
     End Sub
-
 
 End Class

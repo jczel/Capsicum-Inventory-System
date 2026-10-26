@@ -43,17 +43,18 @@ Partial Class MenuManagement
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.userid = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.firstname = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.prodid = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.prodname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.rolecmbbox = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.confirmpass = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.password = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.sizecmbx = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.quantity = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.price = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.catcmbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.categorylb = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -244,48 +245,48 @@ Partial Class MenuManagement
         Me.Guna2Button2.Location = New System.Drawing.Point(39, 575)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(183, 50)
-        Me.Guna2Button2.TabIndex = 52
+        Me.Guna2Button2.TabIndex = 7
         Me.Guna2Button2.Text = "Update"
         '
-        'userid
+        'prodid
         '
-        Me.userid.AutoRoundedCorners = True
-        Me.userid.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.userid.DefaultText = ""
-        Me.userid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.userid.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.userid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.userid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.userid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.userid.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.userid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.userid.Location = New System.Drawing.Point(39, 251)
-        Me.userid.Margin = New System.Windows.Forms.Padding(4)
-        Me.userid.Name = "userid"
-        Me.userid.PlaceholderText = "Product ID"
-        Me.userid.SelectedText = ""
-        Me.userid.Size = New System.Drawing.Size(183, 21)
-        Me.userid.TabIndex = 51
+        Me.prodid.AutoRoundedCorners = True
+        Me.prodid.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.prodid.DefaultText = ""
+        Me.prodid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.prodid.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.prodid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prodid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prodid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prodid.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.prodid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prodid.Location = New System.Drawing.Point(39, 251)
+        Me.prodid.Margin = New System.Windows.Forms.Padding(4)
+        Me.prodid.Name = "prodid"
+        Me.prodid.PlaceholderText = "Product ID"
+        Me.prodid.SelectedText = ""
+        Me.prodid.Size = New System.Drawing.Size(183, 21)
+        Me.prodid.TabIndex = 51
         '
-        'firstname
+        'prodname
         '
-        Me.firstname.AutoRoundedCorners = True
-        Me.firstname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.firstname.DefaultText = ""
-        Me.firstname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.firstname.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.firstname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.firstname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.firstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.firstname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.firstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.firstname.Location = New System.Drawing.Point(39, 281)
-        Me.firstname.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.firstname.Name = "firstname"
-        Me.firstname.PlaceholderText = "Product Name"
-        Me.firstname.SelectedText = ""
-        Me.firstname.Size = New System.Drawing.Size(183, 24)
-        Me.firstname.TabIndex = 50
+        Me.prodname.AutoRoundedCorners = True
+        Me.prodname.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.prodname.DefaultText = ""
+        Me.prodname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.prodname.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.prodname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prodname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prodname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prodname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.prodname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.prodname.Location = New System.Drawing.Point(39, 281)
+        Me.prodname.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.prodname.Name = "prodname"
+        Me.prodname.PlaceholderText = "Product Name"
+        Me.prodname.SelectedText = ""
+        Me.prodname.Size = New System.Drawing.Size(183, 24)
+        Me.prodname.TabIndex = 1
         '
         'Label4
         '
@@ -313,65 +314,65 @@ Partial Class MenuManagement
         Me.Guna2Button1.Location = New System.Drawing.Point(39, 513)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(183, 50)
-        Me.Guna2Button1.TabIndex = 45
+        Me.Guna2Button1.TabIndex = 6
         Me.Guna2Button1.Text = "Add"
         '
-        'rolecmbbox
+        'sizecmbx
         '
-        Me.rolecmbbox.AutoRoundedCorners = True
-        Me.rolecmbbox.BackColor = System.Drawing.Color.Transparent
-        Me.rolecmbbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.rolecmbbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.rolecmbbox.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.rolecmbbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.rolecmbbox.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.rolecmbbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.rolecmbbox.ItemHeight = 30
-        Me.rolecmbbox.Items.AddRange(New Object() {"Small", "Medium", "Large"})
-        Me.rolecmbbox.Location = New System.Drawing.Point(39, 382)
-        Me.rolecmbbox.Name = "rolecmbbox"
-        Me.rolecmbbox.Size = New System.Drawing.Size(183, 36)
-        Me.rolecmbbox.TabIndex = 43
+        Me.sizecmbx.AutoRoundedCorners = True
+        Me.sizecmbx.BackColor = System.Drawing.Color.Transparent
+        Me.sizecmbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.sizecmbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.sizecmbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.sizecmbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.sizecmbx.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.sizecmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.sizecmbx.ItemHeight = 30
+        Me.sizecmbx.Items.AddRange(New Object() {"Small", "Medium", "Large"})
+        Me.sizecmbx.Location = New System.Drawing.Point(39, 382)
+        Me.sizecmbx.Name = "sizecmbx"
+        Me.sizecmbx.Size = New System.Drawing.Size(183, 36)
+        Me.sizecmbx.TabIndex = 3
         '
-        'confirmpass
+        'quantity
         '
-        Me.confirmpass.AutoRoundedCorners = True
-        Me.confirmpass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.confirmpass.DefaultText = ""
-        Me.confirmpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.confirmpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.confirmpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.confirmpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.confirmpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.confirmpass.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.confirmpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.confirmpass.Location = New System.Drawing.Point(39, 467)
-        Me.confirmpass.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.confirmpass.Name = "confirmpass"
-        Me.confirmpass.PlaceholderText = "Quantity"
-        Me.confirmpass.SelectedText = ""
-        Me.confirmpass.Size = New System.Drawing.Size(183, 34)
-        Me.confirmpass.TabIndex = 42
+        Me.quantity.AutoRoundedCorners = True
+        Me.quantity.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.quantity.DefaultText = ""
+        Me.quantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.quantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.quantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.quantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.quantity.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.quantity.Location = New System.Drawing.Point(39, 467)
+        Me.quantity.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.quantity.Name = "quantity"
+        Me.quantity.PlaceholderText = "Quantity"
+        Me.quantity.SelectedText = ""
+        Me.quantity.Size = New System.Drawing.Size(183, 34)
+        Me.quantity.TabIndex = 5
         '
-        'password
+        'price
         '
-        Me.password.AutoRoundedCorners = True
-        Me.password.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.password.DefaultText = ""
-        Me.password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.password.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.password.Location = New System.Drawing.Point(39, 424)
-        Me.password.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.password.Name = "password"
-        Me.password.PlaceholderText = "Price"
-        Me.password.SelectedText = ""
-        Me.password.Size = New System.Drawing.Size(183, 34)
-        Me.password.TabIndex = 41
+        Me.price.AutoRoundedCorners = True
+        Me.price.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.price.DefaultText = ""
+        Me.price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.price.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.price.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.price.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.price.Location = New System.Drawing.Point(39, 424)
+        Me.price.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.price.Name = "price"
+        Me.price.PlaceholderText = "Price"
+        Me.price.SelectedText = ""
+        Me.price.Size = New System.Drawing.Size(183, 34)
+        Me.price.TabIndex = 4
         '
         'Guna2PictureBox1
         '
@@ -379,6 +380,7 @@ Partial Class MenuManagement
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(39, 107)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(183, 110)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 36
         Me.Guna2PictureBox1.TabStop = False
         '
@@ -393,22 +395,22 @@ Partial Class MenuManagement
         Me.Label5.TabIndex = 55
         Me.Label5.Text = "Manage Product "
         '
-        'Guna2ComboBox1
+        'catcmbx
         '
-        Me.Guna2ComboBox1.AutoRoundedCorners = True
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Small", "Medium", "Large"})
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(39, 326)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(183, 36)
-        Me.Guna2ComboBox1.TabIndex = 56
+        Me.catcmbx.AutoRoundedCorners = True
+        Me.catcmbx.BackColor = System.Drawing.Color.Transparent
+        Me.catcmbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.catcmbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.catcmbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.catcmbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.catcmbx.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.catcmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.catcmbx.ItemHeight = 30
+        Me.catcmbx.Items.AddRange(New Object() {"Hot Coffee", "Cold Coffee", "Tea", "Desserts"})
+        Me.catcmbx.Location = New System.Drawing.Point(39, 326)
+        Me.catcmbx.Name = "catcmbx"
+        Me.catcmbx.Size = New System.Drawing.Size(183, 36)
+        Me.catcmbx.TabIndex = 2
         '
         'categorylb
         '
@@ -420,6 +422,10 @@ Partial Class MenuManagement
         Me.categorylb.TabIndex = 57
         Me.categorylb.Text = "Category"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'MenuManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -427,19 +433,19 @@ Partial Class MenuManagement
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1370, 612)
         Me.Controls.Add(Me.categorylb)
-        Me.Controls.Add(Me.Guna2ComboBox1)
+        Me.Controls.Add(Me.catcmbx)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Guna2Button3)
         Me.Controls.Add(Me.Guna2TextBox2)
         Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.userid)
-        Me.Controls.Add(Me.firstname)
+        Me.Controls.Add(Me.prodid)
+        Me.Controls.Add(Me.prodname)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Guna2Button1)
-        Me.Controls.Add(Me.rolecmbbox)
-        Me.Controls.Add(Me.confirmpass)
-        Me.Controls.Add(Me.password)
+        Me.Controls.Add(Me.sizecmbx)
+        Me.Controls.Add(Me.quantity)
+        Me.Controls.Add(Me.price)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -460,17 +466,17 @@ Partial Class MenuManagement
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents userid As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents firstname As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents prodid As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents prodname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents rolecmbbox As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents confirmpass As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents password As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents sizecmbx As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents quantity As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents price As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents catcmbx As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents categorylb As Label
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
@@ -481,4 +487,5 @@ Partial Class MenuManagement
     Friend WithEvents Column18 As DataGridViewImageColumn
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
