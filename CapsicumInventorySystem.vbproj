@@ -121,11 +121,23 @@
       <DependentUpon>Form1login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ManageAcc.Designer.vb">
+      <DependentUpon>ManageAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
     </Compile>
     <Compile Include="Menu.vb">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.vb">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuManagement.Designer.vb">
       <DependentUpon>MenuManagement.vb</DependentUpon>
@@ -190,8 +202,14 @@
     <EmbeddedResource Include="Form1login.resx">
       <DependentUpon>Form1login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageAcc.resx">
+      <DependentUpon>ManageAcc.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuManagement.resx">
       <DependentUpon>MenuManagement.vb</DependentUpon>

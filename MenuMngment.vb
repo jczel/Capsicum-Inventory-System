@@ -26,30 +26,7 @@ Public Class MenuMngment
         End Using
     End Sub
 
-    Private Sub sizeFilter(size As String)
 
-        PrdctTble.Rows.Clear()
-
-        query = "SELECT * FROM product WHERE Size = @Size"
-
-        Using cmd As New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@Size", size)
-
-            Using dr = cmd.ExecuteReader()
-                While dr.Read
-                    PrdctTble.Rows.Add(dr("ProductID"),
-                                       dr("ProductName"),
-                                       dr("Category"),
-                                       dr("Size"),
-                                       dr("Price"),
-                                       dr("quantity"),
-                                       dr("Image"),
-                                            "Edit",
-                                            "Delete")
-                End While
-            End Using
-        End Using
-    End Sub
 
 
     Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -90,22 +67,7 @@ Public Class MenuMngment
         End If
     End Sub
 
-    Private Sub SizeFilterCmbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SizeFilterCmbx.SelectedIndexChanged
-        Dim size As String = SizeFilterCmbx.SelectedItem
 
-        Select Case size
-            Case "Small"
-                sizeFilter("Small")
-            Case "Medium"
-                sizeFilter("Medium")
-            Case "Large"
-                sizeFilter("Large")
-            Case Else
-                connect()
-                productTable()
-        End Select
-
-    End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         countNotif += 1
