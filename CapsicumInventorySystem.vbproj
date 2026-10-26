@@ -189,7 +189,9 @@
     <Compile Include="Usermanagement.Designer.vb">
       <DependentUpon>Usermanagement.vb</DependentUpon>
     </Compile>
-    <Compile Include="Usermanagement.vb" />
+    <Compile Include="Usermanagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin.resx">
