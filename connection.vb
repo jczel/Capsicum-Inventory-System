@@ -28,7 +28,7 @@ Module connection
         End Using
     End Sub
 
-    Public Sub productCounts(label As Label)
+    Public Sub productCount(label As Label)
         query = "SELECT COUNT(*) FROM Product"
         Using cmd As New SqlCommand(query, sqlconn)
             Dim countProduct As Integer = Convert.ToInt32(cmd.ExecuteScalar)
@@ -38,12 +38,32 @@ Module connection
     End Sub
 
     Public Sub totalStock(label As Label)
-        query = "SELECT ISNULL(SUM(Quantity), 0) FROM Product"
+        query = "SELECT ISNULL(SUM(CAST(Quantity AS INT)), 0) FROM Product"
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            Using cmd As New SqlClient.SqlCommand(query, sqlconn)
+                Dim countStocks As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                label.Text = countStocks.ToString()
+            End Using
+            sqlconn.Close()
+        Catch ex As Exception
+            label.Text = "0"
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
+    End Sub
 
-        Using cmd As New SqlCommand(query, sqlconn)
-            Dim countStocks As Integer = Convert.ToInt32(cmd.ExecuteScalar)
 
-            label.Text = countStocks.ToString()
-        End Using
+    Public Sub productCounts(label As Label)
+        query = "SELECT COUNT(*) FROM Product"
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            Using cmd As New SqlCommand(query, sqlconn)
+                Dim countProduct As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                label.Text = countProduct.ToString()
+            End Using
+            sqlconn.Close()
+        Catch
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
     End Sub
 End Module

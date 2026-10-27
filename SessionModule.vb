@@ -9,7 +9,7 @@ Module SessionModule
     Public countNotif As Integer = 0
 
     Public Sub showUser(name As Label, role As Label)
-
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         query = "SELECT * FROM UserAccount WHERE username = @username"
 
         Using cmd As New SqlCommand(query, sqlconn)

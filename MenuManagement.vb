@@ -15,7 +15,9 @@ Public Class MenuManagement
     End Sub
 
     Sub AutoNumber()
+
         Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
             query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@pfx", "PID")
@@ -38,7 +40,9 @@ Public Class MenuManagement
     End Sub
 
     Sub CreateNewAutoNumber()
+
         Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
             Dim cmd2 As New SqlCommand("SP_AutoNumber", sqlconn)
             cmd2.CommandType = CommandType.StoredProcedure
             cmd2.Parameters.AddWithValue("@pfx", "PID")
@@ -51,31 +55,29 @@ Public Class MenuManagement
 
     Sub readdata()
         Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
             Guna2DataGridView1.Rows.Clear()
-            query = "select * from Product"
+            query = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             dr = cmd.ExecuteReader()
-            While dr.Read
-
-                Guna2DataGridView1.Rows.Add(dr("ProductID").ToString(), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "EDIT", "DELETE")
+            While dr.Read()
+                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
             End While
             dr.Close()
             cmd.Dispose()
-
-            For i = 0 To Guna2DataGridView1.Rows.Count - 1
-                Guna2DataGridView1.Rows(i).Height = 100
-            Next
+            sqlconn.Close()
         Catch ex As Exception
             MsgBox("readdata error: " & ex.Message)
+            If dr IsNot Nothing AndAlso Not dr.IsClosed Then dr.Close()
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
     End Sub
 
     Sub savedata()
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         Dim imgData As Object = DBNull.Value
-
         If Guna2PictureBox1.Image IsNot Nothing Then
             Using ms As New IO.MemoryStream
-                ' CLONE the image first - this fixes GDI+ error
                 Using bmp As New Bitmap(Guna2PictureBox1.Image)
                     bmp.Save(ms, Imaging.ImageFormat.Png)
                 End Using
@@ -83,46 +85,64 @@ Public Class MenuManagement
             End Using
         End If
 
-        query = "Insert into Product (ProductID, productname, category, size, price, quantity, prodimage) values (@ProductID, @productname, @category, @size, @price, @quantity, @prodimage)"
-        cmd = New SqlClient.SqlCommand(query, sqlconn)
-        With cmd.Parameters
-            .AddWithValue("@ProductID", prodid.Text)
-            .AddWithValue("@productname", prodname.Text)
-            .AddWithValue("@category", catcmbx.Text)
-            .AddWithValue("@size", sizecmbx.Text)
-            .AddWithValue("@price", price.Text)
-            .AddWithValue("@quantity", quantity.Text)
-            .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
-        End With
-        cmd.ExecuteNonQuery()
-        cmd.Dispose()
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            query = "Insert into Product (ProductID, productname, category, size, price, quantity, prodimage) values (@ProductID, @productname, @category, @size, @price, @quantity, @prodimage)"
+            cmd = New SqlClient.SqlCommand(query, sqlconn)
+            With cmd.Parameters
+                .AddWithValue("@ProductID", prodid.Text)
+                .AddWithValue("@productname", prodname.Text)
+                .AddWithValue("@category", catcmbx.Text)
+                .AddWithValue("@size", sizecmbx.Text)
+                .AddWithValue("@price", price.Text)
+                .AddWithValue("@quantity", quantity.Text)
+                .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
+            End With
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            sqlconn.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
     End Sub
 
     Sub updatedata()
+
         Dim imgData As Object = DBNull.Value
         If Guna2PictureBox1.Image IsNot Nothing Then
             Using ms As New IO.MemoryStream
-                Guna2PictureBox1.Image.Save(ms, Imaging.ImageFormat.Png)
+                Using bmp As New Bitmap(Guna2PictureBox1.Image)
+                    bmp.Save(ms, Imaging.ImageFormat.Png)
+                End Using
                 imgData = ms.ToArray()
             End Using
         End If
 
-        query = "Update Product set productname=@producttname, category=@category, size=@size, price=@price, quantity=@quantity, role=@role, prodimage=@prodimage where ProductID=@ProductID"
-        cmd = New SqlClient.SqlCommand(query, sqlconn)
-        With cmd.Parameters
-            .AddWithValue("@ProductID", prodid.Text)
-            .AddWithValue("@productname", prodname.Text)
-            .AddWithValue("@category", catcmbx.Text)
-            .AddWithValue("@size", sizecmbx.Text)
-            .AddWithValue("@price", price.Text)
-            .AddWithValue("@quantity", quantity.Text)
-            .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
-        End With
-        cmd.ExecuteNonQuery()
-        cmd.Dispose()
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            query = "Update Product set productname=@productname, category=@category, size=@size, price=@price, quantity=@quantity, prodimage=@prodimage Where ProductID=@ProductID"
+            cmd = New SqlClient.SqlCommand(query, sqlconn)
+            With cmd.Parameters
+                .AddWithValue("@ProductID", prodid.Text)
+                .AddWithValue("@productname", prodname.Text)
+                .AddWithValue("@category", catcmbx.Text)
+                .AddWithValue("@size", sizecmbx.Text)
+                .AddWithValue("@price", price.Text)
+                .AddWithValue("@quantity", quantity.Text)
+                .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
+            End With
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            sqlconn.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
     End Sub
 
     Sub delete(ByVal id As String)
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         query = "Delete From Product where ProductID = @ProductID"
         cmd = New SqlCommand(query, sqlconn)
         cmd.Parameters.AddWithValue("@ProductID", id)
@@ -131,6 +151,7 @@ Public Class MenuManagement
     End Sub
 
     Sub viewimage()
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         Try
             Dim img() As Byte
             query = "Select prodimage from Product where ProductID = @ProductID"
@@ -156,7 +177,7 @@ Public Class MenuManagement
     Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
         If e.RowIndex < 0 Then Return
         Dim i As Integer = e.RowIndex
-        If e.ColumnIndex = 9 Then
+        If e.ColumnIndex = 7 Then
             prodid.Text = Guna2DataGridView1.Item(0, i).Value.ToString()
             prodname.Text = Guna2DataGridView1.Item(1, i).Value.ToString()
             catcmbx.Text = Guna2DataGridView1.Item(2, i).Value.ToString()
@@ -164,7 +185,7 @@ Public Class MenuManagement
             price.Text = Guna2DataGridView1.Item(4, i).Value.ToString()
             quantity.Text = Guna2DataGridView1.Item(5, i).Value.ToString()
             viewimage()
-        ElseIf e.ColumnIndex = 10 Then
+        ElseIf e.ColumnIndex = 8 Then
             Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
             If confirm = MsgBoxResult.Yes Then
                 delete(Guna2DataGridView1.Item(0, i).Value.ToString())
