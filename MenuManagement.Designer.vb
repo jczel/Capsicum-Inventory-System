@@ -23,23 +23,14 @@ Partial Class MenuManagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -55,6 +46,15 @@ Partial Class MenuManagement
         Me.catcmbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.categorylb = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -65,7 +65,7 @@ Partial Class MenuManagement
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(-61, 280)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 13)
+        Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 35
         Me.Label3.Text = "Birthdate"
         '
@@ -97,29 +97,29 @@ Partial Class MenuManagement
         'Guna2DataGridView1
         '
         Me.Guna2DataGridView1.AllowUserToResizeColumns = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ColumnHeadersHeight = 40
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column11, Me.Column2, Me.Column12, Me.Column13, Me.Column14, Me.Column18, Me.Column19, Me.Column20})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(293, 107)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
@@ -138,61 +138,6 @@ Partial Class MenuManagement
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 100
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Product ID"
-        Me.Column1.Name = "Column1"
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Product Name"
-        Me.Column11.MinimumWidth = 8
-        Me.Column11.Name = "Column11"
-        Me.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Category"
-        Me.Column2.Name = "Column2"
-        '
-        'Column12
-        '
-        Me.Column12.HeaderText = "Size"
-        Me.Column12.MinimumWidth = 8
-        Me.Column12.Name = "Column12"
-        '
-        'Column13
-        '
-        Me.Column13.HeaderText = "Price"
-        Me.Column13.MinimumWidth = 8
-        Me.Column13.Name = "Column13"
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Quantity"
-        Me.Column14.MinimumWidth = 8
-        Me.Column14.Name = "Column14"
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Image"
-        Me.Column18.MinimumWidth = 8
-        Me.Column18.Name = "Column18"
-        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Edit"
-        Me.Column19.MinimumWidth = 8
-        Me.Column19.Name = "Column19"
-        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Delete"
-        Me.Column20.MinimumWidth = 8
-        Me.Column20.Name = "Column20"
         '
         'Guna2Button3
         '
@@ -257,13 +202,15 @@ Partial Class MenuManagement
         Me.prodid.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.prodid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.prodid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.prodid.Enabled = False
         Me.prodid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.prodid.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.prodid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.prodid.Location = New System.Drawing.Point(39, 251)
-        Me.prodid.Margin = New System.Windows.Forms.Padding(4)
+        Me.prodid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.prodid.Name = "prodid"
         Me.prodid.PlaceholderText = "Product ID"
+        Me.prodid.ReadOnly = True
         Me.prodid.SelectedText = ""
         Me.prodid.Size = New System.Drawing.Size(183, 21)
         Me.prodid.TabIndex = 51
@@ -426,6 +373,62 @@ Partial Class MenuManagement
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Product ID"
+        Me.Column1.Name = "Column1"
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Product Name"
+        Me.Column11.MinimumWidth = 8
+        Me.Column11.Name = "Column11"
+        Me.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Category"
+        Me.Column2.Name = "Column2"
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Size"
+        Me.Column12.MinimumWidth = 8
+        Me.Column12.Name = "Column12"
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Price"
+        Me.Column13.MinimumWidth = 8
+        Me.Column13.Name = "Column13"
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Quantity"
+        Me.Column14.MinimumWidth = 8
+        Me.Column14.Name = "Column14"
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Image"
+        Me.Column18.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.Column18.MinimumWidth = 8
+        Me.Column18.Name = "Column18"
+        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Edit"
+        Me.Column19.MinimumWidth = 8
+        Me.Column19.Name = "Column19"
+        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Delete"
+        Me.Column20.MinimumWidth = 8
+        Me.Column20.Name = "Column20"
+        '
         'MenuManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -478,6 +481,7 @@ Partial Class MenuManagement
     Friend WithEvents Label5 As Label
     Friend WithEvents catcmbx As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents categorylb As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
@@ -487,5 +491,4 @@ Partial Class MenuManagement
     Friend WithEvents Column18 As DataGridViewImageColumn
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

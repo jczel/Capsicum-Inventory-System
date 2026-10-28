@@ -61,7 +61,7 @@ Public Class MenuManagement
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             dr = cmd.ExecuteReader()
             While dr.Read()
-                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
+                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "EDIT", "DELETE")
             End While
             dr.Close()
             cmd.Dispose()
@@ -71,6 +71,8 @@ Public Class MenuManagement
             If dr IsNot Nothing AndAlso Not dr.IsClosed Then dr.Close()
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
+
+        SearchProduct("")
     End Sub
 
     Sub savedata()
@@ -199,7 +201,7 @@ Public Class MenuManagement
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         If prodname.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If catcmbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
-        If sizecmbx.Text = "" Then MsgBox("Choose Size", MsgBoxStyle.Critical) : Return
+
         If price.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
         If quantity.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
         If Guna2PictureBox1.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
@@ -256,7 +258,7 @@ Public Class MenuManagement
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         If prodname.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If catcmbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
-        If sizecmbx.Text = "" Then MsgBox("Choose Size", MsgBoxStyle.Critical) : Return
+
         If price.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
         If quantity.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
         If Guna2PictureBox1.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
@@ -283,9 +285,10 @@ Public Class MenuManagement
             Return
         End If
         MsgBox("Data added")
-        savedata()
+        updatedata()
         readdata()
         Clear()
+        MsgBox("Data Updated")
         AutoNumber()
         sqlconn.Close()
 
@@ -313,9 +316,60 @@ Public Class MenuManagement
         Guna2PictureBox1.Image = Nothing
     End Sub
 
+    Sub SearchProduct(keyword As String)
+        Dim connStr As String = "Server = .\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+
+
+        Try
+            Guna2DataGridView1.Rows.Clear()
+
+            Using sqlconn As New SqlClient.SqlConnection(connStr)
+                sqlconn.Open()
+
+                Dim q As String
+                If keyword.Trim() = "" Then
+                    q = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product"
+                    Using cmd As New SqlClient.SqlCommand(q, sqlconn)
+                        Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                            While dr.Read()
+                                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
+                            End While
+                        End Using
+                    End Using
+                Else
+                    q = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product 
+                     WHERE ProductID LIKE @k OR productname LIKE @k OR category LIKE @k"
+                    Using cmd As New SqlClient.SqlCommand(q, sqlconn)
+                        cmd.Parameters.AddWithValue("@k", "%" & keyword.Trim() & "%")
+                        Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                            While dr.Read()
+                                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
+                            End While
+                        End Using
+                    End Using
+                End If
+            End Using
+
+        Catch ex As Exception
+            MsgBox("SearchProduct: " & ex.Message)
+        End Try
+    End Sub
+
+
+
+
+
+
     Private Sub Guna2DataGridView1_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles Guna2DataGridView1.DataError
         e.ThrowException = False
         e.Cancel = False
     End Sub
 
+    Private Sub prodid_TextChanged(sender As Object, e As EventArgs) Handles prodid.TextChanged
+
+    End Sub
+
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+        SearchProduct(Guna2TextBox2.Text)
+    End Sub
 End Class

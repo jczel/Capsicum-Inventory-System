@@ -49,6 +49,7 @@ Public Class Usermanagement
     End Sub
 
     Sub readdata()
+        SearchUser("")
         Try
             Guna2DataGridView1.Rows.Clear()
             query = "select * from UserAccount"
@@ -67,6 +68,8 @@ Public Class Usermanagement
         Catch ex As Exception
             MsgBox("readdata error: " & ex.Message)
         End Try
+
+
     End Sub
 
     Sub savedata()
@@ -279,6 +282,38 @@ Public Class Usermanagement
         End If
     End Sub
 
+
+    Sub SearchUser(keyword As String)
+        Dim connStr As String = "Server = .\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+
+        Try
+            Guna2DataGridView1.Rows.Clear()
+
+            Using sqlconn As New SqlClient.SqlConnection(connStr)
+                sqlconn.Open()
+
+                query = "SELECT UserID, username, firstname, lastname, role, gender, birthdate, password, image FROM UserAccount 
+                     WHERE UserID LIKE @k OR username LIKE @k OR firstname LIKE @k OR lastname LIKE @k"
+
+                Using cmd As New SqlClient.SqlCommand(query, sqlconn)
+                    cmd.Parameters.AddWithValue("@k", "%" & keyword & "%")
+
+                    Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                        While dr.Read()
+                            Guna2DataGridView1.Rows.Add(dr("UserID").ToString(), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE")
+                        End While
+                    End Using
+                End Using
+            End Using
+
+        Catch ex As Exception
+            MsgBox("SearchUser: " & ex.Message)
+        End Try
+    End Sub
+
+
+
+
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         If firstname.Text = "" Then MsgBox("First Name Cannot be blank", MsgBoxStyle.Critical) : Return
         If lastname.Text = "" Then MsgBox("Last Name Cannot be blank", MsgBoxStyle.Critical) : Return
@@ -353,4 +388,7 @@ Public Class Usermanagement
         e.Cancel = False
     End Sub
 
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+        SearchUser(Guna2TextBox2.Text)
+    End Sub
 End Class

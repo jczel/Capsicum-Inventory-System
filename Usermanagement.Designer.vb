@@ -36,18 +36,6 @@ Partial Class Usermanagement
         Me.gendercmbox = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -68,6 +56,18 @@ Partial Class Usermanagement
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
@@ -276,82 +276,6 @@ Partial Class Usermanagement
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 50
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "UserID"
-        Me.Column1.MinimumWidth = 8
-        Me.Column1.Name = "Column1"
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Firstname"
-        Me.Column11.MinimumWidth = 8
-        Me.Column11.Name = "Column11"
-        '
-        'Column12
-        '
-        Me.Column12.HeaderText = "Lastname"
-        Me.Column12.MinimumWidth = 8
-        Me.Column12.Name = "Column12"
-        '
-        'Column13
-        '
-        Me.Column13.HeaderText = "Username"
-        Me.Column13.MinimumWidth = 8
-        Me.Column13.Name = "Column13"
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Birthdate"
-        Me.Column14.MinimumWidth = 8
-        Me.Column14.Name = "Column14"
-        '
-        'Column15
-        '
-        Me.Column15.HeaderText = "Password"
-        Me.Column15.MinimumWidth = 8
-        Me.Column15.Name = "Column15"
-        '
-        'Column16
-        '
-        Me.Column16.HeaderText = "Role"
-        Me.Column16.MinimumWidth = 8
-        Me.Column16.Name = "Column16"
-        '
-        'Column17
-        '
-        Me.Column17.HeaderText = "Gender"
-        Me.Column17.MinimumWidth = 8
-        Me.Column17.Name = "Column17"
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Image"
-        Me.Column18.MinimumWidth = 8
-        Me.Column18.Name = "Column18"
-        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Edit"
-        Me.Column19.MinimumWidth = 8
-        Me.Column19.Name = "Column19"
-        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Delete"
-        Me.Column20.MinimumWidth = 8
-        Me.Column20.Name = "Column20"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "View"
-        Me.Column2.MinimumWidth = 8
-        Me.Column2.Name = "Column2"
-        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -378,7 +302,7 @@ Partial Class Usermanagement
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(35, 291)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 13)
+        Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Birthdate"
         '
@@ -411,11 +335,12 @@ Partial Class Usermanagement
         Me.userid.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.userid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.userid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.userid.Enabled = False
         Me.userid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.userid.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.userid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.userid.Location = New System.Drawing.Point(29, 162)
-        Me.userid.Margin = New System.Windows.Forms.Padding(4)
+        Me.userid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.userid.Name = "userid"
         Me.userid.PlaceholderText = "User ID"
         Me.userid.SelectedText = ""
@@ -615,6 +540,82 @@ Partial Class Usermanagement
         Me.Guna2CirclePictureBox1.TabIndex = 0
         Me.Guna2CirclePictureBox1.TabStop = False
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "UserID"
+        Me.Column1.MinimumWidth = 8
+        Me.Column1.Name = "Column1"
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Firstname"
+        Me.Column11.MinimumWidth = 8
+        Me.Column11.Name = "Column11"
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Lastname"
+        Me.Column12.MinimumWidth = 8
+        Me.Column12.Name = "Column12"
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Username"
+        Me.Column13.MinimumWidth = 8
+        Me.Column13.Name = "Column13"
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Birthdate"
+        Me.Column14.MinimumWidth = 8
+        Me.Column14.Name = "Column14"
+        '
+        'Column15
+        '
+        Me.Column15.HeaderText = "Password"
+        Me.Column15.MinimumWidth = 8
+        Me.Column15.Name = "Column15"
+        '
+        'Column16
+        '
+        Me.Column16.HeaderText = "Role"
+        Me.Column16.MinimumWidth = 8
+        Me.Column16.Name = "Column16"
+        '
+        'Column17
+        '
+        Me.Column17.HeaderText = "Gender"
+        Me.Column17.MinimumWidth = 8
+        Me.Column17.Name = "Column17"
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Image"
+        Me.Column18.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.Column18.MinimumWidth = 8
+        Me.Column18.Name = "Column18"
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Edit"
+        Me.Column19.MinimumWidth = 8
+        Me.Column19.Name = "Column19"
+        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Delete"
+        Me.Column20.MinimumWidth = 8
+        Me.Column20.Name = "Column20"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "View"
+        Me.Column2.MinimumWidth = 8
+        Me.Column2.Name = "Column2"
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
         'Usermanagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -673,6 +674,15 @@ Partial Class Usermanagement
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Label4 As Label
+    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
     Friend WithEvents Column12 As DataGridViewTextBoxColumn
@@ -685,13 +695,4 @@ Partial Class Usermanagement
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
     Friend WithEvents Column2 As DataGridViewButtonColumn
-    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class
