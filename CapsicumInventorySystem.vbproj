@@ -133,11 +133,11 @@
     <Compile Include="Menu.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MenuForm.Designer.vb">
-      <DependentUpon>MenuForm.vb</DependentUpon>
+    <Compile Include="Menucntrl.Designer.vb">
+      <DependentUpon>Menucntrl.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuForm.vb">
-      <SubType>Form</SubType>
+    <Compile Include="Menucntrl.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MenuManagement.Designer.vb">
       <DependentUpon>MenuManagement.vb</DependentUpon>
@@ -210,8 +210,8 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForm.resx">
-      <DependentUpon>MenuForm.vb</DependentUpon>
+    <EmbeddedResource Include="Menucntrl.resx">
+      <DependentUpon>Menucntrl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuManagement.resx">
       <DependentUpon>MenuManagement.vb</DependentUpon>
