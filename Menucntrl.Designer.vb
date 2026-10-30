@@ -22,15 +22,12 @@ Partial Class Menucntrl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
@@ -64,7 +61,6 @@ Partial Class Menucntrl
         Me.Guna2Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
@@ -91,15 +87,14 @@ Partial Class Menucntrl
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.01852!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.98148!))
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1669, 873)
         Me.TableLayoutPanel1.TabIndex = 0
         '
@@ -107,63 +102,11 @@ Partial Class Menucntrl
         '
         Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel2)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel3.Location = New System.Drawing.Point(3, 96)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(3, 0)
         Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1663, 774)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1663, 870)
         Me.Guna2Panel3.TabIndex = 1
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2TextBox2)
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.Location = New System.Drawing.Point(3, 3)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1663, 90)
-        Me.Guna2Panel2.TabIndex = 0
-        '
-        'Guna2Button3
-        '
-        Me.Guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button3.BorderRadius = 10
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(564, 30)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(69, 44)
-        Me.Guna2Button3.TabIndex = 25
-        Me.Guna2Button3.Text = "Search"
-        '
-        'Guna2TextBox2
-        '
-        Me.Guna2TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2TextBox2.BorderRadius = 10
-        Me.Guna2TextBox2.BorderThickness = 2
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Goldenrod
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!)
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Goldenrod
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(12, 30)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2TextBox2.PlaceholderText = "Product name..."
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(544, 44)
-        Me.Guna2TextBox2.TabIndex = 24
         '
         'Guna2Panel4
         '
@@ -171,7 +114,7 @@ Partial Class Menucntrl
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(1657, 768)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1657, 864)
         Me.Guna2Panel4.TabIndex = 0
         '
         'TableLayoutPanel3
@@ -187,7 +130,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1657, 768)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1657, 864)
         Me.TableLayoutPanel3.TabIndex = 0
         '
         'Guna2Panel6
@@ -197,7 +140,7 @@ Partial Class Menucntrl
         Me.Guna2Panel6.Location = New System.Drawing.Point(3, 0)
         Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(835, 765)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(835, 861)
         Me.Guna2Panel6.TabIndex = 2
         '
         'TableLayoutPanel5
@@ -213,7 +156,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel5.RowCount = 2
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.104575!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.89542!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(835, 765)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(835, 861)
         Me.TableLayoutPanel5.TabIndex = 0
         '
         'Guna2Panel10
@@ -222,7 +165,7 @@ Partial Class Menucntrl
         Me.Guna2Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel10.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel10.Name = "Guna2Panel10"
-        Me.Guna2Panel10.Size = New System.Drawing.Size(829, 56)
+        Me.Guna2Panel10.Size = New System.Drawing.Size(829, 63)
         Me.Guna2Panel10.TabIndex = 2
         '
         'TableLayoutPanel6
@@ -245,7 +188,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(829, 56)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(829, 63)
         Me.TableLayoutPanel6.TabIndex = 0
         '
         'Guna2Button1
@@ -264,7 +207,7 @@ Partial Class Menucntrl
         Me.Guna2Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button1.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(132, 50)
+        Me.Guna2Button1.Size = New System.Drawing.Size(132, 57)
         Me.Guna2Button1.TabIndex = 58
         Me.Guna2Button1.Text = "All"
         '
@@ -284,7 +227,7 @@ Partial Class Menucntrl
         Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button2.Location = New System.Drawing.Point(141, 3)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(132, 50)
+        Me.Guna2Button2.Size = New System.Drawing.Size(132, 57)
         Me.Guna2Button2.TabIndex = 59
         Me.Guna2Button2.Text = "Hot Coffee"
         '
@@ -304,7 +247,7 @@ Partial Class Menucntrl
         Me.Guna2Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button4.Location = New System.Drawing.Point(279, 3)
         Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(132, 50)
+        Me.Guna2Button4.Size = New System.Drawing.Size(132, 57)
         Me.Guna2Button4.TabIndex = 60
         Me.Guna2Button4.Text = "Cold Coffee"
         '
@@ -324,7 +267,7 @@ Partial Class Menucntrl
         Me.Guna2Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button5.Location = New System.Drawing.Point(417, 3)
         Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(132, 50)
+        Me.Guna2Button5.Size = New System.Drawing.Size(132, 57)
         Me.Guna2Button5.TabIndex = 61
         Me.Guna2Button5.Text = "Tea"
         '
@@ -344,7 +287,7 @@ Partial Class Menucntrl
         Me.Guna2Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button6.Location = New System.Drawing.Point(555, 3)
         Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.Size = New System.Drawing.Size(132, 50)
+        Me.Guna2Button6.Size = New System.Drawing.Size(132, 57)
         Me.Guna2Button6.TabIndex = 62
         Me.Guna2Button6.Text = "Desert"
         '
@@ -364,7 +307,7 @@ Partial Class Menucntrl
         Me.Guna2Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button7.Location = New System.Drawing.Point(693, 3)
         Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(133, 50)
+        Me.Guna2Button7.Size = New System.Drawing.Size(133, 57)
         Me.Guna2Button7.TabIndex = 63
         Me.Guna2Button7.Text = "Add-ons"
         '
@@ -374,9 +317,9 @@ Partial Class Menucntrl
         Me.Guna2Panel11.BorderRadius = 20
         Me.Guna2Panel11.BorderThickness = 2
         Me.Guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel11.Location = New System.Drawing.Point(3, 65)
+        Me.Guna2Panel11.Location = New System.Drawing.Point(3, 72)
         Me.Guna2Panel11.Name = "Guna2Panel11"
-        Me.Guna2Panel11.Size = New System.Drawing.Size(829, 697)
+        Me.Guna2Panel11.Size = New System.Drawing.Size(829, 786)
         Me.Guna2Panel11.TabIndex = 3
         '
         'Guna2Panel7
@@ -385,7 +328,7 @@ Partial Class Menucntrl
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel7.Location = New System.Drawing.Point(844, 3)
         Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(810, 762)
+        Me.Guna2Panel7.Size = New System.Drawing.Size(810, 858)
         Me.Guna2Panel7.TabIndex = 3
         '
         'TableLayoutPanel4
@@ -401,7 +344,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.70226!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.29773!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 241.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(810, 762)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(810, 858)
         Me.TableLayoutPanel4.TabIndex = 0
         '
         'Guna2Panel8
@@ -410,32 +353,32 @@ Partial Class Menucntrl
         Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel8.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(804, 450)
+        Me.Guna2Panel8.Size = New System.Drawing.Size(804, 535)
         Me.Guna2Panel8.TabIndex = 3
         '
         'Guna2DataGridView2
         '
         Me.Guna2DataGridView2.AllowUserToResizeColumns = False
-        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle19
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle20.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView2.ColumnHeadersHeight = 40
         Me.Guna2DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.Column4, Me.Column6, Me.Column5, Me.DataGridViewButtonColumn2})
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView2.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView2.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView2.Location = New System.Drawing.Point(0, 0)
@@ -445,7 +388,7 @@ Partial Class Menucntrl
         Me.Guna2DataGridView2.RowTemplate.Height = 40
         Me.Guna2DataGridView2.RowTemplate.ReadOnly = True
         Me.Guna2DataGridView2.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView2.Size = New System.Drawing.Size(804, 450)
+        Me.Guna2DataGridView2.Size = New System.Drawing.Size(804, 535)
         Me.Guna2DataGridView2.TabIndex = 48
         Me.Guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView2.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
@@ -509,12 +452,13 @@ Partial Class Menucntrl
         '
         'Guna2Panel9
         '
+        Me.Guna2Panel9.BorderRadius = 20
         Me.Guna2Panel9.Controls.Add(Me.Guna2Button9)
         Me.Guna2Panel9.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel9.Location = New System.Drawing.Point(3, 459)
+        Me.Guna2Panel9.Location = New System.Drawing.Point(3, 544)
         Me.Guna2Panel9.Name = "Guna2Panel9"
-        Me.Guna2Panel9.Size = New System.Drawing.Size(804, 58)
+        Me.Guna2Panel9.Size = New System.Drawing.Size(804, 69)
         Me.Guna2Panel9.TabIndex = 4
         '
         'Guna2Button8
@@ -565,7 +509,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1663, 774)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1663, 870)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Menucntrl
@@ -578,7 +522,6 @@ Partial Class Menucntrl
         Me.Guna2Panel1.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel4.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.Guna2Panel6.ResumeLayout(False)
@@ -598,9 +541,6 @@ Partial Class Menucntrl
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
