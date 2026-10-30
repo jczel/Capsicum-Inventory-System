@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Staff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim menu As New Menu
+        Dim menu As New Menucntrl
         Guna2Panel5.Controls.Clear()
         menu.Dock = DockStyle.Fill
         Guna2Panel5.Controls.Add(menu)
@@ -21,5 +21,10 @@
         Application.Exit()
     End Sub
 
-
+    Private Sub Menubtn_Click(sender As Object, e As EventArgs) Handles Menubtn.Click
+        Dim menu As New Menucntrl
+        Guna2Panel5.Controls.Clear()
+        menu.Dock = DockStyle.Fill
+        Guna2Panel5.Controls.Add(menu)
+    End Sub
 End Class
