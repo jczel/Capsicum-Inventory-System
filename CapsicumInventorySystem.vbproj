@@ -179,6 +179,12 @@
     <Compile Include="OwnerDashboard.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="OwnerPrintReprt.Designer.vb">
+      <DependentUpon>OwnerPrintReprt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerPrintReprt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SessionModule.vb" />
     <Compile Include="Staff.Designer.vb">
       <DependentUpon>Staff.vb</DependentUpon>
@@ -231,6 +237,9 @@
     <EmbeddedResource Include="OwnerDashboard.resx">
       <DependentUpon>OwnerDashboard.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerPrintReprt.resx">
+      <DependentUpon>OwnerPrintReprt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.vb</DependentUpon>
