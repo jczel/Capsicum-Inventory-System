@@ -30,14 +30,14 @@ Partial Class Admin
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Dsplaypnl = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.logoutbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.MngInvtrybtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.MangAccbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Dashboardbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NotifCount = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
@@ -79,7 +79,7 @@ Partial Class Admin
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel4, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel5, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Dsplaypnl, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
@@ -134,14 +134,14 @@ Partial Class Admin
         Me.Guna2Button7.Size = New System.Drawing.Size(45, 42)
         Me.Guna2Button7.TabIndex = 0
         '
-        'Guna2Panel5
+        'Dsplaypnl
         '
-        Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel5.Location = New System.Drawing.Point(2, 109)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel5.Name = "Guna2Panel5"
-        Me.Guna2Panel5.Size = New System.Drawing.Size(1029, 570)
-        Me.Guna2Panel5.TabIndex = 1
+        Me.Dsplaypnl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dsplaypnl.Location = New System.Drawing.Point(2, 109)
+        Me.Dsplaypnl.Margin = New System.Windows.Forms.Padding(2)
+        Me.Dsplaypnl.Name = "Dsplaypnl"
+        Me.Dsplaypnl.Size = New System.Drawing.Size(1029, 570)
+        Me.Dsplaypnl.TabIndex = 1
         '
         'Guna2Panel2
         '
@@ -159,11 +159,11 @@ Partial Class Admin
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button4, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button3, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.logoutbttn, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.MngInvtrybtn, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox2, 0, 6)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button1, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button2, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.MangAccbtn, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Dashboardbtn, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
@@ -180,51 +180,51 @@ Partial Class Admin
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 681)
         Me.TableLayoutPanel2.TabIndex = 0
         '
-        'Guna2Button4
+        'logoutbttn
         '
-        Me.Guna2Button4.Animated = True
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
-        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button4.Location = New System.Drawing.Point(2, 358)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Button4.TabIndex = 10
-        Me.Guna2Button4.Text = "Logout"
-        Me.Guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button4.UseTransparentBackground = True
+        Me.logoutbttn.Animated = True
+        Me.logoutbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logoutbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logoutbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logoutbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logoutbttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.logoutbttn.FillColor = System.Drawing.Color.Transparent
+        Me.logoutbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.logoutbttn.ForeColor = System.Drawing.Color.White
+        Me.logoutbttn.Image = CType(resources.GetObject("logoutbttn.Image"), System.Drawing.Image)
+        Me.logoutbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logoutbttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.logoutbttn.Location = New System.Drawing.Point(2, 358)
+        Me.logoutbttn.Margin = New System.Windows.Forms.Padding(2)
+        Me.logoutbttn.Name = "logoutbttn"
+        Me.logoutbttn.Size = New System.Drawing.Size(227, 85)
+        Me.logoutbttn.TabIndex = 10
+        Me.logoutbttn.Text = "Logout"
+        Me.logoutbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logoutbttn.UseTransparentBackground = True
         '
-        'Guna2Button3
+        'MngInvtrybtn
         '
-        Me.Guna2Button3.Animated = True
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Image = Global.CapsicumInventorySystem.My.Resources.Resources.shelving_unit
-        Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button3.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button3.Location = New System.Drawing.Point(2, 269)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Button3.TabIndex = 9
-        Me.Guna2Button3.Text = "Manage Inventory"
-        Me.Guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button3.UseTransparentBackground = True
+        Me.MngInvtrybtn.Animated = True
+        Me.MngInvtrybtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.MngInvtrybtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.MngInvtrybtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.MngInvtrybtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.MngInvtrybtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MngInvtrybtn.FillColor = System.Drawing.Color.Transparent
+        Me.MngInvtrybtn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.MngInvtrybtn.ForeColor = System.Drawing.Color.White
+        Me.MngInvtrybtn.Image = Global.CapsicumInventorySystem.My.Resources.Resources.shelving_unit
+        Me.MngInvtrybtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.MngInvtrybtn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.MngInvtrybtn.Location = New System.Drawing.Point(2, 269)
+        Me.MngInvtrybtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.MngInvtrybtn.Name = "MngInvtrybtn"
+        Me.MngInvtrybtn.Size = New System.Drawing.Size(227, 85)
+        Me.MngInvtrybtn.TabIndex = 9
+        Me.MngInvtrybtn.Text = "Manage Inventory"
+        Me.MngInvtrybtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.MngInvtrybtn.UseTransparentBackground = True
         '
         'Guna2PictureBox2
         '
@@ -239,51 +239,51 @@ Partial Class Admin
         Me.Guna2PictureBox2.TabIndex = 8
         Me.Guna2PictureBox2.TabStop = False
         '
-        'Guna2Button1
+        'MangAccbtn
         '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Image = Global.CapsicumInventorySystem.My.Resources.Resources.users_round
-        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button1.Location = New System.Drawing.Point(2, 180)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Button1.TabIndex = 6
-        Me.Guna2Button1.Text = "Manage Account"
-        Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.UseTransparentBackground = True
+        Me.MangAccbtn.Animated = True
+        Me.MangAccbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.MangAccbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.MangAccbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.MangAccbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.MangAccbtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MangAccbtn.FillColor = System.Drawing.Color.Transparent
+        Me.MangAccbtn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.MangAccbtn.ForeColor = System.Drawing.Color.White
+        Me.MangAccbtn.Image = Global.CapsicumInventorySystem.My.Resources.Resources.users_round
+        Me.MangAccbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.MangAccbtn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.MangAccbtn.Location = New System.Drawing.Point(2, 180)
+        Me.MangAccbtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.MangAccbtn.Name = "MangAccbtn"
+        Me.MangAccbtn.Size = New System.Drawing.Size(227, 85)
+        Me.MangAccbtn.TabIndex = 6
+        Me.MangAccbtn.Text = "Manage Account"
+        Me.MangAccbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.MangAccbtn.UseTransparentBackground = True
         '
-        'Guna2Button2
+        'Dashboardbtn
         '
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Image = Global.CapsicumInventorySystem.My.Resources.Resources.house__1_
-        Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button2.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button2.Location = New System.Drawing.Point(2, 91)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Button2.TabIndex = 2
-        Me.Guna2Button2.Text = "Dashboard"
-        Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button2.UseTransparentBackground = True
+        Me.Dashboardbtn.Animated = True
+        Me.Dashboardbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Dashboardbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Dashboardbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Dashboardbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Dashboardbtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dashboardbtn.FillColor = System.Drawing.Color.Transparent
+        Me.Dashboardbtn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Dashboardbtn.ForeColor = System.Drawing.Color.White
+        Me.Dashboardbtn.Image = Global.CapsicumInventorySystem.My.Resources.Resources.house__1_
+        Me.Dashboardbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Dashboardbtn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Dashboardbtn.Location = New System.Drawing.Point(2, 91)
+        Me.Dashboardbtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Dashboardbtn.Name = "Dashboardbtn"
+        Me.Dashboardbtn.Size = New System.Drawing.Size(227, 85)
+        Me.Dashboardbtn.TabIndex = 2
+        Me.Dashboardbtn.Text = "Dashboard"
+        Me.Dashboardbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Dashboardbtn.UseTransparentBackground = True
         '
         'Guna2Panel6
         '
@@ -345,16 +345,16 @@ Partial Class Admin
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Dsplaypnl As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents MangAccbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Dashboardbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents MngInvtrybtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents NotifCount As Guna.UI2.WinForms.Guna2NotificationPaint
 End Class

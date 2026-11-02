@@ -19258,7 +19258,7 @@
         Ys8zXkOg0Pwe4+kFquln4o80/5oRQIPVbBf+Hzj+Xv1kOhFDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Guna2Button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="logoutbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAYAAAA8uqNSAAAABGdBTUEAALGPC/xhBQAAB2xJREFUeF7t
         3TtyIzcQBuDVTfYouoGvoMSncLI+yYa+gTOXfBMFjp05WpcFF8ShyPmJBrqBxru/KgaWpmcamH8eHHKt
@@ -19295,7 +19295,7 @@
         tt0yVTre0vp60p2ll9iHzUVjO074OmNeZyQB6wyOGsn/3sKF5CbAoeMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Guna2Button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="printreportbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAYAAAA8uqNSAAAABGdBTUEAALGPC/xhBQAACKxJREFUeF7t
         nT2y1TgQhYGMXUzIMiaehJoVMNmEbIEdzBJeSMgS2AYZ8YRUMTMBUxale+13r89VS91Sy/pxf1UuCj+3
@@ -19338,7 +19338,7 @@
         4wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="transachistrybtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAYAAAA8uqNSAAAABGdBTUEAALGPC/xhBQAACCJJREFUeF7t
         nT2y1DoQhaGK6MUsgICELRC9gOgRsAUSInIiAlgACyBiC0REVL0dsAWKiIgIYjfVdzRz57Z+3C1125Lc
@@ -19378,7 +19378,7 @@
         TfiV8/d0HMfRhJ99+HteU1eqZwZt0aCnvT8u3AojCcQ8179VEImEGvMgIgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="generatereportbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAYAAAA8uqNSAAAABGdBTUEAALGPC/xhBQAACGxJREFUeF7t
         m72OFEcQgDlEQkTCA1yAEI9BQIQDZIncOLBIkMhwaAJyYiQkQkKHTpDuDYgtOUCEDi3sdMuq255lp6b/
@@ -19465,7 +19465,7 @@
         mveymEENw9Cmt678D6kROe33xV58AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Dashbrdbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAYAAAA8uqNSAAAABGdBTUEAALGPC/xhBQAACbpJREFUeF7t
         3Y1x2zgYhOG4k5RypaSUdJJSUko6sW5gUzb5kgviZwGCNp6Zm5txtFqK/ESCimP/+DFtvPAL0zRF3OMd

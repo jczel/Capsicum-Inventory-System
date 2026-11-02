@@ -4,6 +4,7 @@ Imports System.Text.RegularExpressions
 Imports Guna.UI2.WinForms
 
 Public Class MenuMngment
+
     Const maxQuantity As Integer = 50
 
     Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -33,7 +34,6 @@ Public Class MenuMngment
                 quantitytxbx.Clear()
             End If
             quantitytxbx.Clear()
-        End If
         End If
 
     End Sub
@@ -253,7 +253,7 @@ Public Class MenuMngment
     End Sub
 
     Sub SearchProduct(keyword As String)
-        Dim connStr As String = "Server = .\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+        Dim connStr As String = "Server = (localdb)\MSSQLLocalDB Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
 
 
         Try

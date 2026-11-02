@@ -4,13 +4,13 @@
 
         Dim OwnerDashboard As New OwnerDashboard()
 
-        Guna2Panel5.Controls.Clear()
+        Display.Controls.Clear()
         OwnerDashboard.Dock = DockStyle.Fill
-        Guna2Panel5.Controls.Add(OwnerDashboard)
+        Display.Controls.Add(OwnerDashboard)
 
     End Sub
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
         Form1login.Show()
         Me.Hide()
     End Sub
@@ -19,7 +19,11 @@
         Application.Exit()
     End Sub
 
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+    Private Sub printreportbtn_Click(sender As Object, e As EventArgs) Handles printreportbtn.Click
 
+        Dim OwnerPrintReport As New OwnerPrintReport()
+        Display.Controls.Clear()
+        OwnerPrintReport.Dock = DockStyle.Fill
+        Display.Controls.Add(OwnerPrintReport)
     End Sub
 End Class
