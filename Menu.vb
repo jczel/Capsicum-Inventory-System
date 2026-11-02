@@ -3,104 +3,153 @@ Imports System.Data.SqlClient
 Imports System.IO
 
 Public Class Menu
-
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FlowLayoutPanel1.AutoScroll = True
         FlowLayoutPanel1.WrapContents = True
-        FlowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight
-        FlowLayoutPanel1.AutoSize = False
         connect()
-        loadAllProduct()
+        loadGrouped()
     End Sub
 
-    Private Sub loadAllProduct()
+    Private Sub loadGrouped()
         FlowLayoutPanel1.Controls.Clear()
-
         Try
-            query = "Select * from Product"
+            Dim dt As New DataTable()
+            query = "SELECT DISTINCT productname FROM Product"
             cmd = New SqlCommand(query, sqlconn)
             dr = cmd.ExecuteReader()
+            dt.Load(dr)
+            dr.Close()
 
-            While dr.Read()
+            For Each row As DataRow In dt.Rows
+                Dim pName As String = row("productname").ToString()
+                Dim priceS As String = ""
+                Dim priceM As String = ""
+                Dim priceL As String = ""
+                Dim singlePrice As String = ""
+
+                Dim dt2 As New DataTable()
+                query = "SELECT size, price, prodimage FROM Product WHERE productname = @productname"
+                Using cmd2 As New SqlCommand(query, sqlconn)
+                    cmd2.Parameters.AddWithValue("@productname", pName)
+                    Dim dr2 As SqlDataReader = cmd2.ExecuteReader()
+                    dt2.Load(dr2)
+                    dr2.Close()
+                End Using
+
+                Dim prodImage As Object = Nothing
+                For Each r2 As DataRow In dt2.Rows
+                    Dim sz As String = ""
+                    If Not IsDBNull(r2("size")) Then sz = r2("size").ToString().Trim().ToUpper()
+
+                    If sz = "" Then
+
+                        singlePrice = r2("price").ToString()
+                    ElseIf sz = "S" OrElse sz.Contains("SMALL") Then
+                        priceS = r2("price").ToString()
+                    ElseIf sz = "M" OrElse sz.Contains("MED") Then
+                        priceM = r2("price").ToString()
+                    ElseIf sz = "L" OrElse sz.Contains("LARGE") Then
+                        priceL = r2("price").ToString()
+                    End If
+                    prodImage = r2("prodimage")
+                Next
+
                 Dim container As New Guna2Panel With {
-                    .Height = 168,
-                    .Width = 275,
-                    .BorderColor = Color.FromArgb(128, 64, 0),
-                    .BorderRadius = 20,
-                    .BorderThickness = 2,
-                    .Margin = New Padding(10)
-                }
+                .Height = 168,
+                .Width = 275,
+                .BorderRadius = 20,
+                .BorderThickness = 2,
+                .BorderColor = Color.FromArgb(128, 64, 0),
+                .Margin = New Padding(10)
+            }
 
                 Dim productName As New Label With {
-                    .Location = New Point(133, 43),
-                    .ForeColor = Color.FromArgb(128, 64, 0),
-                    .Font = New Font("Microsoft YaHei UI", 9, FontStyle.Bold),
-                    .Text = dr("productname").ToString()
-                }
+                .Text = pName,
+                .Location = New Point(133, 20),
+                .AutoSize = True,
+                .Font = New Font("Microsoft YaHei UI", 9, FontStyle.Bold)
+            }
 
                 Dim productPrice As New Label With {
-                    .Location = New Point(133, 81),
-                    .ForeColor = Color.FromArgb(64, 64, 64),
-                    .Font = New Font("Microsoft YaHei UI", 12, FontStyle.Bold),
-                    .Text = "₱" & dr("price").ToString()
-                }
+                .Location = New Point(133, 50),
+                .AutoSize = True,
+                .Font = New Font("Microsoft YaHei UI", 12, FontStyle.Bold)
+            }
+
+                If singlePrice <> "" Then
+                    productPrice.Text = "₱" & singlePrice
+                ElseIf priceM <> "" Then
+                    productPrice.Text = "₱" & priceM
+                ElseIf priceS <> "" Then
+                    productPrice.Text = "₱" & priceS
+                Else
+                    productPrice.Text = "₱" & priceL
+                End If
 
                 Dim productImg As New Guna2PictureBox With {
-                    .Location = New Point(13, 12),
-                    .BorderRadius = 10,
-                    .Height = 91,
-                    .Width = 102,
-                    .SizeMode = PictureBoxSizeMode.StretchImage
-                }
-
-
+                .Location = New Point(13, 12),
+                .Size = New Size(102, 91),
+                .BorderRadius = 10,
+                .SizeMode = PictureBoxSizeMode.StretchImage
+            }
 
                 Try
-                    If Not IsDBNull(dr("prodimage")) Then
-
-                        Dim imgBytes As Byte() = DirectCast(dr("prodimage"), Byte())
+                    If prodImage IsNot Nothing AndAlso Not IsDBNull(prodImage) Then
+                        Dim imgBytes As Byte() = DirectCast(prodImage, Byte())
                         Using ms As New MemoryStream(imgBytes)
                             productImg.Image = Image.FromStream(ms)
                         End Using
                     End If
-                Catch ex1 As Exception
-
-                    Try
-                        Dim imgPath As String = dr("prodimage").ToString()
-                        If File.Exists(imgPath) Then
-                            productImg.Image = Image.FromFile(imgPath)
-                        Else
-
-                            Dim localPath As String = Application.StartupPath & "\Images\" & imgPath
-                            If File.Exists(localPath) Then
-                                productImg.Image = Image.FromFile(localPath)
-                            End If
-                        End If
-                    Catch
-                    End Try
+                Catch
                 End Try
 
+                Dim btnS As New Guna2Button With {.Text = "S", .Location = New Point(13, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
+                Dim btnM As New Guna2Button With {.Text = "M", .Location = New Point(63, 123), .Size = New Size(52, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
+                Dim btnL As New Guna2Button With {.Text = "L", .Location = New Point(121, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
+                Dim addBtn As New Guna2Button With {.Text = "Add", .Location = New Point(171, 123), .Size = New Size(85, 33), .BorderRadius = 10, .FillColor = Color.FromArgb(128, 64, 0)}
 
-                Dim smallSizebtn As New Guna2Button With {.Height = 33, .Width = 44, .BorderColor = Color.FromArgb(128, 64, 0), .BorderThickness = 2, .BorderRadius = 15, .Text = "S", .Location = New Point(13, 123), .ForeColor = Color.FromArgb(128, 64, 0), .Font = New Font("Microsoft YaHei UI", 10, FontStyle.Bold), .FillColor = Color.Transparent}
-                Dim mediumSizebtn As New Guna2Button With {.Height = 33, .Width = 52, .BorderColor = Color.FromArgb(128, 64, 0), .BorderThickness = 2, .BorderRadius = 15, .Text = "M", .Location = New Point(63, 123), .ForeColor = Color.FromArgb(128, 64, 0), .Font = New Font("Microsoft YaHei UI", 10, FontStyle.Bold), .FillColor = Color.Transparent}
-                Dim largeSizebtn As New Guna2Button With {.Height = 33, .Width = 44, .BorderColor = Color.FromArgb(128, 64, 0), .BorderThickness = 2, .BorderRadius = 15, .Text = "L", .Location = New Point(121, 123), .ForeColor = Color.FromArgb(128, 64, 0), .Font = New Font("Microsoft YaHei UI", 10, FontStyle.Bold), .FillColor = Color.Transparent}
-                Dim addBtn As New Guna2Button With {.Height = 33, .Width = 85, .FillColor = Color.FromArgb(128, 64, 0), .BorderRadius = 10, .Text = "Add", .Location = New Point(171, 123), .ForeColor = Color.White, .Font = New Font("Microsoft YaHei UI", 10, FontStyle.Bold)}
+                ' LOGIC FOR DESSERTS AND TEAS
+                If singlePrice <> "" Then
+                    ' Dessert: hide all size buttons, move Add to left
+                    btnS.Visible = False
+                    btnM.Visible = False
+                    btnL.Visible = False
+                    addBtn.Location = New Point(13, 123)
+                    addBtn.Size = New Size(243, 33)
+                Else
+                    ' Tea / Milk Tea: show only sizes that exist
+                    If priceS = "" Then btnS.Visible = False
+                    If priceM = "" Then btnM.Visible = False
+                    If priceL = "" Then btnL.Visible = False
 
-                FlowLayoutPanel1.Controls.Add(container)
+                    ' If only M exists (your teas), make it look selected and move it
+                    If priceS = "" AndAlso priceL = "" AndAlso priceM <> "" Then
+                        btnM.Location = New Point(13, 123)
+                        btnM.FillColor = Color.FromArgb(128, 64, 0)
+                        btnM.ForeColor = Color.White
+                    End If
+                End If
+
+                Dim ps As String = priceS
+                Dim pm As String = priceM
+                Dim pl As String = priceL
+
+                AddHandler btnS.Click, Sub(s, ev) productPrice.Text = "₱" & ps
+                AddHandler btnM.Click, Sub(s, ev) productPrice.Text = "₱" & pm
+                AddHandler btnL.Click, Sub(s, ev) productPrice.Text = "₱" & pl
+
                 container.Controls.Add(productName)
                 container.Controls.Add(productPrice)
-                container.Controls.Add(smallSizebtn)
-                container.Controls.Add(mediumSizebtn)
-                container.Controls.Add(largeSizebtn)
-                container.Controls.Add(addBtn)
                 container.Controls.Add(productImg)
-
-            End While
-
-            dr.Close()
+                container.Controls.Add(btnS)
+                container.Controls.Add(btnM)
+                container.Controls.Add(btnL)
+                container.Controls.Add(addBtn)
+                FlowLayoutPanel1.Controls.Add(container)
+            Next
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show("Error: " & ex.Message)
         Finally
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
