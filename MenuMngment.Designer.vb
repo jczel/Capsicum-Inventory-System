@@ -85,9 +85,8 @@ Partial Class MenuMngment
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.TableLayoutPanel1)
         Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1746, 942)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1164, 612)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
         'TableLayoutPanel1
@@ -99,13 +98,12 @@ Partial Class MenuMngment
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel1, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.23597!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.88202!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.88202!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1746, 942)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1164, 612)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Guna2Panel3
@@ -113,10 +111,9 @@ Partial Class MenuMngment
         Me.Guna2Panel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel3.Controls.Add(Me.PrdctTbledtgrd)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel3.Location = New System.Drawing.Point(4, 542)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(3, 352)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1738, 395)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1158, 257)
         Me.Guna2Panel3.TabIndex = 2
         '
         'PrdctTbledtgrd
@@ -237,10 +234,9 @@ Partial Class MenuMngment
         '
         Me.Guna2Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.Location = New System.Drawing.Point(4, 139)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(3, 90)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1738, 393)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1158, 256)
         Me.Guna2Panel2.TabIndex = 1
         '
         'TableLayoutPanel2
@@ -252,11 +248,10 @@ Partial Class MenuMngment
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel4, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1738, 393)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1158, 256)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Guna2Panel5
@@ -267,13 +262,12 @@ Partial Class MenuMngment
         Me.Guna2Panel5.Controls.Add(Me.Addbtn)
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel5.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel5.Location = New System.Drawing.Point(1438, 5)
-        Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(959, 3)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel5.ShadowDecoration.Depth = 20
         Me.Guna2Panel5.ShadowDecoration.Enabled = True
-        Me.Guna2Panel5.Size = New System.Drawing.Size(296, 383)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(196, 250)
         Me.Guna2Panel5.TabIndex = 1
         '
         'Updatebtn
@@ -338,13 +332,12 @@ Partial Class MenuMngment
         Me.Guna2Panel4.Controls.Add(Me.Categorycmbbx)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel4.Location = New System.Drawing.Point(4, 5)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel4.ShadowDecoration.Depth = 20
         Me.Guna2Panel4.ShadowDecoration.Enabled = True
-        Me.Guna2Panel4.Size = New System.Drawing.Size(1426, 383)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(950, 250)
         Me.Guna2Panel4.TabIndex = 0
         '
         'Guna2GradientPanel1
@@ -359,7 +352,7 @@ Partial Class MenuMngment
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(1029, 65)
         Me.Guna2GradientPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(300, 275)
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(200, 179)
         Me.Guna2GradientPanel1.TabIndex = 67
         '
         'Prdctpicbx
@@ -393,8 +386,7 @@ Partial Class MenuMngment
         Me.Label2.BackColor = System.Drawing.Color.SaddleBrown
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(50, 0)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(33, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(191, 24)
         Me.Label2.TabIndex = 15
@@ -415,12 +407,12 @@ Partial Class MenuMngment
         Me.prdctnmtxbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.prdctnmtxbx.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.prdctnmtxbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.prdctnmtxbx.Location = New System.Drawing.Point(35, 174)
-        Me.prdctnmtxbx.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
+        Me.prdctnmtxbx.Location = New System.Drawing.Point(23, 114)
+        Me.prdctnmtxbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.prdctnmtxbx.Name = "prdctnmtxbx"
         Me.prdctnmtxbx.PlaceholderText = "Product Name"
         Me.prdctnmtxbx.SelectedText = ""
-        Me.prdctnmtxbx.Size = New System.Drawing.Size(420, 71)
+        Me.prdctnmtxbx.Size = New System.Drawing.Size(280, 46)
         Me.prdctnmtxbx.TabIndex = 58
         '
         'sizecmbbx
@@ -501,7 +493,7 @@ Partial Class MenuMngment
         Me.pricetxbx.Name = "pricetxbx"
         Me.pricetxbx.PlaceholderText = "Price"
         Me.pricetxbx.SelectedText = ""
-        Me.pricetxbx.Size = New System.Drawing.Size(420, 71)
+        Me.pricetxbx.Size = New System.Drawing.Size(280, 46)
         Me.pricetxbx.TabIndex = 62
         '
         'quantitytxbx
@@ -524,7 +516,7 @@ Partial Class MenuMngment
         Me.quantitytxbx.Name = "quantitytxbx"
         Me.quantitytxbx.PlaceholderText = "Quantity"
         Me.quantitytxbx.SelectedText = ""
-        Me.quantitytxbx.Size = New System.Drawing.Size(420, 71)
+        Me.quantitytxbx.Size = New System.Drawing.Size(280, 46)
         Me.quantitytxbx.TabIndex = 63
         '
         'Categorycmbbx
@@ -561,13 +553,12 @@ Partial Class MenuMngment
         Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel1.Location = New System.Drawing.Point(4, 5)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.BorderRadius = 10
         Me.Guna2Panel1.ShadowDecoration.Depth = 20
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1738, 124)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1158, 81)
         Me.Guna2Panel1.TabIndex = 0
         '
         'SizeFilterCmbx
@@ -585,10 +576,9 @@ Partial Class MenuMngment
         Me.SizeFilterCmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SizeFilterCmbx.ItemHeight = 30
         Me.SizeFilterCmbx.Items.AddRange(New Object() {"All", "Small", "Medium", "Large"})
-        Me.SizeFilterCmbx.Location = New System.Drawing.Point(603, 45)
-        Me.SizeFilterCmbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.SizeFilterCmbx.Location = New System.Drawing.Point(402, 29)
         Me.SizeFilterCmbx.Name = "SizeFilterCmbx"
-        Me.SizeFilterCmbx.Size = New System.Drawing.Size(145, 36)
+        Me.SizeFilterCmbx.Size = New System.Drawing.Size(98, 36)
         Me.SizeFilterCmbx.StartIndex = 0
         Me.SizeFilterCmbx.TabIndex = 67
         Me.SizeFilterCmbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -599,8 +589,7 @@ Partial Class MenuMngment
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(248, 77)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(165, 50)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(219, 15)
         Me.Label3.TabIndex = 66
@@ -630,8 +619,7 @@ Partial Class MenuMngment
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(246, 37)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(164, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(190, 24)
         Me.Label1.TabIndex = 14
@@ -649,7 +637,7 @@ Partial Class MenuMngment
         Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(250, 124)
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(167, 81)
         Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2CirclePictureBox1.TabIndex = 13
         Me.Guna2CirclePictureBox1.TabStop = False
@@ -690,12 +678,11 @@ Partial Class MenuMngment
         '
         'MenuMngment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1746, 942)
+        Me.ClientSize = New System.Drawing.Size(1164, 612)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "MenuMngment"
         Me.Text = "MenuMngment"
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)

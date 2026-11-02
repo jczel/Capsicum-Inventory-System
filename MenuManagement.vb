@@ -357,9 +357,6 @@ Public Class MenuManagement
 
 
 
-
-
-
     Private Sub Guna2DataGridView1_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles Guna2DataGridView1.DataError
         e.ThrowException = False
         e.Cancel = False

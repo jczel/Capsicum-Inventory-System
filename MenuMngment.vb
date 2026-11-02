@@ -8,9 +8,7 @@ Public Class MenuMngment
 
     Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
-        readdata()
-        AutoNumber()
-
+        productTable()
     End Sub
 
     Private Sub prdctnmtxbx_TextChanged(sender As Object, e As EventArgs) Handles prdctnmtxbx.TextChanged
@@ -33,6 +31,8 @@ Public Class MenuMngment
                 MsgBox("invalid input")
                 quantitytxbx.Clear()
             End If
+            quantitytxbx.Clear()
+        End If
         End If
 
     End Sub
@@ -51,43 +51,43 @@ Public Class MenuMngment
     Private Sub Addbtn_Click(sender As Object, e As EventArgs) Handles Addbtn.Click
         countNotif += 1
         Admin.NotifCount.Text = countNotif.ToString()
+    End Sub
 
-        If prdctnmtxbx.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
-        If Categorycmbbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
+    Private Sub Guna2Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel4.Paint
 
-        If pricetxbx.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
-        If quantitytxbx.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
-        If Prdctpicbx.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
+    End Sub
 
+    Private Sub PrdctTble_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
+        If e.RowIndex < 0 Then Return
+        Dim i As Integer = e.RowIndex
+        If e.ColumnIndex = 7 Then
+            PrdcId.Text = PrdctTbledtgrd.Item(0, i).Value.ToString()
+            prdctnmtxbx.Text = PrdctTbledtgrd.Item(1, i).Value.ToString()
+            Categorycmbbx.Text = PrdctTbledtgrd.Item(2, i).Value.ToString()
+            sizecmbbx.Text = PrdctTbledtgrd.Item(3, i).Value.ToString()
+            pricetxbx.Text = PrdctTbledtgrd.Item(4, i).Value.ToString()
+            quantitytxbx.Text = PrdctTbledtgrd.Item(5, i).Value.ToString()
+            viewimage()
+        ElseIf e.ColumnIndex = 8 Then
+            Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
+            If confirm = MsgBoxResult.Yes Then
+                delete(PrdctTbledtgrd.Item(0, i).Value.ToString())
+                readdata()
+                AutoNumber()
+                Return
+            End If
 
-        If Not Regex.IsMatch(quantitytxbx.Text.Trim(), "^[0-9]+$") Then
-            MsgBox("Quantity must be number only", MsgBoxStyle.Critical)
-            quantitytxbx.Focus()
-            Return
-        End If
-
-        If Not Regex.IsMatch(pricetxbx.Text.Trim(), "^[0-9]+(\.[0-9]{1,2})?$") Then
-            MsgBox("Price must be numbers only (ex: 100 or 100.50)", MsgBoxStyle.Critical)
-            pricetxbx.Focus()
-            Return
-        End If
-
-        If CInt(quantitytxbx.Text) <= 0 Then
-            MsgBox("Quantity must be greater than 0", MsgBoxStyle.Critical)
-            Return
-        End If
-
-        If CDbl(pricetxbx.Text) <= 0 Then
-            MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
-            Return
-        End If
-        MsgBox("Data added")
-        savedata()
-        readdata()
-        Clear()
-        CreateNewAutoNumber()
-        AutoNumber()
-        sqlconn.Close()
+            If CDbl(pricetxbx.Text) <= 0 Then
+                MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
+                Return
+            End If
+            MsgBox("Data added")
+            savedata()
+            readdata()
+            Clear()
+            CreateNewAutoNumber()
+            AutoNumber()
+            sqlconn.Close()
 
     End Sub
 
