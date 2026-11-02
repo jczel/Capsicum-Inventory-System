@@ -25,7 +25,7 @@ Public Class Menu
                 sql = "SELECT productname, size, price, prodimage, category FROM Product ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
             Else
-                sql = "SELECT productname, size, price, prodimage, category FROM Product WHERE category = @cat ORDER BY productname"
+                sql = "SELECT productname, size, price, prodimage, category FROM Product WHERE category = @category ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
                 cmd.Parameters.AddWithValue("@cat", filter)
             End If
@@ -113,9 +113,9 @@ Public Class Menu
                 Catch
                 End Try
 
-                Dim btnS As New Guna2Button With {.Text = "S", .Location = New Point(13, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.Transparent}
-                Dim btnM As New Guna2Button With {.Text = "M", .Location = New Point(63, 123), .Size = New Size(52, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.Transparent}
-                Dim btnL As New Guna2Button With {.Text = "L", .Location = New Point(121, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.Transparent}
+                Dim btnS As New Guna2Button With {.Text = "S", .Location = New Point(13, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
+                Dim btnM As New Guna2Button With {.Text = "M", .Location = New Point(63, 123), .Size = New Size(52, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
+                Dim btnL As New Guna2Button With {.Text = "L", .Location = New Point(121, 123), .Size = New Size(44, 33), .BorderRadius = 15, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .FillColor = Color.FromArgb(128, 64, 0)}
                 Dim addBtn As New Guna2Button With {.Text = "Add", .Location = New Point(171, 123), .Size = New Size(85, 33), .BorderRadius = 10, .FillColor = Color.FromArgb(128, 64, 0)}
 
                 If singlePrice <> "" Then
