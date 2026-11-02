@@ -5,6 +5,10 @@ Imports System.IO
 Public Class Menu
 
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FlowLayoutPanel1.AutoScroll = True
+        FlowLayoutPanel1.WrapContents = True
+        FlowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight
+        FlowLayoutPanel1.AutoSize = False
         connect()
         loadAllProduct()
     End Sub
