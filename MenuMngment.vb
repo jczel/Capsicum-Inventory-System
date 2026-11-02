@@ -6,13 +6,87 @@ Imports Guna.UI2.WinForms
 Public Class MenuMngment
     Const maxQuantity As Integer = 50
 
-    Sub Clear()
-        prodname.Clear()
-        price.Clear()
-        quantity.Clear()
-        sizecmbx.SelectedIndex = -1
-        catcmbx.SelectedIndex = -1
-        Guna2PictureBox1.Image = Nothing
+    Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        connect()
+        readdata()
+        AutoNumber()
+    End Sub
+
+    Private Sub prdctnmtxbx_TextChanged(sender As Object, e As EventArgs) Handles prdctnmtxbx.TextChanged
+        If Regex.IsMatch(prdctnmtxbx.Text, "[0-9]") Then
+            MsgBox("invalid input")
+            prdctnmtxbx.Text = ""
+        End If
+    End Sub
+
+    Private Sub pricetxbx_TextChanged(sender As Object, e As EventArgs) Handles pricetxbx.TextChanged
+        If Regex.IsMatch(pricetxbx.Text, "[a-z]") Then
+            MsgBox("invalid input")
+            pricetxbx.Text = ""
+        End If
+    End Sub
+
+    Private Sub quantitytxbx_TextChanged(sender As Object, e As EventArgs) Handles quantitytxbx.TextChanged
+        If Not quantitytxbx.Text = "" Then
+            If Convert.ToInt32(quantitytxbx.Text) > maxQuantity Then
+                MsgBox("invalid input")
+                quantitytxbx.Clear()
+            End If
+            quantitytxbx.Clear()
+        End If
+
+    End Sub
+
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
+        Dim result As String = MsgBox(InputBox("Enter size"))
+
+        If MsgBoxResult.Ok Then
+            SizeFilterCmbx.Items.Add(result)
+        End If
+    End Sub
+
+
+
+    Private Sub Addbtn_Click(sender As Object, e As EventArgs) Handles Addbtn.Click
+        countNotif += 1
+        Admin.NotifCount.Text = countNotif.ToString()
+    End Sub
+
+
+    Private Sub PrdctTbledtgrd_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
+        If e.RowIndex < 0 Then Return
+        Dim i As Integer = e.RowIndex
+        If e.ColumnIndex = 7 Then
+            PrdcId.Text = PrdctTbledtgrd.Item(0, i).Value.ToString()
+            prdctnmtxbx.Text = PrdctTbledtgrd.Item(1, i).Value.ToString()
+            Categorycmbbx.Text = PrdctTbledtgrd.Item(2, i).Value.ToString()
+            sizecmbbx.Text = PrdctTbledtgrd.Item(3, i).Value.ToString()
+            pricetxbx.Text = PrdctTbledtgrd.Item(4, i).Value.ToString()
+            quantitytxbx.Text = PrdctTbledtgrd.Item(5, i).Value.ToString()
+            viewimage()
+        ElseIf e.ColumnIndex = 8 Then
+            Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
+            If confirm = MsgBoxResult.Yes Then
+                delete(PrdctTbledtgrd.Item(0, i).Value.ToString())
+                readdata()
+                AutoNumber()
+                Return
+            End If
+
+            If CDbl(pricetxbx.Text) <= 0 Then
+                MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
+                Return
+            End If
+        End If
+        MsgBox("Data added")
+        savedata()
+        readdata()
+        Clear()
+        CreateNewAutoNumber()
+        AutoNumber()
+        sqlconn.Close()
+
     End Sub
 
     Sub AutoNumber()
@@ -30,10 +104,10 @@ Public Class MenuMngment
                 query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
                 cmd = New SqlClient.SqlCommand(query, sqlconn)
                 cmd.Parameters.AddWithValue("@pfx", "PID")
-                prodid.Text = Convert.ToString(cmd.ExecuteScalar())
+                PrdcId.Text = Convert.ToString(cmd.ExecuteScalar())
                 cmd.Dispose()
             Else
-                prodid.Text = Convert.ToString(result)
+                PrdcId.Text = Convert.ToString(result)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -57,12 +131,12 @@ Public Class MenuMngment
     Sub readdata()
         Try
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
-            Guna2DataGridView1.Rows.Clear()
+            PrdctTbledtgrd.Rows.Clear()
             query = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             dr = cmd.ExecuteReader()
             While dr.Read()
-                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "EDIT", "DELETE")
+                PrdctTbledtgrd.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "EDIT", "DELETE")
             End While
             dr.Close()
             cmd.Dispose()
@@ -79,9 +153,9 @@ Public Class MenuMngment
     Sub savedata()
         If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         Dim imgData As Object = DBNull.Value
-        If Guna2PictureBox1.Image IsNot Nothing Then
+        If Prdctpicbx.Image IsNot Nothing Then
             Using ms As New IO.MemoryStream
-                Using bmp As New Bitmap(Guna2PictureBox1.Image)
+                Using bmp As New Bitmap(Prdctpicbx.Image)
                     bmp.Save(ms, Imaging.ImageFormat.Png)
                 End Using
                 imgData = ms.ToArray()
@@ -93,12 +167,12 @@ Public Class MenuMngment
             query = "Insert into Product (ProductID, productname, category, size, price, quantity, prodimage) values (@ProductID, @productname, @category, @size, @price, @quantity, @prodimage)"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             With cmd.Parameters
-                .AddWithValue("@ProductID", prodid.Text)
-                .AddWithValue("@productname", prodname.Text)
-                .AddWithValue("@category", catcmbx.Text)
-                .AddWithValue("@size", sizecmbx.Text)
-                .AddWithValue("@price", price.Text)
-                .AddWithValue("@quantity", quantity.Text)
+                .AddWithValue("@ProductID", PrdcId.Text)
+                .AddWithValue("@productname", prdctnmtxbx.Text)
+                .AddWithValue("@category", Categorycmbbx.Text)
+                .AddWithValue("@size", sizecmbbx.Text)
+                .AddWithValue("@price", pricetxbx.Text)
+                .AddWithValue("@quantity", quantitytxbx.Text)
                 .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
             End With
             cmd.ExecuteNonQuery()
@@ -113,9 +187,9 @@ Public Class MenuMngment
     Sub updatedata()
 
         Dim imgData As Object = DBNull.Value
-        If Guna2PictureBox1.Image IsNot Nothing Then
+        If Prdctpicbx.Image IsNot Nothing Then
             Using ms As New IO.MemoryStream
-                Using bmp As New Bitmap(Guna2PictureBox1.Image)
+                Using bmp As New Bitmap(Prdctpicbx.Image)
                     bmp.Save(ms, Imaging.ImageFormat.Png)
                 End Using
                 imgData = ms.ToArray()
@@ -127,12 +201,12 @@ Public Class MenuMngment
             query = "Update Product set productname=@productname, category=@category, size=@size, price=@price, quantity=@quantity, prodimage=@prodimage Where ProductID=@ProductID"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
             With cmd.Parameters
-                .AddWithValue("@ProductID", prodid.Text)
-                .AddWithValue("@productname", prodname.Text)
-                .AddWithValue("@category", catcmbx.Text)
-                .AddWithValue("@size", sizecmbx.Text)
-                .AddWithValue("@price", price.Text)
-                .AddWithValue("@quantity", quantity.Text)
+                .AddWithValue("@ProductID", PrdcId.Text)
+                .AddWithValue("@productname", prdctnmtxbx.Text)
+                .AddWithValue("@category", Categorycmbbx.Text)
+                .AddWithValue("@size", sizecmbbx.Text)
+                .AddWithValue("@price", pricetxbx.Text)
+                .AddWithValue("@quantity", quantitytxbx.Text)
                 .Add("@prodimage", SqlDbType.VarBinary, -1).Value = imgData
             End With
             cmd.ExecuteNonQuery()
@@ -159,15 +233,15 @@ Public Class MenuMngment
             Dim img() As Byte
             query = "Select prodimage from Product where ProductID = @ProductID"
             cmd = New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@ProductID", prodid.Text)
+            cmd.Parameters.AddWithValue("@ProductID", PrdcId.Text)
             dr = cmd.ExecuteReader()
             If dr.Read() Then
                 If IsDBNull(dr("prodimage")) Then
-                    Guna2PictureBox1.Image = Nothing
+                    Prdctpicbx.Image = Nothing
                 Else
                     img = CType(dr("prodimage"), Byte())
                     Using ms As New MemoryStream(img)
-                        Guna2PictureBox1.Image = Image.FromStream(ms)
+                        Prdctpicbx.Image = Image.FromStream(ms)
                     End Using
                 End If
             End If
@@ -182,7 +256,7 @@ Public Class MenuMngment
 
 
         Try
-            Guna2DataGridView1.Rows.Clear()
+            PrdctTbledtgrd.Rows.Clear()
 
             Using sqlconn As New SqlClient.SqlConnection(connStr)
                 sqlconn.Open()
@@ -193,7 +267,7 @@ Public Class MenuMngment
                     Using cmd As New SqlClient.SqlCommand(q, sqlconn)
                         Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
                             While dr.Read()
-                                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
+                                PrdctTbledtgrd.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
                             End While
                         End Using
                     End Using
@@ -204,7 +278,7 @@ Public Class MenuMngment
                         cmd.Parameters.AddWithValue("@k", "%" & keyword.Trim() & "%")
                         Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
                             While dr.Read()
-                                Guna2DataGridView1.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
+                                PrdctTbledtgrd.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "Edit", "Delete")
                             End While
                         End Using
                     End Using
@@ -216,136 +290,61 @@ Public Class MenuMngment
         End Try
     End Sub
 
-    Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        connect()
+    Private Sub Guna2Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel4.Paint
 
     End Sub
 
-    Private Sub prdctnmtxbx_TextChanged(sender As Object, e As EventArgs) Handles prdctnmtxbx.TextChanged
-        If Regex.IsMatch(prdctnmtxbx.Text, "[0-9]") Then
-            MsgBox("invalid input")
-            prdctnmtxbx.Text = ""
-        End If
-    End Sub
-
-    Private Sub pricetxbx_TextChanged(sender As Object, e As EventArgs) Handles pricetxbx.TextChanged
-        If Regex.IsMatch(pricetxbx.Text, "[a-z]") Then
-            MsgBox("invalid input")
-            pricetxbx.Text = ""
-        End If
-    End Sub
-
-    Private Sub quantitytxbx_TextChanged(sender As Object, e As EventArgs) Handles quantitytxbx.TextChanged
-        If Not quantitytxbx.Text = "" Then
-            If Convert.ToInt32(quantitytxbx.Text) > maxQuantity Then
-                MsgBox("invalid input")
-                quantitytxbx.Clear()
-            End If
-        End If
-
-    End Sub
-
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
-        Dim result As String = MsgBox(InputBox("Enter size"))
-
-        If MsgBoxResult.Ok Then
-            SizeFilterCmbx.Items.Add(result)
-        End If
-    End Sub
-
-
-
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        countNotif += 1
-        Admin.NotifCount.Text = countNotif.ToString()
-
-        If prodname.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
-        If catcmbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
-
-        If price.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
-        If quantity.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
-        If Guna2PictureBox1.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
-
-
-        If Not Regex.IsMatch(quantity.Text.Trim(), "^[0-9]+$") Then
-            MsgBox("Quantity must be number only", MsgBoxStyle.Critical)
-            quantity.Focus()
-            Return
-        End If
-
-        If Not Regex.IsMatch(price.Text.Trim(), "^[0-9]+(\.[0-9]{1,2})?$") Then
-            MsgBox("Price must be numbers only (ex: 100 or 100.50)", MsgBoxStyle.Critical)
-            price.Focus()
-            Return
-        End If
-
-        If CInt(quantity.Text) <= 0 Then
-            MsgBox("Quantity must be greater than 0", MsgBoxStyle.Critical)
-            Return
-        End If
-
-        If CDbl(price.Text) <= 0 Then
-            MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
-            Return
-        End If
-        MsgBox("Data added")
-        savedata()
-        readdata()
-        Clear()
-        CreateNewAutoNumber()
-        AutoNumber()
-        sqlconn.Close()
-
-    End Sub
-
-    Private Sub PrdctTble_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTble.CellContentClick
+    Private Sub PrdctTble_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
         If e.RowIndex < 0 Then Return
         Dim i As Integer = e.RowIndex
         If e.ColumnIndex = 7 Then
-            prodid.Text = Guna2DataGridView1.Item(0, i).Value.ToString()
-            prodname.Text = Guna2DataGridView1.Item(1, i).Value.ToString()
-            catcmbx.Text = Guna2DataGridView1.Item(2, i).Value.ToString()
-            sizecmbx.Text = Guna2DataGridView1.Item(3, i).Value.ToString()
-            price.Text = Guna2DataGridView1.Item(4, i).Value.ToString()
-            quantity.Text = Guna2DataGridView1.Item(5, i).Value.ToString()
+            PrdcId.Text = PrdctTbledtgrd.Item(0, i).Value.ToString()
+            prdctnmtxbx.Text = PrdctTbledtgrd.Item(1, i).Value.ToString()
+            Categorycmbbx.Text = PrdctTbledtgrd.Item(2, i).Value.ToString()
+            sizecmbbx.Text = PrdctTbledtgrd.Item(3, i).Value.ToString()
+            pricetxbx.Text = PrdctTbledtgrd.Item(4, i).Value.ToString()
+            quantitytxbx.Text = PrdctTbledtgrd.Item(5, i).Value.ToString()
             viewimage()
         ElseIf e.ColumnIndex = 8 Then
             Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
             If confirm = MsgBoxResult.Yes Then
-                delete(Guna2DataGridView1.Item(0, i).Value.ToString())
+                delete(PrdctTbledtgrd.Item(0, i).Value.ToString())
                 readdata()
                 AutoNumber()
             End If
         End If
     End Sub
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        If prodname.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
-        If catcmbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
 
-        If price.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
-        If quantity.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
-        If Guna2PictureBox1.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
+    End Sub
 
-        If Not Regex.IsMatch(quantity.Text.Trim(), "^[0-9]+$") Then
+    Private Sub Updatebtn_Click(sender As Object, e As EventArgs) Handles Updatebtn.Click
+        If prdctnmtxbx.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
+        If Categorycmbbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
+
+        If pricetxbx.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
+        If quantitytxbx.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
+        If Prdctpicbx.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
+
+        If Not Regex.IsMatch(quantitytxbx.Text.Trim(), "^[0-9]+$") Then
             MsgBox("Quantity must be number only", MsgBoxStyle.Critical)
-            quantity.Focus()
+            quantitytxbx.Focus()
             Return
         End If
 
-        If Not Regex.IsMatch(price.Text.Trim(), "^[0-9]+(\.[0-9]{1,2})?$") Then
+        If Not Regex.IsMatch(pricetxbx.Text.Trim(), "^[0-9]+(\.[0-9]{1,2})?$") Then
             MsgBox("Price must be numbers only (ex: 100 or 100.50)", MsgBoxStyle.Critical)
-            price.Focus()
+            pricetxbx.Focus()
             Return
         End If
 
-        If CInt(quantity.Text) <= 0 Then
+        If CInt(quantitytxbx.Text) <= 0 Then
             MsgBox("Quantity must be greater than 0", MsgBoxStyle.Critical)
             Return
         End If
 
-        If CDbl(price.Text) <= 0 Then
+        If CDbl(pricetxbx.Text) <= 0 Then
             MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
             Return
         End If
@@ -355,25 +354,25 @@ Public Class MenuMngment
         Clear()
         MsgBox("Data Updated")
         AutoNumber()
-        sqlconn.Close()
 
     End Sub
 
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
-        OpenFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
-        OpenFileDialog1.FileName = ""
-        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
-            Try
-                Dim tempImg As Image = Image.FromFile(OpenFileDialog1.FileName)
-                Guna2PictureBox1.Image = New Bitmap(tempImg)
-                tempImg.Dispose()
-            Catch ex As Exception
-                MsgBox("Use JPG or PNG only", MsgBoxStyle.Critical)
-            End Try
-        End If
+    Sub Clear()
+        prdctnmtxbx.Clear()
+        pricetxbx.Clear()
+        quantitytxbx.Clear()
+        sizecmbbx.SelectedIndex = -1
+        Categorycmbbx.SelectedIndex = -1
+        Prdctpicbx.Image = Nothing
     End Sub
 
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
+
+    Private Sub Searchbtn_Click(sender As Object, e As EventArgs) Handles Searchbtn.Click
+        SearchProduct(Srchtxtbx.Text)
+
+    End Sub
+
+    Private Sub Prdctpicbx_Click(sender As Object, e As EventArgs) Handles Prdctpicbx.Click
 
     End Sub
 End Class
