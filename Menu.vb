@@ -50,10 +50,11 @@ Public Class Menu
                 }
 
 
+
                 Try
                     If Not IsDBNull(dr("prodimage")) Then
 
-                        Dim imgBytes As Byte() = DirectCast(dr("product_image"), Byte())
+                        Dim imgBytes As Byte() = DirectCast(dr("prodimage"), Byte())
                         Using ms As New MemoryStream(imgBytes)
                             productImg.Image = Image.FromStream(ms)
                         End Using

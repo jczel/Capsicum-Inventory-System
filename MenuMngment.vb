@@ -34,7 +34,6 @@ Public Class MenuMngment
             End If
             quantitytxbx.Clear()
         End If
-        End If
 
     End Sub
 
