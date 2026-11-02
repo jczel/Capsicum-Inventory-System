@@ -23,23 +23,14 @@ Partial Class MenuMngment
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuMngment))
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PrdctTbledtgrd = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -58,6 +49,7 @@ Partial Class MenuMngment
         Me.quantitytxbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Categorycmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Srchtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.SizeFilterCmbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Searchbtn = New Guna.UI2.WinForms.Guna2Button()
@@ -65,7 +57,15 @@ Partial Class MenuMngment
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Srchtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -120,27 +120,27 @@ Partial Class MenuMngment
         '
         Me.PrdctTbledtgrd.AllowUserToAddRows = False
         Me.PrdctTbledtgrd.AllowUserToResizeColumns = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.PrdctTbledtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
+        Me.PrdctTbledtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle19
         Me.PrdctTbledtgrd.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SandyBrown
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.PrdctTbledtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.SandyBrown
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.PrdctTbledtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
         Me.PrdctTbledtgrd.ColumnHeadersHeight = 40
         Me.PrdctTbledtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column11, Me.Column2, Me.Column12, Me.Column13, Me.Column14, Me.Column18, Me.Column19, Me.Column20})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.PrdctTbledtgrd.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.PrdctTbledtgrd.DefaultCellStyle = DataGridViewCellStyle21
         Me.PrdctTbledtgrd.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PrdctTbledtgrd.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PrdctTbledtgrd.Location = New System.Drawing.Point(0, 0)
@@ -152,7 +152,7 @@ Partial Class MenuMngment
         Me.PrdctTbledtgrd.RowTemplate.Height = 100
         Me.PrdctTbledtgrd.RowTemplate.ReadOnly = True
         Me.PrdctTbledtgrd.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.PrdctTbledtgrd.Size = New System.Drawing.Size(1738, 395)
+        Me.PrdctTbledtgrd.Size = New System.Drawing.Size(1158, 257)
         Me.PrdctTbledtgrd.TabIndex = 47
         Me.PrdctTbledtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.PrdctTbledtgrd.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
@@ -163,72 +163,6 @@ Partial Class MenuMngment
         Me.PrdctTbledtgrd.ThemeStyle.ReadOnly = True
         Me.PrdctTbledtgrd.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PrdctTbledtgrd.ThemeStyle.RowsStyle.Height = 100
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Product ID"
-        Me.Column1.MinimumWidth = 8
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Product Name"
-        Me.Column11.MinimumWidth = 8
-        Me.Column11.Name = "Column11"
-        Me.Column11.ReadOnly = True
-        Me.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Category"
-        Me.Column2.MinimumWidth = 8
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column12
-        '
-        Me.Column12.HeaderText = "Size"
-        Me.Column12.MinimumWidth = 8
-        Me.Column12.Name = "Column12"
-        Me.Column12.ReadOnly = True
-        '
-        'Column13
-        '
-        Me.Column13.HeaderText = "Price"
-        Me.Column13.MinimumWidth = 8
-        Me.Column13.Name = "Column13"
-        Me.Column13.ReadOnly = True
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Quantity"
-        Me.Column14.MinimumWidth = 8
-        Me.Column14.Name = "Column14"
-        Me.Column14.ReadOnly = True
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Image"
-        Me.Column18.MinimumWidth = 8
-        Me.Column18.Name = "Column18"
-        Me.Column18.ReadOnly = True
-        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Edit"
-        Me.Column19.MinimumWidth = 8
-        Me.Column19.Name = "Column19"
-        Me.Column19.ReadOnly = True
-        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Delete"
-        Me.Column20.MinimumWidth = 8
-        Me.Column20.Name = "Column20"
-        Me.Column20.ReadOnly = True
         '
         'Guna2Panel2
         '
@@ -285,10 +219,10 @@ Partial Class MenuMngment
         Me.Updatebtn.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Updatebtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Updatebtn.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Updatebtn.Location = New System.Drawing.Point(10, 202)
+        Me.Updatebtn.Location = New System.Drawing.Point(10, 151)
         Me.Updatebtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Updatebtn.Name = "Updatebtn"
-        Me.Updatebtn.Size = New System.Drawing.Size(276, 77)
+        Me.Updatebtn.Size = New System.Drawing.Size(179, 44)
         Me.Updatebtn.TabIndex = 54
         Me.Updatebtn.Text = "Update"
         '
@@ -309,10 +243,10 @@ Partial Class MenuMngment
         Me.Addbtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Addbtn.HoverState.ForeColor = System.Drawing.Color.White
         Me.Addbtn.IndicateFocus = True
-        Me.Addbtn.Location = New System.Drawing.Point(10, 108)
+        Me.Addbtn.Location = New System.Drawing.Point(10, 76)
         Me.Addbtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Addbtn.Name = "Addbtn"
-        Me.Addbtn.Size = New System.Drawing.Size(276, 77)
+        Me.Addbtn.Size = New System.Drawing.Size(179, 51)
         Me.Addbtn.TabIndex = 53
         Me.Addbtn.Text = "Add"
         '
@@ -349,7 +283,7 @@ Partial Class MenuMngment
         Me.Guna2GradientPanel1.Controls.Add(Me.Prdctpicbx)
         Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.White
         Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.White
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(1029, 65)
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(705, 45)
         Me.Guna2GradientPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(200, 179)
@@ -364,7 +298,7 @@ Partial Class MenuMngment
         Me.Prdctpicbx.Location = New System.Drawing.Point(0, 0)
         Me.Prdctpicbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Prdctpicbx.Name = "Prdctpicbx"
-        Me.Prdctpicbx.Size = New System.Drawing.Size(300, 275)
+        Me.Prdctpicbx.Size = New System.Drawing.Size(200, 179)
         Me.Prdctpicbx.TabIndex = 66
         Me.Prdctpicbx.TabStop = False
         '
@@ -373,7 +307,7 @@ Partial Class MenuMngment
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(527, 65)
+        Me.Label4.Location = New System.Drawing.Point(377, 112)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 15)
@@ -407,12 +341,12 @@ Partial Class MenuMngment
         Me.prdctnmtxbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.prdctnmtxbx.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.prdctnmtxbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.prdctnmtxbx.Location = New System.Drawing.Point(23, 114)
+        Me.prdctnmtxbx.Location = New System.Drawing.Point(35, 122)
         Me.prdctnmtxbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.prdctnmtxbx.Name = "prdctnmtxbx"
         Me.prdctnmtxbx.PlaceholderText = "Product Name"
         Me.prdctnmtxbx.SelectedText = ""
-        Me.prdctnmtxbx.Size = New System.Drawing.Size(280, 46)
+        Me.prdctnmtxbx.Size = New System.Drawing.Size(282, 40)
         Me.prdctnmtxbx.TabIndex = 58
         '
         'sizecmbbx
@@ -430,10 +364,10 @@ Partial Class MenuMngment
         Me.sizecmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.sizecmbbx.ItemHeight = 30
         Me.sizecmbbx.Items.AddRange(New Object() {"Small", "Medium", "Large"})
-        Me.sizecmbbx.Location = New System.Drawing.Point(502, 93)
+        Me.sizecmbbx.Location = New System.Drawing.Point(362, 132)
         Me.sizecmbbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.sizecmbbx.Name = "sizecmbbx"
-        Me.sizecmbbx.Size = New System.Drawing.Size(418, 36)
+        Me.sizecmbbx.Size = New System.Drawing.Size(259, 36)
         Me.sizecmbbx.TabIndex = 64
         Me.sizecmbbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -442,7 +376,7 @@ Partial Class MenuMngment
         Me.categorylb.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.categorylb.AutoSize = True
         Me.categorylb.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.categorylb.Location = New System.Drawing.Point(53, 265)
+        Me.categorylb.Location = New System.Drawing.Point(368, 51)
         Me.categorylb.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.categorylb.Name = "categorylb"
         Me.categorylb.Size = New System.Drawing.Size(57, 15)
@@ -464,13 +398,13 @@ Partial Class MenuMngment
         Me.PrdcId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PrdcId.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.PrdcId.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PrdcId.Location = New System.Drawing.Point(35, 88)
+        Me.PrdcId.Location = New System.Drawing.Point(37, 71)
         Me.PrdcId.Margin = New System.Windows.Forms.Padding(6)
         Me.PrdcId.Name = "PrdcId"
         Me.PrdcId.PlaceholderText = "Product ID"
         Me.PrdcId.ReadOnly = True
         Me.PrdcId.SelectedText = ""
-        Me.PrdcId.Size = New System.Drawing.Size(420, 71)
+        Me.PrdcId.Size = New System.Drawing.Size(282, 40)
         Me.PrdcId.TabIndex = 59
         '
         'pricetxbx
@@ -488,12 +422,12 @@ Partial Class MenuMngment
         Me.pricetxbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.pricetxbx.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.pricetxbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pricetxbx.Location = New System.Drawing.Point(502, 174)
+        Me.pricetxbx.Location = New System.Drawing.Point(362, 181)
         Me.pricetxbx.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.pricetxbx.Name = "pricetxbx"
         Me.pricetxbx.PlaceholderText = "Price"
         Me.pricetxbx.SelectedText = ""
-        Me.pricetxbx.Size = New System.Drawing.Size(280, 46)
+        Me.pricetxbx.Size = New System.Drawing.Size(259, 40)
         Me.pricetxbx.TabIndex = 62
         '
         'quantitytxbx
@@ -511,12 +445,12 @@ Partial Class MenuMngment
         Me.quantitytxbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.quantitytxbx.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.quantitytxbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.quantitytxbx.Location = New System.Drawing.Point(502, 268)
+        Me.quantitytxbx.Location = New System.Drawing.Point(35, 181)
         Me.quantitytxbx.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.quantitytxbx.Name = "quantitytxbx"
         Me.quantitytxbx.PlaceholderText = "Quantity"
         Me.quantitytxbx.SelectedText = ""
-        Me.quantitytxbx.Size = New System.Drawing.Size(280, 46)
+        Me.quantitytxbx.Size = New System.Drawing.Size(282, 40)
         Me.quantitytxbx.TabIndex = 63
         '
         'Categorycmbbx
@@ -534,10 +468,10 @@ Partial Class MenuMngment
         Me.Categorycmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Categorycmbbx.ItemHeight = 30
         Me.Categorycmbbx.Items.AddRange(New Object() {"Hot Coffee", "Cold Coffee", "Tea", "Desserts"})
-        Me.Categorycmbbx.Location = New System.Drawing.Point(35, 293)
+        Me.Categorycmbbx.Location = New System.Drawing.Point(362, 71)
         Me.Categorycmbbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Categorycmbbx.Name = "Categorycmbbx"
-        Me.Categorycmbbx.Size = New System.Drawing.Size(418, 36)
+        Me.Categorycmbbx.Size = New System.Drawing.Size(259, 36)
         Me.Categorycmbbx.TabIndex = 60
         Me.Categorycmbbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -560,6 +494,30 @@ Partial Class MenuMngment
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
         Me.Guna2Panel1.Size = New System.Drawing.Size(1158, 81)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Srchtxtbx
+        '
+        Me.Srchtxtbx.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Srchtxtbx.AutoRoundedCorners = True
+        Me.Srchtxtbx.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Srchtxtbx.BorderThickness = 2
+        Me.Srchtxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Srchtxtbx.DefaultText = ""
+        Me.Srchtxtbx.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Srchtxtbx.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Srchtxtbx.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Srchtxtbx.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Srchtxtbx.FillColor = System.Drawing.Color.WhiteSmoke
+        Me.Srchtxtbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Srchtxtbx.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!)
+        Me.Srchtxtbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Srchtxtbx.Location = New System.Drawing.Point(588, 29)
+        Me.Srchtxtbx.Margin = New System.Windows.Forms.Padding(8)
+        Me.Srchtxtbx.Name = "Srchtxtbx"
+        Me.Srchtxtbx.PlaceholderText = "Search Product ID, name..."
+        Me.Srchtxtbx.SelectedText = ""
+        Me.Srchtxtbx.Size = New System.Drawing.Size(410, 38)
+        Me.Srchtxtbx.TabIndex = 68
         '
         'SizeFilterCmbx
         '
@@ -606,10 +564,10 @@ Partial Class MenuMngment
         Me.Searchbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Searchbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Searchbtn.ForeColor = System.Drawing.Color.White
-        Me.Searchbtn.Location = New System.Drawing.Point(1516, 37)
+        Me.Searchbtn.Location = New System.Drawing.Point(1010, 29)
         Me.Searchbtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Searchbtn.Name = "Searchbtn"
-        Me.Searchbtn.Size = New System.Drawing.Size(141, 55)
+        Me.Searchbtn.Size = New System.Drawing.Size(82, 38)
         Me.Searchbtn.TabIndex = 23
         Me.Searchbtn.Text = "Search"
         '
@@ -652,29 +610,72 @@ Partial Class MenuMngment
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Srchtxtbx
+        'Column1
         '
-        Me.Srchtxtbx.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Srchtxtbx.AutoRoundedCorners = True
-        Me.Srchtxtbx.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Srchtxtbx.BorderThickness = 2
-        Me.Srchtxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Srchtxtbx.DefaultText = ""
-        Me.Srchtxtbx.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Srchtxtbx.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Srchtxtbx.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Srchtxtbx.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Srchtxtbx.FillColor = System.Drawing.Color.WhiteSmoke
-        Me.Srchtxtbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Srchtxtbx.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!)
-        Me.Srchtxtbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Srchtxtbx.Location = New System.Drawing.Point(1006, 37)
-        Me.Srchtxtbx.Margin = New System.Windows.Forms.Padding(8)
-        Me.Srchtxtbx.Name = "Srchtxtbx"
-        Me.Srchtxtbx.PlaceholderText = "Search Product ID, name..."
-        Me.Srchtxtbx.SelectedText = ""
-        Me.Srchtxtbx.Size = New System.Drawing.Size(498, 55)
-        Me.Srchtxtbx.TabIndex = 68
+        Me.Column1.HeaderText = "Product ID"
+        Me.Column1.MinimumWidth = 8
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Product Name"
+        Me.Column11.MinimumWidth = 8
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
+        Me.Column11.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Category"
+        Me.Column2.MinimumWidth = 8
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Size"
+        Me.Column12.MinimumWidth = 8
+        Me.Column12.Name = "Column12"
+        Me.Column12.ReadOnly = True
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Price"
+        Me.Column13.MinimumWidth = 8
+        Me.Column13.Name = "Column13"
+        Me.Column13.ReadOnly = True
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Quantity"
+        Me.Column14.MinimumWidth = 8
+        Me.Column14.Name = "Column14"
+        Me.Column14.ReadOnly = True
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Image"
+        Me.Column18.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.Column18.MinimumWidth = 8
+        Me.Column18.Name = "Column18"
+        Me.Column18.ReadOnly = True
+        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Edit"
+        Me.Column19.MinimumWidth = 8
+        Me.Column19.Name = "Column19"
+        Me.Column19.ReadOnly = True
+        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Delete"
+        Me.Column20.MinimumWidth = 8
+        Me.Column20.Name = "Column20"
+        Me.Column20.ReadOnly = True
         '
         'MenuMngment
         '
@@ -726,6 +727,13 @@ Partial Class MenuMngment
     Friend WithEvents Updatebtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Addbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents PrdctTbledtgrd As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Searchbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents SizeFilterCmbx As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Srchtxtbx As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
@@ -735,11 +743,4 @@ Partial Class MenuMngment
     Friend WithEvents Column18 As DataGridViewImageColumn
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
-    Friend WithEvents Searchbtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents SizeFilterCmbx As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents Srchtxtbx As Guna.UI2.WinForms.Guna2TextBox
 End Class

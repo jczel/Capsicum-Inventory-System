@@ -8,7 +8,8 @@ Public Class MenuMngment
 
     Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
-        productTable()
+        readdata()
+        AutoNumber()
     End Sub
 
     Private Sub prdctnmtxbx_TextChanged(sender As Object, e As EventArgs) Handles prdctnmtxbx.TextChanged
@@ -53,11 +54,8 @@ Public Class MenuMngment
         Admin.NotifCount.Text = countNotif.ToString()
     End Sub
 
-    Private Sub Guna2Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel4.Paint
 
-    End Sub
-
-    Private Sub PrdctTble_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
+    Private Sub PrdctTbledtgrd_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
         If e.RowIndex < 0 Then Return
         Dim i As Integer = e.RowIndex
         If e.ColumnIndex = 7 Then
@@ -81,13 +79,14 @@ Public Class MenuMngment
                 MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
                 Return
             End If
-            MsgBox("Data added")
-            savedata()
-            readdata()
-            Clear()
-            CreateNewAutoNumber()
-            AutoNumber()
-            sqlconn.Close()
+        End If
+        MsgBox("Data added")
+        savedata()
+        readdata()
+        Clear()
+        CreateNewAutoNumber()
+        AutoNumber()
+        sqlconn.Close()
 
     End Sub
 
@@ -374,5 +373,7 @@ Public Class MenuMngment
 
     End Sub
 
+    Private Sub Prdctpicbx_Click(sender As Object, e As EventArgs) Handles Prdctpicbx.Click
 
+    End Sub
 End Class
