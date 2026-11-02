@@ -27,4 +27,8 @@
         menu.Dock = DockStyle.Fill
         Guna2Panel5.Controls.Add(menu)
     End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+
+    End Sub
 End Class
