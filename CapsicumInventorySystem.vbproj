@@ -121,6 +121,12 @@
       <DependentUpon>Form1login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GenerateReport.Designer.vb">
+      <DependentUpon>GenerateReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ManageAcc.Designer.vb">
       <DependentUpon>ManageAcc.vb</DependentUpon>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1login.resx">
       <DependentUpon>Form1login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateReport.resx">
+      <DependentUpon>GenerateReport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageAcc.resx">
       <DependentUpon>ManageAcc.vb</DependentUpon>
