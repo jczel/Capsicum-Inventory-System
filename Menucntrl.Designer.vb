@@ -144,7 +144,7 @@ Partial Class Menucntrl
         '
         Me.TableLayoutPanel3.ColumnCount = 2
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 816.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 695.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2Panel7, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2Panel6, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -160,9 +160,9 @@ Partial Class Menucntrl
         '
         Me.Guna2Panel7.Controls.Add(Me.TableLayoutPanel4)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel7.Location = New System.Drawing.Point(695, 3)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(816, 3)
         Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(810, 737)
+        Me.Guna2Panel7.Size = New System.Drawing.Size(689, 737)
         Me.Guna2Panel7.TabIndex = 3
         '
         'TableLayoutPanel4
@@ -181,7 +181,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(810, 737)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(689, 737)
         Me.TableLayoutPanel4.TabIndex = 0
         '
         'Discountlb
@@ -200,7 +200,7 @@ Partial Class Menucntrl
         Me.Discountlb.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Discountlb.Location = New System.Drawing.Point(3, 485)
         Me.Discountlb.Name = "Discountlb"
-        Me.Discountlb.Size = New System.Drawing.Size(804, 156)
+        Me.Discountlb.Size = New System.Drawing.Size(683, 156)
         Me.Discountlb.TabIndex = 4
         '
         'totalnumlb
@@ -317,7 +317,7 @@ Partial Class Menucntrl
         Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel8.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(804, 476)
+        Me.Guna2Panel8.Size = New System.Drawing.Size(683, 476)
         Me.Guna2Panel8.TabIndex = 3
         '
         'ProductCartDtgrd
@@ -352,7 +352,7 @@ Partial Class Menucntrl
         Me.ProductCartDtgrd.RowTemplate.Height = 40
         Me.ProductCartDtgrd.RowTemplate.ReadOnly = True
         Me.ProductCartDtgrd.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.Size = New System.Drawing.Size(804, 476)
+        Me.ProductCartDtgrd.Size = New System.Drawing.Size(683, 476)
         Me.ProductCartDtgrd.TabIndex = 48
         Me.ProductCartDtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
@@ -406,9 +406,9 @@ Partial Class Menucntrl
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Clearbttn)
         Me.Guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(2, 646)
-        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(806, 89)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(685, 89)
         Me.Guna2CustomGradientPanel1.TabIndex = 5
         '
         'Confrmbttn
@@ -456,7 +456,7 @@ Partial Class Menucntrl
         Me.Guna2Panel6.Location = New System.Drawing.Point(3, 0)
         Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(686, 740)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(807, 740)
         Me.Guna2Panel6.TabIndex = 2
         '
         'TableLayoutPanel5
@@ -472,7 +472,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel5.RowCount = 2
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.104575!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.89542!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(686, 740)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(807, 740)
         Me.TableLayoutPanel5.TabIndex = 0
         '
         'Guna2Panel11
@@ -483,7 +483,7 @@ Partial Class Menucntrl
         Me.Guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel11.Location = New System.Drawing.Point(3, 62)
         Me.Guna2Panel11.Name = "Guna2Panel11"
-        Me.Guna2Panel11.Size = New System.Drawing.Size(680, 675)
+        Me.Guna2Panel11.Size = New System.Drawing.Size(801, 675)
         Me.Guna2Panel11.TabIndex = 3
         '
         'Guna2Panel10
@@ -492,7 +492,7 @@ Partial Class Menucntrl
         Me.Guna2Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel10.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel10.Name = "Guna2Panel10"
-        Me.Guna2Panel10.Size = New System.Drawing.Size(680, 53)
+        Me.Guna2Panel10.Size = New System.Drawing.Size(801, 53)
         Me.Guna2Panel10.TabIndex = 2
         '
         'TableLayoutPanel6
@@ -515,7 +515,7 @@ Partial Class Menucntrl
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(680, 53)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(801, 53)
         Me.TableLayoutPanel6.TabIndex = 0
         '
         'AddOnsbttn
@@ -532,9 +532,9 @@ Partial Class Menucntrl
         Me.AddOnsbttn.FillColor = System.Drawing.Color.Transparent
         Me.AddOnsbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.AddOnsbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.AddOnsbttn.Location = New System.Drawing.Point(568, 3)
+        Me.AddOnsbttn.Location = New System.Drawing.Point(668, 3)
         Me.AddOnsbttn.Name = "AddOnsbttn"
-        Me.AddOnsbttn.Size = New System.Drawing.Size(109, 47)
+        Me.AddOnsbttn.Size = New System.Drawing.Size(130, 47)
         Me.AddOnsbttn.TabIndex = 63
         Me.AddOnsbttn.Text = "Add-ons"
         '
@@ -552,9 +552,9 @@ Partial Class Menucntrl
         Me.Dssrtbttn.FillColor = System.Drawing.Color.Transparent
         Me.Dssrtbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Dssrtbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Dssrtbttn.Location = New System.Drawing.Point(455, 3)
+        Me.Dssrtbttn.Location = New System.Drawing.Point(535, 3)
         Me.Dssrtbttn.Name = "Dssrtbttn"
-        Me.Dssrtbttn.Size = New System.Drawing.Size(107, 47)
+        Me.Dssrtbttn.Size = New System.Drawing.Size(127, 47)
         Me.Dssrtbttn.TabIndex = 62
         Me.Dssrtbttn.Text = "Desert"
         '
@@ -572,9 +572,9 @@ Partial Class Menucntrl
         Me.teabttn.FillColor = System.Drawing.Color.Transparent
         Me.teabttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.teabttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.teabttn.Location = New System.Drawing.Point(342, 3)
+        Me.teabttn.Location = New System.Drawing.Point(402, 3)
         Me.teabttn.Name = "teabttn"
-        Me.teabttn.Size = New System.Drawing.Size(107, 47)
+        Me.teabttn.Size = New System.Drawing.Size(127, 47)
         Me.teabttn.TabIndex = 61
         Me.teabttn.Text = "Tea"
         '
@@ -592,9 +592,9 @@ Partial Class Menucntrl
         Me.coldCofbttn.FillColor = System.Drawing.Color.Transparent
         Me.coldCofbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.coldCofbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.coldCofbttn.Location = New System.Drawing.Point(229, 3)
+        Me.coldCofbttn.Location = New System.Drawing.Point(269, 3)
         Me.coldCofbttn.Name = "coldCofbttn"
-        Me.coldCofbttn.Size = New System.Drawing.Size(107, 47)
+        Me.coldCofbttn.Size = New System.Drawing.Size(127, 47)
         Me.coldCofbttn.TabIndex = 60
         Me.coldCofbttn.Text = "Cold Coffee"
         '
@@ -612,9 +612,9 @@ Partial Class Menucntrl
         Me.hotCofbttn.FillColor = System.Drawing.Color.Transparent
         Me.hotCofbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.hotCofbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.hotCofbttn.Location = New System.Drawing.Point(116, 3)
+        Me.hotCofbttn.Location = New System.Drawing.Point(136, 3)
         Me.hotCofbttn.Name = "hotCofbttn"
-        Me.hotCofbttn.Size = New System.Drawing.Size(107, 47)
+        Me.hotCofbttn.Size = New System.Drawing.Size(127, 47)
         Me.hotCofbttn.TabIndex = 59
         Me.hotCofbttn.Text = "Hot Coffee"
         '
@@ -634,7 +634,7 @@ Partial Class Menucntrl
         Me.allprdbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.allprdbttn.Location = New System.Drawing.Point(3, 3)
         Me.allprdbttn.Name = "allprdbttn"
-        Me.allprdbttn.Size = New System.Drawing.Size(107, 47)
+        Me.allprdbttn.Size = New System.Drawing.Size(127, 47)
         Me.allprdbttn.TabIndex = 58
         Me.allprdbttn.Text = "All"
         '

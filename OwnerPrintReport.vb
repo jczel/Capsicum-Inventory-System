@@ -10,4 +10,12 @@
     Private Sub OwnerPrintReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub datelb_Click(sender As Object, e As EventArgs) Handles datelb.Click
+
+    End Sub
 End Class
