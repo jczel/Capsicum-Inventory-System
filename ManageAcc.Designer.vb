@@ -24,9 +24,9 @@ Partial Class ManageAcc
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManageAcc))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -88,14 +88,14 @@ Partial Class ManageAcc
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2CustomGradientPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1268, 629)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1268, 667)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.6607!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.3393!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.38802!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.61199!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel5, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
@@ -105,7 +105,7 @@ Partial Class ManageAcc
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1268, 629)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1268, 667)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Guna2Panel5
@@ -131,13 +131,13 @@ Partial Class ManageAcc
         Me.Guna2Panel5.Controls.Add(Me.Guna2CustomGradientPanel2)
         Me.Guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel5.FillColor = System.Drawing.Color.OldLace
-        Me.Guna2Panel5.Location = New System.Drawing.Point(986, 2)
+        Me.Guna2Panel5.Location = New System.Drawing.Point(1034, 2)
         Me.Guna2Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel5.ShadowDecoration.Color = System.Drawing.Color.Tan
         Me.Guna2Panel5.ShadowDecoration.Enabled = True
-        Me.Guna2Panel5.Size = New System.Drawing.Size(280, 625)
+        Me.Guna2Panel5.Size = New System.Drawing.Size(232, 663)
         Me.Guna2Panel5.TabIndex = 2
         '
         'Guna2Button2
@@ -156,7 +156,7 @@ Partial Class ManageAcc
         Me.Guna2Button2.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Button2.HoverState.ForeColor = System.Drawing.Color.SeaShell
-        Me.Guna2Button2.Location = New System.Drawing.Point(147, 571)
+        Me.Guna2Button2.Location = New System.Drawing.Point(123, 596)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Size = New System.Drawing.Size(116, 39)
         Me.Guna2Button2.TabIndex = 32
@@ -178,7 +178,7 @@ Partial Class ManageAcc
         Me.Guna2Button1.ForeColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Button1.HoverState.ForeColor = System.Drawing.Color.SeaShell
-        Me.Guna2Button1.Location = New System.Drawing.Point(17, 571)
+        Me.Guna2Button1.Location = New System.Drawing.Point(-7, 596)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Size = New System.Drawing.Size(124, 39)
         Me.Guna2Button1.TabIndex = 31
@@ -190,7 +190,7 @@ Partial Class ManageAcc
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label3.Location = New System.Drawing.Point(52, 315)
+        Me.Label3.Location = New System.Drawing.Point(25, 333)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 15)
         Me.Label3.TabIndex = 30
@@ -233,11 +233,11 @@ Partial Class ManageAcc
         Me.gendercmbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.gendercmbox.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.gendercmbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.gendercmbox.ItemHeight = 20
+        Me.gendercmbox.ItemHeight = 25
         Me.gendercmbox.Items.AddRange(New Object() {"Female", "Male"})
         Me.gendercmbox.Location = New System.Drawing.Point(48, 511)
         Me.gendercmbox.Name = "gendercmbox"
-        Me.gendercmbox.Size = New System.Drawing.Size(183, 26)
+        Me.gendercmbox.Size = New System.Drawing.Size(183, 31)
         Me.gendercmbox.TabIndex = 27
         '
         'rolecmbbox
@@ -253,11 +253,11 @@ Partial Class ManageAcc
         Me.rolecmbbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.rolecmbbox.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.rolecmbbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.rolecmbbox.ItemHeight = 20
+        Me.rolecmbbox.ItemHeight = 25
         Me.rolecmbbox.Items.AddRange(New Object() {"Admin", "Owner", "Staff"})
         Me.rolecmbbox.Location = New System.Drawing.Point(49, 455)
         Me.rolecmbbox.Name = "rolecmbbox"
-        Me.rolecmbbox.Size = New System.Drawing.Size(183, 26)
+        Me.rolecmbbox.Size = New System.Drawing.Size(183, 31)
         Me.rolecmbbox.TabIndex = 26
         '
         'confirmpass
@@ -280,7 +280,7 @@ Partial Class ManageAcc
         Me.confirmpass.Name = "confirmpass"
         Me.confirmpass.PlaceholderText = "Confirm Password"
         Me.confirmpass.SelectedText = ""
-        Me.confirmpass.Size = New System.Drawing.Size(183, 23)
+        Me.confirmpass.Size = New System.Drawing.Size(183, 33)
         Me.confirmpass.TabIndex = 25
         '
         'password
@@ -303,7 +303,7 @@ Partial Class ManageAcc
         Me.password.Name = "password"
         Me.password.PlaceholderText = "Password"
         Me.password.SelectedText = ""
-        Me.password.Size = New System.Drawing.Size(183, 23)
+        Me.password.Size = New System.Drawing.Size(183, 33)
         Me.password.TabIndex = 24
         '
         'birthdate
@@ -321,7 +321,7 @@ Partial Class ManageAcc
         Me.birthdate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.birthdate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.birthdate.Name = "birthdate"
-        Me.birthdate.Size = New System.Drawing.Size(183, 27)
+        Me.birthdate.Size = New System.Drawing.Size(183, 33)
         Me.birthdate.TabIndex = 23
         Me.birthdate.Value = New Date(2026, 10, 16, 17, 53, 38, 520)
         '
@@ -346,7 +346,7 @@ Partial Class ManageAcc
         Me.userid.Name = "userid"
         Me.userid.PlaceholderText = "User ID"
         Me.userid.SelectedText = ""
-        Me.userid.Size = New System.Drawing.Size(183, 25)
+        Me.userid.Size = New System.Drawing.Size(183, 33)
         Me.userid.TabIndex = 22
         '
         'firstname
@@ -370,7 +370,7 @@ Partial Class ManageAcc
         Me.firstname.Name = "firstname"
         Me.firstname.PlaceholderText = "Firstname"
         Me.firstname.SelectedText = ""
-        Me.firstname.Size = New System.Drawing.Size(183, 24)
+        Me.firstname.Size = New System.Drawing.Size(183, 33)
         Me.firstname.TabIndex = 21
         '
         'username
@@ -394,7 +394,7 @@ Partial Class ManageAcc
         Me.username.Name = "username"
         Me.username.PlaceholderText = "Username"
         Me.username.SelectedText = ""
-        Me.username.Size = New System.Drawing.Size(183, 24)
+        Me.username.Size = New System.Drawing.Size(183, 33)
         Me.username.TabIndex = 20
         '
         'lastname
@@ -418,7 +418,7 @@ Partial Class ManageAcc
         Me.lastname.Name = "lastname"
         Me.lastname.PlaceholderText = "Lastname"
         Me.lastname.SelectedText = ""
-        Me.lastname.Size = New System.Drawing.Size(183, 24)
+        Me.lastname.Size = New System.Drawing.Size(183, 33)
         Me.lastname.TabIndex = 19
         '
         'Guna2CustomGradientPanel2
@@ -437,7 +437,7 @@ Partial Class ManageAcc
         Me.Guna2CustomGradientPanel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2CustomGradientPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CustomGradientPanel2.Name = "Guna2CustomGradientPanel2"
-        Me.Guna2CustomGradientPanel2.Size = New System.Drawing.Size(280, 161)
+        Me.Guna2CustomGradientPanel2.Size = New System.Drawing.Size(232, 161)
         Me.Guna2CustomGradientPanel2.TabIndex = 0
         '
         'Guna2Panel1
@@ -449,7 +449,7 @@ Partial Class ManageAcc
         Me.Guna2Panel1.BorderRadius = 20
         Me.Guna2Panel1.BorderThickness = 3
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(59, 26)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(35, 26)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(166, 117)
@@ -474,7 +474,7 @@ Partial Class ManageAcc
         Me.Guna2Panel2.Location = New System.Drawing.Point(2, 2)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(980, 625)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1028, 663)
         Me.Guna2Panel2.TabIndex = 1
         '
         'TableLayoutPanel2
@@ -490,7 +490,7 @@ Partial Class ManageAcc
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.956778!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.04322!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(980, 625)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1028, 663)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Guna2Panel4
@@ -502,38 +502,38 @@ Partial Class ManageAcc
         Me.Guna2Panel4.Controls.Add(Me.Guna2DataGridView1)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.OldLace
-        Me.Guna2Panel4.Location = New System.Drawing.Point(2, 51)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(2, 54)
         Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel4.ShadowDecoration.Color = System.Drawing.Color.Tan
         Me.Guna2Panel4.ShadowDecoration.Enabled = True
-        Me.Guna2Panel4.Size = New System.Drawing.Size(976, 572)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(1024, 607)
         Me.Guna2Panel4.TabIndex = 2
         '
         'Guna2DataGridView1
         '
         Me.Guna2DataGridView1.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.Guna2DataGridView1.ColumnHeadersHeight = 40
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column11, Me.Column12, Me.Column13, Me.Column14, Me.Column15, Me.Column16, Me.Column17, Me.Column18, Me.Column19, Me.Column20})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle9
         Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 0)
@@ -543,7 +543,7 @@ Partial Class ManageAcc
         Me.Guna2DataGridView1.RowTemplate.Height = 50
         Me.Guna2DataGridView1.RowTemplate.ReadOnly = True
         Me.Guna2DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(976, 572)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1024, 607)
         Me.Guna2DataGridView1.TabIndex = 12
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
@@ -640,7 +640,7 @@ Partial Class ManageAcc
         Me.Guna2Panel3.ShadowDecoration.BorderRadius = 20
         Me.Guna2Panel3.ShadowDecoration.Color = System.Drawing.Color.Tan
         Me.Guna2Panel3.ShadowDecoration.Enabled = True
-        Me.Guna2Panel3.Size = New System.Drawing.Size(976, 45)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1024, 48)
         Me.Guna2Panel3.TabIndex = 1
         '
         'SizeFilterCmbx
@@ -658,7 +658,7 @@ Partial Class ManageAcc
         Me.SizeFilterCmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SizeFilterCmbx.ItemHeight = 20
         Me.SizeFilterCmbx.Items.AddRange(New Object() {"All", "Admin", "Owner", "Staff"})
-        Me.SizeFilterCmbx.Location = New System.Drawing.Point(25, 11)
+        Me.SizeFilterCmbx.Location = New System.Drawing.Point(25, 13)
         Me.SizeFilterCmbx.Name = "SizeFilterCmbx"
         Me.SizeFilterCmbx.Size = New System.Drawing.Size(143, 26)
         Me.SizeFilterCmbx.StartIndex = 0
@@ -676,7 +676,7 @@ Partial Class ManageAcc
         Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(889, 8)
+        Me.Guna2Button3.Location = New System.Drawing.Point(937, 10)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.Size = New System.Drawing.Size(71, 30)
         Me.Guna2Button3.TabIndex = 23
@@ -698,13 +698,13 @@ Partial Class ManageAcc
         Me.Guna2TextBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!)
         Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Goldenrod
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(479, 8)
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(479, 10)
         Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2TextBox2.PlaceholderText = "Search ID, name, username.."
         Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(408, 30)
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(456, 30)
         Me.Guna2TextBox2.TabIndex = 22
         '
         'Guna2Elipse1
@@ -721,7 +721,7 @@ Partial Class ManageAcc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.OldLace
-        Me.ClientSize = New System.Drawing.Size(1268, 629)
+        Me.ClientSize = New System.Drawing.Size(1268, 667)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MinimumSize = New System.Drawing.Size(1284, 668)
