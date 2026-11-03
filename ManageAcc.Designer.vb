@@ -51,12 +51,6 @@ Partial Class ManageAcc
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.SizeFilterCmbx = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -68,6 +62,12 @@ Partial Class ManageAcc
         Me.Column18 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column19 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Column20 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.SizeFilterCmbx = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel5.SuspendLayout()
@@ -190,7 +190,7 @@ Partial Class ManageAcc
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label3.Location = New System.Drawing.Point(52, 299)
+        Me.Label3.Location = New System.Drawing.Point(52, 315)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 15)
         Me.Label3.TabIndex = 30
@@ -202,7 +202,7 @@ Partial Class ManageAcc
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label2.Location = New System.Drawing.Point(52, 470)
+        Me.Label2.Location = New System.Drawing.Point(52, 486)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 15)
         Me.Label2.TabIndex = 29
@@ -214,7 +214,7 @@ Partial Class ManageAcc
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label1.Location = New System.Drawing.Point(52, 415)
+        Me.Label1.Location = New System.Drawing.Point(52, 431)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 15)
         Me.Label1.TabIndex = 28
@@ -235,7 +235,7 @@ Partial Class ManageAcc
         Me.gendercmbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.gendercmbox.ItemHeight = 20
         Me.gendercmbox.Items.AddRange(New Object() {"Female", "Male"})
-        Me.gendercmbox.Location = New System.Drawing.Point(48, 495)
+        Me.gendercmbox.Location = New System.Drawing.Point(48, 511)
         Me.gendercmbox.Name = "gendercmbox"
         Me.gendercmbox.Size = New System.Drawing.Size(183, 26)
         Me.gendercmbox.TabIndex = 27
@@ -255,7 +255,7 @@ Partial Class ManageAcc
         Me.rolecmbbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.rolecmbbox.ItemHeight = 20
         Me.rolecmbbox.Items.AddRange(New Object() {"Admin", "Owner", "Staff"})
-        Me.rolecmbbox.Location = New System.Drawing.Point(49, 439)
+        Me.rolecmbbox.Location = New System.Drawing.Point(49, 455)
         Me.rolecmbbox.Name = "rolecmbbox"
         Me.rolecmbbox.Size = New System.Drawing.Size(183, 26)
         Me.rolecmbbox.TabIndex = 26
@@ -275,7 +275,7 @@ Partial Class ManageAcc
         Me.confirmpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.confirmpass.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.confirmpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.confirmpass.Location = New System.Drawing.Point(47, 383)
+        Me.confirmpass.Location = New System.Drawing.Point(47, 399)
         Me.confirmpass.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.confirmpass.Name = "confirmpass"
         Me.confirmpass.PlaceholderText = "Confirm Password"
@@ -298,7 +298,7 @@ Partial Class ManageAcc
         Me.password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.password.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.password.Location = New System.Drawing.Point(47, 350)
+        Me.password.Location = New System.Drawing.Point(47, 366)
         Me.password.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.password.Name = "password"
         Me.password.PlaceholderText = "Password"
@@ -317,7 +317,7 @@ Partial Class ManageAcc
         Me.birthdate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.birthdate.ForeColor = System.Drawing.Color.SaddleBrown
         Me.birthdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.birthdate.Location = New System.Drawing.Point(47, 315)
+        Me.birthdate.Location = New System.Drawing.Point(47, 331)
         Me.birthdate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.birthdate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.birthdate.Name = "birthdate"
@@ -341,7 +341,7 @@ Partial Class ManageAcc
         Me.userid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.userid.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.userid.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.userid.Location = New System.Drawing.Point(44, 160)
+        Me.userid.Location = New System.Drawing.Point(44, 176)
         Me.userid.Margin = New System.Windows.Forms.Padding(4)
         Me.userid.Name = "userid"
         Me.userid.PlaceholderText = "User ID"
@@ -365,7 +365,7 @@ Partial Class ManageAcc
         Me.firstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.firstname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.firstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.firstname.Location = New System.Drawing.Point(44, 195)
+        Me.firstname.Location = New System.Drawing.Point(44, 211)
         Me.firstname.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.firstname.Name = "firstname"
         Me.firstname.PlaceholderText = "Firstname"
@@ -389,7 +389,7 @@ Partial Class ManageAcc
         Me.username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.username.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.username.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.username.Location = New System.Drawing.Point(44, 263)
+        Me.username.Location = New System.Drawing.Point(44, 279)
         Me.username.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.username.Name = "username"
         Me.username.PlaceholderText = "Username"
@@ -413,7 +413,7 @@ Partial Class ManageAcc
         Me.lastname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lastname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.lastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lastname.Location = New System.Drawing.Point(44, 229)
+        Me.lastname.Location = New System.Drawing.Point(44, 245)
         Me.lastname.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.lastname.Name = "lastname"
         Me.lastname.PlaceholderText = "Lastname"
@@ -554,6 +554,75 @@ Partial Class ManageAcc
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 50
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "UserID"
+        Me.Column1.MinimumWidth = 8
+        Me.Column1.Name = "Column1"
+        '
+        'Column11
+        '
+        Me.Column11.HeaderText = "Firstname"
+        Me.Column11.MinimumWidth = 8
+        Me.Column11.Name = "Column11"
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Lastname"
+        Me.Column12.MinimumWidth = 8
+        Me.Column12.Name = "Column12"
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Username"
+        Me.Column13.MinimumWidth = 8
+        Me.Column13.Name = "Column13"
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Birthdate"
+        Me.Column14.MinimumWidth = 8
+        Me.Column14.Name = "Column14"
+        '
+        'Column15
+        '
+        Me.Column15.HeaderText = "Password"
+        Me.Column15.MinimumWidth = 8
+        Me.Column15.Name = "Column15"
+        '
+        'Column16
+        '
+        Me.Column16.HeaderText = "Role"
+        Me.Column16.MinimumWidth = 8
+        Me.Column16.Name = "Column16"
+        '
+        'Column17
+        '
+        Me.Column17.HeaderText = "Gender"
+        Me.Column17.MinimumWidth = 8
+        Me.Column17.Name = "Column17"
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Image"
+        Me.Column18.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.Column18.MinimumWidth = 8
+        Me.Column18.Name = "Column18"
+        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Edit"
+        Me.Column19.MinimumWidth = 8
+        Me.Column19.Name = "Column19"
+        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Delete"
+        Me.Column20.MinimumWidth = 8
+        Me.Column20.Name = "Column20"
+        '
         'Guna2Panel3
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.Transparent
@@ -646,75 +715,6 @@ Partial Class ManageAcc
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "UserID"
-        Me.Column1.MinimumWidth = 8
-        Me.Column1.Name = "Column1"
-        '
-        'Column11
-        '
-        Me.Column11.HeaderText = "Firstname"
-        Me.Column11.MinimumWidth = 8
-        Me.Column11.Name = "Column11"
-        '
-        'Column12
-        '
-        Me.Column12.HeaderText = "Lastname"
-        Me.Column12.MinimumWidth = 8
-        Me.Column12.Name = "Column12"
-        '
-        'Column13
-        '
-        Me.Column13.HeaderText = "Username"
-        Me.Column13.MinimumWidth = 8
-        Me.Column13.Name = "Column13"
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Birthdate"
-        Me.Column14.MinimumWidth = 8
-        Me.Column14.Name = "Column14"
-        '
-        'Column15
-        '
-        Me.Column15.HeaderText = "Password"
-        Me.Column15.MinimumWidth = 8
-        Me.Column15.Name = "Column15"
-        '
-        'Column16
-        '
-        Me.Column16.HeaderText = "Role"
-        Me.Column16.MinimumWidth = 8
-        Me.Column16.Name = "Column16"
-        '
-        'Column17
-        '
-        Me.Column17.HeaderText = "Gender"
-        Me.Column17.MinimumWidth = 8
-        Me.Column17.Name = "Column17"
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Image"
-        Me.Column18.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
-        Me.Column18.MinimumWidth = 8
-        Me.Column18.Name = "Column18"
-        Me.Column18.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Edit"
-        Me.Column19.MinimumWidth = 8
-        Me.Column19.Name = "Column19"
-        Me.Column19.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Delete"
-        Me.Column20.MinimumWidth = 8
-        Me.Column20.Name = "Column20"
         '
         'ManageAcc
         '

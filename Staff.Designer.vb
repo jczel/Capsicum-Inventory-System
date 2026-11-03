@@ -341,7 +341,7 @@ Partial Class Staff
         '
         'rolelb
         '
-        Me.rolelb.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.rolelb.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.rolelb.AutoSize = True
         Me.rolelb.BackColor = System.Drawing.Color.Transparent
         Me.rolelb.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -355,7 +355,7 @@ Partial Class Staff
         '
         'namelb
         '
-        Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.namelb.AutoSize = True
         Me.namelb.BackColor = System.Drawing.Color.Transparent
         Me.namelb.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
