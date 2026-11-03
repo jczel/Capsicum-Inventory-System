@@ -253,7 +253,7 @@ Public Class MenuMngment
     End Sub
 
     Sub SearchProduct(keyword As String)
-        Dim connStr As String = "Server = (localdb)\MSSQLLocalDB Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+        Dim connStr As String = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
 
 
         Try
@@ -374,6 +374,16 @@ Public Class MenuMngment
     End Sub
 
     Private Sub Prdctpicbx_Click(sender As Object, e As EventArgs) Handles Prdctpicbx.Click
-
+        OpenFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
+        OpenFileDialog1.FileName = ""
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            Try
+                Dim tempImg As Image = Image.FromFile(OpenFileDialog1.FileName)
+                Prdctpicbx.Image = New Bitmap(tempImg)
+                tempImg.Dispose()
+            Catch ex As Exception
+                MsgBox("Use JPG or PNG only", MsgBoxStyle.Critical)
+            End Try
+        End If
     End Sub
 End Class
