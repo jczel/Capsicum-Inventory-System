@@ -320,4 +320,16 @@ Public Class ManageAcc
     Private Sub Guna2Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel5.Paint
 
     End Sub
+
+    Private Sub userid_TextChanged(sender As Object, e As EventArgs) Handles userid.TextChanged
+
+    End Sub
+
+    Private Sub lastname_TextChanged(sender As Object, e As EventArgs) Handles lastname.TextChanged
+
+    End Sub
+
+    Private Sub birthdate_ValueChanged(sender As Object, e As EventArgs) Handles birthdate.ValueChanged
+
+    End Sub
 End Class
