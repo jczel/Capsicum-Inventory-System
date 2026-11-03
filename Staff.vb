@@ -1,6 +1,31 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
+Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class Staff
+
+    Sub viewimage()
+        Try
+            Dim img() As Byte
+            query = "Select image from UserAccount where username = @Username"
+            cmd = New SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@Username", LoggedUsername)
+            dr = cmd.ExecuteReader()
+            If dr.Read() Then
+                If IsDBNull(dr("image")) Then
+                    Guna2PictureBox1.Image = Nothing
+                Else
+                    img = CType(dr("image"), Byte())
+                    Using ms As New MemoryStream(img)
+                        Guna2PictureBox1.Image = Image.FromStream(ms)
+                    End Using
+                End If
+            End If
+            dr.Close()
+            cmd.Dispose()
+        Catch ex As Exception
+        End Try
+    End Sub
 
     Private Sub Staff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
@@ -9,6 +34,7 @@ Public Class Staff
         menu.Dock = DockStyle.Fill
         Guna2Panel5.Controls.Add(menu)
         showUser(namelb, rolelb)
+        viewimage()
     End Sub
 
 
