@@ -10,7 +10,7 @@ Module connection
     Sub connect()
         Try
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
-            sqlconn.ConnectionString = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+            sqlconn.ConnectionString = "Server = .\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
             sqlconn.Open()
 
         Catch ex As Exception

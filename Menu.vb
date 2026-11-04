@@ -8,6 +8,7 @@ Public Class Menu
         FlowLayoutPanel1.WrapContents = True
         connect()
         loadGrouped("All")
+
     End Sub
 
     Public Sub loadGrouped(Optional filter As String = "All")
@@ -20,14 +21,14 @@ Public Class Menu
             Dim dtAll As New DataTable()
             Dim sql As String
 
-            ' Use your actual column name: category - change if yours is different
+
             If filter = "All" Then
                 sql = "SELECT productname, size, price, prodimage, category FROM Product ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
             Else
                 sql = "SELECT productname, size, price, prodimage, category FROM Product WHERE category = @category ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
-                cmd.Parameters.AddWithValue("@cat", filter)
+                cmd.Parameters.AddWithValue("@category", filter)
             End If
 
             cmd.CommandTimeout = 120

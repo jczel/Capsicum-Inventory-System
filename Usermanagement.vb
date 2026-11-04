@@ -92,7 +92,7 @@ Public Class Usermanagement
             .AddWithValue("@password", password.Text)
             .AddWithValue("@role", rolecmbbox.Text)
             .AddWithValue("@gender", gendercmbox.Text)
-            .AddWithValue("@image", imgData) ' WALANG ()
+            .AddWithValue("@image", imgData)
         End With
         cmd.ExecuteNonQuery()
         cmd.Dispose()

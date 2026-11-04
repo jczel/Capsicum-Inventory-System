@@ -7,9 +7,9 @@ Public Class Staff
     Sub viewimage()
         Try
             Dim img() As Byte
-            query = "Select image from UserAccount where username = @Username"
+            query = "Select image from UserAccount where username = @username"
             cmd = New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@Username", LoggedUsername)
+            cmd.Parameters.AddWithValue("@username", LoggedUsername)
             dr = cmd.ExecuteReader()
             If dr.Read() Then
                 If IsDBNull(dr("image")) Then
@@ -35,6 +35,7 @@ Public Class Staff
         Guna2Panel5.Controls.Add(menu)
         showUser(namelb, rolelb)
         viewimage()
+
     End Sub
 
 
