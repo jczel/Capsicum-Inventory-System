@@ -10,7 +10,7 @@
 
     End Sub
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) 
         Form1login.Show()
         Me.Hide()
     End Sub
@@ -19,7 +19,7 @@
         Application.Exit()
     End Sub
 
-    Private Sub printreportbtn_Click(sender As Object, e As EventArgs) Handles printreportbtn.Click
+    Private Sub printreportbtn_Click(sender As Object, e As EventArgs) 
 
         Dim OwnerPrintReport As New OwnerPrintReport()
         Display.Controls.Clear()

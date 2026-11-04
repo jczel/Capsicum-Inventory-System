@@ -48,6 +48,7 @@ Partial Class Menucntrl
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
@@ -334,7 +335,7 @@ Partial Class Menucntrl
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.ProductCartDtgrd.ColumnHeadersHeight = 40
-        Me.ProductCartDtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn5, Me.DataGridViewButtonColumn2})
+        Me.ProductCartDtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.Column1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn5, Me.DataGridViewButtonColumn2})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -381,6 +382,11 @@ Partial Class Menucntrl
         Me.DataGridViewTextBoxColumn4.HeaderText = "Size"
         Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Add-Ons"
+        Me.Column1.Name = "Column1"
         '
         'DataGridViewTextBoxColumn6
         '
@@ -481,6 +487,7 @@ Partial Class Menucntrl
         Me.Guna2Panel11.BorderRadius = 20
         Me.Guna2Panel11.BorderThickness = 2
         Me.Guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel11.FillColor = System.Drawing.Color.White
         Me.Guna2Panel11.Location = New System.Drawing.Point(3, 62)
         Me.Guna2Panel11.Name = "Guna2Panel11"
         Me.Guna2Panel11.Size = New System.Drawing.Size(801, 675)
@@ -699,12 +706,6 @@ Partial Class Menucntrl
     Friend WithEvents Confrmbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Clearbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents subtotallb As Label
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn2 As DataGridViewButtonColumn
     Friend WithEvents Label1 As Label
     Friend WithEvents Totallb As Label
     Friend WithEvents Label2 As Label
@@ -713,4 +714,11 @@ Partial Class Menucntrl
     Friend WithEvents Label3 As Label
     Friend WithEvents totalnumlb As Label
     Friend WithEvents discntnumlb As Label
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn2 As DataGridViewButtonColumn
 End Class
