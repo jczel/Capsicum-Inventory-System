@@ -32,4 +32,9 @@
         product.loadGrouped("Add-ons")
     End Sub
 
+    Private Sub Guna2Panel11_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+
 End Class

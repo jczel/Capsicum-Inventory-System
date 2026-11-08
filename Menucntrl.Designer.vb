@@ -44,13 +44,6 @@ Partial Class Menucntrl
         Me.Label1 = New System.Windows.Forms.Label()
         Me.subtotallb = New System.Windows.Forms.Label()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.ProductCartDtgrd = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Confrmbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Clearbttn = New Guna.UI2.WinForms.Guna2Button()
@@ -67,6 +60,13 @@ Partial Class Menucntrl
         Me.allprdbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrdctCartdtgrd = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -77,12 +77,12 @@ Partial Class Menucntrl
         Me.TableLayoutPanel4.SuspendLayout()
         Me.Discountlb.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
-        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
+        CType(Me.PrdctCartdtgrd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -313,92 +313,12 @@ Partial Class Menucntrl
         '
         'Guna2Panel8
         '
-        Me.Guna2Panel8.Controls.Add(Me.ProductCartDtgrd)
+        Me.Guna2Panel8.Controls.Add(Me.PrdctCartdtgrd)
         Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel8.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel8.Name = "Guna2Panel8"
         Me.Guna2Panel8.Size = New System.Drawing.Size(683, 476)
         Me.Guna2Panel8.TabIndex = 3
-        '
-        'ProductCartDtgrd
-        '
-        Me.ProductCartDtgrd.AllowUserToResizeColumns = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.ProductCartDtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.ProductCartDtgrd.ColumnHeadersHeight = 40
-        Me.ProductCartDtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn5, Me.DataGridViewButtonColumn2})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ProductCartDtgrd.DefaultCellStyle = DataGridViewCellStyle3
-        Me.ProductCartDtgrd.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ProductCartDtgrd.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ProductCartDtgrd.Location = New System.Drawing.Point(0, 0)
-        Me.ProductCartDtgrd.Name = "ProductCartDtgrd"
-        Me.ProductCartDtgrd.RowHeadersVisible = False
-        Me.ProductCartDtgrd.RowHeadersWidth = 62
-        Me.ProductCartDtgrd.RowTemplate.Height = 40
-        Me.ProductCartDtgrd.RowTemplate.ReadOnly = True
-        Me.ProductCartDtgrd.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.Size = New System.Drawing.Size(683, 476)
-        Me.ProductCartDtgrd.TabIndex = 48
-        Me.ProductCartDtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
-        Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Gainsboro
-        Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.Height = 40
-        Me.ProductCartDtgrd.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProductCartDtgrd.ThemeStyle.RowsStyle.Height = 40
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Product ID"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Product Name"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Size"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Price"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewButtonColumn2
-        '
-        Me.DataGridViewButtonColumn2.HeaderText = "Remove"
-        Me.DataGridViewButtonColumn2.MinimumWidth = 8
-        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
         '
         'Guna2CustomGradientPanel1
         '
@@ -643,6 +563,75 @@ Partial Class Menucntrl
         Me.PrintDialog1.Document = Me.PrintDocument1
         Me.PrintDialog1.UseEXDialog = True
         '
+        'PrdctCartdtgrd
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.PrdctCartdtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.PrdctCartdtgrd.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Chocolate
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.PrdctCartdtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.PrdctCartdtgrd.ColumnHeadersHeight = 50
+        Me.PrdctCartdtgrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.PrdctCartdtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.PrdctCartdtgrd.DefaultCellStyle = DataGridViewCellStyle3
+        Me.PrdctCartdtgrd.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PrdctCartdtgrd.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PrdctCartdtgrd.Location = New System.Drawing.Point(0, 0)
+        Me.PrdctCartdtgrd.Name = "PrdctCartdtgrd"
+        Me.PrdctCartdtgrd.RowHeadersVisible = False
+        Me.PrdctCartdtgrd.RowTemplate.Height = 45
+        Me.PrdctCartdtgrd.Size = New System.Drawing.Size(683, 476)
+        Me.PrdctCartdtgrd.TabIndex = 0
+        Me.PrdctCartdtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.PrdctCartdtgrd.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
+        Me.PrdctCartdtgrd.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PrdctCartdtgrd.ThemeStyle.HeaderStyle.Height = 50
+        Me.PrdctCartdtgrd.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PrdctCartdtgrd.ThemeStyle.RowsStyle.Height = 45
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Product ID"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Product Name"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Size"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Add Ons"
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Price"
+        Me.Column5.Name = "Column5"
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Remove"
+        Me.Column6.Name = "Column6"
+        '
         'Menucntrl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -661,12 +650,12 @@ Partial Class Menucntrl
         Me.Discountlb.ResumeLayout(False)
         Me.Discountlb.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
-        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)
         Me.Guna2Panel6.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.Guna2Panel10.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
+        CType(Me.PrdctCartdtgrd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -681,7 +670,6 @@ Partial Class Menucntrl
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Discountlb As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents ProductCartDtgrd As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
@@ -699,12 +687,6 @@ Partial Class Menucntrl
     Friend WithEvents Confrmbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Clearbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents subtotallb As Label
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn2 As DataGridViewButtonColumn
     Friend WithEvents Label1 As Label
     Friend WithEvents Totallb As Label
     Friend WithEvents Label2 As Label
@@ -713,4 +695,11 @@ Partial Class Menucntrl
     Friend WithEvents Label3 As Label
     Friend WithEvents totalnumlb As Label
     Friend WithEvents discntnumlb As Label
+    Friend WithEvents PrdctCartdtgrd As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
 End Class

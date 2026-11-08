@@ -602,7 +602,7 @@ Partial Class MenuMngment
         Me.SizeFilterCmbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SizeFilterCmbx.ItemHeight = 30
         Me.SizeFilterCmbx.Items.AddRange(New Object() {"All", "Small", "Medium", "Large"})
-        Me.SizeFilterCmbx.Location = New System.Drawing.Point(402, 29)
+        Me.SizeFilterCmbx.Location = New System.Drawing.Point(405, 24)
         Me.SizeFilterCmbx.Name = "SizeFilterCmbx"
         Me.SizeFilterCmbx.Size = New System.Drawing.Size(98, 36)
         Me.SizeFilterCmbx.StartIndex = 0
