@@ -29,12 +29,18 @@
     End Sub
 
     Private Sub AddOnsbttn_Click_1(sender As Object, e As EventArgs) Handles AddOnsbttn.Click
-        product.loadGrouped("Add-ons")
+        Dim addons As New AddOnsCntrl
+
+        Guna2Panel11.Controls.Clear()
+        addons.Dock = DockStyle.Fill
+        Guna2Panel11.Controls.Add(addons)
     End Sub
 
-    Private Sub Guna2Panel11_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub ProductCartDtgrd_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ProductCartDtgrd.CellContentClick
 
     End Sub
 
+    Private Sub Guna2Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel11.Paint
 
+    End Sub
 End Class

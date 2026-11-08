@@ -101,6 +101,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOnsCntrl.Designer.vb">
+      <DependentUpon>AddOnsCntrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOnsCntrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddOnsflw1.Designer.vb">
+      <DependentUpon>AddOnsflw1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOnsflw1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Admin.Designer.vb">
       <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
@@ -218,6 +230,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddOnsCntrl.resx">
+      <DependentUpon>AddOnsCntrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOnsflw1.resx">
+      <DependentUpon>AddOnsflw1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
