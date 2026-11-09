@@ -51,7 +51,7 @@ Partial Class GenerateReport
         Me.printreportbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.printeportlb = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.preparedbylb = New System.Windows.Forms.Label()
         Me.Guna2Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
@@ -281,7 +281,7 @@ Partial Class GenerateReport
         Me.Guna2Panel7.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Panel7.BorderRadius = 5
         Me.Guna2Panel7.BorderThickness = 2
-        Me.Guna2Panel7.Controls.Add(Me.Label2)
+        Me.Guna2Panel7.Controls.Add(Me.preparedbylb)
         Me.Guna2Panel7.Controls.Add(Me.GeneratereportDtgrid)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel7.Location = New System.Drawing.Point(3, 71)
@@ -406,16 +406,16 @@ Partial Class GenerateReport
         Me.printeportlb.TabIndex = 1
         Me.printeportlb.Text = "Print Report"
         '
-        'Label2
+        'preparedbylb
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(22, 413)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(130, 24)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Prepared by:"
+        Me.preparedbylb.AutoSize = True
+        Me.preparedbylb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.preparedbylb.ForeColor = System.Drawing.Color.Black
+        Me.preparedbylb.Location = New System.Drawing.Point(22, 413)
+        Me.preparedbylb.Name = "preparedbylb"
+        Me.preparedbylb.Size = New System.Drawing.Size(130, 24)
+        Me.preparedbylb.TabIndex = 16
+        Me.preparedbylb.Text = "Prepared by:"
         '
         'GenerateReport
         '
@@ -472,5 +472,5 @@ Partial Class GenerateReport
     Friend WithEvents printreportbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents printeportlb As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents preparedbylb As Label
 End Class
