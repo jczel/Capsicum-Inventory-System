@@ -10,4 +10,8 @@
     Private Sub enddatelb_Click(sender As Object, e As EventArgs) Handles enddatelb.Click
 
     End Sub
+
+    Private Sub Guna2Panel7_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel7.Paint
+
+    End Sub
 End Class
