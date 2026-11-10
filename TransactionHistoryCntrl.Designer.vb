@@ -205,7 +205,7 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2DateTimePicker2.BorderRadius = 5
         Me.Guna2DateTimePicker2.BorderThickness = 2
         Me.Guna2DateTimePicker2.Checked = True
-        Me.Guna2DateTimePicker2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2DateTimePicker2.FillColor = System.Drawing.Color.White
         Me.Guna2DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(141, 17)
@@ -222,7 +222,7 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2DateTimePicker1.BorderRadius = 5
         Me.Guna2DateTimePicker1.BorderThickness = 2
         Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
         Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(517, 17)

@@ -22,8 +22,30 @@ Public Class MenuMngment
 
 
     Private Sub Addbtn_Click(sender As Object, e As EventArgs) Handles Addbtn.Click
-        countNotif += 1
-        Admin.NotifCount.Text = countNotif.ToString()
+        If prdctnmtxbx.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
+        If Categorycmbbx.Text = "" Then MsgBox("Choose Category", MsgBoxStyle.Critical) : Return
+        If pricetxbx.Text = "" Then MsgBox("Price Cannot be blank", MsgBoxStyle.Critical) : Return
+        If quantitytxbx.Text = "" Then MsgBox("Quantity Cannot be blank", MsgBoxStyle.Critical) : Return
+        If Prdctpicbx.Image Is Nothing Then MsgBox("Image Cannot be blank", MsgBoxStyle.Critical) : Return
+        If Not Regex.IsMatch(quantitytxbx.Text.Trim(), "^[0-9]+$") Then
+            MsgBox("Quantity must be number only", MsgBoxStyle.Critical)
+            Return
+        End If
+        If Not Regex.IsMatch(pricetxbx.Text.Trim(), "^[0-9]+(\.[0-9]{1,2})?$") Then
+            MsgBox("Price must be numbers only (ex: 100 or 100.50)", MsgBoxStyle.Critical)
+            Return
+        End If
+        If CInt(quantitytxbx.Text) <= 0 Then MsgBox("Quantity must be greater than 0", MsgBoxStyle.Critical) : Return
+        If CDbl(pricetxbx.Text) <= 0 Then MsgBox("Price must be greater than 0", MsgBoxStyle.Critical) : Return
+        If CInt(quantitytxbx.Text) > 50 Then MsgBox("Quantity cannot exceed 50", MsgBoxStyle.Critical) : Return
+
+        savedata()
+        MsgBox("Data added")
+        readdata()
+        Clear()
+        CreateNewAutoNumber()
+        AutoNumber()
+
     End Sub
 
 
@@ -110,7 +132,7 @@ Public Class MenuMngment
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
 
-        SearchProduct("")
+
     End Sub
 
 
@@ -220,7 +242,7 @@ Public Class MenuMngment
 
 
     Sub SearchProduct(keyword As String)
-        Dim connStr As String = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+        Dim connStr As String = "Server = (localdb)\MSSQLLocalDB; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
 
 
         Try

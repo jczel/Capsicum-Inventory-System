@@ -7,9 +7,9 @@ Public Class Admin
         Try
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
-            query = "SELECT image FROM UserAccount WHERE UserID = @id"
+            query = "SELECT image FROM UserAccount WHERE UserID = @UserID"
             cmd = New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@id", LoggedUserID)
+            cmd.Parameters.AddWithValue("@UserID", LoggedUserID)
             Dim result As Object = cmd.ExecuteScalar()
             sqlconn.Close()
 

@@ -310,10 +310,11 @@ Partial Class ManageAcc
         '
         Me.birthdate.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.birthdate.AutoRoundedCorners = True
+        Me.birthdate.BackColor = System.Drawing.Color.White
         Me.birthdate.BorderColor = System.Drawing.Color.SaddleBrown
         Me.birthdate.BorderThickness = 2
         Me.birthdate.Checked = True
-        Me.birthdate.FillColor = System.Drawing.Color.Transparent
+        Me.birthdate.FillColor = System.Drawing.Color.White
         Me.birthdate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.birthdate.ForeColor = System.Drawing.Color.SaddleBrown
         Me.birthdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]

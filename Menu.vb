@@ -35,7 +35,7 @@ Public Class Menu
             Dim da As New SqlDataAdapter(cmd)
             da.Fill(dtAll)
 
-            ' Group by productname in memory - FAST, 1 query only
+
             Dim grouped = dtAll.AsEnumerable().GroupBy(Function(r) r.Field(Of String)("productname"))
 
             For Each g In grouped
