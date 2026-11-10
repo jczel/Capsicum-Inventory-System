@@ -91,9 +91,21 @@ Public Class Form1login
 
 
     Private Sub Form1login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        Application.Exit()
+        If LoggedUserID Is Nothing Then
+            Application.Exit()
+        End If
     End Sub
 
+
+    Private Sub Form1login_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+        If Me.Visible = True Then
+            usernametxtbx.Clear()
+            passwordtxtbx.Clear()
+            showpasschcbx.Checked = False
+            passwordtxtbx.PasswordChar = "*"c
+            usernametxtbx.Focus()
+        End If
+    End Sub
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
