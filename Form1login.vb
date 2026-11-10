@@ -18,7 +18,6 @@ Public Class Form1login
 
 
     Private Sub loginbttn_Click_1(sender As Object, e As EventArgs) Handles loginbttn.Click
-
         If usernametxtbx.Text = "" AndAlso passwordtxtbx.Text = "" Then
             MsgBox("Username and Password cannot be blank", MsgBoxStyle.Critical)
             Return
@@ -30,29 +29,36 @@ Public Class Form1login
             Return
         End If
 
-
         Try
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT username, role, firstname, lastname FROM UserAccount WHERE username=@username AND password=@password"
+            query = "SELECT UserID, username, role, firstname, lastname, image FROM UserAccount WHERE username=@username AND password=@password"
             cmd = New SqlCommand(query, sqlconn)
             cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
             cmd.Parameters.AddWithValue("@password", passwordtxtbx.Text)
 
-
             Dim dr As SqlDataReader = cmd.ExecuteReader()
 
             If dr.Read() Then
+
+                LoggedUserID = dr("UserID").ToString()
                 LoggedUsername = dr("username").ToString()
                 LoggedRole = dr("role").ToString().Trim()
                 LoggedFirstName = dr("firstname").ToString()
                 LoggedLastName = dr("lastname").ToString()
 
+                If Not IsDBNull(dr("image")) Then
+                    LoggedImage = DirectCast(dr("image"), Byte())
+                Else
+                    LoggedImage = Nothing
+                End If
+
                 dr.Close()
                 sqlconn.Close()
 
-                MessageBox.Show("Login success! ")
+                MessageBox.Show("Login success! Welcome " & LoggedFirstName)
+
 
                 If LoggedRole = "Owner" Then
                     Dim f As New Owner()

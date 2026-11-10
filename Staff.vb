@@ -28,6 +28,24 @@ Public Class Staff
     End Sub
 
     Private Sub Staff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            connect()
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            query = "SELECT image FROM UserAccount WHERE UserID = @id"
+            cmd = New SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@id", LoggedUserID)
+            Dim result As Object = cmd.ExecuteScalar()
+            sqlconn.Close()
+
+            If result IsNot Nothing AndAlso Not IsDBNull(result) Then
+                Dim imgBytes As Byte() = DirectCast(result, Byte())
+                Dim ms As New IO.MemoryStream(imgBytes)
+                Guna2PictureBox1.Image = Image.FromStream(ms)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
         connect()
         Dim menu As New Menucntrl
         Guna2Panel5.Controls.Clear()
