@@ -1,10 +1,12 @@
 ﻿Imports System.Data.SqlClient
 
 Module SessionModule
+    Public LoggedUserID As String
     Public LoggedUsername As String
     Public LoggedRole As String
     Public LoggedFirstName As String
     Public LoggedLastName As String
+    Public LoggedImage As Byte()
 
     Public countNotif As Integer = 0
 
