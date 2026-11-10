@@ -28,6 +28,8 @@ Partial Class Staff
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.namelb = New System.Windows.Forms.Label()
+        Me.rolelb = New System.Windows.Forms.Label()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,10 +42,8 @@ Partial Class Staff
         Me.transactionhisbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Menubtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
-        Me.rolelb = New System.Windows.Forms.Label()
-        Me.namelb = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -107,6 +107,34 @@ Partial Class Staff
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.Size = New System.Drawing.Size(1048, 104)
         Me.Guna2Panel4.TabIndex = 0
+        '
+        'namelb
+        '
+        Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.namelb.AutoSize = True
+        Me.namelb.BackColor = System.Drawing.Color.Transparent
+        Me.namelb.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namelb.ForeColor = System.Drawing.Color.White
+        Me.namelb.Location = New System.Drawing.Point(649, 69)
+        Me.namelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.namelb.Name = "namelb"
+        Me.namelb.Size = New System.Drawing.Size(53, 19)
+        Me.namelb.TabIndex = 4
+        Me.namelb.Text = "Name"
+        '
+        'rolelb
+        '
+        Me.rolelb.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.rolelb.AutoSize = True
+        Me.rolelb.BackColor = System.Drawing.Color.Transparent
+        Me.rolelb.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rolelb.ForeColor = System.Drawing.Color.White
+        Me.rolelb.Location = New System.Drawing.Point(649, 25)
+        Me.rolelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.rolelb.Name = "rolelb"
+        Me.rolelb.Size = New System.Drawing.Size(51, 22)
+        Me.rolelb.TabIndex = 3
+        Me.rolelb.Text = "Role"
         '
         'Guna2PictureBox1
         '
@@ -317,18 +345,6 @@ Partial Class Staff
         Me.Guna2Panel6.Size = New System.Drawing.Size(227, 86)
         Me.Guna2Panel6.TabIndex = 0
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(74, 7)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(87, 81)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'Guna2NotificationPaint1
         '
         Me.Guna2NotificationPaint1.Alignment = Guna.UI2.WinForms.Enums.CustomContentAlignment.TopRight
@@ -339,33 +355,20 @@ Partial Class Staff
         Me.Guna2NotificationPaint1.Offset = New System.Drawing.Point(-7, 0)
         Me.Guna2NotificationPaint1.TargetControl = Me.Guna2Button7
         '
-        'rolelb
+        'PictureBox1
         '
-        Me.rolelb.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.rolelb.AutoSize = True
-        Me.rolelb.BackColor = System.Drawing.Color.Transparent
-        Me.rolelb.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rolelb.ForeColor = System.Drawing.Color.White
-        Me.rolelb.Location = New System.Drawing.Point(649, 25)
-        Me.rolelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.rolelb.Name = "rolelb"
-        Me.rolelb.Size = New System.Drawing.Size(51, 22)
-        Me.rolelb.TabIndex = 3
-        Me.rolelb.Text = "Role"
-        '
-        'namelb
-        '
-        Me.namelb.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.namelb.AutoSize = True
-        Me.namelb.BackColor = System.Drawing.Color.Transparent
-        Me.namelb.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.namelb.ForeColor = System.Drawing.Color.White
-        Me.namelb.Location = New System.Drawing.Point(649, 69)
-        Me.namelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.namelb.Name = "namelb"
-        Me.namelb.Size = New System.Drawing.Size(53, 19)
-        Me.namelb.TabIndex = 4
-        Me.namelb.Text = "Name"
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(54, 7)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(107, 81)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'Staff
         '
@@ -405,7 +408,6 @@ Partial Class Staff
     Friend WithEvents transactionhisbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Menubtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2NotificationPaint1 As Guna.UI2.WinForms.Guna2NotificationPaint
     Friend WithEvents productinfobtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
@@ -413,4 +415,5 @@ Partial Class Staff
     Friend WithEvents logoutbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents namelb As Label
     Friend WithEvents rolelb As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

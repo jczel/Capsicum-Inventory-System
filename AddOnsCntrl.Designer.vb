@@ -24,24 +24,27 @@ Partial Class AddOnsCntrl
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddOnsCntrl))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Searchbtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.SizeFilterCmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Srchtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Srchtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.SizeFilterCmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Searchbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Confirmsbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Exitsbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
-        Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
+        Me.Guna2Panel4.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel3.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -53,15 +56,37 @@ Partial Class AddOnsCntrl
         Me.Guna2Panel1.Size = New System.Drawing.Size(968, 758)
         Me.Guna2Panel1.TabIndex = 0
         '
-        'Guna2Panel3
+        'TableLayoutPanel1
         '
-        Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel2)
-        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel3.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel3.Location = New System.Drawing.Point(3, 101)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(962, 563)
-        Me.Guna2Panel3.TabIndex = 2
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel4, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 0, 1)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.9927!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.18248!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.82482!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(968, 758)
+        Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel4.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel4.BorderRadius = 5
+        Me.Guna2Panel4.BorderThickness = 2
+        Me.Guna2Panel4.Controls.Add(Me.Exitsbttn)
+        Me.Guna2Panel4.Controls.Add(Me.Confirmsbtn)
+        Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Guna2Panel4.Location = New System.Drawing.Point(3, 670)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.Size = New System.Drawing.Size(962, 85)
+        Me.Guna2Panel4.TabIndex = 6
         '
         'Guna2Panel2
         '
@@ -84,70 +109,6 @@ Partial Class AddOnsCntrl
         Me.Guna2Panel2.ShadowDecoration.Enabled = True
         Me.Guna2Panel2.Size = New System.Drawing.Size(962, 92)
         Me.Guna2Panel2.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(164, 30)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 24)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Add-Ons"
-        '
-        'Searchbtn
-        '
-        Me.Searchbtn.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Searchbtn.AutoRoundedCorners = True
-        Me.Searchbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Searchbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Searchbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Searchbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Searchbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Searchbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Searchbtn.ForeColor = System.Drawing.Color.White
-        Me.Searchbtn.Location = New System.Drawing.Point(863, 35)
-        Me.Searchbtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Searchbtn.Name = "Searchbtn"
-        Me.Searchbtn.Size = New System.Drawing.Size(82, 38)
-        Me.Searchbtn.TabIndex = 23
-        Me.Searchbtn.Text = "Search"
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(165, 56)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(141, 15)
-        Me.Label3.TabIndex = 66
-        Me.Label3.Text = "Add and update product"
-        '
-        'SizeFilterCmbbx
-        '
-        Me.SizeFilterCmbbx.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.SizeFilterCmbbx.BackColor = System.Drawing.Color.Transparent
-        Me.SizeFilterCmbbx.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SizeFilterCmbbx.BorderRadius = 10
-        Me.SizeFilterCmbbx.BorderThickness = 2
-        Me.SizeFilterCmbbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.SizeFilterCmbbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.SizeFilterCmbbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SizeFilterCmbbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SizeFilterCmbbx.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.SizeFilterCmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SizeFilterCmbbx.ItemHeight = 30
-        Me.SizeFilterCmbbx.Items.AddRange(New Object() {"All", "Small", "Medium", "Large"})
-        Me.SizeFilterCmbbx.Location = New System.Drawing.Point(312, 35)
-        Me.SizeFilterCmbbx.Name = "SizeFilterCmbbx"
-        Me.SizeFilterCmbbx.Size = New System.Drawing.Size(98, 36)
-        Me.SizeFilterCmbbx.StartIndex = 0
-        Me.SizeFilterCmbbx.TabIndex = 67
-        Me.SizeFilterCmbbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Srchtxtbx
         '
@@ -173,48 +134,69 @@ Partial Class AddOnsCntrl
         Me.Srchtxtbx.Size = New System.Drawing.Size(320, 38)
         Me.Srchtxtbx.TabIndex = 68
         '
-        'TableLayoutPanel1
+        'SizeFilterCmbbx
         '
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel4, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel2, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel3, 0, 1)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.9927!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.18248!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.82482!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(968, 758)
-        Me.TableLayoutPanel1.TabIndex = 0
+        Me.SizeFilterCmbbx.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.SizeFilterCmbbx.BackColor = System.Drawing.Color.Transparent
+        Me.SizeFilterCmbbx.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SizeFilterCmbbx.BorderRadius = 10
+        Me.SizeFilterCmbbx.BorderThickness = 2
+        Me.SizeFilterCmbbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.SizeFilterCmbbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SizeFilterCmbbx.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SizeFilterCmbbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SizeFilterCmbbx.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.SizeFilterCmbbx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SizeFilterCmbbx.ItemHeight = 30
+        Me.SizeFilterCmbbx.Items.AddRange(New Object() {"All", "Small", "Medium", "Large"})
+        Me.SizeFilterCmbbx.Location = New System.Drawing.Point(312, 35)
+        Me.SizeFilterCmbbx.Name = "SizeFilterCmbbx"
+        Me.SizeFilterCmbbx.Size = New System.Drawing.Size(98, 36)
+        Me.SizeFilterCmbbx.StartIndex = 0
+        Me.SizeFilterCmbbx.TabIndex = 67
+        Me.SizeFilterCmbbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TableLayoutPanel2
+        'Label3
         '
-        Me.TableLayoutPanel2.ColumnCount = 1
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.43867!))
-        Me.TableLayoutPanel2.Controls.Add(Me.FlowLayoutPanel1, 0, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(962, 563)
-        Me.TableLayoutPanel2.TabIndex = 0
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(165, 56)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(141, 15)
+        Me.Label3.TabIndex = 66
+        Me.Label3.Text = "Add and update product"
         '
-        'Guna2Panel4
+        'Searchbtn
         '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel4.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2Panel4.BorderRadius = 5
-        Me.Guna2Panel4.BorderThickness = 2
-        Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel4.Location = New System.Drawing.Point(3, 670)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.Size = New System.Drawing.Size(962, 85)
-        Me.Guna2Panel4.TabIndex = 6
+        Me.Searchbtn.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Searchbtn.AutoRoundedCorners = True
+        Me.Searchbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Searchbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Searchbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Searchbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Searchbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Searchbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Searchbtn.ForeColor = System.Drawing.Color.White
+        Me.Searchbtn.Location = New System.Drawing.Point(863, 35)
+        Me.Searchbtn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Searchbtn.Name = "Searchbtn"
+        Me.Searchbtn.Size = New System.Drawing.Size(82, 38)
+        Me.Searchbtn.TabIndex = 23
+        Me.Searchbtn.Text = "Search"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(164, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 24)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Add-Ons"
         '
         'Guna2CirclePictureBox1
         '
@@ -234,6 +216,29 @@ Partial Class AddOnsCntrl
         Me.Guna2CirclePictureBox1.TabStop = False
         Me.Guna2CirclePictureBox1.UseTransparentBackground = True
         '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.Controls.Add(Me.TableLayoutPanel2)
+        Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel3.FillColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Guna2Panel3.Location = New System.Drawing.Point(3, 101)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.Size = New System.Drawing.Size(962, 563)
+        Me.Guna2Panel3.TabIndex = 2
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.43867!))
+        Me.TableLayoutPanel2.Controls.Add(Me.FlowLayoutPanel1, 0, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(962, 563)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
         'FlowLayoutPanel1
         '
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -241,6 +246,42 @@ Partial Class AddOnsCntrl
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(956, 557)
         Me.FlowLayoutPanel1.TabIndex = 0
+        '
+        'Confirmsbtn
+        '
+        Me.Confirmsbtn.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Confirmsbtn.BorderRadius = 5
+        Me.Confirmsbtn.BorderThickness = 2
+        Me.Confirmsbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Confirmsbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Confirmsbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Confirmsbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Confirmsbtn.FillColor = System.Drawing.Color.SaddleBrown
+        Me.Confirmsbtn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Confirmsbtn.ForeColor = System.Drawing.Color.White
+        Me.Confirmsbtn.Location = New System.Drawing.Point(40, 17)
+        Me.Confirmsbtn.Name = "Confirmsbtn"
+        Me.Confirmsbtn.Size = New System.Drawing.Size(180, 55)
+        Me.Confirmsbtn.TabIndex = 0
+        Me.Confirmsbtn.Text = "Confirm"
+        '
+        'Exitsbttn
+        '
+        Me.Exitsbttn.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Exitsbttn.BorderRadius = 5
+        Me.Exitsbttn.BorderThickness = 2
+        Me.Exitsbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Exitsbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Exitsbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Exitsbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Exitsbttn.FillColor = System.Drawing.Color.Transparent
+        Me.Exitsbttn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Exitsbttn.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Exitsbttn.Location = New System.Drawing.Point(270, 17)
+        Me.Exitsbttn.Name = "Exitsbttn"
+        Me.Exitsbttn.Size = New System.Drawing.Size(180, 55)
+        Me.Exitsbttn.TabIndex = 1
+        Me.Exitsbttn.Text = "Exit"
         '
         'AddOnsCntrl
         '
@@ -250,12 +291,13 @@ Partial Class AddOnsCntrl
         Me.Name = "AddOnsCntrl"
         Me.Size = New System.Drawing.Size(968, 758)
         Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel3.ResumeLayout(False)
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel3.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -273,4 +315,6 @@ Partial Class AddOnsCntrl
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents Exitsbttn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Confirmsbtn As Guna.UI2.WinForms.Guna2Button
 End Class

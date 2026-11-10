@@ -22,9 +22,9 @@ Partial Class Menucntrl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
@@ -60,7 +60,6 @@ Partial Class Menucntrl
         Me.Guna2Panel11 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.AddOnsbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Dssrtbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.teabttn = New Guna.UI2.WinForms.Guna2Button()
         Me.coldCofbttn = New Guna.UI2.WinForms.Guna2Button()
@@ -68,8 +67,6 @@ Partial Class Menucntrl
         Me.allprdbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-
-
         Me.Guna2Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -80,12 +77,12 @@ Partial Class Menucntrl
         Me.TableLayoutPanel4.SuspendLayout()
         Me.Discountlb.SuspendLayout()
         Me.Guna2Panel8.SuspendLayout()
+        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.Guna2Panel10.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
-        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -326,28 +323,28 @@ Partial Class Menucntrl
         'ProductCartDtgrd
         '
         Me.ProductCartDtgrd.AllowUserToResizeColumns = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.ProductCartDtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.ProductCartDtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.ProductCartDtgrd.ColumnHeadersHeight = 40
         Me.ProductCartDtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.Column1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn5, Me.DataGridViewButtonColumn2})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ProductCartDtgrd.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ProductCartDtgrd.DefaultCellStyle = DataGridViewCellStyle6
         Me.ProductCartDtgrd.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ProductCartDtgrd.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ProductCartDtgrd.GridColor = System.Drawing.Color.WhiteSmoke
         Me.ProductCartDtgrd.Location = New System.Drawing.Point(0, 0)
         Me.ProductCartDtgrd.Name = "ProductCartDtgrd"
         Me.ProductCartDtgrd.RowHeadersVisible = False
@@ -358,6 +355,7 @@ Partial Class Menucntrl
         Me.ProductCartDtgrd.Size = New System.Drawing.Size(683, 476)
         Me.ProductCartDtgrd.TabIndex = 48
         Me.ProductCartDtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.ProductCartDtgrd.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
         Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
         Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Gainsboro
@@ -506,14 +504,13 @@ Partial Class Menucntrl
         '
         'TableLayoutPanel6
         '
-        Me.TableLayoutPanel6.ColumnCount = 6
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel6.Controls.Add(Me.AddOnsbttn, 5, 0)
+        Me.TableLayoutPanel6.ColumnCount = 5
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Dssrtbttn, 4, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.teabttn, 3, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.coldCofbttn, 2, 0)
@@ -526,26 +523,6 @@ Partial Class Menucntrl
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(801, 53)
         Me.TableLayoutPanel6.TabIndex = 0
-        '
-        'AddOnsbttn
-        '
-        Me.AddOnsbttn.BackColor = System.Drawing.Color.Transparent
-        Me.AddOnsbttn.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.AddOnsbttn.BorderRadius = 20
-        Me.AddOnsbttn.BorderThickness = 2
-        Me.AddOnsbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.AddOnsbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.AddOnsbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.AddOnsbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.AddOnsbttn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AddOnsbttn.FillColor = System.Drawing.Color.Transparent
-        Me.AddOnsbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.AddOnsbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.AddOnsbttn.Location = New System.Drawing.Point(668, 3)
-        Me.AddOnsbttn.Name = "AddOnsbttn"
-        Me.AddOnsbttn.Size = New System.Drawing.Size(130, 47)
-        Me.AddOnsbttn.TabIndex = 63
-        Me.AddOnsbttn.Text = "Add-ons"
         '
         'Dssrtbttn
         '
@@ -561,9 +538,9 @@ Partial Class Menucntrl
         Me.Dssrtbttn.FillColor = System.Drawing.Color.Transparent
         Me.Dssrtbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.Dssrtbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Dssrtbttn.Location = New System.Drawing.Point(535, 3)
+        Me.Dssrtbttn.Location = New System.Drawing.Point(643, 3)
         Me.Dssrtbttn.Name = "Dssrtbttn"
-        Me.Dssrtbttn.Size = New System.Drawing.Size(127, 47)
+        Me.Dssrtbttn.Size = New System.Drawing.Size(155, 47)
         Me.Dssrtbttn.TabIndex = 62
         Me.Dssrtbttn.Text = "Desert"
         '
@@ -581,9 +558,9 @@ Partial Class Menucntrl
         Me.teabttn.FillColor = System.Drawing.Color.Transparent
         Me.teabttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.teabttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.teabttn.Location = New System.Drawing.Point(402, 3)
+        Me.teabttn.Location = New System.Drawing.Point(483, 3)
         Me.teabttn.Name = "teabttn"
-        Me.teabttn.Size = New System.Drawing.Size(127, 47)
+        Me.teabttn.Size = New System.Drawing.Size(154, 47)
         Me.teabttn.TabIndex = 61
         Me.teabttn.Text = "Tea"
         '
@@ -601,9 +578,9 @@ Partial Class Menucntrl
         Me.coldCofbttn.FillColor = System.Drawing.Color.Transparent
         Me.coldCofbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.coldCofbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.coldCofbttn.Location = New System.Drawing.Point(269, 3)
+        Me.coldCofbttn.Location = New System.Drawing.Point(323, 3)
         Me.coldCofbttn.Name = "coldCofbttn"
-        Me.coldCofbttn.Size = New System.Drawing.Size(127, 47)
+        Me.coldCofbttn.Size = New System.Drawing.Size(154, 47)
         Me.coldCofbttn.TabIndex = 60
         Me.coldCofbttn.Text = "Cold Coffee"
         '
@@ -621,9 +598,9 @@ Partial Class Menucntrl
         Me.hotCofbttn.FillColor = System.Drawing.Color.Transparent
         Me.hotCofbttn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.hotCofbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.hotCofbttn.Location = New System.Drawing.Point(136, 3)
+        Me.hotCofbttn.Location = New System.Drawing.Point(163, 3)
         Me.hotCofbttn.Name = "hotCofbttn"
-        Me.hotCofbttn.Size = New System.Drawing.Size(127, 47)
+        Me.hotCofbttn.Size = New System.Drawing.Size(154, 47)
         Me.hotCofbttn.TabIndex = 59
         Me.hotCofbttn.Text = "Hot Coffee"
         '
@@ -643,7 +620,7 @@ Partial Class Menucntrl
         Me.allprdbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.allprdbttn.Location = New System.Drawing.Point(3, 3)
         Me.allprdbttn.Name = "allprdbttn"
-        Me.allprdbttn.Size = New System.Drawing.Size(127, 47)
+        Me.allprdbttn.Size = New System.Drawing.Size(154, 47)
         Me.allprdbttn.TabIndex = 58
         Me.allprdbttn.Text = "All"
         '
@@ -651,11 +628,6 @@ Partial Class Menucntrl
         '
         Me.PrintDialog1.Document = Me.PrintDocument1
         Me.PrintDialog1.UseEXDialog = True
-        '
-
-        '
-        'Column1
-
         '
         'Menucntrl
         '
@@ -675,12 +647,12 @@ Partial Class Menucntrl
         Me.Discountlb.ResumeLayout(False)
         Me.Discountlb.PerformLayout()
         Me.Guna2Panel8.ResumeLayout(False)
+        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)
         Me.Guna2Panel6.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.Guna2Panel10.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
-        CType(Me.ProductCartDtgrd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -700,7 +672,6 @@ Partial Class Menucntrl
     Friend WithEvents Guna2Panel11 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel10 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents AddOnsbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Dssrtbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents teabttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents coldCofbttn As Guna.UI2.WinForms.Guna2Button

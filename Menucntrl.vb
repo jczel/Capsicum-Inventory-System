@@ -28,7 +28,7 @@
         product.loadGrouped("Desserts")
     End Sub
 
-    Private Sub AddOnsbttn_Click_1(sender As Object, e As EventArgs) Handles AddOnsbttn.Click
+    Private Sub AddOnsbttn_Click_1(sender As Object, e As EventArgs)
         Dim addons As New AddOnsCntrl
 
         Guna2Panel11.Controls.Clear()
