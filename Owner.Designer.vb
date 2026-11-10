@@ -30,16 +30,16 @@ Partial Class Owner
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Display = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Displaypnl = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.logoutbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.transachistrybtn = New Guna.UI2.WinForms.Guna2Button()
         Me.generatereportbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Dashbrdbtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -78,7 +78,7 @@ Partial Class Owner
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Guna2Panel4, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Display, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Displaypnl, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
@@ -148,14 +148,14 @@ Partial Class Owner
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Dashboard"
         '
-        'Display
+        'Displaypnl
         '
-        Me.Display.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Display.Location = New System.Drawing.Point(2, 109)
-        Me.Display.Margin = New System.Windows.Forms.Padding(2)
-        Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(1029, 570)
-        Me.Display.TabIndex = 1
+        Me.Displaypnl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Displaypnl.Location = New System.Drawing.Point(2, 109)
+        Me.Displaypnl.Margin = New System.Windows.Forms.Padding(2)
+        Me.Displaypnl.Name = "Displaypnl"
+        Me.Displaypnl.Size = New System.Drawing.Size(1029, 570)
+        Me.Displaypnl.TabIndex = 1
         '
         'Guna2Panel2
         '
@@ -173,7 +173,7 @@ Partial Class Owner
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2Button1, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.logoutbttn, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox2, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.transachistrybtn, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.generatereportbtn, 0, 2)
@@ -193,6 +193,29 @@ Partial Class Owner
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 681)
         Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'logoutbttn
+        '
+        Me.logoutbttn.Animated = True
+        Me.logoutbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logoutbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logoutbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logoutbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logoutbttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.logoutbttn.FillColor = System.Drawing.Color.Transparent
+        Me.logoutbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.logoutbttn.ForeColor = System.Drawing.Color.White
+        Me.logoutbttn.Image = CType(resources.GetObject("logoutbttn.Image"), System.Drawing.Image)
+        Me.logoutbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logoutbttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.logoutbttn.Location = New System.Drawing.Point(2, 358)
+        Me.logoutbttn.Margin = New System.Windows.Forms.Padding(2)
+        Me.logoutbttn.Name = "logoutbttn"
+        Me.logoutbttn.Size = New System.Drawing.Size(227, 85)
+        Me.logoutbttn.TabIndex = 9
+        Me.logoutbttn.Text = "Logout"
+        Me.logoutbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logoutbttn.UseTransparentBackground = True
         '
         'Guna2PictureBox2
         '
@@ -300,29 +323,6 @@ Partial Class Owner
         Me.Dashbrdbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Dashbrdbtn.UseTransparentBackground = True
         '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
-        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button1.Location = New System.Drawing.Point(2, 358)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(227, 85)
-        Me.Guna2Button1.TabIndex = 9
-        Me.Guna2Button1.Text = "Logout"
-        Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.UseTransparentBackground = True
-        '
         'Owner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -355,7 +355,7 @@ Partial Class Owner
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Display As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Displaypnl As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents transachistrybtn As Guna.UI2.WinForms.Guna2Button
@@ -364,5 +364,5 @@ Partial Class Owner
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Dashbrdbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
 End Class

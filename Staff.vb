@@ -80,4 +80,11 @@ Public Class Staff
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles rolelb.Click
 
     End Sub
+
+    Private Sub transactionhisbtn_Click(sender As Object, e As EventArgs) Handles transactionhisbtn.Click
+        Dim transactionhistory As New TransactionHistoryCntrl
+        Guna2Panel5.Controls.Clear()
+        transactionhistory.Dock = DockStyle.Fill
+        Guna2Panel5.Controls.Add(transactionhistory)
+    End Sub
 End Class

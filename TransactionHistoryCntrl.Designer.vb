@@ -29,11 +29,6 @@ Partial Class TransactionHistoryCntrl
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.transactionhistorylb = New System.Windows.Forms.Label()
-        Me.printreportbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.GeneratereportDtgrid = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,19 +37,24 @@ Partial Class TransactionHistoryCntrl
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.startdatetransactlb = New System.Windows.Forms.Label()
-        Me.enddatetransactlb = New System.Windows.Forms.Label()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DateTimePicker2 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.enddatetransactlb = New System.Windows.Forms.Label()
+        Me.startdatetransactlb = New System.Windows.Forms.Label()
+        Me.printreportbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Me.transactionhistorylb = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
+        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
-        Me.Guna2Panel1.SuspendLayout()
-        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,7 +74,7 @@ Partial Class TransactionHistoryCntrl
         '
         'Guna2Panel2
         '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
         Me.Guna2Panel2.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Panel2.BorderRadius = 5
         Me.Guna2Panel2.BorderThickness = 2
@@ -88,7 +88,7 @@ Partial Class TransactionHistoryCntrl
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2Panel1, 0, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2Panel7, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Guna2Panel6, 0, 0)
@@ -96,86 +96,11 @@ Partial Class TransactionHistoryCntrl
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 3
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.03743!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.96257!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 384.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(1034, 572)
         Me.TableLayoutPanel3.TabIndex = 0
-        '
-        'Guna2Panel7
-        '
-        Me.Guna2Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Guna2Panel7.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2Panel7.BorderRadius = 5
-        Me.Guna2Panel7.BorderThickness = 2
-        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker2)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker1)
-        Me.Guna2Panel7.Controls.Add(Me.enddatetransactlb)
-        Me.Guna2Panel7.Controls.Add(Me.startdatetransactlb)
-        Me.Guna2Panel7.Controls.Add(Me.printreportbtn)
-        Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel7.Location = New System.Drawing.Point(3, 76)
-        Me.Guna2Panel7.Name = "Guna2Panel7"
-        Me.Guna2Panel7.Size = New System.Drawing.Size(1028, 108)
-        Me.Guna2Panel7.TabIndex = 2
-        '
-        'Guna2Panel6
-        '
-        Me.Guna2Panel6.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2Panel6.BorderRadius = 5
-        Me.Guna2Panel6.BorderThickness = 2
-        Me.Guna2Panel6.Controls.Add(Me.Guna2Panel9)
-        Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel6.Location = New System.Drawing.Point(3, 3)
-        Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(1028, 67)
-        Me.Guna2Panel6.TabIndex = 1
-        '
-        'Guna2Panel9
-        '
-        Me.Guna2Panel9.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2Panel9.BorderRadius = 5
-        Me.Guna2Panel9.BorderThickness = 2
-        Me.Guna2Panel9.Controls.Add(Me.Guna2CirclePictureBox1)
-        Me.Guna2Panel9.Controls.Add(Me.transactionhistorylb)
-        Me.Guna2Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel9.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel9.Name = "Guna2Panel9"
-        Me.Guna2Panel9.Size = New System.Drawing.Size(1028, 67)
-        Me.Guna2Panel9.TabIndex = 1
-        '
-        'transactionhistorylb
-        '
-        Me.transactionhistorylb.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.transactionhistorylb.AutoSize = True
-        Me.transactionhistorylb.BackColor = System.Drawing.Color.Transparent
-        Me.transactionhistorylb.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.transactionhistorylb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.transactionhistorylb.Location = New System.Drawing.Point(412, 15)
-        Me.transactionhistorylb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.transactionhistorylb.Name = "transactionhistorylb"
-        Me.transactionhistorylb.Size = New System.Drawing.Size(317, 37)
-        Me.transactionhistorylb.TabIndex = 1
-        Me.transactionhistorylb.Text = "Transaction History"
-        '
-        'printreportbtn
-        '
-        Me.printreportbtn.BackColor = System.Drawing.Color.Transparent
-        Me.printreportbtn.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.printreportbtn.BorderRadius = 10
-        Me.printreportbtn.BorderThickness = 2
-        Me.printreportbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.printreportbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.printreportbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.printreportbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.printreportbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.printreportbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.printreportbtn.ForeColor = System.Drawing.Color.White
-        Me.printreportbtn.Location = New System.Drawing.Point(799, 29)
-        Me.printreportbtn.Name = "printreportbtn"
-        Me.printreportbtn.Size = New System.Drawing.Size(215, 51)
-        Me.printreportbtn.TabIndex = 66
-        Me.printreportbtn.Text = "Search"
         '
         'Guna2Panel1
         '
@@ -185,9 +110,9 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel1.BorderThickness = 2
         Me.Guna2Panel1.Controls.Add(Me.GeneratereportDtgrid)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel1.Location = New System.Drawing.Point(3, 190)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(3, 189)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1028, 379)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1028, 380)
         Me.Guna2Panel1.TabIndex = 3
         '
         'GeneratereportDtgrid
@@ -214,13 +139,14 @@ Partial Class TransactionHistoryCntrl
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.GeneratereportDtgrid.DefaultCellStyle = DataGridViewCellStyle3
         Me.GeneratereportDtgrid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GeneratereportDtgrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GeneratereportDtgrid.GridColor = System.Drawing.Color.WhiteSmoke
         Me.GeneratereportDtgrid.Location = New System.Drawing.Point(0, 0)
         Me.GeneratereportDtgrid.Name = "GeneratereportDtgrid"
         Me.GeneratereportDtgrid.RowHeadersVisible = False
-        Me.GeneratereportDtgrid.Size = New System.Drawing.Size(1028, 379)
+        Me.GeneratereportDtgrid.Size = New System.Drawing.Size(1028, 380)
         Me.GeneratereportDtgrid.TabIndex = 1
         Me.GeneratereportDtgrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.GeneratereportDtgrid.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Height = 34
@@ -256,44 +182,22 @@ Partial Class TransactionHistoryCntrl
         Me.Column5.HeaderText = "Total"
         Me.Column5.Name = "Column5"
         '
-        'startdatetransactlb
+        'Guna2Panel7
         '
-        Me.startdatetransactlb.AutoSize = True
-        Me.startdatetransactlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.startdatetransactlb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.startdatetransactlb.Location = New System.Drawing.Point(24, 42)
-        Me.startdatetransactlb.Name = "startdatetransactlb"
-        Me.startdatetransactlb.Size = New System.Drawing.Size(111, 24)
-        Me.startdatetransactlb.TabIndex = 67
-        Me.startdatetransactlb.Text = "Start Date :"
-        '
-        'enddatetransactlb
-        '
-        Me.enddatetransactlb.AutoSize = True
-        Me.enddatetransactlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.enddatetransactlb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.enddatetransactlb.Location = New System.Drawing.Point(403, 42)
-        Me.enddatetransactlb.Name = "enddatetransactlb"
-        Me.enddatetransactlb.Size = New System.Drawing.Size(108, 24)
-        Me.enddatetransactlb.TabIndex = 68
-        Me.enddatetransactlb.Text = "End Date :"
-        '
-        'Guna2DateTimePicker1
-        '
-        Me.Guna2DateTimePicker1.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2DateTimePicker1.BorderRadius = 5
-        Me.Guna2DateTimePicker1.BorderThickness = 2
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(517, 30)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(202, 50)
-        Me.Guna2DateTimePicker1.TabIndex = 70
-        Me.Guna2DateTimePicker1.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
+        Me.Guna2Panel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel7.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel7.BorderRadius = 5
+        Me.Guna2Panel7.BorderThickness = 2
+        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker2)
+        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker1)
+        Me.Guna2Panel7.Controls.Add(Me.enddatetransactlb)
+        Me.Guna2Panel7.Controls.Add(Me.startdatetransactlb)
+        Me.Guna2Panel7.Controls.Add(Me.printreportbtn)
+        Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel7.Location = New System.Drawing.Point(3, 77)
+        Me.Guna2Panel7.Name = "Guna2Panel7"
+        Me.Guna2Panel7.Size = New System.Drawing.Size(1028, 106)
+        Me.Guna2Panel7.TabIndex = 2
         '
         'Guna2DateTimePicker2
         '
@@ -304,13 +208,97 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2DateTimePicker2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(182, 30)
+        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(141, 17)
         Me.Guna2DateTimePicker2.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker2.Name = "Guna2DateTimePicker2"
-        Me.Guna2DateTimePicker2.Size = New System.Drawing.Size(202, 50)
+        Me.Guna2DateTimePicker2.Size = New System.Drawing.Size(256, 76)
         Me.Guna2DateTimePicker2.TabIndex = 71
         Me.Guna2DateTimePicker2.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
+        '
+        'Guna2DateTimePicker1
+        '
+        Me.Guna2DateTimePicker1.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2DateTimePicker1.BorderRadius = 5
+        Me.Guna2DateTimePicker1.BorderThickness = 2
+        Me.Guna2DateTimePicker1.Checked = True
+        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(517, 17)
+        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(254, 76)
+        Me.Guna2DateTimePicker1.TabIndex = 70
+        Me.Guna2DateTimePicker1.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
+        '
+        'enddatetransactlb
+        '
+        Me.enddatetransactlb.AutoSize = True
+        Me.enddatetransactlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.enddatetransactlb.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.enddatetransactlb.Location = New System.Drawing.Point(403, 29)
+        Me.enddatetransactlb.Name = "enddatetransactlb"
+        Me.enddatetransactlb.Size = New System.Drawing.Size(108, 24)
+        Me.enddatetransactlb.TabIndex = 68
+        Me.enddatetransactlb.Text = "End Date :"
+        '
+        'startdatetransactlb
+        '
+        Me.startdatetransactlb.AutoSize = True
+        Me.startdatetransactlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.startdatetransactlb.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.startdatetransactlb.Location = New System.Drawing.Point(24, 29)
+        Me.startdatetransactlb.Name = "startdatetransactlb"
+        Me.startdatetransactlb.Size = New System.Drawing.Size(111, 24)
+        Me.startdatetransactlb.TabIndex = 67
+        Me.startdatetransactlb.Text = "Start Date :"
+        '
+        'printreportbtn
+        '
+        Me.printreportbtn.BackColor = System.Drawing.Color.Transparent
+        Me.printreportbtn.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.printreportbtn.BorderRadius = 10
+        Me.printreportbtn.BorderThickness = 2
+        Me.printreportbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.printreportbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.printreportbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.printreportbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.printreportbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.printreportbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.printreportbtn.ForeColor = System.Drawing.Color.White
+        Me.printreportbtn.Location = New System.Drawing.Point(804, 15)
+        Me.printreportbtn.Name = "printreportbtn"
+        Me.printreportbtn.Size = New System.Drawing.Size(215, 78)
+        Me.printreportbtn.TabIndex = 66
+        Me.printreportbtn.Text = "Search"
+        '
+        'Guna2Panel6
+        '
+        Me.Guna2Panel6.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel6.BorderRadius = 5
+        Me.Guna2Panel6.BorderThickness = 2
+        Me.Guna2Panel6.Controls.Add(Me.Guna2Panel9)
+        Me.Guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel6.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2Panel6.Name = "Guna2Panel6"
+        Me.Guna2Panel6.Size = New System.Drawing.Size(1028, 68)
+        Me.Guna2Panel6.TabIndex = 1
+        '
+        'Guna2Panel9
+        '
+        Me.Guna2Panel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel9.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.Guna2Panel9.BorderRadius = 5
+        Me.Guna2Panel9.BorderThickness = 2
+        Me.Guna2Panel9.Controls.Add(Me.Guna2CirclePictureBox1)
+        Me.Guna2Panel9.Controls.Add(Me.transactionhistorylb)
+        Me.Guna2Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel9.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel9.Name = "Guna2Panel9"
+        Me.Guna2Panel9.Size = New System.Drawing.Size(1028, 68)
+        Me.Guna2Panel9.TabIndex = 1
         '
         'Guna2CirclePictureBox1
         '
@@ -324,11 +312,25 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(167, 67)
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(167, 68)
         Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2CirclePictureBox1.TabIndex = 14
         Me.Guna2CirclePictureBox1.TabStop = False
         Me.Guna2CirclePictureBox1.UseTransparentBackground = True
+        '
+        'transactionhistorylb
+        '
+        Me.transactionhistorylb.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.transactionhistorylb.AutoSize = True
+        Me.transactionhistorylb.BackColor = System.Drawing.Color.Transparent
+        Me.transactionhistorylb.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.transactionhistorylb.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.transactionhistorylb.Location = New System.Drawing.Point(353, 17)
+        Me.transactionhistorylb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.transactionhistorylb.Name = "transactionhistorylb"
+        Me.transactionhistorylb.Size = New System.Drawing.Size(317, 37)
+        Me.transactionhistorylb.TabIndex = 1
+        Me.transactionhistorylb.Text = "Transaction History"
         '
         'TransactionHistoryCntrl
         '
@@ -340,13 +342,13 @@ Partial Class TransactionHistoryCntrl
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
         Me.Guna2Panel6.ResumeLayout(False)
         Me.Guna2Panel9.ResumeLayout(False)
         Me.Guna2Panel9.PerformLayout()
-        Me.Guna2Panel1.ResumeLayout(False)
-        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
