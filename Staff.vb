@@ -58,8 +58,35 @@ Public Class Staff
 
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs)
-        Form1login.Show()
-        Me.Hide()
+        If MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+
+
+            LoggedUserID = Nothing
+            LoggedUsername = Nothing
+            LoggedRole = Nothing
+            LoggedFirstName = Nothing
+            LoggedLastName = Nothing
+            LoggedImage = Nothing
+
+
+            For Each f As Form In Application.OpenForms
+                If TypeOf f Is Form1login Then
+                    Dim login As Form1login = DirectCast(f, Form1login)
+                    login.usernametxtbx.Clear()
+                    login.passwordtxtbx.Clear()
+                    login.showpasschcbx.Checked = False
+                    login.passwordtxtbx.PasswordChar = "*"c
+                    login.Show()
+                    Me.Close()
+                    Return
+                End If
+            Next
+
+
+            Dim newLogin As New Form1login()
+            newLogin.Show()
+            Me.Close()
+        End If
     End Sub
 
     Private Sub Staff_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
