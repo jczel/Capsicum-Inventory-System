@@ -9,43 +9,15 @@ Public Class MenuMngment
 
     Private Sub MenuMngment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         readdata()
+        sizes()
+        categ()
         AutoNumber()
-    End Sub
-
-    Private Sub prdctnmtxbx_TextChanged(sender As Object, e As EventArgs) Handles prdctnmtxbx.TextChanged
-        If Regex.IsMatch(prdctnmtxbx.Text, "[0-9]") Then
-            MsgBox("invalid input")
-            prdctnmtxbx.Text = ""
-        End If
-    End Sub
-
-    Private Sub pricetxbx_TextChanged(sender As Object, e As EventArgs) Handles pricetxbx.TextChanged
-        If Regex.IsMatch(pricetxbx.Text, "[a-z]") Then
-            MsgBox("invalid input")
-            pricetxbx.Text = ""
-        End If
-    End Sub
-
-    Private Sub quantitytxbx_TextChanged(sender As Object, e As EventArgs) Handles quantitytxbx.TextChanged
-        If Not quantitytxbx.Text = "" Then
-            If Convert.ToInt32(quantitytxbx.Text) > maxQuantity Then
-                MsgBox("invalid input")
-                quantitytxbx.Clear()
-            End If
-            quantitytxbx.Clear()
-        End If
-
+        SizeFilterCmbx.SelectedIndex = 0
     End Sub
 
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
-        Dim result As String = MsgBox(InputBox("Enter size"))
-
-        If MsgBoxResult.Ok Then
-            SizeFilterCmbx.Items.Add(result)
-        End If
-    End Sub
 
 
 
@@ -72,21 +44,9 @@ Public Class MenuMngment
                 delete(PrdctTbledtgrd.Item(0, i).Value.ToString())
                 readdata()
                 AutoNumber()
-                Return
-            End If
-
-            If CDbl(pricetxbx.Text) <= 0 Then
-                MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
-                Return
             End If
         End If
-        MsgBox("Data added")
-        savedata()
-        readdata()
-        Clear()
-        CreateNewAutoNumber()
-        AutoNumber()
-        sqlconn.Close()
+
 
     End Sub
 
@@ -130,8 +90,10 @@ Public Class MenuMngment
     End Sub
 
     Sub readdata()
+
         Try
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            PrdctTbledtgrd.DataSource = Nothing
             PrdctTbledtgrd.Rows.Clear()
             query = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product"
             cmd = New SqlClient.SqlCommand(query, sqlconn)
@@ -150,6 +112,7 @@ Public Class MenuMngment
 
         SearchProduct("")
     End Sub
+
 
     Sub savedata()
         If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
@@ -185,6 +148,7 @@ Public Class MenuMngment
         End Try
     End Sub
 
+
     Sub updatedata()
 
         Dim imgData As Object = DBNull.Value
@@ -219,6 +183,7 @@ Public Class MenuMngment
         End Try
     End Sub
 
+
     Sub delete(ByVal id As String)
         If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         query = "Delete From Product where ProductID = @ProductID"
@@ -227,6 +192,7 @@ Public Class MenuMngment
         cmd.ExecuteNonQuery()
         cmd.Dispose()
     End Sub
+
 
     Sub viewimage()
         If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
@@ -251,6 +217,7 @@ Public Class MenuMngment
         Catch ex As Exception
         End Try
     End Sub
+
 
     Sub SearchProduct(keyword As String)
         Dim connStr As String = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
@@ -291,34 +258,6 @@ Public Class MenuMngment
         End Try
     End Sub
 
-    Private Sub Guna2Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel4.Paint
-
-    End Sub
-
-    Private Sub PrdctTble_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles PrdctTbledtgrd.CellContentClick
-        If e.RowIndex < 0 Then Return
-        Dim i As Integer = e.RowIndex
-        If e.ColumnIndex = 7 Then
-            PrdcId.Text = PrdctTbledtgrd.Item(0, i).Value.ToString()
-            prdctnmtxbx.Text = PrdctTbledtgrd.Item(1, i).Value.ToString()
-            Categorycmbbx.Text = PrdctTbledtgrd.Item(2, i).Value.ToString()
-            sizecmbbx.Text = PrdctTbledtgrd.Item(3, i).Value.ToString()
-            pricetxbx.Text = PrdctTbledtgrd.Item(4, i).Value.ToString()
-            quantitytxbx.Text = PrdctTbledtgrd.Item(5, i).Value.ToString()
-            viewimage()
-        ElseIf e.ColumnIndex = 8 Then
-            Dim confirm = MsgBox("Are you sure you want to delete this data?", MsgBoxStyle.YesNo)
-            If confirm = MsgBoxResult.Yes Then
-                delete(PrdctTbledtgrd.Item(0, i).Value.ToString())
-                readdata()
-                AutoNumber()
-            End If
-        End If
-    End Sub
-
-    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
-
-    End Sub
 
     Private Sub Updatebtn_Click(sender As Object, e As EventArgs) Handles Updatebtn.Click
         If prdctnmtxbx.Text = "" Then MsgBox("Product Name Cannot be blank", MsgBoxStyle.Critical) : Return
@@ -349,13 +288,40 @@ Public Class MenuMngment
             MsgBox("Price must be greater than 0", MsgBoxStyle.Critical)
             Return
         End If
-        MsgBox("Data added")
+        MsgBox("Data Updated")
         updatedata()
         readdata()
         Clear()
-        MsgBox("Data Updated")
         AutoNumber()
 
+    End Sub
+
+    Private Sub Prdctpicbx_Click(sender As Object, e As EventArgs) Handles Prdctpicbx.Click
+        OpenFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
+        OpenFileDialog1.FileName = ""
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            Try
+                Dim tempImg As Image = Image.FromFile(OpenFileDialog1.FileName)
+                Prdctpicbx.Image = New Bitmap(tempImg)
+                tempImg.Dispose()
+            Catch ex As Exception
+                MsgBox("Use JPG or PNG only", MsgBoxStyle.Critical)
+            End Try
+        End If
+    End Sub
+
+    Sub categ()
+        Categorycmbbx.Items.Clear()
+        Categorycmbbx.Items.Add("Hot Coffee")
+        Categorycmbbx.Items.Add("Cold Coffee")
+        Categorycmbbx.Items.Add("Tea")
+        Categorycmbbx.Items.Add("Desserts")
+    End Sub
+    Sub sizes()
+        sizecmbbx.Items.Clear()
+        sizecmbbx.Items.Add("Small")
+        sizecmbbx.Items.Add("Medium")
+        sizecmbbx.Items.Add("Large")
     End Sub
 
     Sub Clear()
@@ -373,17 +339,33 @@ Public Class MenuMngment
 
     End Sub
 
-    Private Sub Prdctpicbx_Click(sender As Object, e As EventArgs) Handles Prdctpicbx.Click
-        OpenFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
-        OpenFileDialog1.FileName = ""
-        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
-            Try
-                Dim tempImg As Image = Image.FromFile(OpenFileDialog1.FileName)
-                Prdctpicbx.Image = New Bitmap(tempImg)
-                tempImg.Dispose()
-            Catch ex As Exception
-                MsgBox("Use JPG or PNG only", MsgBoxStyle.Critical)
-            End Try
-        End If
+    Private Sub SizeFilterCmbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SizeFilterCmbx.SelectedIndexChanged
+        connect()
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            PrdctTbledtgrd.DataSource = Nothing
+            PrdctTbledtgrd.Rows.Clear()
+
+            Dim query As String
+            If SizeFilterCmbx.Text = "All" Then
+                query = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product"
+                cmd = New SqlClient.SqlCommand(query, sqlconn)
+            Else
+                query = "SELECT ProductID, productname, category, size, price, quantity, prodimage FROM Product WHERE size = @size"
+                cmd = New SqlClient.SqlCommand(query, sqlconn)
+                cmd.Parameters.AddWithValue("@size", SizeFilterCmbx.Text)
+            End If
+
+            dr = cmd.ExecuteReader()
+            While dr.Read()
+                PrdctTbledtgrd.Rows.Add(dr("ProductID"), dr("productname"), dr("category"), dr("size"), dr("price"), dr("quantity"), dr("prodimage"), "EDIT", "DELETE")
+            End While
+            dr.Close()
+            sqlconn.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
+

@@ -8,10 +8,11 @@ Public Class ManageAcc
         Try
             Dim cmd As New SqlCommand
             With cmd
+
                 .Connection = sqlconn
                 .CommandText = "SP_AutoNumber"
                 .CommandType = CommandType.StoredProcedure
-                .Parameters.AddWithValue("@pfx", "UID") '' Palitan nyo nalang si pfx
+                .Parameters.AddWithValue("@pfx", "UID")
             End With
             cmd.ExecuteScalar()
             cmd.Dispose()
@@ -25,22 +26,22 @@ Public Class ManageAcc
         query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
         cmd = New SqlClient.SqlCommand(query, sqlconn)
         With cmd
-            .Parameters.AddWithValue("@Pfx", "UID") '' Palitan nyo nalang si pfx
+            .Parameters.AddWithValue("@Pfx", "UID")
             If IsDBNull(cmd.ExecuteScalar) Then
                 CreateNewAutoNumber()
                 Dim number1 As String
                 query = "SELECT Max(NewNumber) FROM AutoNumber where pfx = @pfx"
                 cmd = New SqlClient.SqlCommand(query, sqlconn)
                 With cmd
-                    .Parameters.AddWithValue("@pfx", "UID") '' Palitan nyo nalang si pfx
+                    .Parameters.AddWithValue("@pfx", "UID")
                     number1 = Convert.ToString(cmd.ExecuteScalar)
-                    userid.Text = number1 ''palitan textboxname
+                    userid.Text = number1
                 End With
                 cmd.ExecuteNonQuery()
                 cmd.Dispose()
             Else
                 number = Convert.ToString(cmd.ExecuteScalar)
-                userid.Text = number '' palitan textboxname
+                userid.Text = number
             End If
         End With
         cmd.ExecuteNonQuery()
@@ -53,7 +54,7 @@ Public Class ManageAcc
         cmd = New SqlClient.SqlCommand(query, sqlconn)
         dr = cmd.ExecuteReader
         While dr.Read
-            Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE", "View")
+            Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE")
         End While
 
         cmd.Dispose()
@@ -61,25 +62,27 @@ Public Class ManageAcc
     End Sub
 
     Sub addUser()
-        Dim ms As New MemoryStream
-        Guna2PictureBox1.Image.Save(ms, Guna2PictureBox1.Image.RawFormat)
-        query = "Insert into UserAccount (UserID, firstname, lastname, username, birthdate, password, role, gender, image) values (@UserID, @firstname, @lastname, @username, @birthdate, @password, @role, @gender, @image);"
-        cmd = New SqlClient.SqlCommand(query, sqlconn)
-        With cmd.Parameters
-            .AddWithValue("@UserID", userid.Text)
-            .AddWithValue("@firstname", firstname.Text)
-            .AddWithValue("@lastname", lastname.Text)
-            .AddWithValue("@username", username.Text)
-            .AddWithValue("@password", password.Text)
-            .AddWithValue("@role", rolecmbbox.Text)
-            .AddWithValue("@gender", gendercmbox.Text)
-            .AddWithValue("@image", ms.ToArray())
 
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            Guna2DataGridView1.DataSource = Nothing
+            Guna2DataGridView1.Rows.Clear()
+            query = "SELECT UserID, firstname, lastname, username, birthdate, password, role, gender, image FROM UserAccount"
+            cmd = New SqlClient.SqlCommand(query, sqlconn)
+            dr = cmd.ExecuteReader()
+            While dr.Read()
+                Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"), "EDIT", "DELETE")
+            End While
+            dr.Close()
+            cmd.Dispose()
+            sqlconn.Close()
+        Catch ex As Exception
+            MsgBox("readdata error: " & ex.Message)
+            If dr IsNot Nothing AndAlso Not dr.IsClosed Then dr.Close()
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
 
-        End With
-        cmd.ExecuteNonQuery()
-        cmd.Dispose()
-
+        SearchUser("")
     End Sub
 
     Sub updateUser()
@@ -94,6 +97,7 @@ Public Class ManageAcc
             .AddWithValue("@firstname", firstname.Text)
             .AddWithValue("@lastname", lastname.Text)
             .AddWithValue("@username", username.Text)
+            .AddWithValue("@birthdate", birthdate.Value.Date)
             .AddWithValue("@password", password.Text)
             .AddWithValue("@role", rolecmbbox.Text)
             .AddWithValue("@gender", gendercmbox.Text)
@@ -152,6 +156,7 @@ Public Class ManageAcc
             If confirm = MsgBoxResult.Yes Then
                 deleteUser(Guna2DataGridView1.Item(0, i).Value)
                 usertable()
+                AutoNumber()
             End If
         End If
 
@@ -203,8 +208,8 @@ Public Class ManageAcc
                 Return
             End If
             MsgBox("Data added")
-            addUser()
             usertable()
+            addUser()
             Clear()
             CreateNewAutoNumber()
             AutoNumber()
@@ -246,6 +251,17 @@ Public Class ManageAcc
         If password.Text = "" Then MsgBox("Password Cannot be blank", MsgBoxStyle.Critical) : Return
         If gendercmbox.Text = "" Then MsgBox("Select Gender", MsgBoxStyle.Critical) : Return
 
+        If Not Regex.IsMatch(firstname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("First Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
+
+        If Not Regex.IsMatch(lastname.Text.Trim(), "^[a-zA-Z ]+$") Then
+            MsgBox("Last Name must contain letters only", MsgBoxStyle.Critical)
+            Return
+        End If
+
+
 
         If password.Text <> confirmpass.Text Then
             MsgBox("Password and confirm password does not match", MsgBoxStyle.Critical)
@@ -270,30 +286,13 @@ Public Class ManageAcc
             Return
         End If
 
-        Try
-            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            query = "SELECT COUNT(*) FROM UserAccount WHERE username=@username"
-            cmd = New SqlCommand(query, sqlconn)
-            cmd.Parameters.AddWithValue("@username", username.Text.Trim())
-            Dim count As Integer = CInt(cmd.ExecuteScalar())
+        MsgBox("Data updated")
+        updateUser()
+        Clear()
+        AutoNumber()
+        sqlconn.Close()
 
-            If count > 0 Then
-                MsgBox("Username already exists! Use another username.", MsgBoxStyle.Critical)
-                username.Clear()
-                sqlconn.Close()
-                Return
-            End If
-            MsgBox("Data added")
-            updateUser()
-            usertable()
-            Clear()
-            AutoNumber()
-            sqlconn.Close()
-        Catch ex As Exception
-            MsgBox("Error checking duplicate: " & ex.Message)
-            Return
-        End Try
     End Sub
 
     Private Sub Guna2DataGridView1_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles Guna2DataGridView1.DataError
@@ -303,33 +302,99 @@ Public Class ManageAcc
 
     Private Sub ManageAcc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         connect()
+        If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
         usertable()
         roless()
         gender()
-        'AutoNumber() tanggalin niyo na lang yung comment para gumana ulit
+        SizeFilterCmbx.SelectedIndex = 0
+        AutoNumber()
     End Sub
 
-    Private Sub Guna2Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel3.Paint
+    Sub SearchUser(keyword As String)
+        Dim connStr As String = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
 
+
+        Try
+            Guna2DataGridView1.Rows.Clear()
+
+            Using sqlconn As New SqlClient.SqlConnection(connStr)
+                sqlconn.Open()
+
+                Dim q As String
+                If keyword.Trim() = "" Then
+                    q = "SELECT UserID, firstname, lastname, username, birthdate, password, role, gender, image FROM UserAccount"
+                    Using cmd As New SqlClient.SqlCommand(q, sqlconn)
+                        Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                            While dr.Read()
+                                Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"))
+                            End While
+                        End Using
+                    End Using
+                Else
+                    q = "SELECT UserID, firstname, lastname, username, birthdate, password, role, gender, image FROM UserAccount 
+                     WHERE UserID LIKE @k OR firstname LIKE @k OR lastname LIKE @k"
+                    Using cmd As New SqlClient.SqlCommand(q, sqlconn)
+                        cmd.Parameters.AddWithValue("@k", "%" & keyword.Trim() & "%")
+                        Using dr As SqlClient.SqlDataReader = cmd.ExecuteReader()
+                            While dr.Read()
+                                Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"))
+                            End While
+                        End Using
+                    End Using
+                End If
+            End Using
+
+        Catch ex As Exception
+            MsgBox("SearchUser: " & ex.Message)
+        End Try
     End Sub
 
-    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
-
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        SearchUser(Guna2TextBox2.Text)
     End Sub
 
-    Private Sub Guna2Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel5.Paint
+    Private Sub SizeFilterCmbx_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SizeFilterCmbx.SelectedIndexChanged
+        connect()
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            Guna2DataGridView1.DataSource = Nothing
+            Guna2DataGridView1.Rows.Clear()
 
+            Dim query As String
+            If SizeFilterCmbx.Text = "All" Then
+                query = "SELECT UserID, firstname, lastname, username, birthdate, password, role, gender, image FROM UserAccount"
+                cmd = New SqlClient.SqlCommand(query, sqlconn)
+            Else
+                query = "SELECT UserID, firstname, lastname, username, birthdate, password, role, gender, image FROM UserAccount WHERE role = @role"
+                cmd = New SqlClient.SqlCommand(query, sqlconn)
+                cmd.Parameters.AddWithValue("@role", SizeFilterCmbx.Text)
+            End If
+
+            dr = cmd.ExecuteReader()
+            While dr.Read()
+                Guna2DataGridView1.Rows.Add(dr("UserID"), dr("firstname"), dr("lastname"), dr("username"), dr("birthdate"), dr("password"), dr("role"), dr("gender"), dr("image"))
+            End While
+            dr.Close()
+            sqlconn.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
-    Private Sub userid_TextChanged(sender As Object, e As EventArgs) Handles userid.TextChanged
 
-    End Sub
 
-    Private Sub lastname_TextChanged(sender As Object, e As EventArgs) Handles lastname.TextChanged
-
-    End Sub
-
-    Private Sub birthdate_ValueChanged(sender As Object, e As EventArgs) Handles birthdate.ValueChanged
-
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+        OpenFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"
+        OpenFileDialog1.FileName = ""
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            Try
+                Dim tempImg As Image = Image.FromFile(OpenFileDialog1.FileName)
+                Guna2PictureBox1.Image = New Bitmap(tempImg)
+                tempImg.Dispose()
+            Catch ex As Exception
+                MsgBox("Use JPG or PNG only", MsgBoxStyle.Critical)
+            End Try
+        End If
     End Sub
 End Class
