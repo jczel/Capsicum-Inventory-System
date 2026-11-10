@@ -759,7 +759,7 @@ Partial Class AdminDashboard
         Me.timelb.BackColor = System.Drawing.Color.Transparent
         Me.timelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.timelb.ForeColor = System.Drawing.SystemColors.Control
-        Me.timelb.Location = New System.Drawing.Point(61, 98)
+        Me.timelb.Location = New System.Drawing.Point(61, 104)
         Me.timelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.timelb.Name = "timelb"
         Me.timelb.Size = New System.Drawing.Size(42, 16)
@@ -796,7 +796,7 @@ Partial Class AdminDashboard
         Me.datelb.BackColor = System.Drawing.Color.Transparent
         Me.datelb.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.datelb.ForeColor = System.Drawing.SystemColors.Control
-        Me.datelb.Location = New System.Drawing.Point(61, 31)
+        Me.datelb.Location = New System.Drawing.Point(61, 38)
         Me.datelb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.datelb.Name = "datelb"
         Me.datelb.Size = New System.Drawing.Size(40, 16)
