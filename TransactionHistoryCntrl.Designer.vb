@@ -30,7 +30,7 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.GeneratereportDtgrid = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,11 +38,11 @@ Partial Class TransactionHistoryCntrl
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2DateTimePicker2 = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.dtStart = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.dtEnd = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.enddatetransactlb = New System.Windows.Forms.Label()
         Me.startdatetransactlb = New System.Windows.Forms.Label()
-        Me.printreportbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnSearch = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
@@ -51,7 +51,7 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
-        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
@@ -108,17 +108,17 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel1.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Panel1.BorderRadius = 5
         Me.Guna2Panel1.BorderThickness = 2
-        Me.Guna2Panel1.Controls.Add(Me.GeneratereportDtgrid)
+        Me.Guna2Panel1.Controls.Add(Me.DataGridView1)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.Location = New System.Drawing.Point(3, 189)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1028, 380)
         Me.Guna2Panel1.TabIndex = 3
         '
-        'GeneratereportDtgrid
+        'DataGridView1
         '
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.GeneratereportDtgrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -126,10 +126,9 @@ Partial Class TransactionHistoryCntrl
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GeneratereportDtgrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.GeneratereportDtgrid.ColumnHeadersHeight = 34
-        Me.GeneratereportDtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.GeneratereportDtgrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column4, Me.Column2, Me.Column3, Me.Column5})
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView1.ColumnHeadersHeight = 34
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -137,50 +136,56 @@ Partial Class TransactionHistoryCntrl
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GeneratereportDtgrid.DefaultCellStyle = DataGridViewCellStyle3
-        Me.GeneratereportDtgrid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GeneratereportDtgrid.GridColor = System.Drawing.Color.WhiteSmoke
-        Me.GeneratereportDtgrid.Location = New System.Drawing.Point(0, 0)
-        Me.GeneratereportDtgrid.Name = "GeneratereportDtgrid"
-        Me.GeneratereportDtgrid.RowHeadersVisible = False
-        Me.GeneratereportDtgrid.Size = New System.Drawing.Size(1028, 380)
-        Me.GeneratereportDtgrid.TabIndex = 1
-        Me.GeneratereportDtgrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.GeneratereportDtgrid.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
-        Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
-        Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Height = 34
-        Me.GeneratereportDtgrid.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.GridColor = System.Drawing.Color.WhiteSmoke
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(1028, 380)
+        Me.DataGridView1.TabIndex = 1
+        Me.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
+        Me.DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
+        Me.DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridView1.ThemeStyle.HeaderStyle.Height = 34
+        Me.DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'Column6
         '
         Me.Column6.HeaderText = "Date"
         Me.Column6.Name = "Column6"
+        Me.Column6.Width = 171
         '
         'Column1
         '
-        Me.Column1.HeaderText = "Transaction ID"
+        Me.Column1.HeaderText = "Transaction No."
         Me.Column1.Name = "Column1"
+        Me.Column1.Width = 172
         '
         'Column4
         '
         Me.Column4.HeaderText = "Staff "
         Me.Column4.Name = "Column4"
+        Me.Column4.Width = 171
         '
         'Column2
         '
         Me.Column2.HeaderText = "Total Item"
         Me.Column2.Name = "Column2"
+        Me.Column2.Width = 171
         '
         'Column3
         '
         Me.Column3.HeaderText = "Discount"
         Me.Column3.Name = "Column3"
+        Me.Column3.Width = 172
         '
         'Column5
         '
         Me.Column5.HeaderText = "Total"
         Me.Column5.Name = "Column5"
+        Me.Column5.Width = 171
         '
         'Guna2Panel7
         '
@@ -188,50 +193,50 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel7.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Panel7.BorderRadius = 5
         Me.Guna2Panel7.BorderThickness = 2
-        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker2)
-        Me.Guna2Panel7.Controls.Add(Me.Guna2DateTimePicker1)
+        Me.Guna2Panel7.Controls.Add(Me.dtStart)
+        Me.Guna2Panel7.Controls.Add(Me.dtEnd)
         Me.Guna2Panel7.Controls.Add(Me.enddatetransactlb)
         Me.Guna2Panel7.Controls.Add(Me.startdatetransactlb)
-        Me.Guna2Panel7.Controls.Add(Me.printreportbtn)
+        Me.Guna2Panel7.Controls.Add(Me.btnSearch)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel7.Location = New System.Drawing.Point(3, 77)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.Size = New System.Drawing.Size(1028, 106)
         Me.Guna2Panel7.TabIndex = 2
         '
-        'Guna2DateTimePicker2
+        'dtStart
         '
-        Me.Guna2DateTimePicker2.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2DateTimePicker2.BorderRadius = 5
-        Me.Guna2DateTimePicker2.BorderThickness = 2
-        Me.Guna2DateTimePicker2.Checked = True
-        Me.Guna2DateTimePicker2.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker2.Location = New System.Drawing.Point(141, 17)
-        Me.Guna2DateTimePicker2.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker2.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker2.Name = "Guna2DateTimePicker2"
-        Me.Guna2DateTimePicker2.Size = New System.Drawing.Size(256, 76)
-        Me.Guna2DateTimePicker2.TabIndex = 71
-        Me.Guna2DateTimePicker2.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
+        Me.dtStart.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.dtStart.BorderRadius = 5
+        Me.dtStart.BorderThickness = 2
+        Me.dtStart.Checked = True
+        Me.dtStart.FillColor = System.Drawing.Color.White
+        Me.dtStart.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.dtStart.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.dtStart.Location = New System.Drawing.Point(141, 17)
+        Me.dtStart.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.dtStart.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.dtStart.Name = "dtStart"
+        Me.dtStart.Size = New System.Drawing.Size(256, 76)
+        Me.dtStart.TabIndex = 71
+        Me.dtStart.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
         '
-        'Guna2DateTimePicker1
+        'dtEnd
         '
-        Me.Guna2DateTimePicker1.BorderColor = System.Drawing.Color.SaddleBrown
-        Me.Guna2DateTimePicker1.BorderRadius = 5
-        Me.Guna2DateTimePicker1.BorderThickness = 2
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(517, 17)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(254, 76)
-        Me.Guna2DateTimePicker1.TabIndex = 70
-        Me.Guna2DateTimePicker1.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
+        Me.dtEnd.BorderColor = System.Drawing.Color.SaddleBrown
+        Me.dtEnd.BorderRadius = 5
+        Me.dtEnd.BorderThickness = 2
+        Me.dtEnd.Checked = True
+        Me.dtEnd.FillColor = System.Drawing.Color.White
+        Me.dtEnd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.dtEnd.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.dtEnd.Location = New System.Drawing.Point(517, 17)
+        Me.dtEnd.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.dtEnd.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.dtEnd.Name = "dtEnd"
+        Me.dtEnd.Size = New System.Drawing.Size(254, 76)
+        Me.dtEnd.TabIndex = 70
+        Me.dtEnd.Value = New Date(2026, 11, 9, 11, 53, 16, 246)
         '
         'enddatetransactlb
         '
@@ -255,24 +260,24 @@ Partial Class TransactionHistoryCntrl
         Me.startdatetransactlb.TabIndex = 67
         Me.startdatetransactlb.Text = "Start Date :"
         '
-        'printreportbtn
+        'btnSearch
         '
-        Me.printreportbtn.BackColor = System.Drawing.Color.Transparent
-        Me.printreportbtn.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.printreportbtn.BorderRadius = 10
-        Me.printreportbtn.BorderThickness = 2
-        Me.printreportbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.printreportbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.printreportbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.printreportbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.printreportbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.printreportbtn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.printreportbtn.ForeColor = System.Drawing.Color.White
-        Me.printreportbtn.Location = New System.Drawing.Point(804, 15)
-        Me.printreportbtn.Name = "printreportbtn"
-        Me.printreportbtn.Size = New System.Drawing.Size(215, 78)
-        Me.printreportbtn.TabIndex = 66
-        Me.printreportbtn.Text = "Search"
+        Me.btnSearch.BackColor = System.Drawing.Color.Transparent
+        Me.btnSearch.BorderColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnSearch.BorderRadius = 10
+        Me.btnSearch.BorderThickness = 2
+        Me.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnSearch.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnSearch.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.btnSearch.ForeColor = System.Drawing.Color.White
+        Me.btnSearch.Location = New System.Drawing.Point(804, 15)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(215, 78)
+        Me.btnSearch.TabIndex = 66
+        Me.btnSearch.Text = "Search"
         '
         'Guna2Panel6
         '
@@ -343,7 +348,7 @@ Partial Class TransactionHistoryCntrl
         Me.Guna2Panel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
-        CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
         Me.Guna2Panel6.ResumeLayout(False)
@@ -361,18 +366,18 @@ Partial Class TransactionHistoryCntrl
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents transactionhistorylb As Label
-    Friend WithEvents printreportbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnSearch As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents GeneratereportDtgrid As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents startdatetransactlb As Label
+    Friend WithEvents enddatetransactlb As Label
+    Friend WithEvents dtStart As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents dtEnd As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents startdatetransactlb As Label
-    Friend WithEvents enddatetransactlb As Label
-    Friend WithEvents Guna2DateTimePicker2 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
 End Class

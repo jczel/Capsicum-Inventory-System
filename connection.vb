@@ -7,6 +7,7 @@ Module connection
     Public dr As SqlDataReader
     Public query As String
 
+
     Sub connect()
         Try
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()

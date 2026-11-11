@@ -186,7 +186,7 @@ Public Class Menucntrl
                 If r("ProductID").ToString() = "SEP" Then Continue For ' skip ADD ONS header
 
                 ' DFD: D TRANSACTION TABLE - Save to DB
-                Dim sql As String = "INSERT INTO Transactions (TransactionNo, ProductID, productname, size, price, quantity, subTotal, discountType, discountID, discountRate, total, transDate) VALUES (@trn, @pid, @pname, @size, @price, @qty, @sub, @dtype, @did, @drate, @total, @date)"
+                Dim sql As String = "INSERT INTO Transactions (TransactionNo, ProductID, productname, size, price, quantity, subTotal, discountType, discountID, discountRate, total, transDate, StaffName) VALUES (@trn, @pid, @pname, @size, @price, @qty, @sub, @dtype, @did, @drate, @total, @date, @staff)"
                 Using cmd As New SqlCommand(sql, sqlconn)
                     cmd.Parameters.AddWithValue("@trn", transNo)
                     cmd.Parameters.AddWithValue("@pid", r("ProductID"))
@@ -200,6 +200,7 @@ Public Class Menucntrl
                     cmd.Parameters.AddWithValue("@drate", discountRate)
                     cmd.Parameters.AddWithValue("@total", finalTotal)
                     cmd.Parameters.AddWithValue("@date", DateTime.Now)
+                    cmd.Parameters.AddWithValue("@staff", LoggedFirstName & " " & LoggedLastName)
                     cmd.ExecuteNonQuery()
                 End Using
             Next
