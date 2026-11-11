@@ -333,7 +333,9 @@ Partial Class Owner
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Owner"
         Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Owner"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)

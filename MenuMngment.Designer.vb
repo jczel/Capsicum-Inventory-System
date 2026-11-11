@@ -251,7 +251,7 @@ Partial Class MenuMngment
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 256.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1158, 256)
         Me.TableLayoutPanel2.TabIndex = 0
         '
@@ -346,7 +346,7 @@ Partial Class MenuMngment
         Me.Guna2GradientPanel1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Guna2GradientPanel1.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2GradientPanel1.BorderRadius = 20
-        Me.Guna2GradientPanel1.BorderThickness = 3
+        Me.Guna2GradientPanel1.BorderThickness = 5
         Me.Guna2GradientPanel1.Controls.Add(Me.Prdctpicbx)
         Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.White
         Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.White
@@ -361,6 +361,7 @@ Partial Class MenuMngment
         Me.Prdctpicbx.BorderRadius = 20
         Me.Prdctpicbx.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Prdctpicbx.FillColor = System.Drawing.Color.Transparent
+        Me.Prdctpicbx.Image = CType(resources.GetObject("Prdctpicbx.Image"), System.Drawing.Image)
         Me.Prdctpicbx.ImageRotate = 0!
         Me.Prdctpicbx.Location = New System.Drawing.Point(0, 0)
         Me.Prdctpicbx.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)

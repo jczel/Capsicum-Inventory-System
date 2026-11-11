@@ -38,12 +38,11 @@ Partial Class Staff
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.logoutbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.productinfobtn = New Guna.UI2.WinForms.Guna2Button()
         Me.transactionhisbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Menubtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -208,24 +207,23 @@ Partial Class Staff
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.logoutbtn, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox2, 0, 6)
-        Me.TableLayoutPanel2.Controls.Add(Me.productinfobtn, 0, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.transactionhisbtn, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.logoutbtn, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox2, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.transactionhisbtn, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Menubtn, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2Panel6, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 7
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62701!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.62818!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.60508!))
+        Me.TableLayoutPanel2.RowCount = 6
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.24242!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 690)
         Me.TableLayoutPanel2.TabIndex = 0
         '
@@ -243,10 +241,10 @@ Partial Class Staff
         Me.logoutbtn.Image = CType(resources.GetObject("logoutbtn.Image"), System.Drawing.Image)
         Me.logoutbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.logoutbtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.logoutbtn.Location = New System.Drawing.Point(2, 362)
+        Me.logoutbtn.Location = New System.Drawing.Point(2, 314)
         Me.logoutbtn.Margin = New System.Windows.Forms.Padding(2)
         Me.logoutbtn.Name = "logoutbtn"
-        Me.logoutbtn.Size = New System.Drawing.Size(227, 86)
+        Me.logoutbtn.Size = New System.Drawing.Size(227, 100)
         Me.logoutbtn.TabIndex = 9
         Me.logoutbtn.Text = "Logout"
         Me.logoutbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -258,35 +256,12 @@ Partial Class Staff
         Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 543)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(3, 523)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(225, 144)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(225, 164)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 8
         Me.Guna2PictureBox2.TabStop = False
-        '
-        'productinfobtn
-        '
-        Me.productinfobtn.Animated = True
-        Me.productinfobtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.productinfobtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.productinfobtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.productinfobtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.productinfobtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.productinfobtn.FillColor = System.Drawing.Color.Transparent
-        Me.productinfobtn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.productinfobtn.ForeColor = System.Drawing.Color.White
-        Me.productinfobtn.Image = CType(resources.GetObject("productinfobtn.Image"), System.Drawing.Image)
-        Me.productinfobtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.productinfobtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.productinfobtn.Location = New System.Drawing.Point(2, 182)
-        Me.productinfobtn.Margin = New System.Windows.Forms.Padding(2)
-        Me.productinfobtn.Name = "productinfobtn"
-        Me.productinfobtn.Size = New System.Drawing.Size(227, 86)
-        Me.productinfobtn.TabIndex = 6
-        Me.productinfobtn.Text = "Product Info"
-        Me.productinfobtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.productinfobtn.UseTransparentBackground = True
         '
         'transactionhisbtn
         '
@@ -302,10 +277,10 @@ Partial Class Staff
         Me.transactionhisbtn.Image = CType(resources.GetObject("transactionhisbtn.Image"), System.Drawing.Image)
         Me.transactionhisbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.transactionhisbtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.transactionhisbtn.Location = New System.Drawing.Point(2, 272)
+        Me.transactionhisbtn.Location = New System.Drawing.Point(2, 210)
         Me.transactionhisbtn.Margin = New System.Windows.Forms.Padding(2)
         Me.transactionhisbtn.Name = "transactionhisbtn"
-        Me.transactionhisbtn.Size = New System.Drawing.Size(227, 86)
+        Me.transactionhisbtn.Size = New System.Drawing.Size(227, 100)
         Me.transactionhisbtn.TabIndex = 3
         Me.transactionhisbtn.Text = "Transaction History"
         Me.transactionhisbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -325,10 +300,10 @@ Partial Class Staff
         Me.Menubtn.Image = CType(resources.GetObject("Menubtn.Image"), System.Drawing.Image)
         Me.Menubtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Menubtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Menubtn.Location = New System.Drawing.Point(2, 92)
+        Me.Menubtn.Location = New System.Drawing.Point(2, 106)
         Me.Menubtn.Margin = New System.Windows.Forms.Padding(2)
         Me.Menubtn.Name = "Menubtn"
-        Me.Menubtn.Size = New System.Drawing.Size(227, 86)
+        Me.Menubtn.Size = New System.Drawing.Size(227, 100)
         Me.Menubtn.TabIndex = 2
         Me.Menubtn.Text = "Menu"
         Me.Menubtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -342,18 +317,8 @@ Partial Class Staff
         Me.Guna2Panel6.Location = New System.Drawing.Point(2, 2)
         Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
-        Me.Guna2Panel6.Size = New System.Drawing.Size(227, 86)
+        Me.Guna2Panel6.Size = New System.Drawing.Size(227, 100)
         Me.Guna2Panel6.TabIndex = 0
-        '
-        'Guna2NotificationPaint1
-        '
-        Me.Guna2NotificationPaint1.Alignment = Guna.UI2.WinForms.Enums.CustomContentAlignment.TopRight
-        Me.Guna2NotificationPaint1.BorderRadius = 8
-        Me.Guna2NotificationPaint1.BorderThickness = 0
-        Me.Guna2NotificationPaint1.FillColor = System.Drawing.Color.Chocolate
-        Me.Guna2NotificationPaint1.Location = New System.Drawing.Point(20, 0)
-        Me.Guna2NotificationPaint1.Offset = New System.Drawing.Point(-7, 0)
-        Me.Guna2NotificationPaint1.TargetControl = Me.Guna2Button7
         '
         'PictureBox1
         '
@@ -369,6 +334,16 @@ Partial Class Staff
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
+        '
+        'Guna2NotificationPaint1
+        '
+        Me.Guna2NotificationPaint1.Alignment = Guna.UI2.WinForms.Enums.CustomContentAlignment.TopRight
+        Me.Guna2NotificationPaint1.BorderRadius = 8
+        Me.Guna2NotificationPaint1.BorderThickness = 0
+        Me.Guna2NotificationPaint1.FillColor = System.Drawing.Color.Chocolate
+        Me.Guna2NotificationPaint1.Location = New System.Drawing.Point(20, 0)
+        Me.Guna2NotificationPaint1.Offset = New System.Drawing.Point(-7, 0)
+        Me.Guna2NotificationPaint1.TargetControl = Me.Guna2Button7
         '
         'Staff
         '
@@ -409,7 +384,6 @@ Partial Class Staff
     Friend WithEvents Menubtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2NotificationPaint1 As Guna.UI2.WinForms.Guna2NotificationPaint
-    Friend WithEvents productinfobtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents logoutbtn As Guna.UI2.WinForms.Guna2Button

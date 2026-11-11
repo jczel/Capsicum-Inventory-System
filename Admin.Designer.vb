@@ -41,6 +41,7 @@ Partial Class Admin
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NotifCount = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
+        Me.Menubttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -160,7 +161,8 @@ Partial Class Admin
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.logoutbttn, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.Menubttn, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.logoutbttn, 0, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.MngInvtrybtn, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Guna2PictureBox2, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.MangAccbtn, 0, 2)
@@ -195,11 +197,11 @@ Partial Class Admin
         Me.logoutbttn.Image = CType(resources.GetObject("logoutbttn.Image"), System.Drawing.Image)
         Me.logoutbttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.logoutbttn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.logoutbttn.Location = New System.Drawing.Point(2, 358)
+        Me.logoutbttn.Location = New System.Drawing.Point(2, 447)
         Me.logoutbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.logoutbttn.Name = "logoutbttn"
         Me.logoutbttn.Size = New System.Drawing.Size(227, 85)
-        Me.logoutbttn.TabIndex = 10
+        Me.logoutbttn.TabIndex = 15
         Me.logoutbttn.Text = "Logout"
         Me.logoutbttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.logoutbttn.UseTransparentBackground = True
@@ -319,6 +321,29 @@ Partial Class Admin
         Me.NotifCount.Size = New System.Drawing.Size(17, 17)
         Me.NotifCount.TargetControl = Me.Guna2Button7
         '
+        'Menubttn
+        '
+        Me.Menubttn.Animated = True
+        Me.Menubttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Menubttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Menubttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Menubttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Menubttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Menubttn.FillColor = System.Drawing.Color.Transparent
+        Me.Menubttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Menubttn.ForeColor = System.Drawing.Color.White
+        Me.Menubttn.Image = CType(resources.GetObject("Menubttn.Image"), System.Drawing.Image)
+        Me.Menubttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Menubttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Menubttn.Location = New System.Drawing.Point(2, 358)
+        Me.Menubttn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Menubttn.Name = "Menubttn"
+        Me.Menubttn.Size = New System.Drawing.Size(227, 85)
+        Me.Menubttn.TabIndex = 16
+        Me.Menubttn.Text = "Menu"
+        Me.Menubttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Menubttn.UseTransparentBackground = True
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -326,7 +351,9 @@ Partial Class Admin
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Name = "Admin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -354,8 +381,9 @@ Partial Class Admin
     Friend WithEvents Dashboardbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents MngInvtrybtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents NotifCount As Guna.UI2.WinForms.Guna2NotificationPaint
+    Friend WithEvents logoutbttn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Menubttn As Guna.UI2.WinForms.Guna2Button
 End Class

@@ -65,7 +65,12 @@ Public Class Admin
 
     End Sub
 
-    Private Sub logoutbttn_Click(sender As Object, e As EventArgs) Handles logoutbttn.Click
+
+    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
+
+    End Sub
+
+    Private Sub logoutbttn_Click_1(sender As Object, e As EventArgs) Handles logoutbttn.Click
         If MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
 
             LoggedUserID = Nothing
@@ -94,5 +99,13 @@ Public Class Admin
             newLogin.Show()
             Me.Close()
         End If
+    End Sub
+
+    Private Sub Menubttn_Click(sender As Object, e As EventArgs) Handles Menubttn.Click
+        Dim menuu As New Menucntrl
+        Dsplaypnl.Controls.Clear()
+        menuu.Dock = DockStyle.Fill
+        Dsplaypnl.Controls.Add(menuu)
+
     End Sub
 End Class

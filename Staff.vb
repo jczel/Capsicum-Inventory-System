@@ -101,18 +101,7 @@ Public Class Staff
         Guna2Panel5.Controls.Add(menu)
     End Sub
 
-    Private Sub productinfobtn_Click(sender As Object, e As EventArgs) Handles productinfobtn.Click
-        loadform(New MenuMngment)
-    End Sub
 
-    Private Sub loadform(childform As Form)
-        Guna2Panel5.Controls.Clear()
-        childform.TopLevel = False
-        childform.FormBorderStyle = FormBorderStyle.None
-        childform.Dock = DockStyle.Fill
-        Guna2Panel5.Controls.Add(childform)
-        childform.Show()
-    End Sub
 
     Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
         Form1login.Show()
