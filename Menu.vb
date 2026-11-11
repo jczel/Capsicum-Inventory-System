@@ -144,7 +144,7 @@ Public Class Menu
                                            selectedID = idL
                                        End Sub
 
-                ' DFD: ADDS-ON = pag Add ulit ng ibang product, add-on na yun
+
                 AddHandler addBtn.Click, Sub(s, ev)
                                              If selectedID <> "" AndAlso selectedPrice > 0 Then
                                                  modCart.AddItem(selectedID, pName, selectedSize, selectedPrice)

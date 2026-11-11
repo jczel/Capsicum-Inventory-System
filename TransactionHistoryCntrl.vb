@@ -46,7 +46,7 @@ Public Class TransactionHistoryCntrl
                 DataGridView1.Columns.Clear()
                 DataGridView1.DataSource = dt
 
-                DesignGrid() ' <--- APPLY DESIGN
+                DesignGrid()
 
             End Using
         Catch ex As Exception
@@ -59,7 +59,7 @@ Public Class TransactionHistoryCntrl
     Private Sub DesignGrid()
         With DataGridView1
             .EnableHeadersVisualStyles = False
-            .BackgroundColor = Color.FromArgb(253, 245, 235) ' cream background mo
+            .BackgroundColor = Color.FromArgb(253, 245, 235)
             .BorderStyle = BorderStyle.None
             .CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
             .GridColor = Color.FromArgb(230, 210, 190)
@@ -72,22 +72,20 @@ Public Class TransactionHistoryCntrl
             .ColumnHeadersHeight = 45
             .ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
 
-            ' HEADER - gaya sa ibang form mo
-            .ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(121, 48, 24) ' dark brown
+            .ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(121, 48, 24)
             .ColumnHeadersDefaultCellStyle.ForeColor = Color.White
             .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI Semibold", 10, FontStyle.Bold)
             .ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
             .ColumnHeadersDefaultCellStyle.Padding = New Padding(15, 0, 0, 0)
 
-            ' ROWS
+
             .DefaultCellStyle.BackColor = Color.White
             .DefaultCellStyle.ForeColor = Color.FromArgb(71, 69, 94)
             .DefaultCellStyle.Font = New Font("Segoe UI", 9.5, FontStyle.Regular)
             .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
             .DefaultCellStyle.Padding = New Padding(15, 0, 0, 0)
-            
 
-            ' ALTERNATING ROWS - gaya sa ibang form
+
             .AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(253, 245, 235)
             .AlternatingRowsDefaultCellStyle.ForeColor = Color.FromArgb(71, 69, 94)
             .AlternatingRowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(242, 225, 206)

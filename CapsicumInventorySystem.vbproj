@@ -101,12 +101,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddOnsCntrl.Designer.vb">
-      <DependentUpon>AddOnsCntrl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AddOnsCntrl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="Admin.Designer.vb">
       <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
@@ -117,12 +111,6 @@
       <DependentUpon>AdminDashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="AdminDashboard.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AdOns.Designer.vb">
-      <DependentUpon>AdOns.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdOns.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="connection.vb" />
@@ -207,18 +195,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddOnsCntrl.resx">
-      <DependentUpon>AddOnsCntrl.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdOns.resx">
-      <DependentUpon>AdOns.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1login.resx">
       <DependentUpon>Form1login.vb</DependentUpon>
