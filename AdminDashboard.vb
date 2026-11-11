@@ -19,4 +19,8 @@
     Private Sub todaysnumofTransnumlb_Click(sender As Object, e As EventArgs) Handles todaysnumofTransnumlb.Click
 
     End Sub
+
+    Private Sub totalprodlb_Click(sender As Object, e As EventArgs) Handles totalprodlb.Click
+
+    End Sub
 End Class

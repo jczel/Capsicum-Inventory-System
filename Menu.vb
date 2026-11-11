@@ -8,38 +8,34 @@ Public Class Menu
         FlowLayoutPanel1.WrapContents = True
         connect()
         loadGrouped("All")
-
     End Sub
 
     Public Sub loadGrouped(Optional filter As String = "All")
         FlowLayoutPanel1.Controls.Clear()
         Try
-            If sqlconn.State = ConnectionState.Closed Then
-                sqlconn.Open()
-            End If
-
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
             Dim dtAll As New DataTable()
             Dim sql As String
-
-
             If filter = "All" Then
-                sql = "SELECT productname, size, price, prodimage, category FROM Product ORDER BY productname"
+                sql = "SELECT ProductID, productname, size, price, prodimage, category FROM Product ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
             Else
-                sql = "SELECT productname, size, price, prodimage, category FROM Product WHERE category = @category ORDER BY productname"
+                sql = "SELECT ProductID, productname, size, price, prodimage, category FROM Product WHERE category = @category ORDER BY productname"
                 cmd = New SqlCommand(sql, sqlconn)
                 cmd.Parameters.AddWithValue("@category", filter)
             End If
-
             cmd.CommandTimeout = 120
             Dim da As New SqlDataAdapter(cmd)
             da.Fill(dtAll)
-
 
             Dim grouped = dtAll.AsEnumerable().GroupBy(Function(r) r.Field(Of String)("productname"))
 
             For Each g In grouped
                 Dim pName As String = g.Key
+                Dim idS As String = ""
+                Dim idM As String = ""
+                Dim idL As String = ""
+                Dim idSingle As String = ""
                 Dim priceS As String = ""
                 Dim priceM As String = ""
                 Dim priceL As String = ""
@@ -48,62 +44,60 @@ Public Class Menu
 
                 For Each r2 In g
                     Dim sz As String = ""
-                    If Not IsDBNull(r2("size")) Then
-                        sz = r2("size").ToString().Trim().ToUpper()
-                    End If
-
+                    If Not IsDBNull(r2("size")) Then sz = r2("size").ToString().Trim().ToUpper()
+                    Dim rID As String = r2("ProductID").ToString()
                     If sz = "" Then
                         singlePrice = r2("price").ToString()
+                        idSingle = rID
                     ElseIf sz = "S" OrElse sz.Contains("SMALL") Then
                         priceS = r2("price").ToString()
+                        idS = rID
                     ElseIf sz = "M" OrElse sz.Contains("MED") Then
                         priceM = r2("price").ToString()
+                        idM = rID
                     ElseIf sz = "L" OrElse sz.Contains("LARGE") Then
                         priceL = r2("price").ToString()
+                        idL = rID
                     End If
-
                     prodImage = r2("prodimage")
                 Next
 
-                Dim container As New Guna2Panel With {
-                    .Height = 168,
-                    .Width = 275,
-                    .BorderRadius = 20,
-                    .BorderThickness = 2,
-                    .BorderColor = Color.FromArgb(128, 64, 0),
-                    .Margin = New Padding(10)
-                }
+                Dim selectedSize As String = "M"
+                Dim selectedPrice As Decimal = 0
+                Dim selectedID As String = ""
 
-                Dim productName As New Label With {
-                    .Text = pName,
-                    .Location = New Point(133, 20),
-                    .AutoSize = True,
-                    .Font = New Font("Microsoft YaHei UI", 9, FontStyle.Bold)
-                }
+                If singlePrice <> "" Then
+                    selectedSize = ""
+                    selectedPrice = CDec(singlePrice)
+                    selectedID = idSingle
+                ElseIf priceM <> "" Then
+                    selectedSize = "M"
+                    selectedPrice = CDec(priceM)
+                    selectedID = idM
+                ElseIf priceS <> "" Then
+                    selectedSize = "S"
+                    selectedPrice = CDec(priceS)
+                    selectedID = idS
+                ElseIf priceL <> "" Then
+                    selectedSize = "L"
+                    selectedPrice = CDec(priceL)
+                    selectedID = idL
+                End If
 
-                Dim productPrice As New Label With {
-                    .Location = New Point(133, 50),
-                    .AutoSize = True,
-                    .Font = New Font("Microsoft YaHei UI", 12, FontStyle.Bold)
-                }
-
+                Dim container As New Guna2Panel With {.Height = 168, .Width = 275, .BorderRadius = 20, .BorderThickness = 2, .BorderColor = Color.FromArgb(128, 64, 0), .Margin = New Padding(10)}
+                Dim productName As New Label With {.Text = pName, .Location = New Point(133, 20), .AutoSize = True, .Font = New Font("Microsoft YaHei UI", 9, FontStyle.Bold)}
+                Dim productPrice As New Label With {.Location = New Point(133, 50), .AutoSize = True, .Font = New Font("Microsoft YaHei UI", 12, FontStyle.Bold)}
                 If singlePrice <> "" Then
                     productPrice.Text = "₱" & singlePrice
                 ElseIf priceM <> "" Then
                     productPrice.Text = "₱" & priceM
                 ElseIf priceS <> "" Then
                     productPrice.Text = "₱" & priceS
-                Else
+                ElseIf priceL <> "" Then
                     productPrice.Text = "₱" & priceL
                 End If
 
-                Dim productImg As New Guna2PictureBox With {
-                    .Location = New Point(13, 12),
-                    .Size = New Size(102, 91),
-                    .BorderRadius = 10,
-                    .SizeMode = PictureBoxSizeMode.StretchImage
-                }
-
+                Dim productImg As New Guna2PictureBox With {.Location = New Point(13, 12), .Size = New Size(102, 91), .BorderRadius = 10, .SizeMode = PictureBoxSizeMode.StretchImage}
                 Try
                     If prodImage IsNot Nothing AndAlso Not IsDBNull(prodImage) Then
                         Dim imgBytes As Byte() = DirectCast(prodImage, Byte())
@@ -129,21 +123,33 @@ Public Class Menu
                     If priceS = "" Then btnS.Visible = False
                     If priceM = "" Then btnM.Visible = False
                     If priceL = "" Then btnL.Visible = False
-
-                    If priceS = "" AndAlso priceL = "" AndAlso priceM <> "" Then
-                        btnM.Location = New Point(13, 123)
-                        btnM.FillColor = Color.FromArgb(128, 64, 0)
-                        btnM.ForeColor = Color.White
-                    End If
                 End If
 
-                Dim ps As String = priceS
-                Dim pm As String = priceM
-                Dim pl As String = priceL
+                AddHandler btnS.Click, Sub(s, ev)
+                                           productPrice.Text = "₱" & priceS
+                                           selectedSize = "S"
+                                           selectedPrice = CDec(priceS)
+                                           selectedID = idS
+                                       End Sub
+                AddHandler btnM.Click, Sub(s, ev)
+                                           productPrice.Text = "₱" & priceM
+                                           selectedSize = "M"
+                                           selectedPrice = CDec(priceM)
+                                           selectedID = idM
+                                       End Sub
+                AddHandler btnL.Click, Sub(s, ev)
+                                           productPrice.Text = "₱" & priceL
+                                           selectedSize = "L"
+                                           selectedPrice = CDec(priceL)
+                                           selectedID = idL
+                                       End Sub
 
-                AddHandler btnS.Click, Sub(s, ev) productPrice.Text = "₱" & ps
-                AddHandler btnM.Click, Sub(s, ev) productPrice.Text = "₱" & pm
-                AddHandler btnL.Click, Sub(s, ev) productPrice.Text = "₱" & pl
+                ' DFD: ADDS-ON = pag Add ulit ng ibang product, add-on na yun
+                AddHandler addBtn.Click, Sub(s, ev)
+                                             If selectedID <> "" AndAlso selectedPrice > 0 Then
+                                                 modCart.AddItem(selectedID, pName, selectedSize, selectedPrice)
+                                             End If
+                                         End Sub
 
                 container.Controls.Add(productName)
                 container.Controls.Add(productPrice)
@@ -152,20 +158,15 @@ Public Class Menu
                 container.Controls.Add(btnM)
                 container.Controls.Add(btnL)
                 container.Controls.Add(addBtn)
-
                 FlowLayoutPanel1.Controls.Add(container)
             Next
-
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         Finally
-            If sqlconn.State = ConnectionState.Open Then
-                sqlconn.Close()
-            End If
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
         End Try
     End Sub
 
     Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles FlowLayoutPanel1.Paint
-
     End Sub
 End Class

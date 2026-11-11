@@ -22,9 +22,9 @@ Partial Class Menucntrl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
@@ -34,6 +34,8 @@ Partial Class Menucntrl
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Discountlb = New Guna.UI2.WinForms.Guna2Panel()
+        Me.txtDiscountID = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.cmbDiscountType = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.totalnumlb = New System.Windows.Forms.Label()
         Me.discntnumlb = New System.Windows.Forms.Label()
         Me.subnumlb = New System.Windows.Forms.Label()
@@ -45,13 +47,6 @@ Partial Class Menucntrl
         Me.subtotallb = New System.Windows.Forms.Label()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.ProductCartDtgrd = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Confrmbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Clearbttn = New Guna.UI2.WinForms.Guna2Button()
@@ -65,6 +60,13 @@ Partial Class Menucntrl
         Me.coldCofbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.hotCofbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.allprdbttn = New Guna.UI2.WinForms.Guna2Button()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.Guna2Panel1.SuspendLayout()
@@ -176,8 +178,8 @@ Partial Class Menucntrl
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 3
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.84849!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.15152!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.80746!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.19255!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
@@ -188,6 +190,8 @@ Partial Class Menucntrl
         '
         Me.Discountlb.BackColor = System.Drawing.Color.White
         Me.Discountlb.BorderRadius = 20
+        Me.Discountlb.Controls.Add(Me.txtDiscountID)
+        Me.Discountlb.Controls.Add(Me.cmbDiscountType)
         Me.Discountlb.Controls.Add(Me.totalnumlb)
         Me.Discountlb.Controls.Add(Me.discntnumlb)
         Me.Discountlb.Controls.Add(Me.subnumlb)
@@ -198,17 +202,53 @@ Partial Class Menucntrl
         Me.Discountlb.Controls.Add(Me.Label1)
         Me.Discountlb.Controls.Add(Me.subtotallb)
         Me.Discountlb.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Discountlb.Location = New System.Drawing.Point(3, 485)
+        Me.Discountlb.Location = New System.Drawing.Point(3, 459)
         Me.Discountlb.Name = "Discountlb"
-        Me.Discountlb.Size = New System.Drawing.Size(683, 156)
+        Me.Discountlb.Size = New System.Drawing.Size(683, 182)
         Me.Discountlb.TabIndex = 4
+        '
+        'txtDiscountID
+        '
+        Me.txtDiscountID.AutoRoundedCorners = True
+        Me.txtDiscountID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtDiscountID.DefaultText = ""
+        Me.txtDiscountID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtDiscountID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtDiscountID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtDiscountID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtDiscountID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtDiscountID.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtDiscountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtDiscountID.Location = New System.Drawing.Point(182, 20)
+        Me.txtDiscountID.Name = "txtDiscountID"
+        Me.txtDiscountID.PlaceholderText = "ID No."
+        Me.txtDiscountID.SelectedText = ""
+        Me.txtDiscountID.Size = New System.Drawing.Size(200, 36)
+        Me.txtDiscountID.TabIndex = 10
+        '
+        'cmbDiscountType
+        '
+        Me.cmbDiscountType.AutoRoundedCorners = True
+        Me.cmbDiscountType.BackColor = System.Drawing.Color.Transparent
+        Me.cmbDiscountType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbDiscountType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDiscountType.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbDiscountType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbDiscountType.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.cmbDiscountType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbDiscountType.ItemHeight = 30
+        Me.cmbDiscountType.Items.AddRange(New Object() {"None", "Senior Citizen - 20%", "PWD - 20%"})
+        Me.cmbDiscountType.Location = New System.Drawing.Point(15, 20)
+        Me.cmbDiscountType.Name = "cmbDiscountType"
+        Me.cmbDiscountType.Size = New System.Drawing.Size(140, 36)
+        Me.cmbDiscountType.TabIndex = 9
         '
         'totalnumlb
         '
         Me.totalnumlb.AutoSize = True
         Me.totalnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalnumlb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.totalnumlb.Location = New System.Drawing.Point(148, 103)
+        Me.totalnumlb.Location = New System.Drawing.Point(150, 142)
         Me.totalnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.totalnumlb.Name = "totalnumlb"
         Me.totalnumlb.Size = New System.Drawing.Size(38, 24)
@@ -220,7 +260,7 @@ Partial Class Menucntrl
         Me.discntnumlb.AutoSize = True
         Me.discntnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.discntnumlb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.discntnumlb.Location = New System.Drawing.Point(148, 64)
+        Me.discntnumlb.Location = New System.Drawing.Point(150, 103)
         Me.discntnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.discntnumlb.Name = "discntnumlb"
         Me.discntnumlb.Size = New System.Drawing.Size(54, 24)
@@ -232,7 +272,7 @@ Partial Class Menucntrl
         Me.subnumlb.AutoSize = True
         Me.subnumlb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.subnumlb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.subnumlb.Location = New System.Drawing.Point(148, 20)
+        Me.subnumlb.Location = New System.Drawing.Point(150, 59)
         Me.subnumlb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.subnumlb.Name = "subnumlb"
         Me.subnumlb.Size = New System.Drawing.Size(38, 24)
@@ -244,7 +284,7 @@ Partial Class Menucntrl
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label4.Location = New System.Drawing.Point(108, 64)
+        Me.Label4.Location = New System.Drawing.Point(110, 103)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(16, 24)
@@ -256,7 +296,7 @@ Partial Class Menucntrl
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label3.Location = New System.Drawing.Point(108, 103)
+        Me.Label3.Location = New System.Drawing.Point(110, 142)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(16, 24)
@@ -268,7 +308,7 @@ Partial Class Menucntrl
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label2.Location = New System.Drawing.Point(108, 20)
+        Me.Label2.Location = New System.Drawing.Point(110, 59)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(16, 24)
@@ -280,7 +320,7 @@ Partial Class Menucntrl
         Me.Totallb.AutoSize = True
         Me.Totallb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Totallb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Totallb.Location = New System.Drawing.Point(15, 103)
+        Me.Totallb.Location = New System.Drawing.Point(17, 142)
         Me.Totallb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Totallb.Name = "Totallb"
         Me.Totallb.Size = New System.Drawing.Size(62, 24)
@@ -292,7 +332,7 @@ Partial Class Menucntrl
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Label1.Location = New System.Drawing.Point(15, 64)
+        Me.Label1.Location = New System.Drawing.Point(17, 103)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 24)
@@ -304,7 +344,7 @@ Partial Class Menucntrl
         Me.subtotallb.AutoSize = True
         Me.subtotallb.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.subtotallb.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.subtotallb.Location = New System.Drawing.Point(15, 20)
+        Me.subtotallb.Location = New System.Drawing.Point(17, 59)
         Me.subtotallb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.subtotallb.Name = "subtotallb"
         Me.subtotallb.Size = New System.Drawing.Size(99, 24)
@@ -317,32 +357,31 @@ Partial Class Menucntrl
         Me.Guna2Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel8.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel8.Name = "Guna2Panel8"
-        Me.Guna2Panel8.Size = New System.Drawing.Size(683, 476)
+        Me.Guna2Panel8.Size = New System.Drawing.Size(683, 450)
         Me.Guna2Panel8.TabIndex = 3
         '
         'ProductCartDtgrd
         '
         Me.ProductCartDtgrd.AllowUserToResizeColumns = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.ProductCartDtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.BurlyWood
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.GrayText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.ProductCartDtgrd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ProductCartDtgrd.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.ProductCartDtgrd.ColumnHeadersHeight = 40
-        Me.ProductCartDtgrd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.Column1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn5, Me.DataGridViewButtonColumn2})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ProductCartDtgrd.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ProductCartDtgrd.DefaultCellStyle = DataGridViewCellStyle3
         Me.ProductCartDtgrd.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ProductCartDtgrd.GridColor = System.Drawing.Color.WhiteSmoke
         Me.ProductCartDtgrd.Location = New System.Drawing.Point(0, 0)
@@ -352,7 +391,7 @@ Partial Class Menucntrl
         Me.ProductCartDtgrd.RowTemplate.Height = 40
         Me.ProductCartDtgrd.RowTemplate.ReadOnly = True
         Me.ProductCartDtgrd.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductCartDtgrd.Size = New System.Drawing.Size(683, 476)
+        Me.ProductCartDtgrd.Size = New System.Drawing.Size(683, 450)
         Me.ProductCartDtgrd.TabIndex = 48
         Me.ProductCartDtgrd.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.ProductCartDtgrd.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke
@@ -363,48 +402,6 @@ Partial Class Menucntrl
         Me.ProductCartDtgrd.ThemeStyle.HeaderStyle.Height = 40
         Me.ProductCartDtgrd.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ProductCartDtgrd.ThemeStyle.RowsStyle.Height = 40
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Product ID"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Product Name"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Size"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Add-Ons"
-        Me.Column1.Name = "Column1"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Price"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewButtonColumn2
-        '
-        Me.DataGridViewButtonColumn2.HeaderText = "Remove"
-        Me.DataGridViewButtonColumn2.MinimumWidth = 8
-        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
         '
         'Guna2CustomGradientPanel1
         '
@@ -624,6 +621,55 @@ Partial Class Menucntrl
         Me.allprdbttn.TabIndex = 58
         Me.allprdbttn.Text = "All"
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Product ID"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Width = 98
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Product Name"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn2.Width = 97
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Size"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 98
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Add-Ons"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 97
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 98
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Price"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 97
+        '
+        'DataGridViewButtonColumn2
+        '
+        Me.DataGridViewButtonColumn2.HeaderText = "Remove"
+        Me.DataGridViewButtonColumn2.MinimumWidth = 8
+        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
+        Me.DataGridViewButtonColumn2.Width = 98
+        '
         'PrintDialog1
         '
         Me.PrintDialog1.Document = Me.PrintDocument1
@@ -700,4 +746,6 @@ Partial Class Menucntrl
     Friend WithEvents DataGridViewButtonColumn2 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProductCartDtgrd As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents txtDiscountID As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents cmbDiscountType As Guna.UI2.WinForms.Guna2ComboBox
 End Class

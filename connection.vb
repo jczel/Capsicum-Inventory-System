@@ -28,13 +28,19 @@ Module connection
         End Using
     End Sub
 
-    Public Sub productCount(label As Label)
-        query = "SELECT COUNT(*) FROM Product"
-        Using cmd As New SqlCommand(query, sqlconn)
-            Dim countProduct As Integer = Convert.ToInt32(cmd.ExecuteScalar)
-
-            label.Text = countProduct.ToString()
-        End Using
+    Public Sub productCounts(label As Label)
+        Dim query As String = "SELECT COUNT(DISTINCT productname) FROM Product"
+        Try
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+            Using cmd As New SqlCommand(query, sqlconn)
+                Dim total As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                label.Text = total.ToString()
+            End Using
+            sqlconn.Close()
+        Catch ex As Exception
+            label.Text = "0"
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
     End Sub
 
     Public Sub totalStock(label As Label)
@@ -53,17 +59,5 @@ Module connection
     End Sub
 
 
-    Public Sub productCounts(label As Label)
-        query = "SELECT COUNT(*) FROM Product"
-        Try
-            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
-            Using cmd As New SqlCommand(query, sqlconn)
-                Dim countProduct As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                label.Text = countProduct.ToString()
-            End Using
-            sqlconn.Close()
-        Catch
-            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
-        End Try
-    End Sub
+
 End Module
