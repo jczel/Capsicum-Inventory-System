@@ -50,9 +50,9 @@ Partial Class Form1login
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.ForeColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(697, 331)
+        Me.Panel1.Size = New System.Drawing.Size(761, 353)
         Me.Panel1.TabIndex = 0
         '
         'passwordtxtbx
@@ -66,18 +66,18 @@ Partial Class Form1login
         Me.passwordtxtbx.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.passwordtxtbx.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.passwordtxtbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.passwordtxtbx.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passwordtxtbx.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.passwordtxtbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.passwordtxtbx.IconRight = CType(resources.GetObject("passwordtxtbx.IconRight"), System.Drawing.Image)
         Me.passwordtxtbx.IconRightSize = New System.Drawing.Size(30, 30)
-        Me.passwordtxtbx.Location = New System.Drawing.Point(406, 170)
-        Me.passwordtxtbx.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.passwordtxtbx.Location = New System.Drawing.Point(406, 182)
+        Me.passwordtxtbx.Margin = New System.Windows.Forms.Padding(4)
         Me.passwordtxtbx.Name = "passwordtxtbx"
         Me.passwordtxtbx.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordtxtbx.PlaceholderForeColor = System.Drawing.Color.Gray
         Me.passwordtxtbx.PlaceholderText = "Password"
         Me.passwordtxtbx.SelectedText = ""
-        Me.passwordtxtbx.Size = New System.Drawing.Size(235, 30)
+        Me.passwordtxtbx.Size = New System.Drawing.Size(270, 39)
         Me.passwordtxtbx.TabIndex = 15
         '
         'usernametxtbx
@@ -96,12 +96,12 @@ Partial Class Form1login
         Me.usernametxtbx.IconRight = CType(resources.GetObject("usernametxtbx.IconRight"), System.Drawing.Image)
         Me.usernametxtbx.IconRightSize = New System.Drawing.Size(30, 30)
         Me.usernametxtbx.Location = New System.Drawing.Point(406, 125)
-        Me.usernametxtbx.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.usernametxtbx.Margin = New System.Windows.Forms.Padding(4)
         Me.usernametxtbx.Name = "usernametxtbx"
         Me.usernametxtbx.PlaceholderForeColor = System.Drawing.Color.Gray
         Me.usernametxtbx.PlaceholderText = "Username"
         Me.usernametxtbx.SelectedText = ""
-        Me.usernametxtbx.Size = New System.Drawing.Size(235, 30)
+        Me.usernametxtbx.Size = New System.Drawing.Size(270, 39)
         Me.usernametxtbx.TabIndex = 14
         '
         'systemtitlelb
@@ -124,7 +124,7 @@ Partial Class Form1login
         Me.Guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2CirclePictureBox1.ImageRotate = 0!
         Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(473, 8)
-        Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(106, 86)
@@ -142,8 +142,8 @@ Partial Class Form1login
         Me.showpasschcbx.CheckedState.BorderThickness = 0
         Me.showpasschcbx.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.showpasschcbx.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Bold)
-        Me.showpasschcbx.Location = New System.Drawing.Point(406, 215)
-        Me.showpasschcbx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.showpasschcbx.Location = New System.Drawing.Point(416, 237)
+        Me.showpasschcbx.Margin = New System.Windows.Forms.Padding(2)
         Me.showpasschcbx.Name = "showpasschcbx"
         Me.showpasschcbx.Size = New System.Drawing.Size(116, 18)
         Me.showpasschcbx.TabIndex = 11
@@ -166,10 +166,10 @@ Partial Class Form1login
         Me.loginbttn.FillColor = System.Drawing.Color.White
         Me.loginbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.loginbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.loginbttn.Location = New System.Drawing.Point(473, 247)
-        Me.loginbttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.loginbttn.Location = New System.Drawing.Point(473, 272)
+        Me.loginbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.loginbttn.Name = "loginbttn"
-        Me.loginbttn.Size = New System.Drawing.Size(106, 29)
+        Me.loginbttn.Size = New System.Drawing.Size(139, 35)
         Me.loginbttn.TabIndex = 8
         Me.loginbttn.Text = "Log In"
         '
@@ -193,11 +193,10 @@ Partial Class Form1login
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(697, 331)
+        Me.ClientSize = New System.Drawing.Size(761, 353)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.MaximumSize = New System.Drawing.Size(717, 381)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
