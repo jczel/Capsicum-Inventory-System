@@ -48,7 +48,7 @@ Public Class Menucntrl
         ComputeTotal()
     End Sub
 
-    ' DFD: PRICE PROCESS - D DISCOUNT, D TOTAL PRICE
+
     Sub ComputeTotal()
         subTotal = 0
         For Each r As DataRow In modCart.CartTable.Rows
@@ -147,9 +147,9 @@ Public Class Menucntrl
         End If
     End Sub
 
-    ' ===== DFD: D CONFIRM + PAYMENT + D TRANSACTION TABLE + PRINT RECEIPT =====
+
     Private Sub Confrmbttn_Click(sender As Object, e As EventArgs) Handles Confrmbttn.Click
-        ' 1. Validate Cart (ADDS-ON Process)
+
         If modCart.CartTable Is Nothing OrElse modCart.CartTable.Rows.Count = 0 Then
             MsgBox("Cart is empty! Please add products.", MsgBoxStyle.Exclamation, "Empty Cart")
             Return
@@ -164,14 +164,14 @@ Public Class Menucntrl
             Return
         End If
 
-        ' 2. Validate Discount (D DISCOUNT)
+
         If cmbDiscountType.SelectedIndex > 0 AndAlso txtDiscountID.Text.Trim() = "" Then
             MsgBox("Please enter ID No. for " & cmbDiscountType.Text, MsgBoxStyle.Exclamation, "Discount Required")
             txtDiscountID.Focus()
             Return
         End If
 
-        ' 3. Confirm Payment (D CONFIRM)
+
         Dim ask = MsgBox("Confirm Payment?" & vbCrLf & "Total: ₱" & finalTotal.ToString("0.00"), MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Payment Confirmation")
         If ask = MsgBoxResult.No Then Return
 
@@ -179,13 +179,13 @@ Public Class Menucntrl
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            ' Generate one TransactionNo for whole order (main + add-ons)
+
             Dim transNo As String = "TRN" & DateTime.Now.ToString("yyyyMMddHHmmss")
 
             For Each r As DataRow In modCart.CartTable.Rows
-                If r("ProductID").ToString() = "SEP" Then Continue For ' skip ADD ONS header
+                If r("ProductID").ToString() = "SEP" Then Continue For
 
-                ' DFD: D TRANSACTION TABLE - Save to DB
+
                 Dim sql As String = "INSERT INTO Transactions (TransactionNo, ProductID, productname, size, price, quantity, subTotal, discountType, discountID, discountRate, total, transDate, StaffName) VALUES (@trn, @pid, @pname, @size, @price, @qty, @sub, @dtype, @did, @drate, @total, @date, @staff)"
                 Using cmd As New SqlCommand(sql, sqlconn)
                     cmd.Parameters.AddWithValue("@trn", transNo)
@@ -203,9 +203,16 @@ Public Class Menucntrl
                     cmd.Parameters.AddWithValue("@staff", LoggedFirstName & " " & LoggedLastName)
                     cmd.ExecuteNonQuery()
                 End Using
+
+                Dim sqlUpdate As String = "UPDATE Products SET quantity = quantity - 1 WHERE ProductID = @pid2"
+                Using cmd2 As New SqlCommand(sqlUpdate, sqlconn)
+                    cmd2.Parameters.AddWithValue("@pid2", r("ProductID"))
+                    cmd2.ExecuteNonQuery()
+                End Using
+
             Next
 
-            ' DFD: PRINT RECEIPT
+
             Dim receipt As String = "===== COFFEE SHOP RECEIPT =====" & vbCrLf
             receipt &= "Trans No: " & transNo & vbCrLf
             receipt &= "Date: " & DateTime.Now.ToString() & vbCrLf & vbCrLf
@@ -223,8 +230,9 @@ Public Class Menucntrl
 
             MsgBox(receipt, MsgBoxStyle.Information, "Receipt - Payment Successful")
 
-            ' 4. Clear after payment
+
             ClearAll()
+            CheckLowStock()
 
         Catch ex As Exception
             MsgBox("Transaction Failed: " & ex.Message, MsgBoxStyle.Critical)
@@ -243,7 +251,7 @@ Public Class Menucntrl
     End Sub
 
     Private Sub ClearAll()
-        ' DFD: CLEAR - reset all D (Cart, Discount, Total)
+
         modCart.ClearCart()
         cmbDiscountType.SelectedIndex = 0
         txtDiscountID.Clear()
@@ -259,5 +267,31 @@ Public Class Menucntrl
     Private Sub Guna2Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel11.Paint
     End Sub
     Private Sub Discountlb_Paint(sender As Object, e As PaintEventArgs) Handles Discountlb.Paint
+    End Sub
+
+    Private Sub CheckLowStock()
+        Try
+            connect()
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
+
+
+            Dim sql As String = "SELECT productname, size, quantity FROM Product WHERE quantity <= 25 AND quantity > 0"
+            Using cmd As New SqlCommand(sql, sqlconn)
+                Dim da As New SqlDataAdapter(cmd)
+                Dim dt As New DataTable
+                da.Fill(dt)
+
+                If dt.Rows.Count > 0 Then
+                    Dim msg As String = "⚠️ LOW STOCK WARNING:" & vbCrLf & vbCrLf
+                    For Each row As DataRow In dt.Rows
+                        msg &= "- " & row("productname").ToString() & " (" & row("size").ToString() & ") : " & row("quantity").ToString() & " left" & vbCrLf
+                    Next
+                    MessageBox.Show(msg, "Low Stock Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+            End Using
+        Catch ex As Exception
+        Finally
+            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+        End Try
     End Sub
 End Class

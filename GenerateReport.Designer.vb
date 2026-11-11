@@ -22,9 +22,10 @@ Partial Class GenerateReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GenerateReport))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
@@ -42,16 +43,12 @@ Partial Class GenerateReport
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Me.printreportbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.preparedbylb = New System.Windows.Forms.Label()
         Me.GeneratereportDtgrid = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
         Me.printeportlb = New System.Windows.Forms.Label()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.Guna2Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -299,7 +296,6 @@ Partial Class GenerateReport
         Me.Guna2Panel7.BackColor = System.Drawing.Color.White
         Me.Guna2Panel7.BorderColor = System.Drawing.Color.SaddleBrown
         Me.Guna2Panel7.BorderThickness = 2
-        Me.Guna2Panel7.Controls.Add(Me.preparedbylb)
         Me.Guna2Panel7.Controls.Add(Me.GeneratereportDtgrid)
         Me.Guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel7.Location = New System.Drawing.Point(3, 61)
@@ -307,79 +303,40 @@ Partial Class GenerateReport
         Me.Guna2Panel7.Size = New System.Drawing.Size(665, 387)
         Me.Guna2Panel7.TabIndex = 2
         '
-        'preparedbylb
-        '
-        Me.preparedbylb.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.preparedbylb.AutoSize = True
-        Me.preparedbylb.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.preparedbylb.ForeColor = System.Drawing.Color.Black
-        Me.preparedbylb.Location = New System.Drawing.Point(23, 341)
-        Me.preparedbylb.Name = "preparedbylb"
-        Me.preparedbylb.Size = New System.Drawing.Size(103, 18)
-        Me.preparedbylb.TabIndex = 16
-        Me.preparedbylb.Text = "Prepared by:"
-        '
         'GeneratereportDtgrid
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.GeneratereportDtgrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.GeneratereportDtgrid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GeneratereportDtgrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle31.BackColor = System.Drawing.Color.White
+        Me.GeneratereportDtgrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle31
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle32.BackColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle32.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GeneratereportDtgrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle32
         Me.GeneratereportDtgrid.ColumnHeadersHeight = 34
         Me.GeneratereportDtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.GeneratereportDtgrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column5})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GeneratereportDtgrid.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GeneratereportDtgrid.DefaultCellStyle = DataGridViewCellStyle33
+        Me.GeneratereportDtgrid.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GeneratereportDtgrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GeneratereportDtgrid.Location = New System.Drawing.Point(3, 3)
+        Me.GeneratereportDtgrid.Location = New System.Drawing.Point(0, 0)
         Me.GeneratereportDtgrid.Name = "GeneratereportDtgrid"
         Me.GeneratereportDtgrid.RowHeadersVisible = False
-        Me.GeneratereportDtgrid.Size = New System.Drawing.Size(656, 303)
+        Me.GeneratereportDtgrid.Size = New System.Drawing.Size(665, 387)
         Me.GeneratereportDtgrid.TabIndex = 0
         Me.GeneratereportDtgrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SaddleBrown
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GeneratereportDtgrid.ThemeStyle.HeaderStyle.Height = 34
         Me.GeneratereportDtgrid.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Date"
-        Me.Column6.Name = "Column6"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Transaction ID"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Total Item"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Discount"
-        Me.Column3.Name = "Column3"
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "total"
-        Me.Column5.Name = "Column5"
         '
         'Guna2Panel6
         '
@@ -419,6 +376,19 @@ Partial Class GenerateReport
         Me.printeportlb.TabIndex = 1
         Me.printeportlb.Text = "Print Report"
         '
+        'PrintDocument1
+        '
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'GenerateReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -439,7 +409,6 @@ Partial Class GenerateReport
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.Guna2Panel8.ResumeLayout(False)
         Me.Guna2Panel7.ResumeLayout(False)
-        Me.Guna2Panel7.PerformLayout()
         CType(Me.GeneratereportDtgrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel6.ResumeLayout(False)
         Me.Guna2Panel9.ResumeLayout(False)
@@ -465,14 +434,10 @@ Partial Class GenerateReport
     Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents GeneratereportDtgrid As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Guna2Panel6 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents printreportbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents printeportlb As Label
-    Friend WithEvents preparedbylb As Label
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

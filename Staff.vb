@@ -28,6 +28,7 @@ Public Class Staff
     End Sub
 
     Private Sub Staff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Try
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()

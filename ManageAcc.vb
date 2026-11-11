@@ -253,7 +253,7 @@ Public Class ManageAcc
 
     Sub SearchUser(keyword As String)
 
-        Dim connStr As String = "Server=(localdb)\MSSQLLocalDB; Database=DB_CAPSICUM; Trusted_Connection=True; MultipleActiveResultSets=True;"
+        Dim connStr As String = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database=DB_CAPSICUM; Trusted_Connection=True; MultipleActiveResultSets=True;"
         Try
             Guna2DataGridView1.Rows.Clear()
             Using conn As New SqlConnection(connStr)
