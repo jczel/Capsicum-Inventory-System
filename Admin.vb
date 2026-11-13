@@ -89,7 +89,7 @@ Public Class Admin
                     login.showpasschcbx.Checked = False
                     login.passwordtxtbx.PasswordChar = "*"c
                     login.Show()
-                    Me.Close()
+                    Me.Hide()
                     Return
                 End If
             Next
@@ -97,7 +97,7 @@ Public Class Admin
 
             Dim newLogin As New Form1login()
             newLogin.Show()
-            Me.Close()
+            Me.Hide()
         End If
     End Sub
 
