@@ -58,7 +58,22 @@ Public Class Staff
     End Sub
 
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs)
+
+
+    Private Sub Staff_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
+    End Sub
+
+    Private Sub Menubtn_Click(sender As Object, e As EventArgs) Handles Menubtn.Click
+        Dim menu As New Menucntrl
+        Guna2Panel5.Controls.Clear()
+        menu.Dock = DockStyle.Fill
+        Guna2Panel5.Controls.Add(menu)
+    End Sub
+
+
+
+    Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
         If MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
 
 
@@ -78,7 +93,7 @@ Public Class Staff
                     login.showpasschcbx.Checked = False
                     login.passwordtxtbx.PasswordChar = "*"c
                     login.Show()
-                    Me.Close()
+                    Me.Hide()
                     Return
                 End If
             Next
@@ -86,31 +101,11 @@ Public Class Staff
 
             Dim newLogin As New Form1login()
             newLogin.Show()
-            Me.Close()
+            Me.Hide()
         End If
     End Sub
 
-    Private Sub Staff_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        Application.Exit()
-    End Sub
 
-    Private Sub Menubtn_Click(sender As Object, e As EventArgs) Handles Menubtn.Click
-        Dim menu As New Menucntrl
-        Guna2Panel5.Controls.Clear()
-        menu.Dock = DockStyle.Fill
-        Guna2Panel5.Controls.Add(menu)
-    End Sub
-
-
-
-    Private Sub logoutbtn_Click(sender As Object, e As EventArgs) Handles logoutbtn.Click
-        Form1login.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub Guna2Panel5_Paint_1(sender As Object, e As PaintEventArgs) Handles Guna2Panel5.Paint
-
-    End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles rolelb.Click
 

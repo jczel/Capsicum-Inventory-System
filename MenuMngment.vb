@@ -389,5 +389,45 @@ Public Class MenuMngment
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Try
+            connect()
+            If sqlconn.State = ConnectionState.Closed Then
+                sqlconn.Open()
+            End If
+
+            Dim sqlSelect As String = "SELECT ProductName, Size, quantity FROM Product WHERE quantity <= 25"
+            Using cmdSelect As New SqlCommand(sqlSelect, sqlconn)
+                Dim da As New SqlDataAdapter(cmdSelect)
+                Dim dt As New DataTable
+                da.Fill(dt)
+
+                If dt.Rows.Count = 0 Then
+                    MsgBox("No low stock. All good!")
+                    Return
+                End If
+
+                Dim list As String = "Restocked:" & vbCrLf & vbCrLf
+                For Each row As DataRow In dt.Rows
+                    list &= "- " & row("ProductName").ToString() & " (" & row("Size").ToString() & ") : " & row("quantity").ToString() & " -> 50" & vbCrLf
+                Next
+
+                Dim sqlUpdate As String = "UPDATE Product SET quantity = 50 WHERE quantity <= 25"
+                Using cmdUpdate As New SqlCommand(sqlUpdate, sqlconn)
+                    Dim count As Integer = cmdUpdate.ExecuteNonQuery()
+                    MsgBox(list & vbCrLf & count & " products restocked!", MsgBoxStyle.Information, "Restock Done")
+                End Using
+            End Using
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+
+            If sqlconn.State = ConnectionState.Open Then
+                sqlconn.Close()
+            End If
+        End Try
+    End Sub
 End Class
 

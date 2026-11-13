@@ -29,10 +29,7 @@ Public Class Owner
 
     End Sub
 
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs)
-        Form1login.Show()
-        Me.Hide()
-    End Sub
+
 
     Private Sub Owner_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
@@ -59,7 +56,7 @@ Public Class Owner
                     login.showpasschcbx.Checked = False
                     login.passwordtxtbx.PasswordChar = "*"c
                     login.Show()
-                    Me.Close()
+                    Me.Hide()
                     Return
                 End If
             Next
@@ -67,7 +64,7 @@ Public Class Owner
 
             Dim newLogin As New Form1login()
             newLogin.Show()
-            Me.Close()
+            Me.Hide()
         End If
     End Sub
 

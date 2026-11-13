@@ -23,6 +23,7 @@ Partial Class AdminDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
         Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
@@ -59,13 +60,12 @@ Partial Class AdminDashboard
         Dim ChartFont31 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick12 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont32 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim LPoint1 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint2 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint3 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint4 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint5 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim LPoint6 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminDashboard))
+        Dim LPoint19 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint20 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint21 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint22 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint23 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
+        Dim LPoint24 As Guna.Charts.WinForms.LPoint = New Guna.Charts.WinForms.LPoint()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -111,7 +111,6 @@ Partial Class AdminDashboard
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -625,19 +624,19 @@ Partial Class AdminDashboard
         '
         'GunaPieDataset1
         '
-        LPoint1.Label = "Monday"
-        LPoint1.Y = 200.0R
-        LPoint2.Label = "Tuesday"
-        LPoint2.Y = 462.0R
-        LPoint3.Label = "Wednesday"
-        LPoint3.Y = 176.0R
-        LPoint4.Label = "Thursday"
-        LPoint4.Y = 358.0R
-        LPoint5.Label = "Friday"
-        LPoint5.Y = 662.0R
-        LPoint6.Label = "Saturday"
-        LPoint6.Y = 1587.0R
-        Me.GunaPieDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint1, LPoint2, LPoint3, LPoint4, LPoint5, LPoint6})
+        LPoint19.Label = "Monday"
+        LPoint19.Y = 200.0R
+        LPoint20.Label = "Tuesday"
+        LPoint20.Y = 462.0R
+        LPoint21.Label = "Wednesday"
+        LPoint21.Y = 176.0R
+        LPoint22.Label = "Thursday"
+        LPoint22.Y = 358.0R
+        LPoint23.Label = "Friday"
+        LPoint23.Y = 662.0R
+        LPoint24.Label = "Saturday"
+        LPoint24.Y = 1587.0R
+        Me.GunaPieDataset1.DataPoints.AddRange(New Guna.Charts.WinForms.LPoint() {LPoint19, LPoint20, LPoint21, LPoint22, LPoint23, LPoint24})
         Me.GunaPieDataset1.Label = "Pie1"
         Me.GunaPieDataset1.TargetChart = Me.weeklysaleschrt
         '
@@ -673,7 +672,6 @@ Partial Class AdminDashboard
         Me.Guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2Panel2.BorderRadius = 20
         Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Guna2Button1)
         Me.Guna2Panel2.Controls.Add(Me.namelb)
         Me.Guna2Panel2.Controls.Add(Me.messagelb)
         Me.Guna2Panel2.Controls.Add(Me.adminlb)
@@ -819,23 +817,6 @@ Partial Class AdminDashboard
         Me.Guna2Elipse2.BorderRadius = 30
         Me.Guna2Elipse2.TargetControl = Me.weeklysaleschrt
         '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(585, 38)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(123, 34)
-        Me.Guna2Button1.TabIndex = 13
-        Me.Guna2Button1.Text = "Guna2Button1"
-        Me.Guna2Button1.UseTransparentBackground = True
-        '
         'AdminDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -923,5 +904,4 @@ Partial Class AdminDashboard
     Friend WithEvents todaysnumofTransnumlb As Label
     Friend WithEvents totalstocknumlb As Label
     Friend WithEvents totalprodnumlb As Label
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
