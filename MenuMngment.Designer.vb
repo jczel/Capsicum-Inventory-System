@@ -58,6 +58,7 @@ Partial Class MenuMngment
         Me.quantitytxbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Categorycmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.restockbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Srchtxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.SizeFilterCmbx = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -66,7 +67,6 @@ Partial Class MenuMngment
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
@@ -549,7 +549,7 @@ Partial Class MenuMngment
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BorderRadius = 10
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel1.Controls.Add(Me.restockbttn)
         Me.Guna2Panel1.Controls.Add(Me.Srchtxtbx)
         Me.Guna2Panel1.Controls.Add(Me.SizeFilterCmbx)
         Me.Guna2Panel1.Controls.Add(Me.Label3)
@@ -565,6 +565,24 @@ Partial Class MenuMngment
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
         Me.Guna2Panel1.Size = New System.Drawing.Size(1158, 81)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'restockbttn
+        '
+        Me.restockbttn.BorderColor = System.Drawing.Color.Transparent
+        Me.restockbttn.BorderRadius = 5
+        Me.restockbttn.BorderThickness = 2
+        Me.restockbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.restockbttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.restockbttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.restockbttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.restockbttn.FillColor = System.Drawing.Color.SaddleBrown
+        Me.restockbttn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.restockbttn.ForeColor = System.Drawing.Color.White
+        Me.restockbttn.Location = New System.Drawing.Point(509, 27)
+        Me.restockbttn.Name = "restockbttn"
+        Me.restockbttn.Size = New System.Drawing.Size(156, 33)
+        Me.restockbttn.TabIndex = 69
+        Me.restockbttn.Text = "Restock"
         '
         'Srchtxtbx
         '
@@ -681,21 +699,6 @@ Partial Class MenuMngment
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(509, 27)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(156, 33)
-        Me.Guna2Button1.TabIndex = 69
-        Me.Guna2Button1.Text = "Guna2Button1"
-        '
         'MenuMngment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -762,5 +765,5 @@ Partial Class MenuMngment
     Friend WithEvents Column18 As DataGridViewImageColumn
     Friend WithEvents Column19 As DataGridViewButtonColumn
     Friend WithEvents Column20 As DataGridViewButtonColumn
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents restockbttn As Guna.UI2.WinForms.Guna2Button
 End Class
