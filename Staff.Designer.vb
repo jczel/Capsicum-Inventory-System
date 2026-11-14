@@ -31,7 +31,6 @@ Partial Class Staff
         Me.namelb = New System.Windows.Forms.Label()
         Me.rolelb = New System.Windows.Forms.Label()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
@@ -97,7 +96,6 @@ Partial Class Staff
         Me.Guna2Panel4.Controls.Add(Me.namelb)
         Me.Guna2Panel4.Controls.Add(Me.rolelb)
         Me.Guna2Panel4.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel4.Controls.Add(Me.Label1)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
@@ -147,26 +145,6 @@ Partial Class Staff
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 2
         Me.Guna2PictureBox1.TabStop = False
-        '
-        'Guna2Button7
-        '
-        Me.Guna2Button7.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button7.AutoRoundedCorners = True
-        Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
-        Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(952, 29)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(45, 42)
-        Me.Guna2Button7.TabIndex = 0
         '
         'Label1
         '
@@ -343,7 +321,6 @@ Partial Class Staff
         Me.Guna2NotificationPaint1.FillColor = System.Drawing.Color.Chocolate
         Me.Guna2NotificationPaint1.Location = New System.Drawing.Point(20, 0)
         Me.Guna2NotificationPaint1.Offset = New System.Drawing.Point(-7, 0)
-        Me.Guna2NotificationPaint1.TargetControl = Me.Guna2Button7
         '
         'Staff
         '
@@ -375,7 +352,6 @@ Partial Class Staff
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2Panel5 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel

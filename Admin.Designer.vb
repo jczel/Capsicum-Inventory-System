@@ -29,10 +29,10 @@ Partial Class Admin
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Dsplaypnl = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Menubttn = New Guna.UI2.WinForms.Guna2Button()
         Me.logoutbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.MngInvtrybtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -41,7 +41,6 @@ Partial Class Admin
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NotifCount = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
-        Me.Menubttn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -94,7 +93,6 @@ Partial Class Admin
         'Guna2Panel4
         '
         Me.Guna2Panel4.Controls.Add(Me.Guna2PictureBox1)
-        Me.Guna2Panel4.Controls.Add(Me.Guna2Button7)
         Me.Guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(14, Byte), Integer))
         Me.Guna2Panel4.Location = New System.Drawing.Point(2, 2)
@@ -115,26 +113,6 @@ Partial Class Admin
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 2
         Me.Guna2PictureBox1.TabStop = False
-        '
-        'Guna2Button7
-        '
-        Me.Guna2Button7.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button7.AutoRoundedCorners = True
-        Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
-        Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(933, 28)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(45, 42)
-        Me.Guna2Button7.TabIndex = 0
         '
         'Dsplaypnl
         '
@@ -182,6 +160,29 @@ Partial Class Admin
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.60508!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(231, 681)
         Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'Menubttn
+        '
+        Me.Menubttn.Animated = True
+        Me.Menubttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Menubttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Menubttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Menubttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Menubttn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Menubttn.FillColor = System.Drawing.Color.Transparent
+        Me.Menubttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Menubttn.ForeColor = System.Drawing.Color.White
+        Me.Menubttn.Image = CType(resources.GetObject("Menubttn.Image"), System.Drawing.Image)
+        Me.Menubttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Menubttn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Menubttn.Location = New System.Drawing.Point(2, 358)
+        Me.Menubttn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Menubttn.Name = "Menubttn"
+        Me.Menubttn.Size = New System.Drawing.Size(227, 85)
+        Me.Menubttn.TabIndex = 16
+        Me.Menubttn.Text = "Menu"
+        Me.Menubttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Menubttn.UseTransparentBackground = True
         '
         'logoutbttn
         '
@@ -319,30 +320,6 @@ Partial Class Admin
         Me.NotifCount.Location = New System.Drawing.Point(21, 3)
         Me.NotifCount.Offset = New System.Drawing.Point(-7, 3)
         Me.NotifCount.Size = New System.Drawing.Size(17, 17)
-        Me.NotifCount.TargetControl = Me.Guna2Button7
-        '
-        'Menubttn
-        '
-        Me.Menubttn.Animated = True
-        Me.Menubttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Menubttn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Menubttn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Menubttn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Menubttn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Menubttn.FillColor = System.Drawing.Color.Transparent
-        Me.Menubttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Menubttn.ForeColor = System.Drawing.Color.White
-        Me.Menubttn.Image = CType(resources.GetObject("Menubttn.Image"), System.Drawing.Image)
-        Me.Menubttn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Menubttn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Menubttn.Location = New System.Drawing.Point(2, 358)
-        Me.Menubttn.Margin = New System.Windows.Forms.Padding(2)
-        Me.Menubttn.Name = "Menubttn"
-        Me.Menubttn.Size = New System.Drawing.Size(227, 85)
-        Me.Menubttn.TabIndex = 16
-        Me.Menubttn.Text = "Menu"
-        Me.Menubttn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Menubttn.UseTransparentBackground = True
         '
         'Admin
         '
@@ -372,7 +349,6 @@ Partial Class Admin
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Dsplaypnl As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel

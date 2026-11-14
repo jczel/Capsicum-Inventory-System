@@ -11,7 +11,7 @@ Module connection
     Sub connect()
         Try
             If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
-            sqlconn.ConnectionString = "Server = DESKTOP-51BM6RG\SQLEXPRESS; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
+            sqlconn.ConnectionString = "Server = (localdb)\MSSQLLocalDB; Database = DB_CAPSICUM; Trusted_Connection = True; MultipleActiveResultSets = True;"
             sqlconn.Open()
 
         Catch ex As Exception
@@ -45,17 +45,20 @@ Module connection
     End Sub
 
     Public Sub totalStock(label As Label)
-        query = "SELECT ISNULL(SUM(CAST(Quantity AS INT)), 0) FROM Product"
         Try
+            connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
-            Using cmd As New SqlClient.SqlCommand(query, sqlconn)
-                Dim countStocks As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-                label.Text = countStocks.ToString()
+
+
+            Dim query As String = "SELECT ISNULL(SUM(TRY_CAST(quantity AS INT)),0) FROM Product"
+            Using cmd As New SqlCommand(query, sqlconn)
+                label.Text = cmd.ExecuteScalar().ToString()
+
             End Using
-            sqlconn.Close()
         Catch ex As Exception
-            label.Text = "0"
-            If sqlconn.State = ConnectionState.Open Then sqlconn.Close()
+            MessageBox.Show("Stock error: " & ex.Message)
+        Finally
+            sqlconn.Close()
         End Try
     End Sub
 

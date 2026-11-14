@@ -150,41 +150,32 @@ Public Class Menucntrl
 
     Private Sub Confrmbttn_Click(sender As Object, e As EventArgs) Handles Confrmbttn.Click
 
-        If modCart.CartTable Is Nothing OrElse modCart.CartTable.Rows.Count = 0 Then
-            MsgBox("Cart is empty! Please add products.", MsgBoxStyle.Exclamation, "Empty Cart")
-            Return
-        End If
-
-        Dim realCount As Integer = 0
-        For Each r As DataRow In modCart.CartTable.Rows
-            If r("ProductID").ToString() <> "SEP" Then realCount += 1
-        Next
-        If realCount = 0 Then
-            MsgBox("Cart is empty!", MsgBoxStyle.Exclamation)
-            Return
-        End If
-
-
-        If cmbDiscountType.SelectedIndex > 0 AndAlso txtDiscountID.Text.Trim() = "" Then
-            MsgBox("Please enter ID No. for " & cmbDiscountType.Text, MsgBoxStyle.Exclamation, "Discount Required")
-            txtDiscountID.Focus()
-            Return
-        End If
-
-
-        Dim ask = MsgBox("Confirm Payment?" & vbCrLf & "Total: ₱" & finalTotal.ToString("0.00"), MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Payment Confirmation")
-        If ask = MsgBoxResult.No Then Return
-
         Try
             connect()
             If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
-
-
             Dim transNo As String = "TRN" & DateTime.Now.ToString("yyyyMMddHHmmss")
+
+
+            Dim grouped As New Dictionary(Of String, DataRow)
+            Dim qtyMap As New Dictionary(Of String, Integer)
 
             For Each r As DataRow In modCart.CartTable.Rows
                 If r("ProductID").ToString() = "SEP" Then Continue For
+                Dim key As String = r("ProductID").ToString() & "|" & r("Size").ToString()
+                If grouped.ContainsKey(key) Then
+                    qtyMap(key) += 1
+                Else
+                    grouped.Add(key, r)
+                    qtyMap.Add(key, 1)
+                End If
+            Next
 
+            ' 2. I-save yung naka-group na
+            For Each key In grouped.Keys
+                Dim r As DataRow = grouped(key)
+                Dim qty As Integer = qtyMap(key)
+                Dim price As Decimal = CDec(r("Price"))
+                Dim itemSubTotal As Decimal = price * qty
 
                 Dim sql As String = "INSERT INTO Transactions (TransactionNo, ProductID, productname, size, price, quantity, subTotal, discountType, discountID, discountRate, total, transDate, StaffName) VALUES (@trn, @pid, @pname, @size, @price, @qty, @sub, @dtype, @did, @drate, @total, @date, @staff)"
                 Using cmd As New SqlCommand(sql, sqlconn)
@@ -192,9 +183,9 @@ Public Class Menucntrl
                     cmd.Parameters.AddWithValue("@pid", r("ProductID"))
                     cmd.Parameters.AddWithValue("@pname", r("ProductName"))
                     cmd.Parameters.AddWithValue("@size", r("Size"))
-                    cmd.Parameters.AddWithValue("@price", CDec(r("Price")))
-                    cmd.Parameters.AddWithValue("@qty", 1)
-                    cmd.Parameters.AddWithValue("@sub", subTotal)
+                    cmd.Parameters.AddWithValue("@price", price)
+                    cmd.Parameters.AddWithValue("@qty", qty)
+                    cmd.Parameters.AddWithValue("@sub", itemSubTotal)
                     cmd.Parameters.AddWithValue("@dtype", cmbDiscountType.Text)
                     cmd.Parameters.AddWithValue("@did", txtDiscountID.Text)
                     cmd.Parameters.AddWithValue("@drate", discountRate)
@@ -204,36 +195,30 @@ Public Class Menucntrl
                     cmd.ExecuteNonQuery()
                 End Using
 
-                Dim sqlUpdate As String = "UPDATE Products SET quantity = quantity - 1 WHERE ProductID = @pid2"
+
+                Dim sqlUpdate As String = "UPDATE Product SET quantity = quantity - @qty2 WHERE ProductID = @pid2"
                 Using cmd2 As New SqlCommand(sqlUpdate, sqlconn)
+                    cmd2.Parameters.AddWithValue("@qty2", qty)
                     cmd2.Parameters.AddWithValue("@pid2", r("ProductID"))
                     cmd2.ExecuteNonQuery()
                 End Using
-
             Next
 
 
             Dim receipt As String = "===== COFFEE SHOP RECEIPT =====" & vbCrLf
             receipt &= "Trans No: " & transNo & vbCrLf
             receipt &= "Date: " & DateTime.Now.ToString() & vbCrLf & vbCrLf
-            For Each r As DataRow In modCart.CartTable.Rows
-                If r("ProductID").ToString() = "SEP" Then
-                    receipt &= vbCrLf & "--- ADD ONS ---" & vbCrLf
-                Else
-                    receipt &= r("ProductName").ToString() & " (" & r("Size").ToString() & ") - ₱" & CDec(r("Price")).ToString("0.00") & vbCrLf
-                End If
+            For Each key In grouped.Keys
+                Dim r As DataRow = grouped(key)
+                receipt &= r("ProductName").ToString() & " (" & r("Size").ToString() & ") x" & qtyMap(key) & " - ₱" & (CDec(r("Price")) * qtyMap(key)).ToString("0.00") & vbCrLf
             Next
             receipt &= vbCrLf & "Sub Total: ₱" & subTotal.ToString("0.00") & vbCrLf
             receipt &= "Discount: " & discntnumlb.Text & vbCrLf
             receipt &= "TOTAL: ₱" & finalTotal.ToString("0.00") & vbCrLf & vbCrLf
             receipt &= "Thank you!"
-
             MsgBox(receipt, MsgBoxStyle.Information, "Receipt - Payment Successful")
-
-
             ClearAll()
             CheckLowStock()
-
         Catch ex As Exception
             MsgBox("Transaction Failed: " & ex.Message, MsgBoxStyle.Critical)
         Finally
