@@ -227,7 +227,7 @@ Public Class Menu
 
                                              modCart.AddItem(selectedID, pName, selectedSize, selectedPrice)
 
-                                             ' ===== RESET AFTER ADD =====
+
                                              ResetSizeButtons()
 
                                              If sizeCount > 1 Then

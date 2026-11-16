@@ -73,13 +73,13 @@ Public Class AdminDashboard
 
             productAreachrt.Datasets.Clear()
 
-            ' Ito lang yung gumagana sa Guna version mo
+
             Dim lineDs As New GunaLineDataset()
             lineDs.Label = "Weekly Transactions"
 
-            ' Ito lang gumagana sa version mo
-            lineDs.BorderColor = Color.FromArgb(255, 165, 0) ' orange
-            lineDs.BorderWidth = 3 ' mas makapal para mas kita
+
+            lineDs.BorderColor = Color.FromArgb(255, 165, 0)
+            lineDs.BorderWidth = 3
             lineDs.PointRadius = 5
 
 
@@ -88,7 +88,7 @@ Public Class AdminDashboard
             For Each d In daysOrder
                 Dim row = dt.AsEnumerable().FirstOrDefault(Function(r) r.Field(Of String)("DayName") = d)
                 Dim val As Integer = If(row IsNot Nothing, CInt(row("TransCount")), 0)
-                ' Kahit 0 i-add mo para di maputol line
+
                 lineDs.DataPoints.Add(d, val)
             Next
 
